@@ -75,7 +75,7 @@ def extract_named_entities_with_context(text):
     date_pattern = r'\b(\d{4}\s*–\s*\d{4})\b'  # Matches patterns like "1642 – 1945"
     
     # Regex pattern to check for non-alphanumeric characters, including specified symbols and space
-    non_alphanumeric_pattern = r'[^a-zA-Z0-9.:,?/(){}[\]_+=-*`"\' ]'  # Matches any non-alphanumeric character, including specified symbols and space
+    non_alphanumeric_pattern = r'[^a-zA-Z0-9.:,?/(){}[\]_+=-*`"\'#@$! ]'  # Matches any non-alphanumeric character, including specified symbols and space
     
     # Define a set of blacklisted words
     blacklist = {
