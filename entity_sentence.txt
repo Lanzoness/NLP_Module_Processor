@@ -21,74 +21,167 @@ Sentence: Computer Hardware main components At the most basic level, a computer 
 Entity: Central Processing Unit
 Label: ORG
 Sentence: Central Processing Unit (CPU)
+
+The central processing unit (CPU) is responsible for fetching the program instructions, decoding each instruction that is fetched, and performing the indicated sequence of operations on the correct data.
 
 Entity: CPU
 Label: ORG
 Sentence: Central Processing Unit (CPU)
+
+The central processing unit (CPU) is responsible for fetching the program instructions, decoding each instruction that is fetched, and performing the indicated sequence of operations on the correct data.
+
+Entity: 
+Label: PERSON
+Sentence: Central Processing Unit (CPU)
+
+The central processing unit (CPU) is responsible for fetching the program instructions, decoding each instruction that is fetched, and performing the indicated sequence of operations on the correct data.
 
 Entity: CPU
 Label: ORG
-Sentence: The central processing unit (CPU) is responsible for fetching the program instructions, decoding each instruction that is fetched, and performing the indicated sequence of operations on the correct data.
+Sentence: Central Processing Unit (CPU)
+
+The central processing unit (CPU) is responsible for fetching the program instructions, decoding each instruction that is fetched, and performing the indicated sequence of operations on the correct data.
+
+Entity: CPU
+Label: ORG
+Sentence: 
+CPU acts like the “brain” of a computer system.
 
 Entity: CPU
 Label: ORG
 Sentence: All computers have a CPU that can be divided into two pieces.
 
-Entity: CPU
-Label: ORG
-Sentence: The second CPU component is the control unit, a module responsible for sequencing operations and making sure the correct data are where they need to be at the correct time.
-
-Entity: CPU
-Label: ORG
-Sentence: Register Register is a small, very fast storage area inside CPU.
-
-Entity: For
+Entity: 
 Label: PERSON
-Sentence: For instance, when a ALU is commanded to calculate A*(B+C), ALU needs to calculate B+C first, then ALU need to store the result for a moment and use the result to multiply A. It is faster for ALU to access register than store the data in memory units.
+Sentence: 
+The second CPU component is the control unit, a module responsible for sequencing operations and making sure the correct data are where they need to be at the correct time.
+
+Entity: CPU
+Label: ORG
+Sentence: 
+The second CPU component is the control unit, a module responsible for sequencing operations and making sure the correct data are where they need to be at the correct time.
+
+Entity: Register
+
+Register
+Label: ORG
+Sentence: Register
+
+Register is a small, very fast storage area inside CPU.
+
+Entity: CPU
+Label: ORG
+Sentence: Register
+
+Register is a small, very fast storage area inside CPU.
 
 Entity: A*(B+C
 Label: PRODUCT
-Sentence: For instance, when a ALU is commanded to calculate A*(B+C), ALU needs to calculate B+C first, then ALU need to store the result for a moment and use the result to multiply A. It is faster for ALU to access register than store the data in memory units.
+Sentence: 
+For instance, when a ALU is commanded to calculate A*(B+C), ALU needs to calculate B+C first, then ALU need to store the result for a moment and use the result to multiply A.
+
+It is faster for ALU to access register than store the data in memory units.
 
-Entity: A. It
+Entity: A.
+
 Label: PERSON
-Sentence: For instance, when a ALU is commanded to calculate A*(B+C), ALU needs to calculate B+C first, then ALU need to store the result for a moment and use the result to multiply A. It is faster for ALU to access register than store the data in memory units.
+Sentence: 
+For instance, when a ALU is commanded to calculate A*(B+C), ALU needs to calculate B+C first, then ALU need to store the result for a moment and use the result to multiply A.
+
+It is faster for ALU to access register than store the data in memory units.
 
 Entity: Register
+
 Label: ORG
-Sentence: Four types of Register MAR (memory address register): store memory that currently be accessed inside RAM MDR/MBR (memory data/buffer register): store data from memory Accumulator (A register): a register stores immediate result from ALU Program Counter (PC): store the address of the next instruction
+Sentence: Four types of Register
+
+MAR (memory address register): store memory that currently be accessed inside RAM
+
+MDR/MBR (memory data/buffer register): store data from memory
+
+Accumulator (A register): a register stores immediate result from ALU
+
+Program Counter (PC): store the address of the next instruction
+
+Entity: MAR
+Label: ORG
+Sentence: Four types of Register
+
+MAR (memory address register): store memory that currently be accessed inside RAM
+
+MDR/MBR (memory data/buffer register): store data from memory
+
+Accumulator (A register): a register stores immediate result from ALU
+
+Program Counter (PC): store the address of the next instruction
 
 Entity: RAM
 Label: ORG
-Sentence: Four types of Register MAR (memory address register): store memory that currently be accessed inside RAM MDR/MBR (memory data/buffer register): store data from memory Accumulator (A register): a register stores immediate result from ALU Program Counter (PC): store the address of the next instruction
+Sentence: Four types of Register
+
+MAR (memory address register): store memory that currently be accessed inside RAM
+
+MDR/MBR (memory data/buffer register): store data from memory
+
+Accumulator (A register): a register stores immediate result from ALU
+
+Program Counter (PC): store the address of the next instruction
 
-Entity: MBR
-Label: ORG
-Sentence: Four types of Register MAR (memory address register): store memory that currently be accessed inside RAM MDR/MBR (memory data/buffer register): store data from memory Accumulator (A register): a register stores immediate result from ALU Program Counter (PC): store the address of the next instruction
-
-Entity: Accumulator
+Entity: 
+Accumulator
 Label: WORK_OF_ART
-Sentence: Four types of Register MAR (memory address register): store memory that currently be accessed inside RAM MDR/MBR (memory data/buffer register): store data from memory Accumulator (A register): a register stores immediate result from ALU Program Counter (PC): store the address of the next instruction
-
-Entity: ALU Program Counter
-Label: ORG
-Sentence: Four types of Register MAR (memory address register): store memory that currently be accessed inside RAM MDR/MBR (memory data/buffer register): store data from memory Accumulator (A register): a register stores immediate result from ALU Program Counter (PC): store the address of the next instruction
+Sentence: Four types of Register
+
+MAR (memory address register): store memory that currently be accessed inside RAM
+
+MDR/MBR (memory data/buffer register): store data from memory
+
+Accumulator (A register): a register stores immediate result from ALU
+
+Program Counter (PC): store the address of the next instruction
 
 Entity: Control Unit
 Label: ORG
-Sentence: Control Unit (CU) CU acts like a manager in a computer.
+Sentence: Control Unit (CU)
+
+CU acts like a manager in a computer.
 
 Entity: CU
 Label: ORG
-Sentence: Control Unit (CU) CU acts like a manager in a computer.
+Sentence: Control Unit (CU)
+
+CU acts like a manager in a computer.
+
+Entity: CU
+Label: ORG
+Sentence: Control Unit (CU)
+
+CU acts like a manager in a computer.
+
+Entity: CU
+Label: ORG
+Sentence: 
+CU receives orders from RAM in the form of instruction and decode (break) that instruction down into specific commands for other components inside computer system.
 
 Entity: RAM
 Label: ORG
-Sentence: CU receives orders from RAM in the form of instruction and decode (break) that instruction down into specific commands for other components inside computer system.
+Sentence: 
+CU receives orders from RAM in the form of instruction and decode (break) that instruction down into specific commands for other components inside computer system.
+
+Entity: 
+Together
+Label: WORK_OF_ART
+Sentence: 
+It directs the data flow and the operation of the ALU.
+
+Together, these components perform the tasks of the CPU: fetching instructions, decoding them, and finally performing the indicated sequence of operations.
 
 Entity: CPU
 Label: ORG
-Sentence: Together, these components perform the tasks of the CPU: fetching instructions, decoding them, and finally performing the indicated sequence of operations.
+Sentence: 
+It directs the data flow and the operation of the ALU.
+
+Together, these components perform the tasks of the CPU: fetching instructions, decoding them, and finally performing the indicated sequence of operations.
 
 Entity: CPU
 Label: ORG
@@ -222,73 +315,239 @@ Entity: 0 to 65535
 Label: DATE
 Sentence: The address of these locations varies from 0 to 65535.
 
-Entity: Memory Primary
+Entity: Input / Output Devices
+
+Input
 Label: ORG
-Sentence: Memory Primary memory holds only those data and instructions on which the computer is currently working.
-
-Entity: Input / Output Devices Input
-Label: ORG
-Sentence: Input / Output Devices Input and output devices allow the computer system to interact with the outside world by moving data into and out of the system.
-
-Entity: For
-Label: PERSON
-Sentence: For example, the speakers of a multimedia computer system are directly connected to a device controller called an audio card (such as a SoundBlaster), which in turn is connected to the rest of the system.
+Sentence: Input / Output Devices
+
+Input and output devices allow the computer system to interact with the outside world by moving data into and out of the system.
+
+Input/output devices are usually called I/O devices.
 
 Entity: SoundBlaster
 Label: PRODUCT
-Sentence: For example, the speakers of a multimedia computer system are directly connected to a device controller called an audio card (such as a SoundBlaster), which in turn is connected to the rest of the system.
+Sentence: 
+For example, the speakers of a multimedia computer system are directly connected to a device controller called an audio card (such as a SoundBlaster), which in turn is connected to the rest of the system.
 
-Entity: Web Camera
-Label: WORK_OF_ART
-Sentence: Some input devices are: Keyboard Mouse Microphone Bar code reader Graphics tablet Web Camera Scanner Joystick
-
-Entity: Speaker
-Label: ORG
-Sentence: Some output devices are: Monitor Printer Speaker Projector
-
-Entity: Flash Drive
+Entity: 
 Label: PERSON
-Sentence: USB Flash Drive: Similar to an external hard drive, it can both receive and send data.
+Sentence: Some input devices are:
+
+Keyboard
+
+Mouse
+
+Microphone
+
+Bar code reader
+
+Graphics tablet
+
+Web Camera
+
+Scanner
+
+Joystick
 
-Entity: International Organization for Standardization
+Entity: Keyboard
+
+Mouse
+
+Microphone
+
+Bar
+Label: PERSON
+Sentence: Some input devices are:
+
+Keyboard
+
+Mouse
+
+Microphone
+
+Bar code reader
+
+Graphics tablet
+
+Web Camera
+
+Scanner
+
+Joystick
+
+Entity: 
+Graphics
 Label: ORG
-Sentence: Some international standards organizations ISO (International Organization for Standardization) Develops and publishes international standards across various industries, including computing and technology.
+Sentence: Some input devices are:
+
+Keyboard
+
+Mouse
+
+Microphone
+
+Bar code reader
+
+Graphics tablet
+
+Web Camera
+
+Scanner
+
+Joystick
+
+Entity: Joystick
+Label: PRODUCT
+Sentence: Some input devices are:
+
+Keyboard
+
+Mouse
+
+Microphone
+
+Bar code reader
+
+Graphics tablet
+
+Web Camera
+
+Scanner
+
+Joystick
+
+Entity: 
+Projector
+Label: ORG
+Sentence: Some output devices are:
+
+Monitor
+
+Printer
+
+Speaker
+
+Projector
+
+Entity: External Hard Drive: Can receive
+Label: WORK_OF_ART
+Sentence: 
+External Hard Drive: Can receive data from a computer (input) and send data to a computer (output).
+
+Entity: Aim
+
+Establish
+Label: PERSON
+Sentence: Aim
+
+Establish common guide lines for a particular type of equipment to ensure a “worldwide”1 interoperability (compatibility)
+
+Entity: 
+ISO (International Organization for Standardization
+Label: ORG
+Sentence: Some international standards organizations
+
+ISO (International Organization for Standardization)
+
+Develops and publishes international standards across various industries, including computing and technology.
+
+Entity: 
+Develops
+Label: ORG
+Sentence: Some international standards organizations
+
+ISO (International Organization for Standardization)
+
+Develops and publishes international standards across various industries, including computing and technology.
+
+Entity: 
+IEC
+Label: ORG
+Sentence: 
+IEC (International Electrotechnical Commission)
+
+Focuses on international standards for electrical, electronic, and related technologies.
 
 Entity: International Electrotechnical Commission
 Label: ORG
-Sentence: (International Electrotechnical Commission) Focuses on international standards for electrical, electronic, and related technologies.
+Sentence: 
+IEC (International Electrotechnical Commission)
+
+Focuses on international standards for electrical, electronic, and related technologies.
 
 Entity: IEEE (Institute of Electrical and Electronic Engineers
 Label: ORG
-Sentence: Some international standards organizations IEEE (Institute of Electrical and Electronic Engineers) sets standards for various computer components, signaling protocols, and data representation ITU (International Telecommunications Union) Sets standards for telecommunications systems, including telephone, telegraph, and data communication systems
+Sentence: Some international standards organizations IEEE (Institute of Electrical and Electronic Engineers)
+
+sets standards for various computer components, signaling protocols, and data representation ITU (International Telecommunications Union)
 
 Entity: ITU (International Telecommunications Union
 Label: ORG
-Sentence: Some international standards organizations IEEE (Institute of Electrical and Electronic Engineers) sets standards for various computer components, signaling protocols, and data representation ITU (International Telecommunications Union) Sets standards for telecommunications systems, including telephone, telegraph, and data communication systems
-
-Entity: ANSI
-Label: GPE
-Sentence: Some international standards organizations ANSI (American National Standards Institute) Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S. ETSI (European Telecommunications Standards Institute) Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
+Sentence: Some international standards organizations IEEE (Institute of Electrical and Electronic Engineers)
+
+sets standards for various computer components, signaling protocols, and data representation ITU (International Telecommunications Union)
 
 Entity: American National Standards Institute
 Label: ORG
-Sentence: Some international standards organizations ANSI (American National Standards Institute) Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S. ETSI (European Telecommunications Standards Institute) Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
+Sentence: Some international standards organizations
+
+ANSI (American National Standards Institute)
+
+Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
+
+ETSI (European Telecommunications Standards Institute)
+
+Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
+
+Entity: 
+Oversees
+Label: ORG
+Sentence: Some international standards organizations
+
+ANSI (American National Standards Institute)
+
+Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
+
+ETSI (European Telecommunications Standards Institute)
+
+Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
 
 Entity: U.S.
 Label: GPE
-Sentence: Some international standards organizations ANSI (American National Standards Institute) Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S. ETSI (European Telecommunications Standards Institute) Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
+Sentence: Some international standards organizations
+
+ANSI (American National Standards Institute)
+
+Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
+
+ETSI (European Telecommunications Standards Institute)
+
+Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
 
 Entity: European Telecommunications Standards Institute
 Label: ORG
-Sentence: Some international standards organizations ANSI (American National Standards Institute) Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S. ETSI (European Telecommunications Standards Institute) Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
+Sentence: Some international standards organizations
+
+ANSI (American National Standards Institute)
+
+Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
+
+ETSI (European Telecommunications Standards Institute)
+
+Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
 
 Entity: CEN
 Label: ORG
-Sentence: Some international standards organizations CEN (European Committee for Standardization) Develops standards in various sectors, including information technology
+Sentence: Some international standards organizations CEN (European Committee for Standardization)
+
+Develops standards in various sectors, including information technology
 
 Entity: European Committee for Standardization
 Label: ORG
-Sentence: Some international standards organizations CEN (European Committee for Standardization) Develops standards in various sectors, including information technology
+Sentence: Some international standards organizations CEN (European Committee for Standardization)
+
+Develops standards in various sectors, including information technology
 
 Entity: Historical Development of Computers Generation Zero
 Label: ORG
@@ -523,7 +782,25 @@ Sentence: Programs written in machine language can be executed directly by the e
 Entity: The Computer Level Hierarchy
 Label: ORG
 Sentence: The Computer Level Hierarchy Level 1: The Control Level
- Is where a control unit do its job Receives machine instructions from the level above decodes and executes those instructions properly Moves data to where and when it should be
+ Is where a control unit do its job
+
+Receives machine instructions from the level above
+
+decodes and executes those instructions properly
+
+Moves data to where and when it should be
+
+
+Entity: Moves
+Label: ORG
+Sentence: The Computer Level Hierarchy Level 1: The Control Level
+ Is where a control unit do its job
+
+Receives machine instructions from the level above
+
+decodes and executes those instructions properly
+
+Moves data to where and when it should be
 
 
 Entity: The Computer Level Hierarchy
@@ -565,11 +842,21 @@ Sentence: A central processing unit (CPU) with a control unit, an arithmetic log
 
 Entity: The Von Neumann Model
 Label: PERSON
-Sentence: The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics 
+Sentence: The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics
+
+a main-memory system, which holds programs that control the computer’s operation;
+
+and an I/O system.
+
 
 Entity: The Von Neumann
 Label: PRODUCT
-Sentence: The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics 
+Sentence: The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics
+
+a main-memory system, which holds programs that control the computer’s operation;
+
+and an I/O system.
+
 
 Entity: CPU
 Label: ORG

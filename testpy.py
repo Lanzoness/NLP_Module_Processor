@@ -46,10 +46,23 @@ def extract_text_from_pdf(pdf_path):
                         
                         current_line = part
                     else:
-                        # Ensure a space follows the current line if it doesn't already
-                        if current_line and not current_line.endswith(" "):
-                            current_line += " "
-                        current_line += part
+                        # Handle non-alphanumeric symbols by splitting them into new lines, excluding common punctuation
+                        split_parts = re.split(r'([^a-zA-Z0-9\\s.?!-…,():;"\'])', part)  # Exclude ., ?, !, and - from splitting
+                        for sub_part in split_parts:
+                            if not sub_part.strip():  # Skip empty parts
+                                continue
+                            
+                            # If it's a non-alphanumeric character (excluding common punctuation), treat it as a separate line
+                            if re.match(r'[^a-zA-Z0-9\\s.?!-…,():;"\']', sub_part):
+                                if current_line:
+                                    processed_lines.append(current_line.strip())
+                                    current_line = ""
+                                processed_lines.append(sub_part.strip())
+                            else:
+                                # Append alphanumeric content or valid punctuation to the current line
+                                if current_line and not current_line.endswith(" "):
+                                    current_line += " "
+                                current_line += sub_part
             
             if current_line:
                 processed_lines.append(current_line.strip())
@@ -70,6 +83,8 @@ def extract_text_from_pdf(pdf_path):
     except Exception as e:
         print(f"Error extracting text from PDF: {str(e)}")
         return ""
+
+
 
 
 def extract_named_entities_with_context(text):
