@@ -1,768 +1,1031 @@
-Entity: VS
-Label: PRODUCT
-Sentence: Overview of computer organization and architecture Computer organization VS architecture
-The distinction between computer organization and computer architecture is not clear-cut.
-
-Entity: Software
+Entity: Jesus
 Label: PERSON
-Sentence: The main components of a computer From Software to Hardware
-Computer scientists design algorithms
-Computer scientists implement an algorithm by using high level programing language (Java, C, etc.)
-Another algorithm runs this algorithm and another one runs that algorithm and so on
-We finally get down to machine level
-Machine level can be thought of as an algorithm implemented as an electronic device
+Sentence: 2.  Are the poor during the time of Jesus the same as we speak of the poor today in our society?
 
-Entity: Hardware
-Label: ORG
-Sentence: The main components of a computer From Software to Hardware
-Computer scientists design algorithms
-Computer scientists implement an algorithm by using high level programing language (Java, C, etc.)
-Another algorithm runs this algorithm and another one runs that algorithm and so on
-We finally get down to machine level
-Machine level can be thought of as an algorithm implemented as an electronic device
-
-Entity: Java
-Label: PERSON
-Sentence: The main components of a computer From Software to Hardware
-Computer scientists design algorithms
-Computer scientists implement an algorithm by using high level programing language (Java, C, etc.)
-Another algorithm runs this algorithm and another one runs that algorithm and so on
-We finally get down to machine level
-Machine level can be thought of as an algorithm implemented as an electronic device
-
-Entity: Another
-Label: ORG
-Sentence: The main components of a computer From Software to Hardware
-Computer scientists design algorithms
-Computer scientists implement an algorithm by using high level programing language (Java, C, etc.)
-Another algorithm runs this algorithm and another one runs that algorithm and so on
-We finally get down to machine level
-Machine level can be thought of as an algorithm implemented as an electronic device
-
-Entity: We
-Label: PERSON
-Sentence: The main components of a computer From Software to Hardware
-Computer scientists design algorithms
-Computer scientists implement an algorithm by using high level programing language (Java, C, etc.)
-Another algorithm runs this algorithm and another one runs that algorithm and so on
-We finally get down to machine level
-Machine level can be thought of as an algorithm implemented as an electronic device
-
-Entity: We
-Label: PRODUCT
-Sentence: The main components of a computer Principle of Equivalence of Hardware and Software
-Anything that can be done with software can also be done with hardware, and anything that can be done with hardware can also be done with software
-We implement an application in Hardware or Software level
-Our knowledge of computer organization and architecture will help us to make the best choice
-
-Entity: Hardware
-Label: GPE
-Sentence: The main components of a computer Principle of Equivalence of Hardware and Software
-Anything that can be done with software can also be done with hardware, and anything that can be done with hardware can also be done with software
-We implement an application in Hardware or Software level
-Our knowledge of computer organization and architecture will help us to make the best choice
-
-Entity: Computer Hardware
-Label: ORG
-Sentence: Computer Hardware main components At the most basic level, a computer is a device consisting of 3 pieces:
-A processor to interpret and execute programs
-A memory to store both data and programs
-A mechanism for transferring data to and from the outside world
-
-Entity: Central Processing Unit
-Label: ORG
-Sentence: Central Processing Unit (CPU)
-
-Entity: CPU
-Label: ORG
-Sentence: Central Processing Unit (CPU)
-
-Entity: CPU
-Label: ORG
-Sentence: The central processing unit (CPU) is responsible for fetching the program instructions, decoding each instruction that is fetched, and performing the indicated sequence of operations on the correct data.
-
-Entity: CPU
-Label: ORG
-Sentence: All computers have a CPU that can be divided into two pieces.
-
-Entity: CPU
-Label: ORG
-Sentence: The second CPU component is the control unit, a module responsible for sequencing operations and making sure the correct data are where they need to be at the correct time.
-
-Entity: CPU
-Label: ORG
-Sentence: Register
-Register is a small, very fast storage area inside CPU.
-
-Entity: For
-Label: PERSON
-Sentence: For instance, when a ALU is commanded to calculate A*(B+C), ALU needs to calculate B+C first, then ALU need to store the result for a moment and use the result to multiply A.
-It is faster for ALU to access register than store the data in memory units.
-
-Entity: A*(B+C
-Label: PRODUCT
-Sentence: For instance, when a ALU is commanded to calculate A*(B+C), ALU needs to calculate B+C first, then ALU need to store the result for a moment and use the result to multiply A.
-It is faster for ALU to access register than store the data in memory units.
-
-Entity: A.
-It
-Label: PERSON
-Sentence: For instance, when a ALU is commanded to calculate A*(B+C), ALU needs to calculate B+C first, then ALU need to store the result for a moment and use the result to multiply A.
-It is faster for ALU to access register than store the data in memory units.
-
-Entity: Register
-Label: ORG
-Sentence: Four types of Register
-MAR (memory address register): store memory that currently be accessed inside RAM
-MDR/MBR (memory data/buffer register): store data from memory
-Accumulator (A register): a register stores immediate result from ALU
-Program Counter (PC): store the address of the next instruction
-
-Entity: RAM
-Label: ORG
-Sentence: Four types of Register
-MAR (memory address register): store memory that currently be accessed inside RAM
-MDR/MBR (memory data/buffer register): store data from memory
-Accumulator (A register): a register stores immediate result from ALU
-Program Counter (PC): store the address of the next instruction
-
-Entity: MBR
-Label: ORG
-Sentence: Four types of Register
-MAR (memory address register): store memory that currently be accessed inside RAM
-MDR/MBR (memory data/buffer register): store data from memory
-Accumulator (A register): a register stores immediate result from ALU
-Program Counter (PC): store the address of the next instruction
-
-Entity: Program Counter
-Label: PERSON
-Sentence: Four types of Register
-MAR (memory address register): store memory that currently be accessed inside RAM
-MDR/MBR (memory data/buffer register): store data from memory
-Accumulator (A register): a register stores immediate result from ALU
-Program Counter (PC): store the address of the next instruction
-
-Entity: Control Unit
-Label: ORG
-Sentence: Control Unit (CU)
-CU acts like a manager in a computer.
-
-Entity: CU
-Label: ORG
-Sentence: Control Unit (CU)
-CU acts like a manager in a computer.
-
-Entity: RAM
-Label: ORG
-Sentence: CU receives orders from RAM in the form of instruction and decode (break) that instruction down into specific commands for other components inside computer system.
-
-Entity: CPU
-Label: ORG
-Sentence: Together, these components perform the tasks of the CPU: fetching instructions, decoding them, and finally performing the indicated sequence of operations.
-
-Entity: CPU
-Label: ORG
-Sentence: How a CPU works?
-
-Entity: CU
-Label: ORG
-Sentence: 1. CU turn on enable wire of Instruction Address Register(Program
-
-Entity: Instruction Address Register(Program
-Label: ORG
-Sentence: 1. CU turn on enable wire of Instruction Address Register(Program
-
-Entity: RAM
-Label: ORG
-Sentence: Counter) to allow the next Instruction address to flows to RAM.
-
-Entity: Memory Address Register
-Label: ORG
-Sentence: 2. Instruction address first goes to Memory Address Register which only tells RAM what address the CPU wants next.
-
-Entity: RAM
-Label: ORG
-Sentence: 2. Instruction address first goes to Memory Address Register which only tells RAM what address the CPU wants next.
-
-Entity: CPU
-Label: ORG
-Sentence: 2. Instruction address first goes to Memory Address Register which only tells RAM what address the CPU wants next.
-
-Entity: CU
-Label: ORG
-Sentence: CU turns on the set wire of MAR, then memory address goes to RAM.
-
-Entity: MAR
-Label: ORG
-Sentence: CU turns on the set wire of MAR, then memory address goes to RAM.
-
-Entity: RAM
-Label: ORG
-Sentence: CU turns on the set wire of MAR, then memory address goes to RAM.
-
-Entity: CU
-Label: ORG
-Sentence: CU turns on the enable RAM wire.
-
-Entity: RAM
-Label: ORG
-Sentence: CU turns on the enable RAM wire.
-
-Entity: Memory Data Register(buffer
-Label: ORG
-Sentence: Then data goes to Memory Data Register(buffer) from RAM via data bus.
-
-Entity: RAM
-Label: ORG
-Sentence: Then data goes to Memory Data Register(buffer) from RAM via data bus.
-
-Entity: Instruction Register
-Label: ORG
-Sentence: Then data (instruction) goes to Instruction Register.
-
-Entity: CU
-Label: ORG
-Sentence: 4. CU turns on the set Instruction Register(store instruction) wire.
-
-Entity: CU
-Label: ORG
-Sentence: Instruction goes to CU.
-
-Entity: CU
-Label: ORG
-Sentence: CU decodes instruction, tells ALU the type of operation ALU need to perform and stores the input in Temporary registers by turning on the set wire.
-
-Entity: Temporary
-Label: GPE
-Sentence: CU decodes instruction, tells ALU the type of operation ALU need to perform and stores the input in Temporary registers by turning on the set wire.
-
-Entity: CPU
-Label: ORG
-Sentence: How a CPU works?
-
-Entity: CU
-Label: ORG
-Sentence: CU turns on the set wire of Accumulator and instructs ALU to store the immediate result in Accumulator (A Register).
-
-Entity: Register
-Label: ORG
-Sentence: CU turns on the set wire of Accumulator and instructs ALU to store the immediate result in Accumulator (A Register).
-
-Entity: CU
-Label: ORG
-Sentence: CU turns on the enable wire of Accumulator to instruct Accumulator to output the result to the system bus.
-
-Entity: CU
-Label: ORG
-Sentence: 6. CU send address to MAR again and points out an address in RAM.
-
-Entity: MAR
-Label: ORG
-Sentence: 6. CU send address to MAR again and points out an address in RAM.
-
-Entity: RAM
-Label: ORG
-Sentence: 6. CU send address to MAR again and points out an address in RAM.
-
-Entity: Register
-Label: ORG
-Sentence: The result stored temporarily in A Register will go to the RAM via data bus.
-
-Entity: RAM
-Label: ORG
-Sentence: The result stored temporarily in A Register will go to the RAM via data bus.
-
-Entity: RAM
-Label: ORG
-Sentence: Data will be stored in the specified address in RAM.
-
-Entity: CPU
-Label: ORG
-Sentence: CPU is ready for the next instruction.
-
-Entity: CPU
-Label: ORG
-Sentence: How a CPU works?
-
-Entity: 1024
+Entity: today
 Label: DATE
-Sentence: For example, if the computer has 64k words, then this memory unit has 64 * 1024 = 65536 memory locations.
+Sentence: 2.  Are the poor during the time of Jesus the same as we speak of the poor today in our society?
 
-Entity: 0 to 65535
-Label: DATE
-Sentence: The address of these locations varies from 0 to 65535.
-
-Entity: Input / Output Devices
-Label: ORG
-Sentence: Input / Output Devices
-Input and output devices allow the computer system to interact with the outside world by moving data into and out of the system.
-
-Entity: For
+Entity: Lesson Three
 Label: PERSON
-Sentence: For example, the speakers of a multimedia computer system are directly connected to a device controller called an audio card
-(such as a SoundBlaster), which in turn is connected to the rest of the system.
-
-Entity: SoundBlaster
-Label: PRODUCT
-Sentence: For example, the speakers of a multimedia computer system are directly connected to a device controller called an audio card
-(such as a SoundBlaster), which in turn is connected to the rest of the system.
-
-Entity: Graphics
-Label: LOC
-Sentence: Some input devices are:
-Keyboard
-Mouse
-Microphone
-Bar code reader
-Graphics tablet
-Web Camera
-Scanner
-Joystick
-
-Entity: Web Camera
-Label: WORK_OF_ART
-Sentence: Some input devices are:
-Keyboard
-Mouse
-Microphone
-Bar code reader
-Graphics tablet
-Web Camera
-Scanner
-Joystick
-
-Entity: Speaker
-Label: ORG
-Sentence: Monitor
-Printer
-Speaker
-Projector
-
-Entity: External Hard Drive: Can receive
-Label: WORK_OF_ART
-Sentence: External Hard Drive: Can receive data from a computer (input) and send data to a computer (output).
-
-Entity: Flash Drive
-Label: PERSON
-Sentence: USB Flash Drive: Similar to an external hard drive, it can both receive and send data.
-
-Entity: International Organization for Standardization
-Label: ORG
-Sentence: Some international standards organizations
-ISO (International Organization for Standardization)
-Develops and publishes international standards across various industries, including computing and technology.
-
-Entity: Develops
-Label: ORG
-Sentence: Some international standards organizations
-ISO (International Organization for Standardization)
-Develops and publishes international standards across various industries, including computing and technology.
-
-Entity: International Electrotechnical Commission
-Label: ORG
-Sentence: IEC (International Electrotechnical Commission)
-Focuses on international standards for electrical, electronic, and related technologies.
-
-Entity: IEEE (Institute of Electrical and Electronic Engineers
-Label: ORG
-Sentence: Some international standards organizations IEEE (Institute of Electrical and Electronic Engineers)
-sets standards for various computer components, signaling protocols, and data representation ITU (International Telecommunications Union)
-Sets standards for telecommunications systems, including telephone, telegraph, and data communication systems
-
-Entity: ITU (International Telecommunications Union
-Label: ORG
-Sentence: Some international standards organizations IEEE (Institute of Electrical and Electronic Engineers)
-sets standards for various computer components, signaling protocols, and data representation ITU (International Telecommunications Union)
-Sets standards for telecommunications systems, including telephone, telegraph, and data communication systems
-
-Entity: ANSI
-Label: GPE
-Sentence: Some international standards organizations
-ANSI (American National Standards Institute)
-Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
-ETSI (European Telecommunications Standards Institute)
-Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
-
-Entity: American National Standards Institute
-Label: ORG
-Sentence: Some international standards organizations
-ANSI (American National Standards Institute)
-Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
-ETSI (European Telecommunications Standards Institute)
-Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
-
-Entity: U.S.
-Label: GPE
-Sentence: Some international standards organizations
-ANSI (American National Standards Institute)
-Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
-ETSI (European Telecommunications Standards Institute)
-Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
-
-Entity: European Telecommunications Standards Institute
-Label: ORG
-Sentence: Some international standards organizations
-ANSI (American National Standards Institute)
-Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
-ETSI (European Telecommunications Standards Institute)
-Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
-
-Entity: CEN
-Label: ORG
-Sentence: Some international standards organizations CEN (European Committee for Standardization)
-Develops standards in various sectors, including information technology
-
-Entity: European Committee for Standardization
-Label: ORG
-Sentence: Some international standards organizations CEN (European Committee for Standardization)
-Develops standards in various sectors, including information technology
-
-Entity: Historical Development of Computers Generation Zero
-Label: ORG
-Sentence: Historical Development of Computers Generation Zero: Mechanical Calculating Machines
-(1642 – 1945)
-
-Entity: Calculating Machines
-Label: PERSON
-Sentence: Historical Development of Computers Generation Zero: Mechanical Calculating Machines
-(1642 – 1945)
-
-Entity: 1642 – 1945
-Label: DATE
-Sentence: Historical Development of Computers Generation Zero: Mechanical Calculating Machines
-(1642 – 1945)
-
-Entity: 1642 – 1945
-Label: DATE
-Sentence: Historical Development of Computers Generation Zero: Mechanical Calculating Machines
-(1642 – 1945)
-
-Entity: Historical Development of Computers First Generation: Vacuum
-Label: ORG
-Sentence: Historical Development of Computers First Generation: Vacuum tube computers
-(1945–1953)
-Use of electrical/electronic technology (much faster than mechanical technology)
-Invent binary machines built from vacuum tubes
-Invent vaccum tubes diodes and triodes
-Disadvantages: Bulky systems, Power consumption and heat dissipation.
-
-Entity: 1945–1953
-Label: DATE
-Sentence: Historical Development of Computers First Generation: Vacuum tube computers
-(1945–1953)
-Use of electrical/electronic technology (much faster than mechanical technology)
-Invent binary machines built from vacuum tubes
-Invent vaccum tubes diodes and triodes
-Disadvantages: Bulky systems, Power consumption and heat dissipation.
-
-Entity: Historical Development of Computers
-Label: ORG
-Sentence: Historical Development of Computers The Second Generation: Transistorized Computers (1954–1965)
-Transistors revolutionize computers
-• Transistors consume less power than vacuum tubes, are smaller, and work more reliably,
-• the circuitry in computers became smaller and more reliable.
-
-Entity: • Transistors
-Label: PRODUCT
-Sentence: Historical Development of Computers The Second Generation: Transistorized Computers (1954–1965)
-Transistors revolutionize computers
-• Transistors consume less power than vacuum tubes, are smaller, and work more reliably,
-• the circuitry in computers became smaller and more reliable.
-
-Entity: 1954–1965
-Label: DATE
-Sentence: Historical Development of Computers The Second Generation: Transistorized Computers (1954–1965)
-Transistors revolutionize computers
-• Transistors consume less power than vacuum tubes, are smaller, and work more reliably,
-• the circuitry in computers became smaller and more reliable.
-
-Entity: Historical Development of Computers The Third Generation: Integrated Circuit Computers
-Label: ORG
-Sentence: Historical Development of Computers The Third Generation: Integrated Circuit Computers (1965–1980)
-Integrating multiple transistors in a single silicon/germanium chip
-Explosion in computer use
-Computers became faster, smaller, and cheaper, bringing huge gains in processing power
-
-Entity: 1965–1980
-Label: DATE
-Sentence: Historical Development of Computers The Third Generation: Integrated Circuit Computers (1965–1980)
-Integrating multiple transistors in a single silicon/germanium chip
-Explosion in computer use
-Computers became faster, smaller, and cheaper, bringing huge gains in processing power
-
-Entity: Historical Development of Computers
-Label: ORG
-Sentence: Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
-More integration, more transistors on a single silicon chip
-Computers became smaller: Appearance of micro- computers
-Increasing the processing power of all computers types (also supercomputers and main frame computers)
-
-Entity: 1980
-Label: DATE
-Sentence: Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
-More integration, more transistors on a single silicon chip
-Computers became smaller: Appearance of micro- computers
-Increasing the processing power of all computers types (also supercomputers and main frame computers)
-
-Entity: Increasing
-Label: DATE
-Sentence: Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
-More integration, more transistors on a single silicon chip
-Computers became smaller: Appearance of micro- computers
-Increasing the processing power of all computers types (also supercomputers and main frame computers)
-
-Entity: Historical Development of Computers
-Label: ORG
-Sentence: Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
-
-Entity: 1980
-Label: DATE
-Sentence: Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
-
-Entity: Historical Development of Computers Size
-Label: ORG
-Sentence: Historical Development of Computers Size comparison Vacuum Tube Transistor Integrated circuit package Integrated circuit chip
-
-Entity: Historical Development of Computers Moore’s Law
-Label: ORG
-Sentence: Historical Development of Computers Moore’s Law (Gordon Moore – Intel Founder, 1965)
-
-Entity: Gordon Moore
-Label: PERSON
-Sentence: Historical Development of Computers Moore’s Law (Gordon Moore – Intel Founder, 1965)
-
-Entity: 1965
-Label: DATE
-Sentence: Historical Development of Computers Moore’s Law (Gordon Moore – Intel Founder, 1965)
-
-Entity: every 18 months
-Label: DATE
-Sentence: The density of transistors in an integrated circuit doubles every 18 months (1.5 year).
-
-Entity: 1.5 year
-Label: DATE
-Sentence: The density of transistors in an integrated circuit doubles every 18 months (1.5 year).
-
-Entity: Rock’s Law
-Label: ORG
-Sentence: Rock’s Law (early Intel capitalist Arthur Rock)
-
-Entity: Intel
-Label: ORG
-Sentence: Rock’s Law (early Intel capitalist Arthur Rock)
-
-Entity: Arthur Rock
-Label: PERSON
-Sentence: Rock’s Law (early Intel capitalist Arthur Rock)
-
-Entity: every four years
-Label: DATE
-Sentence: The cost of capital equipment to build semiconductors will double every four years
-
-Entity: Historical Development of Computers
-Label: ORG
-Sentence: Historical Development of Computers
-If Moore’s Law is to hold, Rock’s Law must fall or computers must shift to a radically different technology
-Research into new computing paradigms has been proceeding in earnest during the last half decade
-
-Entity: Rock’s Law
-Label: ORG
-Sentence: Historical Development of Computers
-If Moore’s Law is to hold, Rock’s Law must fall or computers must shift to a radically different technology
-Research into new computing paradigms has been proceeding in earnest during the last half decade
-
-Entity: the last half decade
-Label: DATE
-Sentence: Historical Development of Computers
-If Moore’s Law is to hold, Rock’s Law must fall or computers must shift to a radically different technology
-Research into new computing paradigms has been proceeding in earnest during the last half decade
-
-Entity: The Computer Level Hierarchy
-Label: ORG
-Sentence: The Computer Level Hierarchy
-The user executes programs on a PC (Paint, word files, games, etc.)
-
-Entity: The Computer Level Hierarchy
-Label: ORG
-Sentence: The Computer Level Hierarchy
-Imagine the machine (computer) as a hierarchy of levels, in which each level has a specific function.
-
-Entity: • User
-Label: PRODUCT
-Sentence: The highest level – Level 6 – is the “user’s level”
-• Level 6 is composed of applications
-• User runs programs such as word processors, graphics packages, or games.
-
-Entity: The Computer Level Hierarchy
-Label: ORG
-Sentence: The Computer Level Hierarchy
-
-Entity: The Computer Level Hierarchy
-Label: ORG
-Sentence: The Computer Level Hierarchy Level 5: High-Level Language Level
-Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
-Programmers write programs at this level.
-Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
-
-Entity: C++
-Label: PERSON
-Sentence: The Computer Level Hierarchy Level 5: High-Level Language Level
-Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
-Programmers write programs at this level.
-Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
-
-Entity: FORTRAN
-Label: ORG
-Sentence: The Computer Level Hierarchy Level 5: High-Level Language Level
-Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
-Programmers write programs at this level.
-Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
-
-Entity: Lisp, Pascal
-Label: ORG
-Sentence: The Computer Level Hierarchy Level 5: High-Level Language Level
-Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
-Programmers write programs at this level.
-Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
-
-Entity: Prolog
-Label: PERSON
-Sentence: The Computer Level Hierarchy Level 5: High-Level Language Level
-Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
-Programmers write programs at this level.
-Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
-
-Entity: Assembly
-Label: ORG
-Sentence: The Computer Level Hierarchy Level 5: High-Level Language Level
-Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
-Programmers write programs at this level.
-Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
-
-Entity: The Computer Level Hierarchy
-Label: ORG
-Sentence: The Computer Level Hierarchy Level 4: Assembly Language Level
-More “machine dependent” language.
-
-Entity: Assembly Language Level
-Label: ORG
-Sentence: The Computer Level Hierarchy Level 4: Assembly Language Level
-More “machine dependent” language.
-
-Entity: More
-Label: PRODUCT
-Sentence: The Computer Level Hierarchy Level 4: Assembly Language Level
-More “machine dependent” language.
-
-Entity: The Computer Level Hierarchy
-Label: ORG
-Sentence: The Computer Level Hierarchy Level 3: System Software Level
-Deals with operating system instructions
-(multiprogramming, protecting memory, synchronizing processes, and various other important functions)
-Instructions translated from assembly language to machine language are passed through this level unmodified
-
-Entity: The Computer Level Hierarchy
-Label: ORG
-Sentence: The Computer Level Hierarchy Level 2: Instruction Set Architecture (ISA), or Machine Level
-Machine language recognized by the particular architecture of the computer system
-Programs written in machine language can be executed directly by the electronic circuits without any interpreters, translators, or compilers.
-
-Entity: ISA
-Label: ORG
-Sentence: The Computer Level Hierarchy Level 2: Instruction Set Architecture (ISA), or Machine Level
-Machine language recognized by the particular architecture of the computer system
-Programs written in machine language can be executed directly by the electronic circuits without any interpreters, translators, or compilers.
-
-Entity: The Computer Level Hierarchy
-Label: ORG
-Sentence: The Computer Level Hierarchy Level 1: The Control Level
-Is where a control unit do its job
-Receives machine instructions from the level above
-decodes and executes those instructions properly
-Moves data to where and when it should be
-The control unit interprets the machine instructions
-
-Entity: The Computer Level Hierarchy
-Label: ORG
-Sentence: The Computer Level Hierarchy Level 0: The Digital Logic Level
-is where we find the physical components of the computer system: the gates and wires
-
-Entity: The Von Neumann Model
-Label: PERSON
-Sentence: The Von Neumann Model
-A computer architecture model published by a famous Hungarian mathematician named John von Neumann
-The idea is to store programs’ instructions inside a main memory in order to avoid rewiring the system each time it had a new problem to solve, or an old one to debug.
-
-Entity: John von Neumann
-Label: PERSON
-Sentence: The Von Neumann Model
-A computer architecture model published by a famous Hungarian mathematician named John von Neumann
-The idea is to store programs’ instructions inside a main memory in order to avoid rewiring the system each time it had a new problem to solve, or an old one to debug.
-
-Entity: Neumann
-Label: ORG
-Sentence: All stored-program computers have come to be known as von Neumann systems using the von Neumann architecture
-
-Entity: Neumann
-Label: ORG
-Sentence: All stored-program computers have come to be known as von Neumann systems using the von Neumann architecture
-
-Entity: The Von Neumann Model
-Label: PERSON
-Sentence: The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics
-Consists of three hardware systems
-A central processing unit (CPU) with a control unit, an arithmetic logic unit (ALU), registers (small storage areas), and a program counter;
-
-Entity: The Von Neumann
-Label: PRODUCT
-Sentence: The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics
-Consists of three hardware systems
-A central processing unit (CPU) with a control unit, an arithmetic logic unit (ALU), registers (small storage areas), and a program counter;
-
-Entity: CPU
-Label: ORG
-Sentence: The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics
-Consists of three hardware systems
-A central processing unit (CPU) with a control unit, an arithmetic logic unit (ALU), registers (small storage areas), and a program counter;
-
-Entity: The Von Neumann Model
-Label: PERSON
-Sentence: The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics
- a main-memory system, which holds programs that control the computer’s operation;
- and an I/O system.
-
-Entity: The Von Neumann
-Label: PRODUCT
-Sentence: The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics
- a main-memory system, which holds programs that control the computer’s operation;
- and an I/O system.
-
-Entity: CPU
-Label: ORG
-Sentence: Capacity to carry out sequential instruction processing
-Contains a single path, between the main memory system and the control unit of the CPU
-
-Entity: The Von Neumann Model
-Label: PERSON
-Sentence: The Von Neumann Model
-Program instructions are stored inside the main memory
-The machine runs the programs sequentially (instruction per instruction – machine instruction)
-Each machine instruction is fetched, decoded and executed during one cycle known as the von Neumann execution cycle (also called the fetch- decode-execute cycle)
-
-Entity: Neumann
-Label: ORG
-Sentence: The Von Neumann Model
-Program instructions are stored inside the main memory
-The machine runs the programs sequentially (instruction per instruction – machine instruction)
-Each machine instruction is fetched, decoded and executed during one cycle known as the von Neumann execution cycle (also called the fetch- decode-execute cycle)
-
-Entity: The Von Neumann Model One
-Label: PERSON
-Sentence: The Von Neumann Model One iteration of the cycle is as follows:
-
+Sentence: Lesson Three:
 1.
 
-Entity: CPU
+Entity: The Second Plenary Council of the Philippines
 Label: ORG
-Sentence: Any data operands required to execute the instruction are fetched from memory and placed into registers within the CPU.
+Sentence: The Second Plenary Council of the Philippines Overview Amid socio-economic development and progress, and even religio-cultural change of our society, the proliferation of the poor continues.
+
+Entity: The Philippine Church
+Label: ORG
+Sentence: The Philippine Church, on the other hand, heeds to the call of the poor.
+
+Entity: Vatican II
+Label: LOC
+Sentence: Since the call of Vatican II (1962-1965), the Philippine Church has been trying to respond to the “signs of the times.”
+
+Entity: 1962-1965
+Label: DATE
+Sentence: Since the call of Vatican II (1962-1965), the Philippine Church has been trying to respond to the “signs of the times.”
+
+Entity: the Philippine Church
+Label: ORG
+Sentence: Since the call of Vatican II (1962-1965), the Philippine Church has been trying to respond to the “signs of the times.”
+
+Entity: Church
+Label: ORG
+Sentence: The situation provokes the Church to act; and so, the birth of the Second Plenary Council of the Philippines (PCP II) on January 20-February 17,
+1991.
+
+Entity: the Second Plenary Council of the Philippines
+Label: ORG
+Sentence: The situation provokes the Church to act; and so, the birth of the Second Plenary Council of the Philippines (PCP II) on January 20-February 17,
+1991.
+
+Entity: January 20-February 17
+Label: DATE
+Sentence: The situation provokes the Church to act; and so, the birth of the Second Plenary Council of the Philippines (PCP II) on January 20-February 17,
+1991.
+
+Entity: 1991
+Label: DATE
+Sentence: The situation provokes the Church to act; and so, the birth of the Second Plenary Council of the Philippines (PCP II) on January 20-February 17,
+1991.
+
+Entity: Church
+Label: ORG
+Sentence: Nevertheless, the situation, especially the miserable condition of the poor has been able to evangelize the Church.
+
+Entity: Church
+Label: ORG
+Sentence: Thus, the Church’s concern is the LIBERATION OF THE POOR.
+
+Entity: the Philippine Church
+Label: ORG
+Sentence: This is the vision of the Philippine Church: to be “CHURCH OF THE POOR”.
+
+Entity: PCP II
+Label: ORG
+Sentence: According to PCP II, to be CHURCH OF THE POOR means:
+To embrace and practice the evangelical spirit of poverty, which combines detachment from possessions with a profound trust in the Lord as the sole source of salvation
+(#125);
+
+Entity: Church
+Label: ORG
+Sentence: The members and leaders of the Church have a special love for the poor (#126);
+At the very least, the poor are not discriminated against (#128); In the course of time the church experienced its ups and downs, yet she never wavered in her desire to continue the work that Jesus Christ had entrusted her for his flock.
+
+Entity: Jesus Christ
+Label: PERSON
+Sentence: The members and leaders of the Church have a special love for the poor (#126);
+At the very least, the poor are not discriminated against (#128); In the course of time the church experienced its ups and downs, yet she never wavered in her desire to continue the work that Jesus Christ had entrusted her for his flock.
+
+Entity: Spirit
+Label: ORG
+Sentence: Guided with the Spirit she constantly struggles and made herself a beacon of hope for every community of believers, especially the community of the poor.
+
+Entity: Lesson
+Label: PERSON
+Sentence: In this Lesson we will learn how this same church nourishes us with love, binding us together as one for the greater glory of God.
+
+Entity: the poor (#130
+Label: ORG
+Sentence: 8
+The pastors and church leaders will give preferential attention and time and share their resources to the poor (#129);
+One will be in solidarity with the poor (#130);
+One will condemn any injustices and exploitation of the poor (#131);
+
+Entity: Jesus Christ
+Label: PERSON
+Sentence: The community of disciples especially the rich have preferential love for the poor (#134);
+One is willing to follow Jesus Christ through poverty and oppression to carry out the work of salvation
+(#135).
+
+Entity: 01
+Label: DATE
+Sentence: http://mpq3.blogspot.com/2011/ 01/pcp-ii-20.html Models of the Church
+
+Entity: PCP II
+Label: ORG
+Sentence: According to PCP II
+
+Entity: Church
+Label: ORG
+Sentence: The models of the Church in the final document of PCPII are presented in the second part of the Acts and Decrees (PCPII.
+
+Entity: PCPII
+Label: ORG
+Sentence: The models of the Church in the final document of PCPII are presented in the second part of the Acts and Decrees (PCPII.
+
+Entity: PCPII
+Label: ORG
+Sentence: The models of the Church in the final document of PCPII are presented in the second part of the Acts and Decrees (PCPII.
+
+Entity: the Third millennium
+Label: DATE
+Sentence: These models are a response to meet the challenge of the Third millennium.
+
+Entity: PCP II
+Label: ORG
+Sentence: The PCP II identifies five models in envisioning the renewed Church:
+1.
+
+Entity: Church
+Label: ORG
+Sentence: The PCP II identifies five models in envisioning the renewed Church:
+1.
+
+Entity: The Church
+Label: ORG
+Sentence: The Church is a Communion.
+
+Entity: Church
+Label: ORG
+Sentence: He wants the Church to be “a communion of life, love, and truth” (Lumen Gentium 9) “a community of faith, hope, and charity” (LG 8).
+
+Entity: Paul
+Label: PERSON
+Sentence: 12:12-30, Paul expressed this when he compared the group of believers to a human body.
+
+Entity: Church
+Label: ORG
+Sentence: There are different charisms and ministries in the Church, but there is only one body.
+
+Entity: Church
+Label: ORG
+Sentence: Sharing and mutual interaction of the different members characterized the Church and through them that everybody’s need is supplied (PCPII.
+
+Entity: PCPII
+Label: ORG
+Sentence: Sharing and mutual interaction of the different members characterized the Church and through them that everybody’s need is supplied (PCPII.
+
+Entity: Church
+Label: ORG
+Sentence: There is the diversity of ministries and charisms (LG 13) in the Church, yet in unity, there is also equality in the Christian dignity of all the members.
+
+Entity: 10:42-45
+Label: DATE
+Sentence: They are great if they truly serve the Lord and his community (Mk. 10:42-45).
+
+Entity: John Paul II
+Label: PERSON
+Sentence: John Paul II concludes the equality in the dignity of all Christians: “Each member of the lay faithful, together with
+
+Entity: Church
+Label: ORG
+Sentence: 9 ordained ministers and men and women religious, shares responsibility for the Church mission” (CL 15).
+
+Entity: The Church as Participation
+Label: ORG
+Sentence: The Church as Participation.
+
+Entity: Eph.4;7,11-16
+Label: PRODUCT
+Sentence: 12:4-36, Eph.4;7,11-16) each has a gift from the Spirit to share, and each has a need of the other’s gifts for the building up of the body and the fulfillment of its mission.
+
+Entity: Spirit
+Label: ORG
+Sentence: 12:4-36, Eph.4;7,11-16) each has a gift from the Spirit to share, and each has a need of the other’s gifts for the building up of the body and the fulfillment of its mission.
+
+Entity: Church
+Label: ORG
+Sentence: It means that in the Church, nobody is so poor as to have nothing to give, and nobody is so rich as to have nothing to receive.
+
+Entity: Vatican II
+Label: LOC
+Sentence: It emphasizes the insights of Vatican II on co-responsibility, shared responsibility in the mission of the entire Church among the bishops, clergy, religious, laymen, and women.
+
+Entity: Church
+Label: ORG
+Sentence: It emphasizes the insights of Vatican II on co-responsibility, shared responsibility in the mission of the entire Church among the bishops, clergy, religious, laymen, and women.
+
+Entity: Christ
+Label: GPE
+Sentence: This is to restore the laity’s neglected role as evangelizers and to enable them to exercise the same role more fully and efficaciously in spreading the kingdom of Christ.
+
+Entity: Church
+Label: ORG
+Sentence: The Church as Community- in-Mission.
+
+Entity: The Church
+Label: ORG
+Sentence: This is the missionary character of the community of disciples The Church is the communion in the state of mission (PCPII, p. 103).
+
+Entity: PCPII
+Label: ORG
+Sentence: This is the missionary character of the community of disciples The Church is the communion in the state of mission (PCPII, p. 103).
+
+Entity: AG
+Label: ORG
+Sentence: It originated from the mission of the Son and the Holy Spirit
+(AG 2).
+
+Entity: The Church
+Label: ORG
+Sentence: The Church exists for the world not for itself or its members.
+
+Entity: the Good News of Christ
+Label: ORG
+Sentence: It is sent on a mission in the world to proclaim the Good News of Christ and to be an instrument of his grace
+(PCPII, 104).
+
+Entity: PCPII
+Label: ORG
+Sentence: It is sent on a mission in the world to proclaim the Good News of Christ and to be an instrument of his grace
+(PCPII, 104).
+
+Entity: the Good News
+Label: ORG
+Sentence: It exists to evangelize, proclaim the Good News, build up the Church, and serve the Kingdom by permeating the world with Gospel values so that finally all creation may be united in Christ as the head (Eph. 1:10).
+
+Entity: Church
+Label: ORG
+Sentence: It exists to evangelize, proclaim the Good News, build up the Church, and serve the Kingdom by permeating the world with Gospel values so that finally all creation may be united in Christ as the head (Eph. 1:10).
+
+Entity: Kingdom
+Label: GPE
+Sentence: It exists to evangelize, proclaim the Good News, build up the Church, and serve the Kingdom by permeating the world with Gospel values so that finally all creation may be united in Christ as the head (Eph. 1:10).
+
+Entity: Gospel
+Label: PERSON
+Sentence: It exists to evangelize, proclaim the Good News, build up the Church, and serve the Kingdom by permeating the world with Gospel values so that finally all creation may be united in Christ as the head (Eph. 1:10).
+
+Entity: Christ
+Label: GPE
+Sentence: It exists to evangelize, proclaim the Good News, build up the Church, and serve the Kingdom by permeating the world with Gospel values so that finally all creation may be united in Christ as the head (Eph. 1:10).
+
+Entity: 1:10
+Label: TIME
+Sentence: It exists to evangelize, proclaim the Good News, build up the Church, and serve the Kingdom by permeating the world with Gospel values so that finally all creation may be united in Christ as the head (Eph. 1:10).
+
+Entity: Jesus
+Label: PERSON
+Sentence: Also, Jesus’ final words to them are words of commissioning: “You will receive power when the Holy Spirit comes upon you, and you will be my witness in Jerusalem, throughout Judea and Samaria, to the ends of the earth (Acts 1:8).
+
+Entity: Jerusalem
+Label: GPE
+Sentence: Also, Jesus’ final words to them are words of commissioning: “You will receive power when the Holy Spirit comes upon you, and you will be my witness in Jerusalem, throughout Judea and Samaria, to the ends of the earth (Acts 1:8).
+
+Entity: Judea
+Label: ORG
+Sentence: Also, Jesus’ final words to them are words of commissioning: “You will receive power when the Holy Spirit comes upon you, and you will be my witness in Jerusalem, throughout Judea and Samaria, to the ends of the earth (Acts 1:8).
+
+Entity: Samaria
+Label: PERSON
+Sentence: Also, Jesus’ final words to them are words of commissioning: “You will receive power when the Holy Spirit comes upon you, and you will be my witness in Jerusalem, throughout Judea and Samaria, to the ends of the earth (Acts 1:8).
+
+Entity: the end of the age
+Label: DATE
+Sentence: In the missionary mandate found in (Mt. 28:19-20), it is said in a different way saying, “Go, therefore, and make disciples of all nations…and behold, I am with you always, until the end of the age”.
+
+Entity: Asia
+Label: LOC
+Sentence: As the country in Asia with a predominantly Catholic population, the Philippine Church should be a missionary Church (No. 106).
+
+Entity: the Philippine Church
+Label: ORG
+Sentence: As the country in Asia with a predominantly Catholic population, the Philippine Church should be a missionary Church (No. 106).
+
+Entity: John Paul II
+Label: PERSON
+Sentence: Pope John Paul II spoke with special clarity when he said to the Philippine bishops that: “There is no doubt about it: the Philippines has a special missionary vocation to proclaim the Good News, to carry the light of Christ to the nations” (JP II- Message to Asian Bishops).
+
+Entity: Philippines
+Label: GPE
+Sentence: Pope John Paul II spoke with special clarity when he said to the Philippine bishops that: “There is no doubt about it: the Philippines has a special missionary vocation to proclaim the Good News, to carry the light of Christ to the nations” (JP II- Message to Asian Bishops).
+
+Entity: the Good News
+Label: ORG
+Sentence: Pope John Paul II spoke with special clarity when he said to the Philippine bishops that: “There is no doubt about it: the Philippines has a special missionary vocation to proclaim the Good News, to carry the light of Christ to the nations” (JP II- Message to Asian Bishops).
+
+Entity: JP
+Label: ORG
+Sentence: Pope John Paul II spoke with special clarity when he said to the Philippine bishops that: “There is no doubt about it: the Philippines has a special missionary vocation to proclaim the Good News, to carry the light of Christ to the nations” (JP II- Message to Asian Bishops).
+
+Entity: The Second Plenary Council
+Label: ORG
+Sentence: 12
+(Continuation … The Second Plenary Council of the Philippines) 4.
+
+Entity: Philippines
+Label: GPE
+Sentence: 12
+(Continuation … The Second Plenary Council of the Philippines) 4.
+
+Entity: Kingly People
+Label: ORG
+Sentence: A Priestly, Prophetic, and Kingly People.
+
+Entity: Eucharist
+Label: ORG
+Sentence: We exercise it when we participate in the offering of the Eucharist (LG 10).
+
+Entity: Jesus
+Label: PERSON
+Sentence: The entire baptized share in the common priesthood of Jesus.
+
+Entity: the Holy Orders
+Label: ORG
+Sentence: By the sacrament of the Holy Orders, some are ordained to shepherd and serve the people of God.
+
+Entity: the Good News of Christ
+Label: ORG
+Sentence: We are tasked to spread the Good News of Christ to others by the way we live our lives, behavior, testimony, and teaching
+(PCP II, 120).
+
+Entity: The Church of the Poor.
+Label: ORG
+Sentence: The Church of the Poor.
+
+Entity: The Church of the poor
+Label: ORG
+Sentence: The Church of the poor means that the Church embraces and practices the Evangelical spirit of poverty, which combines detachment from possessions with the profound trust in the Lord as the source of salvation (PCP II, 125).
+
+Entity: Church
+Label: ORG
+Sentence: The Church of the poor means that the Church embraces and practices the Evangelical spirit of poverty, which combines detachment from possessions with the profound trust in the Lord as the source of salvation (PCP II, 125).
+
+Entity: PCP II
+Label: ORG
+Sentence: The Church of the poor means that the Church embraces and practices the Evangelical spirit of poverty, which combines detachment from possessions with the profound trust in the Lord as the source of salvation (PCP II, 125).
+
+Entity: Mt. 5:3
+Label: DATE
+Sentence: The Lord does not want anyone to be materially poor, but he wants all his followers to be “poor in spirit”
+(Mt. 5:3).
+
+Entity: The “Church of the Poor
+Label: ORG
+Sentence: 13 The “Church of the Poor” means the poor are not discriminated against because of their poverty, nor will they be deprived of their “rights to receive the abundance of the help of the spiritual goods of the Church, especially of the word of God in the sacrament of the pastors (LG 37).
+
+Entity: Church
+Label: ORG
+Sentence: 13 The “Church of the Poor” means the poor are not discriminated against because of their poverty, nor will they be deprived of their “rights to receive the abundance of the help of the spiritual goods of the Church, especially of the word of God in the sacrament of the pastors (LG 37).
+
+Entity: PCP II
+Label: ORG
+Sentence: If they cannot pay the stipends or the stole fees because of poverty, they will not be deprived of the sacraments or the necessary spiritual services (PCP II, 128).
+
+Entity: Church
+Label: ORG
+Sentence: This further stresses that the pastors and other Church leaders will give preferential attention and time to those who are poor, and will generously share their resources to alleviate their poverty and make them recognize the love of the Lord for them despite their poverty (PCP II, 129).
+
+Entity: PCP II
+Label: ORG
+Sentence: This further stresses that the pastors and other Church leaders will give preferential attention and time to those who are poor, and will generously share their resources to alleviate their poverty and make them recognize the love of the Lord for them despite their poverty (PCP II, 129).
+
+Entity: The “Church of the Poor
+Label: ORG
+Sentence: The “Church of the Poor” also means that the Church will not only evangelize the poor, but the Poor in the Church will themselves become evangelizers.
+
+Entity: Church
+Label: ORG
+Sentence: The “Church of the Poor” also means that the Church will not only evangelize the poor, but the Poor in the Church will themselves become evangelizers.
+
+Entity: Church
+Label: ORG
+Sentence: The “Church of the Poor” also means that the Church will not only evangelize the poor, but the Poor in the Church will themselves become evangelizers.
+
+Entity: PCP II
+Label: ORG
+Sentence: This will not only render preferential service to the poor but will practice preferential reliance on the poor in the work of evangelization (PCP II, 132).
+
+Entity: John Baptist de la Salle
+Label: PERSON
+Sentence: St. John Baptist de la Salle, pray for us.
+
+Entity: Jesus
+Label: PERSON
+Sentence: Live Jesus in our hearts, forever!
+
+Entity: A Vision of a Renewed Church: Church
+Label: PRODUCT
+Sentence: A Vision of a Renewed Church: Church of the Poor/ Community of Disciples Overview Since the time Jesus started his ministry, he never wavered to nurture the faith of his disciples.
+
+Entity: Community of Disciples Overview
+Label: ORG
+Sentence: A Vision of a Renewed Church: Church of the Poor/ Community of Disciples Overview Since the time Jesus started his ministry, he never wavered to nurture the faith of his disciples.
+
+Entity: Jesus
+Label: PERSON
+Sentence: A Vision of a Renewed Church: Church of the Poor/ Community of Disciples Overview Since the time Jesus started his ministry, he never wavered to nurture the faith of his disciples.
+
+Entity: the Kingdom of God
+Label: GPE
+Sentence: Those who had witnessed how our Lord fulfilled the will of His Father to bring salvation to humanity through his death on the cross, have come to acknowledge the truth of his message about the Kingdom of God.
+
+Entity: Paul VI Evangelii Nuntiandi
+Label: PERSON
+Sentence: The post-synodal exhortation of Paul VI Evangelii Nuntiandi generally considers evangelization as a “complex and dynamic reality”
+(EN 17).
+
+Entity: EN 17
+Label: DATE
+Sentence: The post-synodal exhortation of Paul VI Evangelii Nuntiandi generally considers evangelization as a “complex and dynamic reality”
+(EN 17).
+
+Entity: Evangelii Nuntiandi
+Label: ORG
+Sentence: Elements like a witness, dialogue, proclamation, catechesis, conversion, the formation of the local clergy, inculturation, integral human promotion or development or liberation, etc., are contained in Evangelii Nuntiandi (Tomko, 1990).
+
+Entity: 1990
+Label: DATE
+Sentence: Elements like a witness, dialogue, proclamation, catechesis, conversion, the formation of the local clergy, inculturation, integral human promotion or development or liberation, etc., are contained in Evangelii Nuntiandi (Tomko, 1990).
+
+Entity: Church
+Label: ORG
+Sentence: The Church realizes that evangelization should take into account peoples’ concrete lives, both personal and social.
+
+Entity: Paul VI
+Label: PERSON
+Sentence: Pope Paul VI, however, says “they are not the end of evangelization “.
+
+Entity: Jesus Christ
+Label: PERSON
+Sentence: The proclamation of Jesus Christ and the promotion of the values of God’s Kingdom “remain to be the primary mission of the Church” (Redemptoris Missio, 34).
+
+Entity: Church
+Label: ORG
+Sentence: The proclamation of Jesus Christ and the promotion of the values of God’s Kingdom “remain to be the primary mission of the Church” (Redemptoris Missio, 34).
+
+Entity: Redemptoris Missio
+Label: PERSON
+Sentence: The proclamation of Jesus Christ and the promotion of the values of God’s Kingdom “remain to be the primary mission of the Church” (Redemptoris Missio, 34).
+
+Entity: 34
+Label: DATE
+Sentence: The proclamation of Jesus Christ and the promotion of the values of God’s Kingdom “remain to be the primary mission of the Church” (Redemptoris Missio, 34).
+
+Entity: solidarity
+Label: ORG
+Sentence: 18
+“civilization of love” should be founded on the universal values of peace, solidarity, justice, and liberty, which find their full attainment in Christ” (Tertio Millenio Adveniente, 52.)
+
+Entity: Millenio Adveniente
+Label: PERSON
+Sentence: 18
+“civilization of love” should be founded on the universal values of peace, solidarity, justice, and liberty, which find their full attainment in Christ” (Tertio Millenio Adveniente, 52.)
+
+Entity: 52
+Label: DATE
+Sentence: 18
+“civilization of love” should be founded on the universal values of peace, solidarity, justice, and liberty, which find their full attainment in Christ” (Tertio Millenio Adveniente, 52.)
+
+Entity: Morneau
+Label: PERSON
+Sentence: Morneau (Pp. 32-57) presents ten theses drawn from the ten themes that Pope Paul VI emphasized in Evangelii Nuntiandi:
+
+Entity: Paul VI
+Label: PERSON
+Sentence: Morneau (Pp. 32-57) presents ten theses drawn from the ten themes that Pope Paul VI emphasized in Evangelii Nuntiandi:
+
+Entity: Evangelii Nuntiandi
+Label: LOC
+Sentence: Morneau (Pp. 32-57) presents ten theses drawn from the ten themes that Pope Paul VI emphasized in Evangelii Nuntiandi:
+
+Entity: Jesus Christ
+Label: PERSON
+Sentence: 1. Evangelization consists of many diverse but complementary elements, all of which proclaim the good news of God’s love and his liberating salvation in Jesus Christ.
+
+Entity: the Holy Spirit
+Label: WORK_OF_ART
+Sentence: 2. Evangelization is grounded in the power of the Holy Spirit who calls us to holiness and enables us to live in Christ.
+
+Entity: Christ
+Label: GPE
+Sentence: 2. Evangelization is grounded in the power of the Holy Spirit who calls us to holiness and enables us to live in Christ.
+
+Entity: Jesus
+Label: PERSON
+Sentence: 3. Evangelization demands the sensitivity of maintaining complete fidelity to the message of Jesus while adapting it to the circumstances of the people being evangelized.
+
+Entity: Church
+Label: ORG
+Sentence: 6. Evangelization, the essential mission of the Church, is the responsibility of every Christian; no one is exempt from this call and privilege.
+
+Entity: Jesus Christ
+Label: PERSON
+Sentence: 7. Evangelization is rooted in personal adherence to Jesus Christ and the work of building the Kingdom.
+
+Entity: John Paul II’s
+Label: PERSON
+Sentence: John Paul II’s expression of lay involvement is supported by Vatican II and Evangelii Nuntiandi:
+“From the fact of their union with Christ the head, flows the laymen’s right and duty to be apostles … it is by the Lord himself that they are assigned to the apostolate”
+(AA, 3).
+
+Entity: Vatican II
+Label: EVENT
+Sentence: John Paul II’s expression of lay involvement is supported by Vatican II and Evangelii Nuntiandi:
+“From the fact of their union with Christ the head, flows the laymen’s right and duty to be apostles … it is by the Lord himself that they are assigned to the apostolate”
+(AA, 3).
+
+Entity: Church
+Label: ORG
+Sentence: Evangelii Nuntiandi (60) articulates further saying that “Evangelizing is the work of the whole Church.
+
+Entity: Church
+Label: ORG
+Sentence: This means that for the world as a whole and for each of the regions where she happens to be, the Church knows herself responsible for the task of spreading the gospel.”
+
+Entity: The Vatican Council
+Label: ORG
+Sentence: 19 The Vatican Council and Evangelii Nuntiandi clearly state that Christ calls the laity to full participation in the life of the Church and full commitment to the mission of the Church.
+
+Entity: Evangelii Nuntiandi
+Label: PERSON
+Sentence: 19 The Vatican Council and Evangelii Nuntiandi clearly state that Christ calls the laity to full participation in the life of the Church and full commitment to the mission of the Church.
+
+Entity: Christ
+Label: ORG
+Sentence: 19 The Vatican Council and Evangelii Nuntiandi clearly state that Christ calls the laity to full participation in the life of the Church and full commitment to the mission of the Church.
+
+Entity: Church
+Label: ORG
+Sentence: 19 The Vatican Council and Evangelii Nuntiandi clearly state that Christ calls the laity to full participation in the life of the Church and full commitment to the mission of the Church.
+
+Entity: Church
+Label: ORG
+Sentence: 19 The Vatican Council and Evangelii Nuntiandi clearly state that Christ calls the laity to full participation in the life of the Church and full commitment to the mission of the Church.
+
+Entity: Church
+Label: ORG
+Sentence: PCP II enumerates four aspects of the Church’s life and has emerged as lived experience after Vatican II and which determine the role and life of the lay faithful.
+
+Entity: Vatican II
+Label: LOC
+Sentence: PCP II enumerates four aspects of the Church’s life and has emerged as lived experience after Vatican II and which determine the role and life of the lay faithful.
+
+Entity: PCP II
+Label: ORG
+Sentence: For PCP II, evangelization comprises both a “message of salvation” concerned with catechesis and liturgy and a “message of liberation focusing on social transformation.
+
+Entity: PCP II
+Label: ORG
+Sentence: The community of disciples envisioned by PCP II must be increasingly seen by our people today as a community of faith rooted in Christ and immersed in the life of the Filipino people.
+
+Entity: today
+Label: DATE
+Sentence: The community of disciples envisioned by PCP II must be increasingly seen by our people today as a community of faith rooted in Christ and immersed in the life of the Filipino people.
+
+Entity: Christ
+Label: GPE
+Sentence: The community of disciples envisioned by PCP II must be increasingly seen by our people today as a community of faith rooted in Christ and immersed in the life of the Filipino people.
+
+Entity: PCP II’s
+Label: ORG
+Sentence: One of the most potent ways of actualizing PCP II’s vision is making different communities/ parishes realize the value of being a community of disciples.
+
+Entity: the Church of the poor
+Label: ORG
+Sentence: 22
+(Continuation … A Vision of a Renewed Church: Church of the Poor/Community of Disciples Integration The Church as the Church of the poor and a community of disciples is a way to promote that the Church must be active in the lives of people especially the poor.
+
+Entity: Church
+Label: ORG
+Sentence: 22
+(Continuation … A Vision of a Renewed Church: Church of the Poor/Community of Disciples Integration The Church as the Church of the poor and a community of disciples is a way to promote that the Church must be active in the lives of people especially the poor.
+
+Entity: Church
+Label: ORG
+Sentence: The Church exhorted the people to take an active role in the social milieu particularly in liberating themselves from the bondage of oppression and enslavement.
+
+Entity: Church of the Poor.
+Label: ORG
+Sentence: Church of the Poor.
+
+Entity: The Church of the poor
+Label: ORG
+Sentence: The Church of the poor means that the church embraces and practices the Evangelical spirit of poverty, which combines detachment from possessions with the profound trust in the Lord as the source of salvation (PCP II,125).
+
+Entity: Community of Disciples
+Label: ORG
+Sentence: 2.  Community of Disciples.
+
+Entity: Church
+Label: ORG
+Sentence: The Church realizes that evangelization should take into account peoples’ concrete lives, both personal and social.
+
+Entity: Domingo
+Label: PERSON
+Sentence: Conclusion The “new” church sees to it that the call of being the church of the poor and community of disciples enthusiastically “promotes a journey towards renewal, unity, and empowerment of the people to live with dignity amidst the crises and problems of our society (Domingo).
+
+Entity: The Basic Ecclesial Community
+Label: ORG
+Sentence: The Basic Ecclesial Community: towards social transformation, 2005 p.5).
+
+Entity: 2005
+Label: DATE
+Sentence: The Basic Ecclesial Community: towards social transformation, 2005 p.5).
+
+Entity: Jesus Christ
+Label: PERSON
+Sentence: Furthermore, it upholds the real participation of the people in transforming the society rooted and centered in the very example of Jesus Christ.
+
+Entity: PCP
+Label: ORG
+Sentence: It spells that these “new” Church must know how to
+“identify the joys, hopes, grievances, and aspirations of humanity and especially of the poor as its own” (Acts and Decrees of the PCP II,1992, p.72) until such time that these new” disciples thru their common effort will establish a just and humane society (Kingdom of God).
+
+Entity: Supplementary Lesson
+Label: PERSON
+Sentence: 27 Supplementary Lesson: THE BROTHER OF THE CHRISTIAN SCHOOL: A COMMUNITY OF FAITH WHAT IS THE “COMMUNITY” FOUNDED BY FR.
+
+Entity: FOUNDED BY FR
+Label: WORK_OF_ART
+Sentence: 27 Supplementary Lesson: THE BROTHER OF THE CHRISTIAN SCHOOL: A COMMUNITY OF FAITH WHAT IS THE “COMMUNITY” FOUNDED BY FR.
+
+Entity: BAPTIST DE LA SALLE
+Label: ORG
+Sentence: JOHN BAPTIST DE LA SALLE?
+
+Entity: 1680
+Label: DATE
+Sentence: The community was founded in 1680, at Reims, France, by St. John Baptist de La Salle , a priest, a canon of the metropolitan church of that city.
+
+Entity: Reims
+Label: ORG
+Sentence: The community was founded in 1680, at Reims, France, by St. John Baptist de La Salle , a priest, a canon of the metropolitan church of that city.
+
+Entity: France
+Label: GPE
+Sentence: The community was founded in 1680, at Reims, France, by St. John Baptist de La Salle , a priest, a canon of the metropolitan church of that city.
+
+Entity: the Institute of the Brothers of the Christian Schools
+Label: ORG
+Sentence: The community is known as the Institute of the Brothers of the Christian Schools, a society of male religious approved by the Church, but not taking Holy orders, and having for its object the personal sanctification of its members and the Christian education of youth, especially of the children of artisans and the poor.
+
+Entity: Church
+Label: ORG
+Sentence: The community is known as the Institute of the Brothers of the Christian Schools, a society of male religious approved by the Church, but not taking Holy orders, and having for its object the personal sanctification of its members and the Christian education of youth, especially of the children of artisans and the poor.
+
+Entity: Spirit
+Label: ORG
+Sentence: https://www.catholic.org/encyclopedia/view.php?id=6140 The Spirit of the Community The spirit of the community (institute), infused by the example and teachings of its founder and fostered by the exercises of the religious life, is a spirit of faith and zeal.
+
+Entity: Community The
+Label: ORG
+Sentence: https://www.catholic.org/encyclopedia/view.php?id=6140 The Spirit of the Community The spirit of the community (institute), infused by the example and teachings of its founder and fostered by the exercises of the religious life, is a spirit of faith and zeal.
+
+Entity: Gospel
+Label: PERSON
+Sentence: The spirit of zeal attracts him towards children to instruct them in the truths of religion and penetrate their hearts with the maxims of the Gospel, so that they may make it the rule of their conduct.
+
+Entity: Brothers
+Label: ORG
+Sentence: St. John Baptist de La Salle had himself given his Brothers admirable proofs of the purity of his faith and the vivacity of his zeal.
+
+Entity: Reims
+Label: GPE
+Sentence: His whole life was a prolonged act of zeal: he taught school at Reims, Paris, and Grenoble, and showed how to do it well.
+
+Entity: Paris
+Label: GPE
+Sentence: His whole life was a prolonged act of zeal: he taught school at Reims, Paris, and Grenoble, and showed how to do it well.
+
+Entity: Grenoble
+Label: PERSON
+Sentence: His whole life was a prolonged act of zeal: he taught school at Reims, Paris, and Grenoble, and showed how to do it well.
+
+Entity: Devoirs du chrétien"
+Label: WORK_OF_ART
+Sentence: He composed works for teachers and pupils, and especially the "Conduite des écoles" the "Devoirs du chrétien", and the
+"Règles de la bienséance et de la civilité chrétienne"
+(https://www.catholic.org/encyclopedia/view.php?id=6140) https://lsaruminations.edublogs.org/2014/05/ 14/the-lasallian-community-try-it/
+
+Entity: Règles de la
+Label: PERSON
+Sentence: He composed works for teachers and pupils, and especially the "Conduite des écoles" the "Devoirs du chrétien", and the
+"Règles de la bienséance et de la civilité chrétienne"
+(https://www.catholic.org/encyclopedia/view.php?id=6140) https://lsaruminations.edublogs.org/2014/05/ 14/the-lasallian-community-try-it/
+
+Entity: de la
+Label: ORG
+Sentence: He composed works for teachers and pupils, and especially the "Conduite des écoles" the "Devoirs du chrétien", and the
+"Règles de la bienséance et de la civilité chrétienne"
+(https://www.catholic.org/encyclopedia/view.php?id=6140) https://lsaruminations.edublogs.org/2014/05/ 14/the-lasallian-community-try-it/
+
+Entity: civilité chrétienne
+Label: PERSON
+Sentence: He composed works for teachers and pupils, and especially the "Conduite des écoles" the "Devoirs du chrétien", and the
+"Règles de la bienséance et de la civilité chrétienne"
+(https://www.catholic.org/encyclopedia/view.php?id=6140) https://lsaruminations.edublogs.org/2014/05/ 14/the-lasallian-community-try-it/
+
+Entity: https://www.catholic.org/encyclopedia/view.php?id=6140
+Label: PERSON
+Sentence: He composed works for teachers and pupils, and especially the "Conduite des écoles" the "Devoirs du chrétien", and the
+"Règles de la bienséance et de la civilité chrétienne"
+(https://www.catholic.org/encyclopedia/view.php?id=6140) https://lsaruminations.edublogs.org/2014/05/ 14/the-lasallian-community-try-it/
+
+Entity: https://lsaruminations.edublogs.org/2014/05/
+Label: PERSON
+Sentence: He composed works for teachers and pupils, and especially the "Conduite des écoles" the "Devoirs du chrétien", and the
+"Règles de la bienséance et de la civilité chrétienne"
+(https://www.catholic.org/encyclopedia/view.php?id=6140) https://lsaruminations.edublogs.org/2014/05/ 14/the-lasallian-community-try-it/
+
+Entity: Brothers
+Label: ORG
+Sentence: Hence, the Brothers have always considered catechism as the most important subject taught in their schools.
+
+Entity: Church
+Label: ORG
+Sentence: They are catechists by vocation and the will of the Church.
+
+Entity: https://www.catholic.org/encyclopedia/view.php?id=6140
+Label: PERSON
+Sentence: (https://www.catholic.org/encyclopedia/view.php?id=6140) A reflection: What is to be a Lasallian Brother?
+…is someone who follows the call of the Lord and consecrates himself entirely to Him through the religious vows of poverty, chastity, and obedience, to dedicate his whole life and all his strength to the mission of educating children and young people, in other words to being a religious educator.
+
+Entity: Institute
+Label: ORG
+Sentence: …forms community with the other members of the Institute, and they all commit themselves to “keep Christian Schools together and by association”, especially for the service of the poor, and to carry out whatever ministry is entrusted to them, wherever they may be sent.
+
+Entity: Christian Schools
+Label: PERSON
+Sentence: …forms community with the other members of the Institute, and they all commit themselves to “keep Christian Schools together and by association”, especially for the service of the poor, and to carry out whatever ministry is entrusted to them, wherever they may be sent.
+
+Entity: John Baptist de la Salle
+Label: PERSON
+Sentence: St. John Baptist de la Salle, pray for us.
+
+Entity: Jesus
+Label: PERSON
+Sentence: Live Jesus in our hearts, forever!
+
+Entity: Son
+Label: PERSON
+Sentence: +In the name of the Father, and of the Son… Leader: Jesus, be with us now as we meditate on the role of community in our life.
+
+Entity: Jesus
+Label: PERSON
+Sentence: +In the name of the Father, and of the Son… Leader: Jesus, be with us now as we meditate on the role of community in our life.
+
+Entity: De La Salle’s Words
+Label: ORG
+Sentence: De La Salle’s Words: In his meditations on the Ascension, De La Salle wrote: The third petition which Jesus made to the Eternal Father for His Apostles… is that they should be closely united among themselves.
+
+Entity: Ascension
+Label: PRODUCT
+Sentence: De La Salle’s Words: In his meditations on the Ascension, De La Salle wrote: The third petition which Jesus made to the Eternal Father for His Apostles… is that they should be closely united among themselves.
+
+Entity: De La Salle
+Label: ORG
+Sentence: De La Salle’s Words: In his meditations on the Ascension, De La Salle wrote: The third petition which Jesus made to the Eternal Father for His Apostles… is that they should be closely united among themselves.
+
+Entity: Jesus
+Label: PERSON
+Sentence: De La Salle’s Words: In his meditations on the Ascension, De La Salle wrote: The third petition which Jesus made to the Eternal Father for His Apostles… is that they should be closely united among themselves.
+
+Entity: the Eternal Father for His Apostles
+Label: ORG
+Sentence: De La Salle’s Words: In his meditations on the Ascension, De La Salle wrote: The third petition which Jesus made to the Eternal Father for His Apostles… is that they should be closely united among themselves.
+
+Entity: Jesus
+Label: PERSON
+Sentence: This union should be close and firm as to resemble that which exists between the three Divine Persons… And this union of heart and mind which Jesus desires to see among His Apostles is to produce the same effect as the essential union between the Father, the Son, and the Holy Spirit, that is to say, they are all to share the same sentiments, to have the same practices… As St. Luke records in the Acts, saying,
+“there was one heart and soul in all the company of believers.”
+… Only using such harmony will you be able to maintain that peace that constitutes the whole happiness of your life.
+
+Entity: St. Luke
+Label: PERSON
+Sentence: This union should be close and firm as to resemble that which exists between the three Divine Persons… And this union of heart and mind which Jesus desires to see among His Apostles is to produce the same effect as the essential union between the Father, the Son, and the Holy Spirit, that is to say, they are all to share the same sentiments, to have the same practices… As St. Luke records in the Acts, saying,
+“there was one heart and soul in all the company of believers.”
+… Only using such harmony will you be able to maintain that peace that constitutes the whole happiness of your life.
+
+Entity: Brothers
+Label: ORG
+Sentence: Ask therefore the Lord of all hearts to make yours one with those of your Brothers, in that of Jesus.
+(Battersby, Meditations, p. 174)
+
+Entity: Jesus
+Label: PERSON
+Sentence: Ask therefore the Lord of all hearts to make yours one with those of your Brothers, in that of Jesus.
+(Battersby, Meditations, p. 174)
+
+Entity: Battersby, Meditations
+Label: ORG
+Sentence: Ask therefore the Lord of all hearts to make yours one with those of your Brothers, in that of Jesus.
+(Battersby, Meditations, p. 174)
+
+Entity: Jesus Christ
+Label: PERSON
+Sentence: Christians are united by a belief in the Triune God revealed in the life, death, and resurrection of Jesus Christ.
+
+Entity: the early days
+Label: DATE
+Sentence: In the early days of Christianity, the followers of Jesus were known for their love for one another, expressed in their sharing of goods and care for one another.
+
+Entity: Jesus
+Label: PERSON
+Sentence: In the early days of Christianity, the followers of Jesus were known for their love for one another, expressed in their sharing of goods and care for one another.
+
+Entity: De La Salle
+Label: ORG
+Sentence: De La Salle urged his followers to create community, too.
+
+Entity: De La Salle
+Label: PERSON
+Sentence: De La Salle believed that without community, his Brothers would become discouraged, lose their sense of mission, and drift away from their calling.
+
+Entity: Brothers
+Label: ORG
+Sentence: De La Salle believed that without community, his Brothers would become discouraged, lose their sense of mission, and drift away from their calling.
+
+Entity: De La Salle’s
+Label: PERSON
+Sentence: De La Salle’s model for the community was the Trinity itself – the three persons, each unique and distinct yet bonded together in love.
+
+Entity: Trinity
+Label: ORG
+Sentence: De La Salle’s model for the community was the Trinity itself – the three persons, each unique and distinct yet bonded together in love.
+
+Entity: Jesus
+Label: PERSON
+Sentence: The apostles continued to testify to the resurrection of the Lord Jesus with great power, and they were all accorded great aspect.
+
+Entity: 32-35
+Label: DATE
+Sentence: (Acts 4: 32-35)
+
+Entity: Aaron
+Label: PERSON
+Sentence: It is like the precious oil running down from Aaron’s head and beard, down to the collar of his robes.
+
+Entity: Mount Hermon
+Label: LOC
+Sentence: It is like the dew on Mount Hermon falling on the hills of Zion.
+
+Entity: Yahweh
+Label: PERSON
+Sentence: For there Yahweh has promised a blessing, a life that never ends.
+
+Entity: Koch
+Label: PERSON
+Sentence: Koch, C. (1990).
+
+Entity: C.
+Label: PERSON
+Sentence: Koch, C. (1990).
+
+Entity: 1990
+Label: DATE
+Sentence: Koch, C. (1990).
+
+Entity: the De La Salle
+Label: ORG
+Sentence: Companions for the Journey: Praying with the De La Salle.
+
+Entity: https://www.dlsud.edu.ph/news/2020/peace.htm
+Label: PERSON
+Sentence: https://www.dlsud.edu.ph/news/2020/peace.htm
+
+Entity: Gil A. Ellema
+Label: PERSON
+Sentence: 33 Prepared by: Gil A. Ellema, PhD LEARNING REFERENCES Primary Sources: New American Bible (NAB) Christian Community Bible, Revised Standard Version (RSV) Catholic Bishops’ Conference of the Philippines.
+
+Entity: New American Bible
+Label: ORG
+Sentence: 33 Prepared by: Gil A. Ellema, PhD LEARNING REFERENCES Primary Sources: New American Bible (NAB) Christian Community Bible, Revised Standard Version (RSV) Catholic Bishops’ Conference of the Philippines.
+
+Entity: NAB
+Label: ORG
+Sentence: 33 Prepared by: Gil A. Ellema, PhD LEARNING REFERENCES Primary Sources: New American Bible (NAB) Christian Community Bible, Revised Standard Version (RSV) Catholic Bishops’ Conference of the Philippines.
+
+Entity: Christian Community Bible
+Label: ORG
+Sentence: 33 Prepared by: Gil A. Ellema, PhD LEARNING REFERENCES Primary Sources: New American Bible (NAB) Christian Community Bible, Revised Standard Version (RSV) Catholic Bishops’ Conference of the Philippines.
+
+Entity: Revised Standard Version
+Label: ORG
+Sentence: 33 Prepared by: Gil A. Ellema, PhD LEARNING REFERENCES Primary Sources: New American Bible (NAB) Christian Community Bible, Revised Standard Version (RSV) Catholic Bishops’ Conference of the Philippines.
+
+Entity: RSV
+Label: ORG
+Sentence: 33 Prepared by: Gil A. Ellema, PhD LEARNING REFERENCES Primary Sources: New American Bible (NAB) Christian Community Bible, Revised Standard Version (RSV) Catholic Bishops’ Conference of the Philippines.
+
+Entity: Philippines
+Label: GPE
+Sentence: 33 Prepared by: Gil A. Ellema, PhD LEARNING REFERENCES Primary Sources: New American Bible (NAB) Christian Community Bible, Revised Standard Version (RSV) Catholic Bishops’ Conference of the Philippines.
+
+Entity: 2005
+Label: DATE
+Sentence: (2005).
+
+Entity: the Second Plenary Council
+Label: ORG
+Sentence: Acts and Decrees of the Second Plenary Council of the Philippines
+(PCP II) Episcopal Commission on Catechesis and Catholic Education.
+(1994).
+
+Entity: Philippines
+Label: GPE
+Sentence: Acts and Decrees of the Second Plenary Council of the Philippines
+(PCP II) Episcopal Commission on Catechesis and Catholic Education.
+(1994).
+
+Entity: Episcopal Commission
+Label: ORG
+Sentence: Acts and Decrees of the Second Plenary Council of the Philippines
+(PCP II) Episcopal Commission on Catechesis and Catholic Education.
+(1994).
+
+Entity: Catechesis
+Label: GPE
+Sentence: Acts and Decrees of the Second Plenary Council of the Philippines
+(PCP II) Episcopal Commission on Catechesis and Catholic Education.
+(1994).
+
+Entity: Catholic Education
+Label: ORG
+Sentence: Acts and Decrees of the Second Plenary Council of the Philippines
+(PCP II) Episcopal Commission on Catechesis and Catholic Education.
+(1994).
+
+Entity: 1994
+Label: DATE
+Sentence: Acts and Decrees of the Second Plenary Council of the Philippines
+(PCP II) Episcopal Commission on Catechesis and Catholic Education.
+(1994).
+
+Entity: the Catholic Church
+Label: ORG
+Sentence: Catechism of the Catholic Church (newsprint edition).
+
+Entity: Manila
+Label: GPE
+Sentence: Manila:
+
+Entity: Patambang
+Label: GPE
+Sentence: Patambang, Salibay, and Valera.
+
+Entity: Salibay
+Label: GPE
+Sentence: Patambang, Salibay, and Valera.
+
+Entity: Valera
+Label: GPE
+Sentence: Patambang, Salibay, and Valera.
+
+Entity: 2001
+Label: DATE
+Sentence: (2001).
+
+Entity: Manila
+Label: GPE
+Sentence: Manila: National Bookstore.
+
+Entity: National Bookstore
+Label: ORG
+Sentence: Manila: National Bookstore.
+
+Entity: Alonsozana
+Label: GPE
+Sentence: Alonsozana, De Leon, Domingo, Ellema, Ramirez, Regis, Salibay, Talamera, Valera.
+
+Entity: De Leon
+Label: PERSON
+Sentence: Alonsozana, De Leon, Domingo, Ellema, Ramirez, Regis, Salibay, Talamera, Valera.
+
+Entity: Domingo
+Label: PERSON
+Sentence: Alonsozana, De Leon, Domingo, Ellema, Ramirez, Regis, Salibay, Talamera, Valera.
+
+Entity: Ellema
+Label: PERSON
+Sentence: Alonsozana, De Leon, Domingo, Ellema, Ramirez, Regis, Salibay, Talamera, Valera.
+
+Entity: Ramirez
+Label: PERSON
+Sentence: Alonsozana, De Leon, Domingo, Ellema, Ramirez, Regis, Salibay, Talamera, Valera.
+
+Entity: Regis
+Label: GPE
+Sentence: Alonsozana, De Leon, Domingo, Ellema, Ramirez, Regis, Salibay, Talamera, Valera.
+
+Entity: Salibay
+Label: GPE
+Sentence: Alonsozana, De Leon, Domingo, Ellema, Ramirez, Regis, Salibay, Talamera, Valera.
+
+Entity: Talamera
+Label: GPE
+Sentence: Alonsozana, De Leon, Domingo, Ellema, Ramirez, Regis, Salibay, Talamera, Valera.
+
+Entity: Valera
+Label: GPE
+Sentence: Alonsozana, De Leon, Domingo, Ellema, Ramirez, Regis, Salibay, Talamera, Valera.
+
+Entity: the Modern World
+Label: ORG
+Sentence: (Workbook) Christian Discipleship in the Modern World.
+
+Entity: Pan Asia Book Exchange Inc.
+Label: ORG
+Sentence: Pan Asia Book Exchange Inc., Quezon City, Philippines Additional Online Sources: http://www.catholic-pages.com/church/marks.asp https://www.sacredspace.ie/scripture/ http://www.vatican.va/content/john-paul- ii/en/encyclicals/documents/hf_jp- ii_enc_18051986_dominum-et-vivificantem.html https://www.religion-online.org/book-chapter/chapter-14-the- growth-of-the-church/ https://courses.lumenlearning.com/atd-herkimer- worldreligions/chapter/reformation-counter-reformation-and-
+
+Entity: Quezon City
+Label: GPE
+Sentence: Pan Asia Book Exchange Inc., Quezon City, Philippines Additional Online Sources: http://www.catholic-pages.com/church/marks.asp https://www.sacredspace.ie/scripture/ http://www.vatican.va/content/john-paul- ii/en/encyclicals/documents/hf_jp- ii_enc_18051986_dominum-et-vivificantem.html https://www.religion-online.org/book-chapter/chapter-14-the- growth-of-the-church/ https://courses.lumenlearning.com/atd-herkimer- worldreligions/chapter/reformation-counter-reformation-and-
+
+Entity: Philippines Additional Online Sources
+Label: ORG
+Sentence: Pan Asia Book Exchange Inc., Quezon City, Philippines Additional Online Sources: http://www.catholic-pages.com/church/marks.asp https://www.sacredspace.ie/scripture/ http://www.vatican.va/content/john-paul- ii/en/encyclicals/documents/hf_jp- ii_enc_18051986_dominum-et-vivificantem.html https://www.religion-online.org/book-chapter/chapter-14-the- growth-of-the-church/ https://courses.lumenlearning.com/atd-herkimer- worldreligions/chapter/reformation-counter-reformation-and-
 

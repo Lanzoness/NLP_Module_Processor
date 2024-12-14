@@ -97,7 +97,7 @@ def extract_named_entities_with_context(text):
         
         # Iterate over named entities from spaCy
         for ent in doc.ents:
-            if ent.label_ in ["PERSON", "ORG", "GPE", "DATE", "EVENT", "LOC", "MONEY", "PRODUCT", "WORK_OF_ART", "TIME"]:
+            if ent.label_ in ["PERSON", "ORG", "GPE", "DATE", "EVENT", "LOC", "PRODUCT", "WORK_OF_ART", "TIME"]:
                 # Capture only the sentence containing the entity
                 sentence = ent.sent.text.strip()
                 entities_with_context.append((ent.text.strip(), ent.label_, sentence))
@@ -183,5 +183,5 @@ def main(pdf_path):
     print(f"Questions have been saved to {output_file}")
 
 if __name__ == "__main__":
-    pdf_path = "Module_01_Introduction_to_Computer_Organization_and_Architecture.pdf"  # Replace with your PDF file path
+    pdf_path = "Module_3-The-Second-Plenary-Council-of-The-Philippines-cropped.pdf"  # Replace with your PDF file path
     main(pdf_path)
