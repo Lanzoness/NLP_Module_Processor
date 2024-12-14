@@ -25,6 +25,9 @@ def extract_text_from_pdf(pdf_path):
                 if not line:  # Skip empty lines
                     continue
                 
+                # Add space after bullet symbols like , , etc.
+                line = re.sub(r"^(|)(\S)", r"\1 \2", line)  # Ensure space between bullet and text
+                
                 # Handle bullet points and symbols like , , etc.
                 if line.startswith(("", "", "-")) or re.match(r'^\d+\.', line):
                     if current_line:  # Append previous line if it exists
@@ -59,9 +62,6 @@ def extract_text_from_pdf(pdf_path):
     except Exception as e:
         print(f"Error extracting text from PDF: {str(e)}")
         return ""
-
-
-
 
 
 def extract_named_entities_with_context(text):
