@@ -1,844 +1,735 @@
 Multiple-Choice Questions:
 
 1. The main components of a computer From ______ to Hardware
-
-a. Historical Development of Computers
+Computer scientists design algorithms
+Computer scientists implement an algorithm by using high level programing language (Java, C, etc.)
+Another algorithm runs this algorithm and another one runs that algorithm and so on
+We finally get down to machine level
+Machine level can be thought of as an algorithm implemented as an electronic device
+a. International Electrotechnical Commission
 b. Software
-c. CPU
-d. A.
- 
+c. The Computer Level Hierarchy
+d. Neumann 
 (Answer: Software)
 ----------------------------
-2. Computer scientists implement an algorithm by using high level programing language (______, C, etc.)
-
-a. Historical Development of Computers Generation Zero
-b. Neumann
-c. CU
+2. The main components of a computer From Software to ______
+Computer scientists design algorithms
+Computer scientists implement an algorithm by using high level programing language (Java, C, etc.)
+Another algorithm runs this algorithm and another one runs that algorithm and so on
+We finally get down to machine level
+Machine level can be thought of as an algorithm implemented as an electronic device
+a. CPU
+b. CU
+c. Hardware
 d. Java 
+(Answer: Hardware)
+----------------------------
+3. The main components of a computer From Software to Hardware
+Computer scientists design algorithms
+Computer scientists implement an algorithm by using high level programing language (______, C, etc.)
+Another algorithm runs this algorithm and another one runs that algorithm and so on
+We finally get down to machine level
+Machine level can be thought of as an algorithm implemented as an electronic device
+a. CU
+b. Java
+c. 1965–1980
+d. Calculating Machines 
 (Answer: Java)
 ----------------------------
-3. We implement an application in ______ or Software level
-
-a. every 18 months
-b. Hardware
-c. Compilers
+4. The main components of a computer From Software to Hardware
+Computer scientists design algorithms
+Computer scientists implement an algorithm by using high level programing language (Java, C, etc.)
+______ algorithm runs this algorithm and another one runs that algorithm and so on
+We finally get down to machine level
+Machine level can be thought of as an algorithm implemented as an electronic device
+a. Rock’s Law
+b. John von Neumann
+c. 1980
+d. Another 
+(Answer: Another)
+----------------------------
+5. The main components of a computer From Software to Hardware
+Computer scientists design algorithms
+Computer scientists implement an algorithm by using high level programing language (Java, C, etc.)
+Another algorithm runs this algorithm and another one runs that algorithm and so on
+______ finally get down to machine level
+Machine level can be thought of as an algorithm implemented as an electronic device
+a. CPU
+b. • Transistors
+c. Flash Drive
+d. We 
+(Answer: We)
+----------------------------
+6. The main components of a computer Principle of Equivalence of Hardware and Software
+Anything that can be done with software can also be done with hardware, and anything that can be done with hardware can also be done with software
+______ implement an application in Hardware or Software level
+Our knowledge of computer organization and architecture will help us to make the best choice
+a. The Computer Level Hierarchy
+b. RAM
+c. We
+d. Historical Development of Computers Generation Zero 
+(Answer: We)
+----------------------------
+7. The main components of a computer Principle of Equivalence of ______ and Software
+Anything that can be done with software can also be done with hardware, and anything that can be done with hardware can also be done with software
+We implement an application in ______ or Software level
+Our knowledge of computer organization and architecture will help us to make the best choice
+a. Hardware
+b. A*(B+C
+c. 1954–1965
 d. CU 
 (Answer: Hardware)
 ----------------------------
-4. ______ main components At the most basic level, a computer is a device consisting of 3 pieces:
-
-a. Keyboard
-
-Mouse
-
-Microphone
-
-Bar
-b. 
-IEC
-c. Computer Hardware
-d. Instruction Register 
+8. ______ main components At the most basic level, a computer is a device consisting of 3 pieces:
+A processor to interpret and execute programs
+A memory to store both data and programs
+A mechanism for transferring data to and from the outside world
+a. every four years
+b. Computer Hardware
+c. For
+d. U.S. 
 (Answer: Computer Hardware)
 ----------------------------
-5. ______ (CPU)
-
-The central processing unit (CPU) is responsible for fetching the program instructions, decoding each instruction that is fetched, and performing the indicated sequence of operations on the correct data.
+9. ______ (CPU)
 a. Central Processing Unit
-b. 1965–1980
-c. CPU
-d. The Computer Level Hierarchy 
+b. A.
+It
+c. Neumann
+d. Historical Development of Computers First Generation: Vacuum 
 (Answer: Central Processing Unit)
 ----------------------------
-6. Central Processing Unit (______)
-
-The central processing unit (______) is responsible for fetching the program instructions, decoding each instruction that is fetched, and performing the indicated sequence of operations on the correct data.
-a. The Computer Level Hierarchy
-b. RAM
-c. CPU
-d. Compilers 
+10. Central Processing Unit (______)
+a. CPU
+b. Register
+c. CU
+d. External Hard Drive: Can receive 
 (Answer: CPU)
 ----------------------------
-7. Central Processing Unit (CPU)
-______
-The central processing unit (CPU) is responsible for fetching the program instructions, decoding each instruction that is fetched, and performing the indicated sequence of operations on the correct data.
-a. Neumann
-b. Memory Address Register
-c. 
-d. ISA 
-(Answer: )
-----------------------------
-8. ______ is a small, very fast storage area inside CPU.
-a. CU
-b. Register
-
-Register
-c. Temporary
-d. Register 
-(Answer: Register
-
-Register)
-----------------------------
-9. 
-For instance, when a ALU is commanded to calculate ______), ALU needs to calculate B+C first, then ALU need to store the result for a moment and use the result to multiply A.
-
-It is faster for ALU to access register than store the data in memory units.
+11. ______ instance, when a ALU is commanded to calculate A*(B+C), ALU needs to calculate B+C first, then ALU need to store the result for a moment and use the result to multiply A.
+It is faster for ALU to access register than store the data in memory units.
 a. The Computer Level Hierarchy
-b. Lisp, Pascal
+b. European Telecommunications Standards Institute
+c. For
+d. Arthur Rock 
+(Answer: For)
+----------------------------
+12. For instance, when a ALU is commanded to calculate ______), ALU needs to calculate B+C first, then ALU need to store the result for a moment and use the result to multiply A.
+It is faster for ALU to access register than store the data in memory units.
+a. CU
+b. FORTRAN
 c. A*(B+C
-d. Historical Development of Computers Moore’s Law 
+d. CU 
 (Answer: A*(B+C)
 ----------------------------
-10. 
-For instance, when a ALU is commanded to calculate A*(B+C), ALU needs to calculate B+C first, then ALU need to store the result for a moment and use the result to multiply ______
-It is faster for ALU to access register than store the data in memory units.
-a. RAM
+13. For instance, when a ALU is commanded to calculate A*(B+C), ALU needs to calculate B+C first, then ALU need to store the result for a moment and use the result to multiply ______ is faster for ALU to access register than store the data in memory units.
+a. The Von Neumann Model
 b. A.
-
-c. MAR
-d. Neumann 
+It
+c. Historical Development of Computers The Third Generation: Integrated Circuit Computers
+d. RAM 
 (Answer: A.
-)
+It)
 ----------------------------
-11. Four types of ______
-MAR (memory address register): store memory that currently be accessed inside RAM
-
-MDR/MBR (memory data/buffer register): store data from memory
-
-Accumulator (A register): a register stores immediate result from ALU
-
-Program Counter (PC): store the address of the next instruction
+14. Four types of ______
+MAR (memory address register): store memory that currently be accessed inside RAM
+MDR/MBR (memory data/buffer register): store data from memory
+Accumulator (A register): a register stores immediate result from ALU
+Program Counter (PC): store the address of the next instruction
 a. Register
-
-b. 
-IEC
-c. 
-ISO (International Organization for Standardization
-d. The Computer Level Hierarchy 
-(Answer: Register
-)
-----------------------------
-12. Four types of Register
-
-______ (memory address register): store memory that currently be accessed inside RAM
-
-MDR/MBR (memory data/buffer register): store data from memory
-
-Accumulator (A register): a register stores immediate result from ALU
-
-Program Counter (PC): store the address of the next instruction
-a. 1980
-b. 
-Develops
-c. MAR
-d. The Computer Level Hierarchy 
-(Answer: MAR)
-----------------------------
-13. Four types of Register
-
-MAR (memory address register): store memory that currently be accessed inside ______
-
-MDR/MBR (memory data/buffer register): store data from memory
-
-Accumulator (A register): a register stores immediate result from ALU
-
-Program Counter (PC): store the address of the next instruction
-a. RAM
-b. American National Standards Institute
-c. Instructions
-d. Neumann 
-(Answer: RAM)
-----------------------------
-14. Four types of Register
-
-MAR (memory address register): store memory that currently be accessed inside RAM
-
-MDR/MBR (memory data/buffer register): store data from memory
-______ (A register): a register stores immediate result from ALU
-
-Program Counter (PC): store the address of the next instruction
-a. The Computer Level Hierarchy
-b. Prolog
-c. 
-Accumulator
-d. The Von Neumann Model 
-(Answer: 
-Accumulator)
-----------------------------
-15. ______ (CU)
-
-CU acts like a manager in a computer.
-a. Control Unit
-b. The Computer Level Hierarchy
-c. John von Neumann
-d. Historical Development of Computers Generation Zero 
-(Answer: Control Unit)
-----------------------------
-16. Control Unit (______)
-
-______ acts like a manager in a computer.
-a. ISA
-b. CU
-c. The Von Neumann
-d. IEEE (Institute of Electrical and Electronic Engineers 
-(Answer: CU)
-----------------------------
-17. 
-It directs the data flow and the operation of the ALU.
-______, these components perform the tasks of the CPU: fetching instructions, decoding them, and finally performing the indicated sequence of operations.
-a. Moves
-b. 
-Together
-c. FORTRAN
-d. U.S. 
-(Answer: 
-Together)
-----------------------------
-18. 1. CU turn on enable wire of ______
-a. Memory Address Register
-b. Instruction Address Register(Program
-c. FORTRAN
-d. Historical Development of Computers Size 
-(Answer: Instruction Address Register(Program)
-----------------------------
-19. 2. Instruction address first goes to ______ which only tells RAM what address the CPU wants next.
-a. Neumann
-b. Memory Address Register
-c. Instruction Register
-d. FORTRAN 
-(Answer: Memory Address Register)
-----------------------------
-20. Then data goes to ______) from RAM via data bus.
-a. Neumann
-b. Rock’s Law
-c. Instructions
-d. Memory Data Register(buffer 
-(Answer: Memory Data Register(buffer)
-----------------------------
-21. Then data (instruction) goes to ______.
-a. 1.5 year
-b. U.S.
-c. The Von Neumann Model
-d. Instruction Register 
-(Answer: Instruction Register)
-----------------------------
-22. CU decodes instruction, tells ALU the type of operation ALU need to perform and stores the input in ______ registers by turning on the set wire.
-a. Historical Development of Computers
-b. U.S.
-c. The Computer Level Hierarchy
-d. Temporary 
-(Answer: Temporary)
-----------------------------
-23. CU turns on the set wire of Accumulator and instructs ALU to store the immediate result in Accumulator (A ______).
-a. Register
-b. The Computer Level Hierarchy
-c. Assembly
+b. International Electrotechnical Commission
+c. Calculating Machines
 d. John von Neumann 
 (Answer: Register)
 ----------------------------
-24. For example, if the computer has 64k words, then this memory unit has 64 * ______ = 65536 memory locations.
-a. Assembly
-b. The Von Neumann Model One
+15. Four types of Register
+MAR (memory address register): store memory that currently be accessed inside ______
+MDR/MBR (memory data/buffer register): store data from memory
+Accumulator (A register): a register stores immediate result from ALU
+Program Counter (PC): store the address of the next instruction
+a. RAM
+b. Memory Data Register(buffer
+c. SoundBlaster
+d. The Von Neumann Model One 
+(Answer: RAM)
+----------------------------
+16. Four types of Register
+MAR (memory address register): store memory that currently be accessed inside RAM
+MDR/______ (memory data/buffer register): store data from memory
+Accumulator (A register): a register stores immediate result from ALU
+Program Counter (PC): store the address of the next instruction
+a. CU
+b. Historical Development of Computers
+c. Lisp, Pascal
+d. MBR 
+(Answer: MBR)
+----------------------------
+17. Four types of Register
+MAR (memory address register): store memory that currently be accessed inside RAM
+MDR/MBR (memory data/buffer register): store data from memory
+Accumulator (A register): a register stores immediate result from ALU
+______ (PC): store the address of the next instruction
+a. Calculating Machines
+b. Data
+c. American National Standards Institute
+d. Program Counter 
+(Answer: Program Counter)
+----------------------------
+18. ______ (CU)
+CU acts like a manager in a computer.
+a. Speaker
+b. Control Unit
+c. CU
+d. SoundBlaster 
+(Answer: Control Unit)
+----------------------------
+19. Control Unit (______)
+______ acts like a manager in a computer.
+a. The Von Neumann Model
+b. 1945–1953
+c. CU
+d. Historical Development of Computers The Third Generation: Integrated Circuit Computers 
+(Answer: CU)
+----------------------------
+20. How a CPU works?
+1.
+CU turn on enable wire of ______) to allow the next Instruction address to flows to RAM.
+a. Instruction Address Register(Program Counter
+b. Calculating Machines
 c. 1024
-d. Historical Development of Computers Moore’s Law 
+d. John von Neumann 
+(Answer: Instruction Address Register(Program Counter)
+----------------------------
+21. 2.
+Instruction address first goes to ______ which only tells RAM what address the CPU wants next.
+a. Memory Address Register
+b. ITU (International Telecommunications Union
+c. Historical Development of Computers Moore’s Law
+d. Prolog 
+(Answer: Memory Address Register)
+----------------------------
+22. CU turns on the set wire of ______, then memory address goes to RAM.
+a. ANSI
+b. Gordon Moore
+c. The Computer Level Hierarchy
+d. MAR 
+(Answer: MAR)
+----------------------------
+23. 3.
+Then data goes to ______) from RAM via data bus.
+a. Calculating Machines
+b. the last half decade
+c. The Von Neumann
+d. Memory Data Register(buffer 
+(Answer: Memory Data Register(buffer)
+----------------------------
+24. Then data (instruction) goes to ______.
+a. FORTRAN
+b. 1965–1980
+c. Flash Drive
+d. Instruction Register 
+(Answer: Instruction Register)
+----------------------------
+25. CU decodes instruction, tells ALU the type of operation ALU need to perform and stores the input in ______ registers by turning on the set wire.
+a. 1965
+b. Temporary
+c. Historical Development of Computers Size
+d. 1980 
+(Answer: Temporary)
+----------------------------
+26. The result stored temporarily in A Register will go to the RAM via data bus.
+8.
+______ will be stored in the specified address in RAM.
+a. ANSI
+b. International Electrotechnical Commission
+c. Historical Development of Computers Generation Zero
+d. Data 
+(Answer: Data)
+----------------------------
+27. For example, if the computer has 64k words, then this memory unit has 64 * ______ = 65536 memory locations.
+a. 1024
+b. Gordon Moore
+c. The Computer Level Hierarchy
+d. Historical Development of Computers 
 (Answer: 1024)
 ----------------------------
-25. The address of these locations varies from ______.
-a. Arthur Rock
-b. C++
-c. FORTRAN
-d. 0 to 65535 
+28. The address of these locations varies from ______.
+a. 0 to 65535
+b. Neumann
+c. The Computer Level Hierarchy
+d. Rock’s Law 
 (Answer: 0 to 65535)
 ----------------------------
-26. ______ and output devices allow the computer system to interact with the outside world by moving data into and out of the system.
-
-Input/output devices are usually called I/O devices.
-a. The Von Neumann Model
-b. Gordon Moore
-c. 
-Develops
-d. Input / Output Devices
-
-Input 
-(Answer: Input / Output Devices
-
-Input)
+29. ______
+Input and output devices allow the computer system to interact with the outside world by moving data into and out of the system.
+a. U.S.
+b. Web Camera
+c. Input / Output Devices
+d. Historical Development of Computers Moore’s Law 
+(Answer: Input / Output Devices)
 ----------------------------
-27. 
-For example, the speakers of a multimedia computer system are directly connected to a device controller called an audio card (such as a ______), which in turn is connected to the rest of the system.
-a. Arthur Rock
-b. Historical Development of Computers
-c. Historical Development of Computers Size
-d. SoundBlaster 
+30. For example, the speakers of a multimedia computer system are directly connected to a device controller called an audio card (such as a ______), which in turn is connected to the rest of the system.
+a. SoundBlaster
+b. Historical Development of Computers First Generation: Vacuum
+c. The Von Neumann Model One
+d. Historical Development of Computers The Third Generation: Integrated Circuit Computers 
 (Answer: SoundBlaster)
 ----------------------------
-28. Some input devices are:
-
-______ code reader
-
-Graphics tablet
-
-Web Camera
-
-Scanner
-
-Joystick
-a. Aim
-
-Establish
-b. The Computer Level Hierarchy
-c. Transistors
-d. Keyboard
-
-Mouse
-
-Microphone
-
-Bar 
-(Answer: Keyboard
-
-Mouse
-
-Microphone
-
-Bar)
-----------------------------
-29. Some input devices are:
-
-Keyboard
-
-Mouse
-
-Microphone
-
-Bar code reader
+31. Some input devices are:
+Keyboard
+Mouse
+Microphone
+Bar code reader
 ______ tablet
-
-Web Camera
-
-Scanner
-
-Joystick
-a. 
-Graphics
-b. Intel
-c. Historical Development of Computers
-d. Historical Development of Computers Moore’s Law 
-(Answer: 
-Graphics)
+Web Camera
+Scanner
+Joystick
+a. The Von Neumann Model
+b. The Von Neumann Model One
+c. Graphics
+d. Speaker 
+(Answer: Graphics)
 ----------------------------
-30. Some input devices are:
-
-Keyboard
-
-Mouse
-
-Microphone
-
-Bar code reader
-
-Graphics tablet
-
-Web Camera
-
-Scanner
-
+32. Some input devices are:
+Keyboard
+Mouse
+Microphone
+Bar code reader
+Graphics tablet
 ______
-a. Joystick
-b. Historical Development of Computers Size
-c. FORTRAN
-d. The Computer Level Hierarchy 
-(Answer: Joystick)
-----------------------------
-31. Some output devices are:
-
-Monitor
-
-Printer
-
-Speaker
-______
-a. U.S.
-b. 
-Projector
-c. European Telecommunications Standards Institute
-d. The Von Neumann Model One 
-(Answer: 
-Projector)
-----------------------------
-32. 
-______ data from a computer (input) and send data to a computer (output).
-a. 1965–1980
-b. External Hard Drive: Can receive
-c. Moves
-d. ISA 
-(Answer: External Hard Drive: Can receive)
-----------------------------
-33. ______ common guide lines for a particular type of equipment to ensure a “worldwide”1 interoperability (compatibility)
-a. 1980
-b. Aim
-
-Establish
-c. 
-IEC
-d. Rock’s Law 
-(Answer: Aim
-
-Establish)
-----------------------------
-34. Some international standards organizations
-______)
-
-Develops and publishes international standards across various industries, including computing and technology.
-a. 
-ISO (International Organization for Standardization
-b. John von Neumann
-c. Calculating Machines
-d. Gordon Moore 
-(Answer: 
-ISO (International Organization for Standardization)
-----------------------------
-35. Some international standards organizations
-
-ISO (International Organization for Standardization)
-______ and publishes international standards across various industries, including computing and technology.
-a. 
-Develops
-b. 1980
-c. The Von Neumann
-d. Historical Development of Computers 
-(Answer: 
-Develops)
-----------------------------
-36. ______ (International Electrotechnical Commission)
-
-Focuses on international standards for electrical, electronic, and related technologies.
+Scanner
+Joystick
 a. The Computer Level Hierarchy
-b. IEEE (Institute of Electrical and Electronic Engineers
-c. ITU (International Telecommunications Union
-d. 
-IEC 
-(Answer: 
-IEC)
+b. Web Camera
+c. European Committee for Standardization
+d. Develops 
+(Answer: Web Camera)
 ----------------------------
-37. 
-IEC (______)
-
-Focuses on international standards for electrical, electronic, and related technologies.
-a. The Von Neumann
-b. International Electrotechnical Commission
-c. 1965–1980
+33. Monitor
+Printer
+______
+Projector
+a. 1980
+b. Speaker
+c. European Committee for Standardization
+d. The Computer Level Hierarchy 
+(Answer: Speaker)
+----------------------------
+34. ______ data from a computer (input) and send data to a computer (output).
+a. The Computer Level Hierarchy
+b. External Hard Drive: Can receive
+c. ISA
 d. The Von Neumann Model 
+(Answer: External Hard Drive: Can receive)
+----------------------------
+35. USB ______: Similar to an external hard drive, it can both receive and send data.
+a. ITU (International Telecommunications Union
+b. Assembly Language Level
+c. The Von Neumann Model
+d. Flash Drive 
+(Answer: Flash Drive)
+----------------------------
+36. Some international standards organizations
+ISO (______)
+Develops and publishes international standards across various industries, including computing and technology.
+a. The Computer Level Hierarchy
+b. Neumann
+c. International Organization for Standardization
+d. the last half decade 
+(Answer: International Organization for Standardization)
+----------------------------
+37. Some international standards organizations
+ISO (International Organization for Standardization)
+______ and publishes international standards across various industries, including computing and technology.
+a. Develops
+b. John von Neumann
+c. every 18 months
+d. Historical Development of Computers 
+(Answer: Develops)
+----------------------------
+38. IEC (______)
+Focuses on international standards for electrical, electronic, and related technologies.
+a. The Von Neumann Model
+b. International Electrotechnical Commission
+c. American National Standards Institute
+d. 1.5 year 
 (Answer: International Electrotechnical Commission)
 ----------------------------
-38. Some international standards organizations ______)
-
-sets standards for various computer components, signaling protocols, and data representation ITU (International Telecommunications Union)
-a. John von Neumann
-b. IEEE (Institute of Electrical and Electronic Engineers
-c. Neumann
-d. 
-Oversees 
+39. Some international standards organizations ______)
+sets standards for various computer components, signaling protocols, and data representation ITU (International Telecommunications Union)
+Sets standards for telecommunications systems, including telephone, telegraph, and data communication systems
+a. Intel
+b. every four years
+c. IEEE (Institute of Electrical and Electronic Engineers
+d. C++ 
 (Answer: IEEE (Institute of Electrical and Electronic Engineers)
 ----------------------------
-39. Some international standards organizations IEEE (Institute of Electrical and Electronic Engineers)
-
-sets standards for various computer components, signaling protocols, and data representation ______)
-a. Transistors
-b. Historical Development of Computers Generation Zero
-c. ITU (International Telecommunications Union
-d. The Computer Level Hierarchy 
+40. Some international standards organizations IEEE (Institute of Electrical and Electronic Engineers)
+sets standards for various computer components, signaling protocols, and data representation ______)
+Sets standards for telecommunications systems, including telephone, telegraph, and data communication systems
+a. Historical Development of Computers
+b. ANSI
+c. The Computer Level Hierarchy
+d. ITU (International Telecommunications Union 
 (Answer: ITU (International Telecommunications Union)
 ----------------------------
-40. Some international standards organizations
-
-ANSI (______)
-
-Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
-
-ETSI (European Telecommunications Standards Institute)
-
-Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
-a. American National Standards Institute
-b. Assembly
-c. Lisp, Pascal
-d. Prolog 
-(Answer: American National Standards Institute)
-----------------------------
 41. Some international standards organizations
-
-ANSI (American National Standards Institute)
-______ the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
-
-ETSI (European Telecommunications Standards Institute)
-
-Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
-a. 
-Oversees
-b. The Computer Level Hierarchy
-c. European Committee for Standardization
-d. Rock’s Law 
-(Answer: 
-Oversees)
+______ (American National Standards Institute)
+Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
+ETSI (European Telecommunications Standards Institute)
+Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
+a. • Transistors
+b. Increasing
+c. ANSI
+d. The Computer Level Hierarchy 
+(Answer: ANSI)
 ----------------------------
 42. Some international standards organizations
-
-ANSI (American National Standards Institute)
-
-Oversees the development of voluntary consensus standards for products, services, processes, and systems in the ______
-
-ETSI (European Telecommunications Standards Institute)
-
-Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
-a. Historical Development of Computers
-b. U.S.
-c. The Computer Level Hierarchy
-d. Programs 
-(Answer: U.S.)
+ANSI (______)
+Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
+ETSI (European Telecommunications Standards Institute)
+Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
+a. Gordon Moore
+b. The Von Neumann Model
+c. European Telecommunications Standards Institute
+d. American National Standards Institute 
+(Answer: American National Standards Institute)
 ----------------------------
 43. Some international standards organizations
-
-ANSI (American National Standards Institute)
-
-Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
-
-ETSI (______)
-
-Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
-a. Historical Development of Computers
+ANSI (American National Standards Institute)
+Oversees the development of voluntary consensus standards for products, services, processes, and systems in the ______
+ETSI (European Telecommunications Standards Institute)
+Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
+a. 1965–1980
+b. the last half decade
+c. U.S.
+d. Increasing 
+(Answer: U.S.)
+----------------------------
+44. Some international standards organizations
+ANSI (American National Standards Institute)
+Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
+ETSI (______)
+Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
+a. The Computer Level Hierarchy
 b. European Telecommunications Standards Institute
 c. 1980
-d. Moves 
+d. The Von Neumann Model 
 (Answer: European Telecommunications Standards Institute)
 ----------------------------
-44. Some international standards organizations ______ (European Committee for Standardization)
-
-Develops standards in various sectors, including information technology
-a. Historical Development of Computers The Third Generation: Integrated Circuit Computers
-b. CEN
-c. European Committee for Standardization
-d. Neumann 
+45. Some international standards organizations ______ (European Committee for Standardization)
+Develops standards in various sectors, including information technology
+a. CEN
+b. Neumann
+c. 1.5 year
+d. The Von Neumann Model 
 (Answer: CEN)
 ----------------------------
-45. Some international standards organizations CEN (______)
-
-Develops standards in various sectors, including information technology
+46. Some international standards organizations CEN (______)
+Develops standards in various sectors, including information technology
 a. European Committee for Standardization
-b. Historical Development of Computers
-c. Historical Development of Computers Size
-d. ISA 
+b. 1945–1953
+c. More
+d. Neumann 
 (Answer: European Committee for Standardization)
 ----------------------------
-46. ______: Mechanical Calculating Machines (1642 – 1945)
-
-a. ISA
-b. Historical Development of Computers First Generation: Vacuum
-c. every four years
-d. Historical Development of Computers Generation Zero 
+47. ______: Mechanical Calculating Machines (1642 – 1945)
+a. Historical Development of Computers Generation Zero
+b. Increasing
+c. The Computer Level Hierarchy
+d. Prolog 
 (Answer: Historical Development of Computers Generation Zero)
 ----------------------------
-47. Historical Development of Computers Generation Zero: Mechanical ______ (1642 – 1945)
-
-a. The Computer Level Hierarchy
-b. Historical Development of Computers First Generation: Vacuum
-c. Intel
-d. Calculating Machines 
+48. Historical Development of Computers Generation Zero: Mechanical ______ (1642 – 1945)
+a. 1980
+b. Calculating Machines
+c. 1945–1953
+d. • User 
 (Answer: Calculating Machines)
 ----------------------------
-48. Historical Development of Computers Generation Zero: Mechanical Calculating Machines (______)
-
+49. Historical Development of Computers Generation Zero: Mechanical Calculating Machines (______)
 a. 1642 – 1945
-b. The Computer Level Hierarchy
-c. The Von Neumann Model
-d. Historical Development of Computers 
+b. 1980
+c. Rock’s Law
+d. The Computer Level Hierarchy 
 (Answer: 1642 – 1945)
 ----------------------------
-49. ______ tube computers (1945–1953)
-
-a. Moves
-b. Historical Development of Computers First Generation: Vacuum
-c. The Computer Level Hierarchy
-d. Assembly 
+50. ______ tube computers (1945–1953)
+Use of electrical/electronic technology (much faster than mechanical technology)
+Invent binary machines built from vacuum tubes
+Invent vaccum tubes diodes and triodes
+Disadvantages: Bulky systems, Power consumption and heat dissipation.
+a. Historical Development of Computers First Generation: Vacuum
+b. Historical Development of Computers The Third Generation: Integrated Circuit Computers
+c. Assembly Language Level
+d. 1980 
 (Answer: Historical Development of Computers First Generation: Vacuum)
 ----------------------------
-50. Historical Development of Computers First Generation: Vacuum tube computers (______)
-
-a. Instructions
+51. Historical Development of Computers First Generation: Vacuum tube computers (______)
+Use of electrical/electronic technology (much faster than mechanical technology)
+Invent binary machines built from vacuum tubes
+Invent vaccum tubes diodes and triodes
+Disadvantages: Bulky systems, Power consumption and heat dissipation.
+a. More
 b. 1945–1953
-c. Programs
-d. 1965 
+c. Rock’s Law
+d. The Von Neumann 
 (Answer: 1945–1953)
 ----------------------------
-51. ______ The Second Generation: Transistorized Computers (1954–1965)
-
-a. 1954–1965
-b. The Computer Level Hierarchy
-c. Rock’s Law
-d. Historical Development of Computers 
+52. ______ The Second Generation: Transistorized Computers (1954–1965)
+Transistors revolutionize computers • Transistors consume less power than vacuum tubes, are smaller, and work more reliably, • the circuitry in computers became smaller and more reliable.
+a. The Computer Level Hierarchy
+b. 1.5 year
+c. Historical Development of Computers
+d. Lisp, Pascal 
 (Answer: Historical Development of Computers)
 ----------------------------
-52. ______ revolutionize computers • ______ consume less power than vacuum tubes, are smaller, and work more reliably, • the circuitry in computers became smaller and more reliable.
-a. 1.5 year
-b. The Computer Level Hierarchy
-c. The Von Neumann Model
-d. Transistors 
-(Answer: Transistors)
-----------------------------
-53. Transistors revolutionize computers ______ consume less power than vacuum tubes, are smaller, and work more reliably, • the circuitry in computers became smaller and more reliable.
-a. Neumann
-b. • Transistors
-c. the last half decade
-d. 1980 
+53. Historical Development of Computers The Second Generation: Transistorized Computers (1954–1965)
+Transistors revolutionize computers ______ consume less power than vacuum tubes, are smaller, and work more reliably, • the circuitry in computers became smaller and more reliable.
+a. • Transistors
+b. 1980
+c. Prolog
+d. The Computer Level Hierarchy 
 (Answer: • Transistors)
 ----------------------------
 54. Historical Development of Computers The Second Generation: Transistorized Computers (______)
-
-a. 1954–1965
-b. Rock’s Law
-c. The Von Neumann Model
-d. Gordon Moore 
+Transistors revolutionize computers • Transistors consume less power than vacuum tubes, are smaller, and work more reliably, • the circuitry in computers became smaller and more reliable.
+a. The Computer Level Hierarchy
+b. 1954–1965
+c. the last half decade
+d. 1965 
 (Answer: 1954–1965)
 ----------------------------
 55. ______ (1965–1980)
-
+Integrating multiple transistors in a single silicon/germanium chip
+Explosion in computer use
+Computers became faster, smaller, and cheaper, bringing huge gains in processing power
 a. Historical Development of Computers The Third Generation: Integrated Circuit Computers
-b. Rock’s Law
-c. Gordon Moore
-d. 1965 
+b. The Computer Level Hierarchy
+c. More
+d. The Computer Level Hierarchy 
 (Answer: Historical Development of Computers The Third Generation: Integrated Circuit Computers)
 ----------------------------
 56. Historical Development of Computers The Third Generation: Integrated Circuit Computers (______)
-
-a. The Computer Level Hierarchy
+Integrating multiple transistors in a single silicon/germanium chip
+Explosion in computer use
+Computers became faster, smaller, and cheaper, bringing huge gains in processing power
+a. Gordon Moore
 b. 1965–1980
-c. Intel
-d. The Von Neumann Model One 
+c. Neumann
+d. The Computer Level Hierarchy 
 (Answer: 1965–1980)
 ----------------------------
 57. Historical Development of Computers The Fourth Generation: VLSI Computers (>______)
-
+More integration, more transistors on a single silicon chip
+Computers became smaller: Appearance of micro- computers
+Increasing the processing power of all computers types (also supercomputers and main frame computers)
 a. 1980
-b. The Von Neumann Model
+b. John von Neumann
 c. The Computer Level Hierarchy
-d. every four years 
+d. The Von Neumann Model 
 (Answer: 1980)
 ----------------------------
-58. ______ comparison Vacuum Tube Transistor Integrated circuit package Integrated circuit chip
-a. The Computer Level Hierarchy
-b. The Computer Level Hierarchy
+58. Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
+More integration, more transistors on a single silicon chip
+Computers became smaller: Appearance of micro- computers
+______ the processing power of all computers types (also supercomputers and main frame computers)
+a. Rock’s Law
+b. Increasing
 c. • User
+d. The Von Neumann Model 
+(Answer: Increasing)
+----------------------------
+59. ______ comparison Vacuum Tube Transistor Integrated circuit package Integrated circuit chip
+a. Neumann
+b. Prolog
+c. Rock’s Law
 d. Historical Development of Computers Size 
 (Answer: Historical Development of Computers Size)
 ----------------------------
-59. ______ (Gordon Moore – Intel Founder, 1965)
-
-a. the last half decade
-b. Compilers
-c. every four years
-d. Historical Development of Computers Moore’s Law 
+60. ______ (Gordon Moore – Intel Founder, 1965)
+a. Historical Development of Computers Moore’s Law
+b. The Computer Level Hierarchy
+c. The Von Neumann Model
+d. 1.5 year 
 (Answer: Historical Development of Computers Moore’s Law)
 ----------------------------
-60. Historical Development of Computers Moore’s Law (______ – Intel Founder, 1965)
-
-a. Neumann
-b. Assembly
-c. Gordon Moore
-d. Assembly 
-(Answer: Gordon Moore)
-----------------------------
-61. Historical Development of Computers Moore’s Law (Gordon Moore – Intel Founder, ______)
-
-a. 1965
-b. The Computer Level Hierarchy
-c. The Computer Level Hierarchy
-d. Neumann 
-(Answer: 1965)
-----------------------------
-62. The density of transistors in an integrated circuit doubles ______ (1.5 year).
-a. Assembly Language Level
-b. Compilers
-c. every 18 months
-d. Lisp, Pascal 
-(Answer: every 18 months)
-----------------------------
-63. The density of transistors in an integrated circuit doubles every 18 months (______).
-a. • User
-b. The Computer Level Hierarchy
-c. 1.5 year
-d. Arthur Rock 
-(Answer: 1.5 year)
-----------------------------
-64. ______ (early Intel capitalist Arthur Rock)
-
-a. The Computer Level Hierarchy
+61. Historical Development of Computers Moore’s Law (______ – Intel Founder, 1965)
+a. Gordon Moore
 b. The Von Neumann
 c. Rock’s Law
 d. The Computer Level Hierarchy 
+(Answer: Gordon Moore)
+----------------------------
+62. Historical Development of Computers Moore’s Law (Gordon Moore – Intel Founder, ______)
+a. every four years
+b. Neumann
+c. The Computer Level Hierarchy
+d. 1965 
+(Answer: 1965)
+----------------------------
+63. The density of transistors in an integrated circuit doubles ______ (1.5 year).
+a. The Computer Level Hierarchy
+b. Arthur Rock
+c. • User
+d. every 18 months 
+(Answer: every 18 months)
+----------------------------
+64. The density of transistors in an integrated circuit doubles every 18 months (______).
+a. The Von Neumann Model
+b. 1.5 year
+c. The Computer Level Hierarchy
+d. Prolog 
+(Answer: 1.5 year)
+----------------------------
+65. ______ (early Intel capitalist Arthur Rock)
+a. Assembly Language Level
+b. More
+c. Rock’s Law
+d. John von Neumann 
 (Answer: Rock’s Law)
 ----------------------------
-65. Rock’s Law (early ______ capitalist Arthur Rock)
-
-a. The Von Neumann Model One
-b. every four years
-c. Intel
-d. Instructions 
+66. Rock’s Law (early ______ capitalist Arthur Rock)
+a. Intel
+b. Lisp, Pascal
+c. Assembly Language Level
+d. The Computer Level Hierarchy 
 (Answer: Intel)
 ----------------------------
-66. Rock’s Law (early Intel capitalist ______)
-
-a. Assembly
+67. Rock’s Law (early Intel capitalist ______)
+a. Arthur Rock
 b. The Computer Level Hierarchy
-c. • User
-d. Arthur Rock 
+c. Neumann
+d. Assembly 
 (Answer: Arthur Rock)
 ----------------------------
-67. The cost of capital equipment to build semiconductors will double ______
-a. Assembly
-b. Moves
-c. The Computer Level Hierarchy
-d. every four years 
+68. The cost of capital equipment to build semiconductors will double ______
+a. The Von Neumann Model One
+b. The Computer Level Hierarchy
+c. every four years
+d. The Computer Level Hierarchy 
 (Answer: every four years)
 ----------------------------
-68. ______ into new computing paradigms has been proceeding in earnest during the last half decade
-a. Moves
-b. Research
-c. The Von Neumann Model
-d. Neumann 
-(Answer: Research)
-----------------------------
-69. Research into new computing paradigms has been proceeding in earnest during ______
-a. The Computer Level Hierarchy
-b. The Von Neumann Model
-c. The Von Neumann Model
+69. Historical Development of Computers
+If Moore’s Law is to hold, Rock’s Law must fall or computers must shift to a radically different technology
+Research into new computing paradigms has been proceeding in earnest during ______
+a. Assembly Language Level
+b. The Computer Level Hierarchy
+c. The Computer Level Hierarchy
 d. the last half decade 
 (Answer: the last half decade)
 ----------------------------
 70. ______
-
-a. Lisp, Pascal
-b. John von Neumann
-c. The Computer Level Hierarchy
-d. • User 
+The user executes programs on a PC (Paint, word files, games, etc.)
+a. The Computer Level Hierarchy
+b. Neumann
+c. More
+d. The Von Neumann Model 
 (Answer: The Computer Level Hierarchy)
 ----------------------------
-71. The highest level – Level 6 – is the “user’s level” • Level 6 is composed of applications ______ runs programs such as word processors, graphics packages, or games.
-
-a. John von Neumann
-b. Assembly Language Level
-c. • User
-d. Programs 
+71. The highest level – Level 6 – is the “user’s level” • Level 6 is composed of applications ______ runs programs such as word processors, graphics packages, or games.
+a. Neumann
+b. Neumann
+c. The Von Neumann Model
+d. • User 
 (Answer: • User)
 ----------------------------
-72. Consists of languages such as C, ______, FORTRAN, Lisp, Pascal, and Prolog.
-
-a. The Von Neumann Model
-b. C++
-c. The Von Neumann Model
-d. John von Neumann 
+72. The Computer Level Hierarchy Level 5: High-Level Language Level
+Consists of languages such as C, ______, FORTRAN, Lisp, Pascal, and Prolog.
+Programmers write programs at this level.
+Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
+a. The Von Neumann
+b. The Von Neumann Model
+c. The Von Neumann
+d. C++ 
 (Answer: C++)
 ----------------------------
-73. Consists of languages such as C, C++, ______, Lisp, Pascal, and Prolog.
-
-a. Compilers
+73. The Computer Level Hierarchy Level 5: High-Level Language Level
+Consists of languages such as C, C++, ______, Lisp, Pascal, and Prolog.
+Programmers write programs at this level.
+Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
+a. The Von Neumann Model
 b. The Von Neumann Model
 c. FORTRAN
-d. Moves 
+d. The Von Neumann Model 
 (Answer: FORTRAN)
 ----------------------------
-74. Consists of languages such as C, C++, FORTRAN, ______, and Prolog.
-
-a. Compilers
-b. Assembly
-c. John von Neumann
+74. The Computer Level Hierarchy Level 5: High-Level Language Level
+Consists of languages such as C, C++, FORTRAN, ______, and Prolog.
+Programmers write programs at this level.
+Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
+a. The Von Neumann Model
+b. Assembly Language Level
+c. The Von Neumann
 d. Lisp, Pascal 
 (Answer: Lisp, Pascal)
 ----------------------------
-75. Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and ______.
-
-a. The Von Neumann
+75. The Computer Level Hierarchy Level 5: High-Level Language Level
+Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and ______.
+Programmers write programs at this level.
+Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
+a. The Von Neumann Model
 b. Prolog
-c. Programs
-d. Instructions 
+c. The Von Neumann Model One
+d. The Von Neumann 
 (Answer: Prolog)
 ----------------------------
-76. ______ translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
-a. Compilers
-b. Instructions
-c. The Von Neumann Model
-d. Assembly 
-(Answer: Compilers)
-----------------------------
-77. Compilers translates these languages to a language the machine can understand (that lower levels could understand): ______ then machine languages.
-a. John von Neumann
-b. Programs
-c. The Von Neumann Model One
-d. Assembly 
+76. The Computer Level Hierarchy Level 5: High-Level Language Level
+Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
+Programmers write programs at this level.
+Compilers translates these languages to a language the machine can understand (that lower levels could understand): ______ then machine languages.
+a. The Von Neumann
+b. Assembly
+c. John von Neumann
+d. More 
 (Answer: Assembly)
 ----------------------------
-78. The Computer Level Hierarchy Level 4: ______
-
-a. Neumann
-b. Programs
-c. Assembly Language Level
-d. John von Neumann 
+77. The Computer Level Hierarchy Level 4: ______
+More “machine dependent” language.
+a. ISA
+b. The Von Neumann
+c. The Von Neumann Model
+d. Assembly Language Level 
 (Answer: Assembly Language Level)
 ----------------------------
-79. ______ translated from assembly language to machine language are passed through this level unmodified
-a. Neumann
-b. Instructions
-c. ISA
+78. The Computer Level Hierarchy Level 4: Assembly Language Level
+______ “machine dependent” language.
+a. More
+b. The Von Neumann
+c. John von Neumann
 d. The Von Neumann Model 
-(Answer: Instructions)
+(Answer: More)
 ----------------------------
-80. The Computer Level Hierarchy Level 2: Instruction Set Architecture (______), or Machine Level
-
+79. The Computer Level Hierarchy Level 2: Instruction Set Architecture (______), or Machine Level
+Machine language recognized by the particular architecture of the computer system
+Programs written in machine language can be executed directly by the electronic circuits without any interpreters, translators, or compilers.
 a. ISA
-b. The Von Neumann Model
-c. The Von Neumann Model
-d. The Von Neumann 
+b. Neumann
+c. The Von Neumann
+d. The Von Neumann Model 
 (Answer: ISA)
 ----------------------------
-81. ______ written in machine language can be executed directly by the electronic circuits without any interpreters, translators, or compilers.
-a. Programs
-b. The Von Neumann Model One
-c. The Von Neumann
-d. John von Neumann 
-(Answer: Programs)
-----------------------------
-82. The Computer Level Hierarchy Level 1: The Control Level
- Is where a control unit do its job
-
-Receives machine instructions from the level above
-
-decodes and executes those instructions properly
-
-______ data to where and when it should be
-
-a. Neumann
-b. Moves
-c. The Von Neumann
-d. Neumann 
-(Answer: Moves)
-----------------------------
-83. ______
-
+80. ______
+A computer architecture model published by a famous Hungarian mathematician named John von Neumann
+The idea is to store programs’ instructions inside a main memory in order to avoid rewiring the system each time it had a new problem to solve, or an old one to debug.
 a. Neumann
 b. The Von Neumann Model
-c. The Von Neumann
-d. The Von Neumann Model One 
+c. The Von Neumann Model One
+d. Neumann 
 (Answer: The Von Neumann Model)
 ----------------------------
-84. A computer architecture model published by a famous Hungarian mathematician named ______
-
+81. The Von Neumann Model
+A computer architecture model published by a famous Hungarian mathematician named ______
+The idea is to store programs’ instructions inside a main memory in order to avoid rewiring the system each time it had a new problem to solve, or an old one to debug.
 a. Neumann
-b. John von Neumann
-c. The Von Neumann Model One
-d. The Von Neumann 
+b. Neumann
+c. John von Neumann
+d. Neumann 
 (Answer: John von Neumann)
 ----------------------------
-85. All stored-program computers have come to be known as von ______ systems using the von ______ architecture
-a. Neumann
+82. All stored-program computers have come to be known as von ______ systems using the von ______ architecture
+a. The Von Neumann
 b. The Von Neumann
-c. The Von Neumann
-d. The Von Neumann Model One 
+c. The Von Neumann Model One
+d. Neumann 
 (Answer: Neumann)
 ----------------------------

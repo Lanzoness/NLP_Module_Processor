@@ -12,77 +12,54 @@ def extract_text_from_pdf(pdf_path):
     """Extracts text from a PDF file and corrects spacing issues."""
     text = ""
     try:
-        # Open the PDF file
-        doc = fitz.open(pdf_path)
+        doc = fitz.open(pdf_path)  # Open the PDF file
         
-        # Iterate through each page
-        for page in doc:
-            # Extract text from the page
+        for page in doc:  # Iterate through each page
             page_text = page.get_text("text")
             lines = page_text.split('\n')
             processed_lines = []
             current_line = ""
-            
+
             for line in lines:
                 line = line.strip()
-                if not line:
+                if not line:  # Skip empty lines
                     continue
                 
-                # Split by numbered list pattern or bullet markers
-                numbered_parts = re.split(r'(\d+\.\s+|)', line)
-                
-                for part in numbered_parts:
-                    # Check if the part is a list item marker (number or bullet)
-                    is_list_item = re.match(r'^\d+\.\s+$', part) or part.strip() == ""
-                    
-                    if is_list_item:
-                        if current_line:
-                            processed_lines.append(current_line.strip())
-                            current_line = ""
-                        
-                        # Ensure a space exists after the list item marker
-                        if not part.endswith(" "):
-                            part += " "
-                        
-                        current_line = part
+                # Handle bullet points and symbols like , , etc.
+                if line.startswith(("", "", "-")) or re.match(r'^\d+\.', line):
+                    if current_line:  # Append previous line if it exists
+                        processed_lines.append(current_line.strip())
+                        current_line = ""
+                    current_line = line  # Start a new bullet point
+                else:
+                    # Combine with the current line if it's part of the same paragraph
+                    if current_line and not current_line.endswith((".", ":", "?")):
+                        current_line += " " + line
                     else:
-                        # Handle non-alphanumeric symbols by splitting them into new lines, excluding common punctuation
-                        split_parts = re.split(r'([^a-zA-Z0-9\\s.?!-…,():;"\'])', part)  # Exclude ., ?, !, and - from splitting
-                        for sub_part in split_parts:
-                            if not sub_part.strip():  # Skip empty parts
-                                continue
-                            
-                            # If it's a non-alphanumeric character (excluding common punctuation), treat it as a separate line
-                            if re.match(r'[^a-zA-Z0-9\\s.?!-…,():;"\']', sub_part):
-                                if current_line:
-                                    processed_lines.append(current_line.strip())
-                                    current_line = ""
-                                processed_lines.append(sub_part.strip())
-                            else:
-                                # Append alphanumeric content or valid punctuation to the current line
-                                if current_line and not current_line.endswith(" "):
-                                    current_line += " "
-                                current_line += sub_part
-            
+                        if current_line:  # Add finished lines
+                            processed_lines.append(current_line.strip())
+                        current_line = line
+
+            # Append the last line on the page if it exists
             if current_line:
                 processed_lines.append(current_line.strip())
             
-            # Combine all lines and add double newline for page separation
-            text += '\n'.join(processed_lines) + "\n\n"
-        
-        # Close the document
-        doc.close()
+            # Add page separator
+            text += "\n".join(processed_lines) + "\n\n"
+
+        doc.close()  # Close the document
         
         # Save raw text to file
         with open("raw_module.txt", "w", encoding="utf-8") as raw_file:
             raw_file.write(text)
-        
+
         print("Raw text saved to raw_module.txt")
         return text
-        
+
     except Exception as e:
         print(f"Error extracting text from PDF: {str(e)}")
         return ""
+
 
 
 

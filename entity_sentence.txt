@@ -1,215 +1,198 @@
 Entity: Software
 Label: PERSON
 Sentence: The main components of a computer From Software to Hardware
-
+Computer scientists design algorithms
+Computer scientists implement an algorithm by using high level programing language (Java, C, etc.)
+Another algorithm runs this algorithm and another one runs that algorithm and so on
+We finally get down to machine level
+Machine level can be thought of as an algorithm implemented as an electronic device
+
+Entity: Hardware
+Label: ORG
+Sentence: The main components of a computer From Software to Hardware
+Computer scientists design algorithms
+Computer scientists implement an algorithm by using high level programing language (Java, C, etc.)
+Another algorithm runs this algorithm and another one runs that algorithm and so on
+We finally get down to machine level
+Machine level can be thought of as an algorithm implemented as an electronic device
 
 Entity: Java
 Label: PERSON
-Sentence: Computer scientists implement an algorithm by using high level programing language (Java, C, etc.)
-
+Sentence: The main components of a computer From Software to Hardware
+Computer scientists design algorithms
+Computer scientists implement an algorithm by using high level programing language (Java, C, etc.)
+Another algorithm runs this algorithm and another one runs that algorithm and so on
+We finally get down to machine level
+Machine level can be thought of as an algorithm implemented as an electronic device
+
+Entity: Another
+Label: ORG
+Sentence: The main components of a computer From Software to Hardware
+Computer scientists design algorithms
+Computer scientists implement an algorithm by using high level programing language (Java, C, etc.)
+Another algorithm runs this algorithm and another one runs that algorithm and so on
+We finally get down to machine level
+Machine level can be thought of as an algorithm implemented as an electronic device
+
+Entity: We
+Label: PERSON
+Sentence: The main components of a computer From Software to Hardware
+Computer scientists design algorithms
+Computer scientists implement an algorithm by using high level programing language (Java, C, etc.)
+Another algorithm runs this algorithm and another one runs that algorithm and so on
+We finally get down to machine level
+Machine level can be thought of as an algorithm implemented as an electronic device
+
+Entity: We
+Label: PRODUCT
+Sentence: The main components of a computer Principle of Equivalence of Hardware and Software
+Anything that can be done with software can also be done with hardware, and anything that can be done with hardware can also be done with software
+We implement an application in Hardware or Software level
+Our knowledge of computer organization and architecture will help us to make the best choice
 
 Entity: Hardware
 Label: GPE
-Sentence: We implement an application in Hardware or Software level
-
+Sentence: The main components of a computer Principle of Equivalence of Hardware and Software
+Anything that can be done with software can also be done with hardware, and anything that can be done with hardware can also be done with software
+We implement an application in Hardware or Software level
+Our knowledge of computer organization and architecture will help us to make the best choice
 
 Entity: Computer Hardware
 Label: ORG
 Sentence: Computer Hardware main components At the most basic level, a computer is a device consisting of 3 pieces:
-
+A processor to interpret and execute programs
+A memory to store both data and programs
+A mechanism for transferring data to and from the outside world
 
 Entity: Central Processing Unit
 Label: ORG
 Sentence: Central Processing Unit (CPU)
-
-The central processing unit (CPU) is responsible for fetching the program instructions, decoding each instruction that is fetched, and performing the indicated sequence of operations on the correct data.
 
 Entity: CPU
 Label: ORG
 Sentence: Central Processing Unit (CPU)
-
-The central processing unit (CPU) is responsible for fetching the program instructions, decoding each instruction that is fetched, and performing the indicated sequence of operations on the correct data.
-
-Entity: 
-Label: PERSON
-Sentence: Central Processing Unit (CPU)
-
-The central processing unit (CPU) is responsible for fetching the program instructions, decoding each instruction that is fetched, and performing the indicated sequence of operations on the correct data.
 
 Entity: CPU
 Label: ORG
-Sentence: Central Processing Unit (CPU)
-
-The central processing unit (CPU) is responsible for fetching the program instructions, decoding each instruction that is fetched, and performing the indicated sequence of operations on the correct data.
-
-Entity: CPU
-Label: ORG
-Sentence: 
-CPU acts like the “brain” of a computer system.
+Sentence: The central processing unit (CPU) is responsible for fetching the program instructions, decoding each instruction that is fetched, and performing the indicated sequence of operations on the correct data.
 
 Entity: CPU
 Label: ORG
 Sentence: All computers have a CPU that can be divided into two pieces.
 
-Entity: 
+Entity: CPU
+Label: ORG
+Sentence: The second CPU component is the control unit, a module responsible for sequencing operations and making sure the correct data are where they need to be at the correct time.
+
+Entity: CPU
+Label: ORG
+Sentence: Register
+Register is a small, very fast storage area inside CPU.
+
+Entity: For
 Label: PERSON
-Sentence: 
-The second CPU component is the control unit, a module responsible for sequencing operations and making sure the correct data are where they need to be at the correct time.
-
-Entity: CPU
-Label: ORG
-Sentence: 
-The second CPU component is the control unit, a module responsible for sequencing operations and making sure the correct data are where they need to be at the correct time.
-
-Entity: Register
-
-Register
-Label: ORG
-Sentence: Register
-
-Register is a small, very fast storage area inside CPU.
-
-Entity: CPU
-Label: ORG
-Sentence: Register
-
-Register is a small, very fast storage area inside CPU.
+Sentence: For instance, when a ALU is commanded to calculate A*(B+C), ALU needs to calculate B+C first, then ALU need to store the result for a moment and use the result to multiply A.
+It is faster for ALU to access register than store the data in memory units.
 
 Entity: A*(B+C
 Label: PRODUCT
-Sentence: 
-For instance, when a ALU is commanded to calculate A*(B+C), ALU needs to calculate B+C first, then ALU need to store the result for a moment and use the result to multiply A.
-
-It is faster for ALU to access register than store the data in memory units.
+Sentence: For instance, when a ALU is commanded to calculate A*(B+C), ALU needs to calculate B+C first, then ALU need to store the result for a moment and use the result to multiply A.
+It is faster for ALU to access register than store the data in memory units.
 
 Entity: A.
-
+It
 Label: PERSON
-Sentence: 
-For instance, when a ALU is commanded to calculate A*(B+C), ALU needs to calculate B+C first, then ALU need to store the result for a moment and use the result to multiply A.
-
-It is faster for ALU to access register than store the data in memory units.
+Sentence: For instance, when a ALU is commanded to calculate A*(B+C), ALU needs to calculate B+C first, then ALU need to store the result for a moment and use the result to multiply A.
+It is faster for ALU to access register than store the data in memory units.
 
 Entity: Register
-
 Label: ORG
 Sentence: Four types of Register
-
-MAR (memory address register): store memory that currently be accessed inside RAM
-
-MDR/MBR (memory data/buffer register): store data from memory
-
-Accumulator (A register): a register stores immediate result from ALU
-
-Program Counter (PC): store the address of the next instruction
-
-Entity: MAR
-Label: ORG
-Sentence: Four types of Register
-
-MAR (memory address register): store memory that currently be accessed inside RAM
-
-MDR/MBR (memory data/buffer register): store data from memory
-
-Accumulator (A register): a register stores immediate result from ALU
-
-Program Counter (PC): store the address of the next instruction
+MAR (memory address register): store memory that currently be accessed inside RAM
+MDR/MBR (memory data/buffer register): store data from memory
+Accumulator (A register): a register stores immediate result from ALU
+Program Counter (PC): store the address of the next instruction
 
 Entity: RAM
 Label: ORG
 Sentence: Four types of Register
-
-MAR (memory address register): store memory that currently be accessed inside RAM
-
-MDR/MBR (memory data/buffer register): store data from memory
-
-Accumulator (A register): a register stores immediate result from ALU
-
-Program Counter (PC): store the address of the next instruction
+MAR (memory address register): store memory that currently be accessed inside RAM
+MDR/MBR (memory data/buffer register): store data from memory
+Accumulator (A register): a register stores immediate result from ALU
+Program Counter (PC): store the address of the next instruction
 
-Entity: 
-Accumulator
-Label: WORK_OF_ART
+Entity: MBR
+Label: ORG
 Sentence: Four types of Register
-
-MAR (memory address register): store memory that currently be accessed inside RAM
-
-MDR/MBR (memory data/buffer register): store data from memory
-
-Accumulator (A register): a register stores immediate result from ALU
-
-Program Counter (PC): store the address of the next instruction
+MAR (memory address register): store memory that currently be accessed inside RAM
+MDR/MBR (memory data/buffer register): store data from memory
+Accumulator (A register): a register stores immediate result from ALU
+Program Counter (PC): store the address of the next instruction
+
+Entity: Program Counter
+Label: PERSON
+Sentence: Four types of Register
+MAR (memory address register): store memory that currently be accessed inside RAM
+MDR/MBR (memory data/buffer register): store data from memory
+Accumulator (A register): a register stores immediate result from ALU
+Program Counter (PC): store the address of the next instruction
 
 Entity: Control Unit
 Label: ORG
 Sentence: Control Unit (CU)
-
-CU acts like a manager in a computer.
+CU acts like a manager in a computer.
 
 Entity: CU
 Label: ORG
 Sentence: Control Unit (CU)
-
-CU acts like a manager in a computer.
-
-Entity: CU
-Label: ORG
-Sentence: Control Unit (CU)
-
-CU acts like a manager in a computer.
-
-Entity: CU
-Label: ORG
-Sentence: 
-CU receives orders from RAM in the form of instruction and decode (break) that instruction down into specific commands for other components inside computer system.
+CU acts like a manager in a computer.
 
 Entity: RAM
 Label: ORG
-Sentence: 
-CU receives orders from RAM in the form of instruction and decode (break) that instruction down into specific commands for other components inside computer system.
-
-Entity: 
-Together
-Label: WORK_OF_ART
-Sentence: 
-It directs the data flow and the operation of the ALU.
-
-Together, these components perform the tasks of the CPU: fetching instructions, decoding them, and finally performing the indicated sequence of operations.
+Sentence: CU receives orders from RAM in the form of instruction and decode (break) that instruction down into specific commands for other components inside computer system.
 
 Entity: CPU
 Label: ORG
-Sentence: 
-It directs the data flow and the operation of the ALU.
-
-Together, these components perform the tasks of the CPU: fetching instructions, decoding them, and finally performing the indicated sequence of operations.
+Sentence: Together, these components perform the tasks of the CPU: fetching instructions, decoding them, and finally performing the indicated sequence of operations.
 
 Entity: CPU
 Label: ORG
 Sentence: How a CPU works?
+1.
+CU turn on enable wire of Instruction Address Register(Program Counter) to allow the next Instruction address to flows to RAM.
 
 Entity: CU
 Label: ORG
-Sentence: 1. CU turn on enable wire of Instruction Address Register(Program
+Sentence: How a CPU works?
+1.
+CU turn on enable wire of Instruction Address Register(Program Counter) to allow the next Instruction address to flows to RAM.
 
-Entity: Instruction Address Register(Program
+Entity: Instruction Address Register(Program Counter
 Label: ORG
-Sentence: 1. CU turn on enable wire of Instruction Address Register(Program
+Sentence: How a CPU works?
+1.
+CU turn on enable wire of Instruction Address Register(Program Counter) to allow the next Instruction address to flows to RAM.
 
 Entity: RAM
 Label: ORG
-Sentence: Counter) to allow the next Instruction address to flows to RAM.
+Sentence: How a CPU works?
+1.
+CU turn on enable wire of Instruction Address Register(Program Counter) to allow the next Instruction address to flows to RAM.
 
 Entity: Memory Address Register
 Label: ORG
-Sentence: 2. Instruction address first goes to Memory Address Register which only tells RAM what address the CPU wants next.
+Sentence: 2.
+Instruction address first goes to Memory Address Register which only tells RAM what address the CPU wants next.
 
 Entity: RAM
 Label: ORG
-Sentence: 2. Instruction address first goes to Memory Address Register which only tells RAM what address the CPU wants next.
+Sentence: 2.
+Instruction address first goes to Memory Address Register which only tells RAM what address the CPU wants next.
 
 Entity: CPU
 Label: ORG
-Sentence: 2. Instruction address first goes to Memory Address Register which only tells RAM what address the CPU wants next.
+Sentence: 2.
+Instruction address first goes to Memory Address Register which only tells RAM what address the CPU wants next.
 
 Entity: CU
 Label: ORG
@@ -233,11 +216,13 @@ Sentence: CU turns on the enable RAM wire.
 
 Entity: Memory Data Register(buffer
 Label: ORG
-Sentence: Then data goes to Memory Data Register(buffer) from RAM via data bus.
+Sentence: 3.
+Then data goes to Memory Data Register(buffer) from RAM via data bus.
 
 Entity: RAM
 Label: ORG
-Sentence: Then data goes to Memory Data Register(buffer) from RAM via data bus.
+Sentence: 3.
+Then data goes to Memory Data Register(buffer) from RAM via data bus.
 
 Entity: Instruction Register
 Label: ORG
@@ -245,7 +230,8 @@ Sentence: Then data (instruction) goes to Instruction Register.
 
 Entity: CU
 Label: ORG
-Sentence: 4. CU turns on the set Instruction Register(store instruction) wire.
+Sentence: 4.
+CU turns on the set Instruction Register(store instruction) wire.
 
 Entity: CU
 Label: ORG
@@ -262,6 +248,7 @@ Sentence: CU decodes instruction, tells ALU the type of operation ALU need to pe
 Entity: CPU
 Label: ORG
 Sentence: How a CPU works?
+5.
 
 Entity: CU
 Label: ORG
@@ -277,31 +264,47 @@ Sentence: CU turns on the enable wire of Accumulator to instruct Accumulator to 
 
 Entity: CU
 Label: ORG
-Sentence: 6. CU send address to MAR again and points out an address in RAM.
+Sentence: 6.
+CU send address to MAR again and points out an address in RAM.
 
 Entity: MAR
 Label: ORG
-Sentence: 6. CU send address to MAR again and points out an address in RAM.
+Sentence: 6.
+CU send address to MAR again and points out an address in RAM.
 
 Entity: RAM
 Label: ORG
-Sentence: 6. CU send address to MAR again and points out an address in RAM.
+Sentence: 6.
+CU send address to MAR again and points out an address in RAM.
 
 Entity: Register
 Label: ORG
 Sentence: The result stored temporarily in A Register will go to the RAM via data bus.
+8.
+Data will be stored in the specified address in RAM.
 
 Entity: RAM
 Label: ORG
 Sentence: The result stored temporarily in A Register will go to the RAM via data bus.
+8.
+Data will be stored in the specified address in RAM.
+
+Entity: Data
+Label: ORG
+Sentence: The result stored temporarily in A Register will go to the RAM via data bus.
+8.
+Data will be stored in the specified address in RAM.
 
 Entity: RAM
 Label: ORG
-Sentence: Data will be stored in the specified address in RAM.
+Sentence: The result stored temporarily in A Register will go to the RAM via data bus.
+8.
+Data will be stored in the specified address in RAM.
 
 Entity: CPU
 Label: ORG
-Sentence: CPU is ready for the next instruction.
+Sentence: 9.
+CPU is ready for the next instruction.
 
 Entity: CPU
 Label: ORG
@@ -316,306 +319,209 @@ Label: DATE
 Sentence: The address of these locations varies from 0 to 65535.
 
 Entity: Input / Output Devices
-
-Input
 Label: ORG
 Sentence: Input / Output Devices
-
-Input and output devices allow the computer system to interact with the outside world by moving data into and out of the system.
-
-Input/output devices are usually called I/O devices.
+Input and output devices allow the computer system to interact with the outside world by moving data into and out of the system.
+
+Entity: For
+Label: PERSON
+Sentence: For example, the speakers of a multimedia computer system are directly connected to a device controller called an audio card (such as a SoundBlaster), which in turn is connected to the rest of the system.
 
 Entity: SoundBlaster
 Label: PRODUCT
-Sentence: 
-For example, the speakers of a multimedia computer system are directly connected to a device controller called an audio card (such as a SoundBlaster), which in turn is connected to the rest of the system.
+Sentence: For example, the speakers of a multimedia computer system are directly connected to a device controller called an audio card (such as a SoundBlaster), which in turn is connected to the rest of the system.
 
-Entity: 
-Label: PERSON
+Entity: Graphics
+Label: LOC
 Sentence: Some input devices are:
-
-Keyboard
-
-Mouse
-
-Microphone
-
-Bar code reader
-
-Graphics tablet
-
-Web Camera
-
-Scanner
-
-Joystick
+Keyboard
+Mouse
+Microphone
+Bar code reader
+Graphics tablet
+Web Camera
+Scanner
+Joystick
 
-Entity: Keyboard
-
-Mouse
-
-Microphone
-
-Bar
-Label: PERSON
-Sentence: Some input devices are:
-
-Keyboard
-
-Mouse
-
-Microphone
-
-Bar code reader
-
-Graphics tablet
-
-Web Camera
-
-Scanner
-
-Joystick
-
-Entity: 
-Graphics
-Label: ORG
-Sentence: Some input devices are:
-
-Keyboard
-
-Mouse
-
-Microphone
-
-Bar code reader
-
-Graphics tablet
-
-Web Camera
-
-Scanner
-
-Joystick
-
-Entity: Joystick
-Label: PRODUCT
-Sentence: Some input devices are:
-
-Keyboard
-
-Mouse
-
-Microphone
-
-Bar code reader
-
-Graphics tablet
-
-Web Camera
-
-Scanner
-
-Joystick
-
-Entity: 
-Projector
-Label: ORG
-Sentence: Some output devices are:
-
-Monitor
-
-Printer
-
-Speaker
-
-Projector
-
-Entity: External Hard Drive: Can receive
+Entity: Web Camera
 Label: WORK_OF_ART
-Sentence: 
-External Hard Drive: Can receive data from a computer (input) and send data to a computer (output).
+Sentence: Some input devices are:
+Keyboard
+Mouse
+Microphone
+Bar code reader
+Graphics tablet
+Web Camera
+Scanner
+Joystick
 
-Entity: Aim
-
-Establish
+Entity: Speaker
+Label: ORG
+Sentence: Monitor
+Printer
+Speaker
+Projector
+
+Entity: External Hard Drive: Can receive
+Label: WORK_OF_ART
+Sentence: External Hard Drive: Can receive data from a computer (input) and send data to a computer (output).
+
+Entity: Flash Drive
 Label: PERSON
-Sentence: Aim
-
-Establish common guide lines for a particular type of equipment to ensure a “worldwide”1 interoperability (compatibility)
+Sentence: USB Flash Drive: Similar to an external hard drive, it can both receive and send data.
 
-Entity: 
-ISO (International Organization for Standardization
+Entity: International Organization for Standardization
 Label: ORG
 Sentence: Some international standards organizations
-
-ISO (International Organization for Standardization)
-
-Develops and publishes international standards across various industries, including computing and technology.
+ISO (International Organization for Standardization)
+Develops and publishes international standards across various industries, including computing and technology.
 
-Entity: 
-Develops
+Entity: Develops
 Label: ORG
 Sentence: Some international standards organizations
-
-ISO (International Organization for Standardization)
-
-Develops and publishes international standards across various industries, including computing and technology.
-
-Entity: 
-IEC
-Label: ORG
-Sentence: 
-IEC (International Electrotechnical Commission)
-
-Focuses on international standards for electrical, electronic, and related technologies.
+ISO (International Organization for Standardization)
+Develops and publishes international standards across various industries, including computing and technology.
 
 Entity: International Electrotechnical Commission
 Label: ORG
-Sentence: 
-IEC (International Electrotechnical Commission)
-
-Focuses on international standards for electrical, electronic, and related technologies.
+Sentence: IEC (International Electrotechnical Commission)
+Focuses on international standards for electrical, electronic, and related technologies.
 
 Entity: IEEE (Institute of Electrical and Electronic Engineers
 Label: ORG
 Sentence: Some international standards organizations IEEE (Institute of Electrical and Electronic Engineers)
-
-sets standards for various computer components, signaling protocols, and data representation ITU (International Telecommunications Union)
+sets standards for various computer components, signaling protocols, and data representation ITU (International Telecommunications Union)
+Sets standards for telecommunications systems, including telephone, telegraph, and data communication systems
 
 Entity: ITU (International Telecommunications Union
 Label: ORG
 Sentence: Some international standards organizations IEEE (Institute of Electrical and Electronic Engineers)
-
-sets standards for various computer components, signaling protocols, and data representation ITU (International Telecommunications Union)
+sets standards for various computer components, signaling protocols, and data representation ITU (International Telecommunications Union)
+Sets standards for telecommunications systems, including telephone, telegraph, and data communication systems
+
+Entity: ANSI
+Label: GPE
+Sentence: Some international standards organizations
+ANSI (American National Standards Institute)
+Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
+ETSI (European Telecommunications Standards Institute)
+Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
 
 Entity: American National Standards Institute
 Label: ORG
 Sentence: Some international standards organizations
-
-ANSI (American National Standards Institute)
-
-Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
-
-ETSI (European Telecommunications Standards Institute)
-
-Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
-
-Entity: 
-Oversees
-Label: ORG
-Sentence: Some international standards organizations
-
-ANSI (American National Standards Institute)
-
-Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
-
-ETSI (European Telecommunications Standards Institute)
-
-Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
+ANSI (American National Standards Institute)
+Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
+ETSI (European Telecommunications Standards Institute)
+Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
 
 Entity: U.S.
 Label: GPE
 Sentence: Some international standards organizations
-
-ANSI (American National Standards Institute)
-
-Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
-
-ETSI (European Telecommunications Standards Institute)
-
-Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
+ANSI (American National Standards Institute)
+Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
+ETSI (European Telecommunications Standards Institute)
+Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
 
 Entity: European Telecommunications Standards Institute
 Label: ORG
 Sentence: Some international standards organizations
-
-ANSI (American National Standards Institute)
-
-Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
-
-ETSI (European Telecommunications Standards Institute)
-
-Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
+ANSI (American National Standards Institute)
+Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
+ETSI (European Telecommunications Standards Institute)
+Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
 
 Entity: CEN
 Label: ORG
 Sentence: Some international standards organizations CEN (European Committee for Standardization)
-
-Develops standards in various sectors, including information technology
+Develops standards in various sectors, including information technology
 
 Entity: European Committee for Standardization
 Label: ORG
 Sentence: Some international standards organizations CEN (European Committee for Standardization)
-
-Develops standards in various sectors, including information technology
+Develops standards in various sectors, including information technology
 
 Entity: Historical Development of Computers Generation Zero
 Label: ORG
 Sentence: Historical Development of Computers Generation Zero: Mechanical Calculating Machines (1642 – 1945)
-
 
 Entity: Calculating Machines
 Label: PERSON
 Sentence: Historical Development of Computers Generation Zero: Mechanical Calculating Machines (1642 – 1945)
-
 
 Entity: 1642 – 1945
 Label: DATE
 Sentence: Historical Development of Computers Generation Zero: Mechanical Calculating Machines (1642 – 1945)
-
 
 Entity: 1642 – 1945
 Label: DATE
 Sentence: Historical Development of Computers Generation Zero: Mechanical Calculating Machines (1642 – 1945)
-
 
 Entity: Historical Development of Computers First Generation: Vacuum
 Label: ORG
 Sentence: Historical Development of Computers First Generation: Vacuum tube computers (1945–1953)
-
+Use of electrical/electronic technology (much faster than mechanical technology)
+Invent binary machines built from vacuum tubes
+Invent vaccum tubes diodes and triodes
+Disadvantages: Bulky systems, Power consumption and heat dissipation.
 
 Entity: 1945–1953
 Label: DATE
 Sentence: Historical Development of Computers First Generation: Vacuum tube computers (1945–1953)
-
+Use of electrical/electronic technology (much faster than mechanical technology)
+Invent binary machines built from vacuum tubes
+Invent vaccum tubes diodes and triodes
+Disadvantages: Bulky systems, Power consumption and heat dissipation.
 
 Entity: Historical Development of Computers
 Label: ORG
 Sentence: Historical Development of Computers The Second Generation: Transistorized Computers (1954–1965)
-
-
-Entity: Transistors
-Label: ORG
-Sentence: Transistors revolutionize computers • Transistors consume less power than vacuum tubes, are smaller, and work more reliably, • the circuitry in computers became smaller and more reliable.
+Transistors revolutionize computers • Transistors consume less power than vacuum tubes, are smaller, and work more reliably, • the circuitry in computers became smaller and more reliable.
 
 Entity: • Transistors
 Label: PRODUCT
-Sentence: Transistors revolutionize computers • Transistors consume less power than vacuum tubes, are smaller, and work more reliably, • the circuitry in computers became smaller and more reliable.
+Sentence: Historical Development of Computers The Second Generation: Transistorized Computers (1954–1965)
+Transistors revolutionize computers • Transistors consume less power than vacuum tubes, are smaller, and work more reliably, • the circuitry in computers became smaller and more reliable.
 
 Entity: 1954–1965
 Label: DATE
 Sentence: Historical Development of Computers The Second Generation: Transistorized Computers (1954–1965)
-
+Transistors revolutionize computers • Transistors consume less power than vacuum tubes, are smaller, and work more reliably, • the circuitry in computers became smaller and more reliable.
 
 Entity: Historical Development of Computers The Third Generation: Integrated Circuit Computers
 Label: ORG
 Sentence: Historical Development of Computers The Third Generation: Integrated Circuit Computers (1965–1980)
-
+Integrating multiple transistors in a single silicon/germanium chip
+Explosion in computer use
+Computers became faster, smaller, and cheaper, bringing huge gains in processing power
 
 Entity: 1965–1980
 Label: DATE
 Sentence: Historical Development of Computers The Third Generation: Integrated Circuit Computers (1965–1980)
-
+Integrating multiple transistors in a single silicon/germanium chip
+Explosion in computer use
+Computers became faster, smaller, and cheaper, bringing huge gains in processing power
 
 Entity: Historical Development of Computers
 Label: ORG
 Sentence: Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
-
+More integration, more transistors on a single silicon chip
+Computers became smaller: Appearance of micro- computers
+Increasing the processing power of all computers types (also supercomputers and main frame computers)
 
 Entity: 1980
 Label: DATE
 Sentence: Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
-
+More integration, more transistors on a single silicon chip
+Computers became smaller: Appearance of micro- computers
+Increasing the processing power of all computers types (also supercomputers and main frame computers)
+
+Entity: Increasing
+Label: DATE
+Sentence: Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
+More integration, more transistors on a single silicon chip
+Computers became smaller: Appearance of micro- computers
+Increasing the processing power of all computers types (also supercomputers and main frame computers)
 
 Entity: Historical Development of Computers
 Label: ORG
@@ -632,77 +538,70 @@ Sentence: Historical Development of Computers Size comparison Vacuum Tube Transi
 Entity: Historical Development of Computers Moore’s Law
 Label: ORG
 Sentence: Historical Development of Computers Moore’s Law (Gordon Moore – Intel Founder, 1965)
-
 
 Entity: Gordon Moore
 Label: PERSON
 Sentence: Historical Development of Computers Moore’s Law (Gordon Moore – Intel Founder, 1965)
-
 
 Entity: 1965
 Label: DATE
 Sentence: Historical Development of Computers Moore’s Law (Gordon Moore – Intel Founder, 1965)
-
 
 Entity: every 18 months
 Label: DATE
-Sentence: The density of transistors in an integrated circuit doubles every 18 months (1.5 year).
+Sentence: The density of transistors in an integrated circuit doubles every 18 months (1.5 year).
 
 Entity: 1.5 year
 Label: DATE
-Sentence: The density of transistors in an integrated circuit doubles every 18 months (1.5 year).
+Sentence: The density of transistors in an integrated circuit doubles every 18 months (1.5 year).
 
 Entity: Rock’s Law
 Label: ORG
 Sentence: Rock’s Law (early Intel capitalist Arthur Rock)
-
 
 Entity: Intel
 Label: ORG
 Sentence: Rock’s Law (early Intel capitalist Arthur Rock)
-
 
 Entity: Arthur Rock
 Label: PERSON
 Sentence: Rock’s Law (early Intel capitalist Arthur Rock)
-
 
 Entity: every four years
 Label: DATE
-Sentence: The cost of capital equipment to build semiconductors will double every four years
+Sentence: The cost of capital equipment to build semiconductors will double every four years
 
 Entity: Historical Development of Computers
 Label: ORG
 Sentence: Historical Development of Computers
-
+If Moore’s Law is to hold, Rock’s Law must fall or computers must shift to a radically different technology
+Research into new computing paradigms has been proceeding in earnest during the last half decade
 
 Entity: Rock’s Law
 Label: ORG
-Sentence: If Moore’s Law is to hold, Rock’s Law must fall or computers must shift to a radically different technology
-
-
-Entity: Research
-Label: ORG
-Sentence: Research into new computing paradigms has been proceeding in earnest during the last half decade
+Sentence: Historical Development of Computers
+If Moore’s Law is to hold, Rock’s Law must fall or computers must shift to a radically different technology
+Research into new computing paradigms has been proceeding in earnest during the last half decade
 
 Entity: the last half decade
 Label: DATE
-Sentence: Research into new computing paradigms has been proceeding in earnest during the last half decade
+Sentence: Historical Development of Computers
+If Moore’s Law is to hold, Rock’s Law must fall or computers must shift to a radically different technology
+Research into new computing paradigms has been proceeding in earnest during the last half decade
 
 Entity: The Computer Level Hierarchy
 Label: ORG
 Sentence: The Computer Level Hierarchy
-
+The user executes programs on a PC (Paint, word files, games, etc.)
 
 Entity: The Computer Level Hierarchy
 Label: ORG
 Sentence: The Computer Level Hierarchy
-
+Imagine the machine (computer) as a hierarchy of levels, in which each level has a specific function.
 
 Entity: • User
 Label: PRODUCT
-Sentence: The highest level – Level 6 – is the “user’s level” • Level 6 is composed of applications • User runs programs such as word processors, graphics packages, or games.
-
+Sentence: The highest level – Level 6 – is the “user’s level” • Level 6 is composed of applications • User runs programs such as word processors, graphics packages, or games.
 
 Entity: The Computer Level Hierarchy
 Label: ORG
@@ -711,171 +610,158 @@ Sentence: The Computer Level Hierarchy
 Entity: The Computer Level Hierarchy
 Label: ORG
 Sentence: The Computer Level Hierarchy Level 5: High-Level Language Level
-
+Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
+Programmers write programs at this level.
+Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
 
 Entity: C++
 Label: PERSON
-Sentence: Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
-
+Sentence: The Computer Level Hierarchy Level 5: High-Level Language Level
+Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
+Programmers write programs at this level.
+Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
 
 Entity: FORTRAN
 Label: ORG
-Sentence: Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
-
+Sentence: The Computer Level Hierarchy Level 5: High-Level Language Level
+Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
+Programmers write programs at this level.
+Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
 
 Entity: Lisp, Pascal
 Label: ORG
-Sentence: Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
-
+Sentence: The Computer Level Hierarchy Level 5: High-Level Language Level
+Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
+Programmers write programs at this level.
+Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
 
 Entity: Prolog
 Label: PERSON
-Sentence: Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
-
-
-Entity: Compilers
-Label: PERSON
-Sentence: Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
+Sentence: The Computer Level Hierarchy Level 5: High-Level Language Level
+Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
+Programmers write programs at this level.
+Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
 
 Entity: Assembly
 Label: ORG
-Sentence: Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
+Sentence: The Computer Level Hierarchy Level 5: High-Level Language Level
+Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
+Programmers write programs at this level.
+Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
 
 Entity: The Computer Level Hierarchy
 Label: ORG
 Sentence: The Computer Level Hierarchy Level 4: Assembly Language Level
-
+More “machine dependent” language.
 
 Entity: Assembly Language Level
 Label: ORG
 Sentence: The Computer Level Hierarchy Level 4: Assembly Language Level
-
+More “machine dependent” language.
 
-Entity: Assembly
-Label: ORG
-Sentence: Assembly language is then one to one translated to machine language (one assembly language instruction is translated to exactly one machine language instruction).
+Entity: More
+Label: PRODUCT
+Sentence: The Computer Level Hierarchy Level 4: Assembly Language Level
+More “machine dependent” language.
 
 Entity: The Computer Level Hierarchy
 Label: ORG
 Sentence: The Computer Level Hierarchy Level 3: System Software Level
- Deals with operating system instructions (multiprogramming, protecting memory, synchronizing processes, and various other important functions)
-
-
-Entity: Instructions
-Label: PERSON
-Sentence: Instructions translated from assembly language to machine language are passed through this level unmodified
+Deals with operating system instructions (multiprogramming, protecting memory, synchronizing processes, and various other important functions)
+Instructions translated from assembly language to machine language are passed through this level unmodified
 
 Entity: The Computer Level Hierarchy
 Label: ORG
 Sentence: The Computer Level Hierarchy Level 2: Instruction Set Architecture (ISA), or Machine Level
-
+Machine language recognized by the particular architecture of the computer system
+Programs written in machine language can be executed directly by the electronic circuits without any interpreters, translators, or compilers.
 
 Entity: ISA
 Label: ORG
 Sentence: The Computer Level Hierarchy Level 2: Instruction Set Architecture (ISA), or Machine Level
-
-
-Entity: Programs
-Label: PERSON
-Sentence: Programs written in machine language can be executed directly by the electronic circuits without any interpreters, translators, or compilers.
+Machine language recognized by the particular architecture of the computer system
+Programs written in machine language can be executed directly by the electronic circuits without any interpreters, translators, or compilers.
 
 Entity: The Computer Level Hierarchy
 Label: ORG
 Sentence: The Computer Level Hierarchy Level 1: The Control Level
- Is where a control unit do its job
-
-Receives machine instructions from the level above
-
-decodes and executes those instructions properly
-
-Moves data to where and when it should be
-
-
-Entity: Moves
-Label: ORG
-Sentence: The Computer Level Hierarchy Level 1: The Control Level
- Is where a control unit do its job
-
-Receives machine instructions from the level above
-
-decodes and executes those instructions properly
-
-Moves data to where and when it should be
-
+Is where a control unit do its job Receives machine instructions from the level above decodes and executes those instructions properly Moves data to where and when it should be
+The control unit interprets the machine instructions
 
 Entity: The Computer Level Hierarchy
 Label: ORG
 Sentence: The Computer Level Hierarchy Level 0: The Digital Logic Level
- is where we find the physical components of the computer system: the gates and wires
+is where we find the physical components of the computer system: the gates and wires
 
 Entity: The Von Neumann Model
 Label: PERSON
 Sentence: The Von Neumann Model
-
+A computer architecture model published by a famous Hungarian mathematician named John von Neumann
+The idea is to store programs’ instructions inside a main memory in order to avoid rewiring the system each time it had a new problem to solve, or an old one to debug.
 
 Entity: John von Neumann
 Label: PERSON
-Sentence: A computer architecture model published by a famous Hungarian mathematician named John von Neumann
-
+Sentence: The Von Neumann Model
+A computer architecture model published by a famous Hungarian mathematician named John von Neumann
+The idea is to store programs’ instructions inside a main memory in order to avoid rewiring the system each time it had a new problem to solve, or an old one to debug.
 
 Entity: Neumann
 Label: ORG
-Sentence: All stored-program computers have come to be known as von Neumann systems using the von Neumann architecture
+Sentence: All stored-program computers have come to be known as von Neumann systems using the von Neumann architecture
 
 Entity: Neumann
 Label: ORG
-Sentence: All stored-program computers have come to be known as von Neumann systems using the von Neumann architecture
+Sentence: All stored-program computers have come to be known as von Neumann systems using the von Neumann architecture
 
 Entity: The Von Neumann Model
 Label: PERSON
 Sentence: The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics
-
+Consists of three hardware systems
+A central processing unit (CPU) with a control unit, an arithmetic logic unit (ALU), registers (small storage areas), and a program counter;
 
 Entity: The Von Neumann
 Label: PRODUCT
 Sentence: The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics
-
+Consists of three hardware systems
+A central processing unit (CPU) with a control unit, an arithmetic logic unit (ALU), registers (small storage areas), and a program counter;
 
 Entity: CPU
 Label: ORG
-Sentence: A central processing unit (CPU) with a control unit, an arithmetic logic unit (ALU), registers (small storage areas), and a program counter;
+Sentence: The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics
+Consists of three hardware systems
+A central processing unit (CPU) with a control unit, an arithmetic logic unit (ALU), registers (small storage areas), and a program counter;
 
 Entity: The Von Neumann Model
 Label: PERSON
-Sentence: The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics
-
-a main-memory system, which holds programs that control the computer’s operation;
-
-and an I/O system.
-
+Sentence: The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics 
 
 Entity: The Von Neumann
 Label: PRODUCT
-Sentence: The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics
-
-a main-memory system, which holds programs that control the computer’s operation;
-
-and an I/O system.
-
+Sentence: The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics 
 
 Entity: CPU
 Label: ORG
-Sentence: Contains a single path, between the main memory system and the control unit of the CPU
+Sentence: Capacity to carry out sequential instruction processing
+Contains a single path, between the main memory system and the control unit of the CPU
 
 Entity: The Von Neumann Model
 Label: PERSON
 Sentence: The Von Neumann Model
-
+Program instructions are stored inside the main memory
+The machine runs the programs sequentially (instruction per instruction – machine instruction)
+Each machine instruction is fetched, decoded and executed during one cycle known as the von Neumann execution cycle (also called the fetch- decode-execute cycle)
 
 Entity: Neumann
 Label: ORG
-Sentence: Each machine instruction is fetched, decoded and executed during one cycle known as the von Neumann execution cycle (also called the fetch- decode-execute cycle)
+Sentence: The Von Neumann Model
+Program instructions are stored inside the main memory
+The machine runs the programs sequentially (instruction per instruction – machine instruction)
+Each machine instruction is fetched, decoded and executed during one cycle known as the von Neumann execution cycle (also called the fetch- decode-execute cycle)
 
 Entity: The Von Neumann Model One
 Label: PERSON
 Sentence: The Von Neumann Model One iteration of the cycle is as follows:
-
-1.
+1.
 
 Entity: CPU
 Label: ORG
