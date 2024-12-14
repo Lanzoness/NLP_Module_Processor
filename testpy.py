@@ -181,9 +181,20 @@ def save_questions_to_file(filename, multiple_choice_questions):
             file.write(f"\n{i}. {q['question']} \n(Answer: {q['answer']})\n")
             file.write("----------------------------")
 
+def save_entities_to_file(filename, entities_with_context):
+    """Saves entities and their corresponding sentences to a text file."""
+    with open(filename, "w", encoding="utf-8") as file:
+        for entity, label, sentence in entities_with_context:
+            file.write(f"Entity: {entity}\nLabel: {label}\nSentence: {sentence}\n\n")
+    print(f"Entities and sentences have been saved to {filename}")
+
 def main(pdf_path):
     text = extract_text_from_pdf(pdf_path)
     entities_with_context = extract_named_entities_with_context(text)
+
+    # Save entities and sentences to a file
+    entity_sentence_file = "entity_sentence.txt"
+    save_entities_to_file(entity_sentence_file, entities_with_context)
 
     # Generate questions
     multiple_choice_questions = generate_multiple_choice_questions(entities_with_context)
