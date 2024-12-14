@@ -1,11 +1,6 @@
 Entity: VS
 Label: PRODUCT
-Sentence: It includes many elements such as
-instruction sets and formats, data types, addressing modes, number and type of registers,
-…
-It helps us to answer the question: How do I design a computer?
-
-Overview of computer organization and architecture Computer organization VS architecture
+Sentence: Overview of computer organization and architecture Computer organization VS architecture
 The distinction between computer organization and computer architecture is not clear-cut.
 
 Entity: Software
@@ -17,18 +12,6 @@ Sentence: The main components of a computer From Software to Hardware
 We finally get down to machine level
 Machine level can be thought of as an algorithm implemented as an electronic device
 
-The main components of a computer Principle of Equivalence of Hardware and Software
-Anything that can be done with software can also be done with hardware, and anything that can be done with hardware can also be done with software
-We implement an application in Hardware or Software level
-Our knowledge of computer organization and architecture will help us to make the best choice
-
-Computer Hardware main components At the most basic level, a computer is a device consisting of 3 pieces:
-A processor to interpret and execute programs
-A memory to store both data and programs
-A mechanism for transferring data to and from the outside world
-
-Central Processing Unit (CPU)
-
 Entity: Hardware
 Label: ORG
 Sentence: The main components of a computer From Software to Hardware
@@ -37,18 +20,6 @@ Sentence: The main components of a computer From Software to Hardware
 Another algorithm runs this algorithm and another one runs that algorithm and so on
 We finally get down to machine level
 Machine level can be thought of as an algorithm implemented as an electronic device
-
-The main components of a computer Principle of Equivalence of Hardware and Software
-Anything that can be done with software can also be done with hardware, and anything that can be done with hardware can also be done with software
-We implement an application in Hardware or Software level
-Our knowledge of computer organization and architecture will help us to make the best choice
-
-Computer Hardware main components At the most basic level, a computer is a device consisting of 3 pieces:
-A processor to interpret and execute programs
-A memory to store both data and programs
-A mechanism for transferring data to and from the outside world
-
-Central Processing Unit (CPU)
 
 Entity: Java
 Label: PERSON
@@ -59,18 +30,6 @@ Sentence: The main components of a computer From Software to Hardware
 We finally get down to machine level
 Machine level can be thought of as an algorithm implemented as an electronic device
 
-The main components of a computer Principle of Equivalence of Hardware and Software
-Anything that can be done with software can also be done with hardware, and anything that can be done with hardware can also be done with software
-We implement an application in Hardware or Software level
-Our knowledge of computer organization and architecture will help us to make the best choice
-
-Computer Hardware main components At the most basic level, a computer is a device consisting of 3 pieces:
-A processor to interpret and execute programs
-A memory to store both data and programs
-A mechanism for transferring data to and from the outside world
-
-Central Processing Unit (CPU)
-
 Entity: Another
 Label: ORG
 Sentence: The main components of a computer From Software to Hardware
@@ -79,18 +38,6 @@ Sentence: The main components of a computer From Software to Hardware
 Another algorithm runs this algorithm and another one runs that algorithm and so on
 We finally get down to machine level
 Machine level can be thought of as an algorithm implemented as an electronic device
-
-The main components of a computer Principle of Equivalence of Hardware and Software
-Anything that can be done with software can also be done with hardware, and anything that can be done with hardware can also be done with software
-We implement an application in Hardware or Software level
-Our knowledge of computer organization and architecture will help us to make the best choice
-
-Computer Hardware main components At the most basic level, a computer is a device consisting of 3 pieces:
-A processor to interpret and execute programs
-A memory to store both data and programs
-A mechanism for transferring data to and from the outside world
-
-Central Processing Unit (CPU)
 
 Entity: We
 Label: PERSON
@@ -101,122 +48,34 @@ Sentence: The main components of a computer From Software to Hardware
 We finally get down to machine level
 Machine level can be thought of as an algorithm implemented as an electronic device
 
-The main components of a computer Principle of Equivalence of Hardware and Software
-Anything that can be done with software can also be done with hardware, and anything that can be done with hardware can also be done with software
-We implement an application in Hardware or Software level
-Our knowledge of computer organization and architecture will help us to make the best choice
-
-Computer Hardware main components At the most basic level, a computer is a device consisting of 3 pieces:
-A processor to interpret and execute programs
-A memory to store both data and programs
-A mechanism for transferring data to and from the outside world
-
-Central Processing Unit (CPU)
-
 Entity: We
 Label: PRODUCT
-Sentence: The main components of a computer From Software to Hardware
-Computer scientists design algorithms
-Computer scientists implement an algorithm by using high level programing language (Java, C, etc.)
-Another algorithm runs this algorithm and another one runs that algorithm and so on
-We finally get down to machine level
-Machine level can be thought of as an algorithm implemented as an electronic device
-
-The main components of a computer Principle of Equivalence of Hardware and Software
+Sentence: The main components of a computer Principle of Equivalence of Hardware and Software
 Anything that can be done with software can also be done with hardware, and anything that can be done with hardware can also be done with software
 We implement an application in Hardware or Software level
 Our knowledge of computer organization and architecture will help us to make the best choice
-
-Computer Hardware main components At the most basic level, a computer is a device consisting of 3 pieces:
-A processor to interpret and execute programs
-A memory to store both data and programs
-A mechanism for transferring data to and from the outside world
-
-Central Processing Unit (CPU)
 
 Entity: Hardware
 Label: GPE
-Sentence: The main components of a computer From Software to Hardware
-Computer scientists design algorithms
-Computer scientists implement an algorithm by using high level programing language (Java, C, etc.)
-Another algorithm runs this algorithm and another one runs that algorithm and so on
-We finally get down to machine level
-Machine level can be thought of as an algorithm implemented as an electronic device
-
-The main components of a computer Principle of Equivalence of Hardware and Software
+Sentence: The main components of a computer Principle of Equivalence of Hardware and Software
 Anything that can be done with software can also be done with hardware, and anything that can be done with hardware can also be done with software
 We implement an application in Hardware or Software level
 Our knowledge of computer organization and architecture will help us to make the best choice
-
-Computer Hardware main components At the most basic level, a computer is a device consisting of 3 pieces:
-A processor to interpret and execute programs
-A memory to store both data and programs
-A mechanism for transferring data to and from the outside world
-
-Central Processing Unit (CPU)
 
 Entity: Computer Hardware
 Label: ORG
-Sentence: The main components of a computer From Software to Hardware
-Computer scientists design algorithms
-Computer scientists implement an algorithm by using high level programing language (Java, C, etc.)
-Another algorithm runs this algorithm and another one runs that algorithm and so on
-We finally get down to machine level
-Machine level can be thought of as an algorithm implemented as an electronic device
-
-The main components of a computer Principle of Equivalence of Hardware and Software
-Anything that can be done with software can also be done with hardware, and anything that can be done with hardware can also be done with software
-We implement an application in Hardware or Software level
-Our knowledge of computer organization and architecture will help us to make the best choice
-
-Computer Hardware main components At the most basic level, a computer is a device consisting of 3 pieces:
+Sentence: Computer Hardware main components At the most basic level, a computer is a device consisting of 3 pieces:
 A processor to interpret and execute programs
 A memory to store both data and programs
 A mechanism for transferring data to and from the outside world
-
-Central Processing Unit (CPU)
 
 Entity: Central Processing Unit
 Label: ORG
-Sentence: The main components of a computer From Software to Hardware
-Computer scientists design algorithms
-Computer scientists implement an algorithm by using high level programing language (Java, C, etc.)
-Another algorithm runs this algorithm and another one runs that algorithm and so on
-We finally get down to machine level
-Machine level can be thought of as an algorithm implemented as an electronic device
-
-The main components of a computer Principle of Equivalence of Hardware and Software
-Anything that can be done with software can also be done with hardware, and anything that can be done with hardware can also be done with software
-We implement an application in Hardware or Software level
-Our knowledge of computer organization and architecture will help us to make the best choice
-
-Computer Hardware main components At the most basic level, a computer is a device consisting of 3 pieces:
-A processor to interpret and execute programs
-A memory to store both data and programs
-A mechanism for transferring data to and from the outside world
-
-Central Processing Unit (CPU)
+Sentence: Central Processing Unit (CPU)
 
 Entity: CPU
 Label: ORG
-Sentence: The main components of a computer From Software to Hardware
-Computer scientists design algorithms
-Computer scientists implement an algorithm by using high level programing language (Java, C, etc.)
-Another algorithm runs this algorithm and another one runs that algorithm and so on
-We finally get down to machine level
-Machine level can be thought of as an algorithm implemented as an electronic device
-
-The main components of a computer Principle of Equivalence of Hardware and Software
-Anything that can be done with software can also be done with hardware, and anything that can be done with hardware can also be done with software
-We implement an application in Hardware or Software level
-Our knowledge of computer organization and architecture will help us to make the best choice
-
-Computer Hardware main components At the most basic level, a computer is a device consisting of 3 pieces:
-A processor to interpret and execute programs
-A memory to store both data and programs
-A mechanism for transferring data to and from the outside world
-
-Central Processing Unit (CPU)
+Sentence: Central Processing Unit (CPU)
 
 Entity: CPU
 Label: ORG
@@ -229,11 +88,6 @@ Sentence: All computers have a CPU that can be divided into two pieces.
 Entity: CPU
 Label: ORG
 Sentence: The second CPU component is the control unit, a module responsible for sequencing operations and making sure the correct data are where they need to be at the correct time.
-
-Entity: Register
-Label: ORG
-Sentence: Register
-Register is a small, very fast storage area inside CPU.
 
 Entity: CPU
 Label: ORG
@@ -264,8 +118,6 @@ Sentence: Four types of Register
 Accumulator (A register): a register stores immediate result from ALU
 Program Counter (PC): store the address of the next instruction
 
-Control Unit (CU)
-
 Entity: RAM
 Label: ORG
 Sentence: Four types of Register
@@ -273,8 +125,6 @@ Sentence: Four types of Register
 MDR/MBR (memory data/buffer register): store data from memory
 Accumulator (A register): a register stores immediate result from ALU
 Program Counter (PC): store the address of the next instruction
-
-Control Unit (CU)
 
 Entity: MBR
 Label: ORG
@@ -284,8 +134,6 @@ Sentence: Four types of Register
 Accumulator (A register): a register stores immediate result from ALU
 Program Counter (PC): store the address of the next instruction
 
-Control Unit (CU)
-
 Entity: Program Counter
 Label: PERSON
 Sentence: Four types of Register
@@ -294,27 +142,15 @@ Sentence: Four types of Register
 Accumulator (A register): a register stores immediate result from ALU
 Program Counter (PC): store the address of the next instruction
 
-Control Unit (CU)
-
 Entity: Control Unit
 Label: ORG
-Sentence: Four types of Register
-MAR (memory address register): store memory that currently be accessed inside RAM
-MDR/MBR (memory data/buffer register): store data from memory
-Accumulator (A register): a register stores immediate result from ALU
-Program Counter (PC): store the address of the next instruction
-
-Control Unit (CU)
+Sentence: Control Unit (CU)
+CU acts like a manager in a computer.
 
 Entity: CU
 Label: ORG
-Sentence: Four types of Register
-MAR (memory address register): store memory that currently be accessed inside RAM
-MDR/MBR (memory data/buffer register): store data from memory
-Accumulator (A register): a register stores immediate result from ALU
-Program Counter (PC): store the address of the next instruction
-
-Control Unit (CU)
+Sentence: Control Unit (CU)
+CU acts like a manager in a computer.
 
 Entity: RAM
 Label: ORG
@@ -456,12 +292,6 @@ Entity: 0 to 65535
 Label: DATE
 Sentence: The address of these locations varies from 0 to 65535.
 
-Entity: Memory
-Primary
-Label: ORG
-Sentence: Memory
-Primary memory holds only those data and instructions on which the computer is currently working.
-
 Entity: Input / Output Devices
 Label: ORG
 Sentence: Input / Output Devices
@@ -489,8 +319,6 @@ Sentence: Some input devices are:
 Scanner
 Joystick
 
-Output device An output device is used to send data out of the system.
-
 Entity: Web Camera
 Label: WORK_OF_ART
 Sentence: Some input devices are:
@@ -503,18 +331,12 @@ Sentence: Some input devices are:
 Scanner
 Joystick
 
-Output device An output device is used to send data out of the system.
-
 Entity: Speaker
 Label: ORG
-Sentence: Some output devices are:
-Monitor
+Sentence: Monitor
 Printer
 Speaker
 Projector
-
-Combined Input/Output Devices
-Touchscreen: Acts as both an input device (when you touch it) and an output device (displaying information).
 
 Entity: External Hard Drive: Can receive
 Label: WORK_OF_ART
@@ -526,19 +348,13 @@ Sentence: USB Flash Drive: Similar to an external hard drive, it can both rec
 
 Entity: International Organization for Standardization
 Label: ORG
-Sentence: Aim
-Establish common guide lines for a particular type of equipment to ensure a “worldwide”1 interoperability (compatibility)
-
-Some international standards organizations
+Sentence: Some international standards organizations
 ISO (International Organization for Standardization)
 Develops and publishes international standards across various industries, including computing and technology.
 
 Entity: Develops
 Label: ORG
-Sentence: Aim
-Establish common guide lines for a particular type of equipment to ensure a “worldwide”1 interoperability (compatibility)
-
-Some international standards organizations
+Sentence: Some international standards organizations
 ISO (International Organization for Standardization)
 Develops and publishes international standards across various industries, including computing and technology.
 
@@ -553,58 +369,42 @@ Sentence: Some international standards organizations IEEE (Institute of Electric
 sets standards for various computer components, signaling protocols, and data representation ITU (International Telecommunications Union)
 Sets standards for telecommunications systems, including telephone, telegraph, and data communication systems
 
-Some international standards organizations
-ANSI (American National Standards Institute)
-Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
-ETSI
-
 Entity: ITU (International Telecommunications Union
 Label: ORG
 Sentence: Some international standards organizations IEEE (Institute of Electrical and Electronic Engineers)
 sets standards for various computer components, signaling protocols, and data representation ITU (International Telecommunications Union)
 Sets standards for telecommunications systems, including telephone, telegraph, and data communication systems
 
-Some international standards organizations
-ANSI (American National Standards Institute)
-Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
-ETSI
-
 Entity: ANSI
 Label: GPE
-Sentence: Some international standards organizations IEEE (Institute of Electrical and Electronic Engineers)
-sets standards for various computer components, signaling protocols, and data representation ITU (International Telecommunications Union)
-Sets standards for telecommunications systems, including telephone, telegraph, and data communication systems
-
-Some international standards organizations
+Sentence: Some international standards organizations
 ANSI (American National Standards Institute)
 Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
-ETSI
+ETSI (European Telecommunications Standards Institute)
+Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
 
 Entity: American National Standards Institute
 Label: ORG
-Sentence: Some international standards organizations IEEE (Institute of Electrical and Electronic Engineers)
-sets standards for various computer components, signaling protocols, and data representation ITU (International Telecommunications Union)
-Sets standards for telecommunications systems, including telephone, telegraph, and data communication systems
-
-Some international standards organizations
+Sentence: Some international standards organizations
 ANSI (American National Standards Institute)
 Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
-ETSI
+ETSI (European Telecommunications Standards Institute)
+Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
 
 Entity: U.S.
 Label: GPE
-Sentence: Some international standards organizations IEEE (Institute of Electrical and Electronic Engineers)
-sets standards for various computer components, signaling protocols, and data representation ITU (International Telecommunications Union)
-Sets standards for telecommunications systems, including telephone, telegraph, and data communication systems
-
-Some international standards organizations
+Sentence: Some international standards organizations
 ANSI (American National Standards Institute)
 Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
-ETSI
+ETSI (European Telecommunications Standards Institute)
+Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
 
 Entity: European Telecommunications Standards Institute
 Label: ORG
-Sentence: (European Telecommunications Standards Institute)
+Sentence: Some international standards organizations
+ANSI (American National Standards Institute)
+Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
+ETSI (European Telecommunications Standards Institute)
 Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
 
 Entity: CEN
@@ -612,47 +412,43 @@ Label: ORG
 Sentence: Some international standards organizations CEN (European Committee for Standardization)
 Develops standards in various sectors, including information technology
 
-Historical Development of Computers Generation Zero: Mechanical Calculating Machines
-(1642 – 1945)
-
 Entity: European Committee for Standardization
 Label: ORG
 Sentence: Some international standards organizations CEN (European Committee for Standardization)
 Develops standards in various sectors, including information technology
 
-Historical Development of Computers Generation Zero: Mechanical Calculating Machines
-(1642 – 1945)
-
 Entity: Historical Development of Computers Generation Zero
 Label: ORG
-Sentence: Some international standards organizations CEN (European Committee for Standardization)
-Develops standards in various sectors, including information technology
-
-Historical Development of Computers Generation Zero: Mechanical Calculating Machines
+Sentence: Historical Development of Computers Generation Zero: Mechanical Calculating Machines
 (1642 – 1945)
 
 Entity: Calculating Machines
 Label: PERSON
-Sentence: Some international standards organizations CEN (European Committee for Standardization)
-Develops standards in various sectors, including information technology
-
-Historical Development of Computers Generation Zero: Mechanical Calculating Machines
+Sentence: Historical Development of Computers Generation Zero: Mechanical Calculating Machines
 (1642 – 1945)
 
 Entity: 1642 – 1945
 Label: DATE
-Sentence: Some international standards organizations CEN (European Committee for Standardization)
-Develops standards in various sectors, including information technology
+Sentence: Historical Development of Computers Generation Zero: Mechanical Calculating Machines
+(1642 – 1945)
 
-Historical Development of Computers Generation Zero: Mechanical Calculating Machines
+Entity: 1642 – 1945
+Label: DATE
+Sentence: Historical Development of Computers Generation Zero: Mechanical Calculating Machines
 (1642 – 1945)
 
 Entity: Historical Development of Computers First Generation: Vacuum
 Label: ORG
-Sentence: Use of mechanical technology to do calculations
-Suggest the use of binary number system rather than the decimal number system
+Sentence: Historical Development of Computers First Generation: Vacuum tube computers
+(1945–1953)
+Use of electrical/electronic technology (much faster than mechanical technology)
+Invent binary machines built from vacuum tubes
+Invent vaccum tubes diodes and triodes
+Disadvantages: Bulky systems, Power consumption and heat dissipation.
 
-Historical Development of Computers First Generation: Vacuum tube computers
+Entity: 1945–1953
+Label: DATE
+Sentence: Historical Development of Computers First Generation: Vacuum tube computers
 (1945–1953)
 Use of electrical/electronic technology (much faster than mechanical technology)
 Invent binary machines built from vacuum tubes
@@ -673,6 +469,13 @@ Sentence: Historical Development of Computers The Second Generation: Transistori
 • Transistors consume less power than vacuum tubes, are smaller, and work more reliably,
 • the circuitry in computers became smaller and more reliable.
 
+Entity: 1954–1965
+Label: DATE
+Sentence: Historical Development of Computers The Second Generation: Transistorized Computers (1954–1965)
+Transistors revolutionize computers
+• Transistors consume less power than vacuum tubes, are smaller, and work more reliably,
+• the circuitry in computers became smaller and more reliable.
+
 Entity: Historical Development of Computers The Third Generation: Integrated Circuit Computers
 Label: ORG
 Sentence: Historical Development of Computers The Third Generation: Integrated Circuit Computers (1965–1980)
@@ -680,142 +483,57 @@ Sentence: Historical Development of Computers The Third Generation: Integrated C
 Explosion in computer use
 Computers became faster, smaller, and cheaper, bringing huge gains in processing power
 
-Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
-More integration, more transistors on a single silicon chip
-Computers became smaller: Appearance of micro- computers
-Increasing the processing power of all computers types (also supercomputers and main frame computers)
-
-Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
-
-Historical Development of Computers Size comparison Vacuum Tube Transistor Integrated circuit package Integrated circuit chip
-
-Historical Development of Computers Moore’s Law (Gordon Moore – Intel Founder, 1965)
-
-Entity: 1980
+Entity: 1965–1980
 Label: DATE
 Sentence: Historical Development of Computers The Third Generation: Integrated Circuit Computers (1965–1980)
 Integrating multiple transistors in a single silicon/germanium chip
 Explosion in computer use
 Computers became faster, smaller, and cheaper, bringing huge gains in processing power
-
-Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
-More integration, more transistors on a single silicon chip
-Computers became smaller: Appearance of micro- computers
-Increasing the processing power of all computers types (also supercomputers and main frame computers)
-
-Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
-
-Historical Development of Computers Size comparison Vacuum Tube Transistor Integrated circuit package Integrated circuit chip
-
-Historical Development of Computers Moore’s Law (Gordon Moore – Intel Founder, 1965)
-
-Entity: Increasing
-Label: DATE
-Sentence: Historical Development of Computers The Third Generation: Integrated Circuit Computers (1965–1980)
-Integrating multiple transistors in a single silicon/germanium chip
-Explosion in computer use
-Computers became faster, smaller, and cheaper, bringing huge gains in processing power
-
-Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
-More integration, more transistors on a single silicon chip
-Computers became smaller: Appearance of micro- computers
-Increasing the processing power of all computers types (also supercomputers and main frame computers)
-
-Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
-
-Historical Development of Computers Size comparison Vacuum Tube Transistor Integrated circuit package Integrated circuit chip
-
-Historical Development of Computers Moore’s Law (Gordon Moore – Intel Founder, 1965)
 
 Entity: Historical Development of Computers
 Label: ORG
-Sentence: Historical Development of Computers The Third Generation: Integrated Circuit Computers (1965–1980)
-Integrating multiple transistors in a single silicon/germanium chip
-Explosion in computer use
-Computers became faster, smaller, and cheaper, bringing huge gains in processing power
-
-Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
+Sentence: Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
 More integration, more transistors on a single silicon chip
 Computers became smaller: Appearance of micro- computers
 Increasing the processing power of all computers types (also supercomputers and main frame computers)
-
-Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
-
-Historical Development of Computers Size comparison Vacuum Tube Transistor Integrated circuit package Integrated circuit chip
-
-Historical Development of Computers Moore’s Law (Gordon Moore – Intel Founder, 1965)
 
 Entity: 1980
 Label: DATE
-Sentence: Historical Development of Computers The Third Generation: Integrated Circuit Computers (1965–1980)
-Integrating multiple transistors in a single silicon/germanium chip
-Explosion in computer use
-Computers became faster, smaller, and cheaper, bringing huge gains in processing power
-
-Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
+Sentence: Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
 More integration, more transistors on a single silicon chip
 Computers became smaller: Appearance of micro- computers
 Increasing the processing power of all computers types (also supercomputers and main frame computers)
 
-Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
+Entity: Increasing
+Label: DATE
+Sentence: Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
+More integration, more transistors on a single silicon chip
+Computers became smaller: Appearance of micro- computers
+Increasing the processing power of all computers types (also supercomputers and main frame computers)
 
-Historical Development of Computers Size comparison Vacuum Tube Transistor Integrated circuit package Integrated circuit chip
+Entity: Historical Development of Computers
+Label: ORG
+Sentence: Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
 
-Historical Development of Computers Moore’s Law (Gordon Moore – Intel Founder, 1965)
+Entity: 1980
+Label: DATE
+Sentence: Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
+
+Entity: Historical Development of Computers Size
+Label: ORG
+Sentence: Historical Development of Computers Size comparison Vacuum Tube Transistor Integrated circuit package Integrated circuit chip
 
 Entity: Historical Development of Computers Moore’s Law
 Label: ORG
-Sentence: Historical Development of Computers The Third Generation: Integrated Circuit Computers (1965–1980)
-Integrating multiple transistors in a single silicon/germanium chip
-Explosion in computer use
-Computers became faster, smaller, and cheaper, bringing huge gains in processing power
-
-Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
-More integration, more transistors on a single silicon chip
-Computers became smaller: Appearance of micro- computers
-Increasing the processing power of all computers types (also supercomputers and main frame computers)
-
-Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
-
-Historical Development of Computers Size comparison Vacuum Tube Transistor Integrated circuit package Integrated circuit chip
-
-Historical Development of Computers Moore’s Law (Gordon Moore – Intel Founder, 1965)
+Sentence: Historical Development of Computers Moore’s Law (Gordon Moore – Intel Founder, 1965)
 
 Entity: Gordon Moore
 Label: PERSON
-Sentence: Historical Development of Computers The Third Generation: Integrated Circuit Computers (1965–1980)
-Integrating multiple transistors in a single silicon/germanium chip
-Explosion in computer use
-Computers became faster, smaller, and cheaper, bringing huge gains in processing power
-
-Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
-More integration, more transistors on a single silicon chip
-Computers became smaller: Appearance of micro- computers
-Increasing the processing power of all computers types (also supercomputers and main frame computers)
-
-Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
-
-Historical Development of Computers Size comparison Vacuum Tube Transistor Integrated circuit package Integrated circuit chip
-
-Historical Development of Computers Moore’s Law (Gordon Moore – Intel Founder, 1965)
+Sentence: Historical Development of Computers Moore’s Law (Gordon Moore – Intel Founder, 1965)
 
 Entity: 1965
 Label: DATE
-Sentence: Historical Development of Computers The Third Generation: Integrated Circuit Computers (1965–1980)
-Integrating multiple transistors in a single silicon/germanium chip
-Explosion in computer use
-Computers became faster, smaller, and cheaper, bringing huge gains in processing power
-
-Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
-More integration, more transistors on a single silicon chip
-Computers became smaller: Appearance of micro- computers
-Increasing the processing power of all computers types (also supercomputers and main frame computers)
-
-Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
-
-Historical Development of Computers Size comparison Vacuum Tube Transistor Integrated circuit package Integrated circuit chip
-
-Historical Development of Computers Moore’s Law (Gordon Moore – Intel Founder, 1965)
+Sentence: Historical Development of Computers Moore’s Law (Gordon Moore – Intel Founder, 1965)
 
 Entity: every 18 months
 Label: DATE
@@ -841,31 +559,21 @@ Entity: every four years
 Label: DATE
 Sentence: The cost of capital equipment to build semiconductors will double every four years
 
-Historical Development of Computers
-If Moore’s Law is to hold, Rock’s Law must fall or computers must shift to a radically different technology
-Research into new computing paradigms has been proceeding in earnest during the last half decade
-
 Entity: Historical Development of Computers
 Label: ORG
-Sentence: The cost of capital equipment to build semiconductors will double every four years
-
-Historical Development of Computers
+Sentence: Historical Development of Computers
 If Moore’s Law is to hold, Rock’s Law must fall or computers must shift to a radically different technology
 Research into new computing paradigms has been proceeding in earnest during the last half decade
 
 Entity: Rock’s Law
 Label: ORG
-Sentence: The cost of capital equipment to build semiconductors will double every four years
-
-Historical Development of Computers
+Sentence: Historical Development of Computers
 If Moore’s Law is to hold, Rock’s Law must fall or computers must shift to a radically different technology
 Research into new computing paradigms has been proceeding in earnest during the last half decade
 
 Entity: the last half decade
 Label: DATE
-Sentence: The cost of capital equipment to build semiconductors will double every four years
-
-Historical Development of Computers
+Sentence: Historical Development of Computers
 If Moore’s Law is to hold, Rock’s Law must fall or computers must shift to a radically different technology
 Research into new computing paradigms has been proceeding in earnest during the last half decade
 
@@ -889,61 +597,44 @@ Entity: The Computer Level Hierarchy
 Label: ORG
 Sentence: The Computer Level Hierarchy
 
-The Computer Level Hierarchy Level 5: High-Level Language Level
-Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
-Programmers write programs at this level.
-Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
-
 Entity: The Computer Level Hierarchy
 Label: ORG
-Sentence: The Computer Level Hierarchy
-
-The Computer Level Hierarchy Level 5: High-Level Language Level
+Sentence: The Computer Level Hierarchy Level 5: High-Level Language Level
 Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
 Programmers write programs at this level.
 Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
 
 Entity: C++
 Label: PERSON
-Sentence: The Computer Level Hierarchy
-
-The Computer Level Hierarchy Level 5: High-Level Language Level
+Sentence: The Computer Level Hierarchy Level 5: High-Level Language Level
 Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
 Programmers write programs at this level.
 Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
 
 Entity: FORTRAN
 Label: ORG
-Sentence: The Computer Level Hierarchy
-
-The Computer Level Hierarchy Level 5: High-Level Language Level
+Sentence: The Computer Level Hierarchy Level 5: High-Level Language Level
 Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
 Programmers write programs at this level.
 Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
 
 Entity: Lisp, Pascal
 Label: ORG
-Sentence: The Computer Level Hierarchy
-
-The Computer Level Hierarchy Level 5: High-Level Language Level
+Sentence: The Computer Level Hierarchy Level 5: High-Level Language Level
 Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
 Programmers write programs at this level.
 Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
 
 Entity: Prolog
 Label: PERSON
-Sentence: The Computer Level Hierarchy
-
-The Computer Level Hierarchy Level 5: High-Level Language Level
+Sentence: The Computer Level Hierarchy Level 5: High-Level Language Level
 Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
 Programmers write programs at this level.
 Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
 
 Entity: Assembly
 Label: ORG
-Sentence: The Computer Level Hierarchy
-
-The Computer Level Hierarchy Level 5: High-Level Language Level
+Sentence: The Computer Level Hierarchy Level 5: High-Level Language Level
 Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
 Programmers write programs at this level.
 Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
@@ -970,29 +661,15 @@ Sentence: The Computer Level Hierarchy Level 3: System Software Level
 (multiprogramming, protecting memory, synchronizing processes, and various other important functions)
 Instructions translated from assembly language to machine language are passed through this level unmodified
 
-The Computer Level Hierarchy Level 2: Instruction Set Architecture (ISA), or Machine Level
-Machine language recognized by the particular architecture of the computer system
-Programs written in machine language can be executed directly by the electronic circuits without any interpreters, translators, or compilers.
-
 Entity: The Computer Level Hierarchy
-Label: WORK_OF_ART
-Sentence: The Computer Level Hierarchy Level 3: System Software Level
-Deals with operating system instructions
-(multiprogramming, protecting memory, synchronizing processes, and various other important functions)
-Instructions translated from assembly language to machine language are passed through this level unmodified
-
-The Computer Level Hierarchy Level 2: Instruction Set Architecture (ISA), or Machine Level
+Label: ORG
+Sentence: The Computer Level Hierarchy Level 2: Instruction Set Architecture (ISA), or Machine Level
 Machine language recognized by the particular architecture of the computer system
 Programs written in machine language can be executed directly by the electronic circuits without any interpreters, translators, or compilers.
 
 Entity: ISA
 Label: ORG
-Sentence: The Computer Level Hierarchy Level 3: System Software Level
-Deals with operating system instructions
-(multiprogramming, protecting memory, synchronizing processes, and various other important functions)
-Instructions translated from assembly language to machine language are passed through this level unmodified
-
-The Computer Level Hierarchy Level 2: Instruction Set Architecture (ISA), or Machine Level
+Sentence: The Computer Level Hierarchy Level 2: Instruction Set Architecture (ISA), or Machine Level
 Machine language recognized by the particular architecture of the computer system
 Programs written in machine language can be executed directly by the electronic circuits without any interpreters, translators, or compilers.
 
@@ -1005,58 +682,20 @@ Sentence: The Computer Level Hierarchy Level 1: The Control Level
 Moves data to where and when it should be
 The control unit interprets the machine instructions
 
-The Computer Level Hierarchy Level 0: The Digital Logic Level
-is where we find the physical components of the computer system: the gates and wires
-
-The Von Neumann Model
-A computer architecture model published by a famous Hungarian mathematician named John von Neumann
-The idea is to store programs’ instructions inside a main memory in order to avoid rewiring the system each time it had a new problem to solve, or an old one to debug.
-
 Entity: The Computer Level Hierarchy
-Label: WORK_OF_ART
-Sentence: The Computer Level Hierarchy Level 1: The Control Level
-Is where a control unit do its job
-Receives machine instructions from the level above
-decodes and executes those instructions properly
-Moves data to where and when it should be
-The control unit interprets the machine instructions
-
-The Computer Level Hierarchy Level 0: The Digital Logic Level
+Label: ORG
+Sentence: The Computer Level Hierarchy Level 0: The Digital Logic Level
 is where we find the physical components of the computer system: the gates and wires
-
-The Von Neumann Model
-A computer architecture model published by a famous Hungarian mathematician named John von Neumann
-The idea is to store programs’ instructions inside a main memory in order to avoid rewiring the system each time it had a new problem to solve, or an old one to debug.
 
 Entity: The Von Neumann Model
-Label: PRODUCT
-Sentence: The Computer Level Hierarchy Level 1: The Control Level
-Is where a control unit do its job
-Receives machine instructions from the level above
-decodes and executes those instructions properly
-Moves data to where and when it should be
-The control unit interprets the machine instructions
-
-The Computer Level Hierarchy Level 0: The Digital Logic Level
-is where we find the physical components of the computer system: the gates and wires
-
-The Von Neumann Model
+Label: PERSON
+Sentence: The Von Neumann Model
 A computer architecture model published by a famous Hungarian mathematician named John von Neumann
 The idea is to store programs’ instructions inside a main memory in order to avoid rewiring the system each time it had a new problem to solve, or an old one to debug.
 
 Entity: John von Neumann
 Label: PERSON
-Sentence: The Computer Level Hierarchy Level 1: The Control Level
-Is where a control unit do its job
-Receives machine instructions from the level above
-decodes and executes those instructions properly
-Moves data to where and when it should be
-The control unit interprets the machine instructions
-
-The Computer Level Hierarchy Level 0: The Digital Logic Level
-is where we find the physical components of the computer system: the gates and wires
-
-The Von Neumann Model
+Sentence: The Von Neumann Model
 A computer architecture model published by a famous Hungarian mathematician named John von Neumann
 The idea is to store programs’ instructions inside a main memory in order to avoid rewiring the system each time it had a new problem to solve, or an old one to debug.
 
@@ -1068,32 +707,11 @@ Entity: Neumann
 Label: ORG
 Sentence: All stored-program computers have come to be known as von Neumann systems using the von Neumann architecture
 
-Entity: The Von Neumann
-Label: PRODUCT
-Sentence: The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics
-Consists of three hardware systems
-A central processing unit (CPU) with a control unit, an arithmetic logic unit (ALU), registers (small storage areas), and a program counter;
-
-The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics
-
-
-Entity: CPU
-Label: ORG
-Sentence: The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics
-Consists of three hardware systems
-A central processing unit (CPU) with a control unit, an arithmetic logic unit (ALU), registers (small storage areas), and a program counter;
-
-The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics
-
-
 Entity: The Von Neumann Model
-Label: PRODUCT
+Label: PERSON
 Sentence: The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics
 Consists of three hardware systems
 A central processing unit (CPU) with a control unit, an arithmetic logic unit (ALU), registers (small storage areas), and a program counter;
-
-The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics
-
 
 Entity: The Von Neumann
 Label: PRODUCT
@@ -1101,41 +719,45 @@ Sentence: The Von Neumann Model The Von Neumann architecture It satisfies at lea
 Consists of three hardware systems
 A central processing unit (CPU) with a control unit, an arithmetic logic unit (ALU), registers (small storage areas), and a program counter;
 
-The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics
-
+Entity: CPU
+Label: ORG
+Sentence: The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics
+Consists of three hardware systems
+A central processing unit (CPU) with a control unit, an arithmetic logic unit (ALU), registers (small storage areas), and a program counter;
+
+Entity: The Von Neumann Model
+Label: PERSON
+Sentence: The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics
+ a main-memory system, which holds programs that control the computer’s operation;
+ and an I/O system.
+
+Entity: The Von Neumann
+Label: PRODUCT
+Sentence: The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics
+ a main-memory system, which holds programs that control the computer’s operation;
+ and an I/O system.
 
 Entity: CPU
 Label: ORG
 Sentence: Capacity to carry out sequential instruction processing
 Contains a single path, between the main memory system and the control unit of the CPU
 
-The Von Neumann Model
-Program instructions are stored inside the main memory
-The machine runs the programs sequentially (instruction per instruction – machine instruction)
-Each machine instruction is fetched, decoded and executed during one cycle known as the von Neumann execution cycle (also called the fetch- decode-execute cycle)
-
 Entity: The Von Neumann Model
-Label: PRODUCT
-Sentence: Capacity to carry out sequential instruction processing
-Contains a single path, between the main memory system and the control unit of the CPU
-
-The Von Neumann Model
+Label: PERSON
+Sentence: The Von Neumann Model
 Program instructions are stored inside the main memory
 The machine runs the programs sequentially (instruction per instruction – machine instruction)
 Each machine instruction is fetched, decoded and executed during one cycle known as the von Neumann execution cycle (also called the fetch- decode-execute cycle)
 
 Entity: Neumann
 Label: ORG
-Sentence: Capacity to carry out sequential instruction processing
-Contains a single path, between the main memory system and the control unit of the CPU
-
-The Von Neumann Model
+Sentence: The Von Neumann Model
 Program instructions are stored inside the main memory
 The machine runs the programs sequentially (instruction per instruction – machine instruction)
 Each machine instruction is fetched, decoded and executed during one cycle known as the von Neumann execution cycle (also called the fetch- decode-execute cycle)
 
 Entity: The Von Neumann Model One
-Label: PRODUCT
+Label: PERSON
 Sentence: The Von Neumann Model One iteration of the cycle is as follows:
 
 1.
@@ -1143,49 +765,4 @@ Sentence: The Von Neumann Model One iteration of the cycle is as follows:
 Entity: CPU
 Label: ORG
 Sentence: Any data operands required to execute the instruction are fetched from memory and placed into registers within the CPU.
-
-Entity: 1642 – 1945
-Label: DATE
-Sentence: Some international standards organizations CEN (European Committee for Standardization)
-Develops standards in various sectors, including information technology
-
-Historical Development of Computers Generation Zero: Mechanical Calculating Machines
-(1642 – 1945)
-
-Entity: 1945–1953
-Label: DATE
-Sentence: Use of mechanical technology to do calculations
-Suggest the use of binary number system rather than the decimal number system
-
-Historical Development of Computers First Generation: Vacuum tube computers
-(1945–1953)
-Use of electrical/electronic technology (much faster than mechanical technology)
-Invent binary machines built from vacuum tubes
-Invent vaccum tubes diodes and triodes
-Disadvantages: Bulky systems, Power consumption and heat dissipation.
-
-Entity: 1954–1965
-Label: DATE
-Sentence: Historical Development of Computers The Second Generation: Transistorized Computers (1954–1965)
-Transistors revolutionize computers
-• Transistors consume less power than vacuum tubes, are smaller, and work more reliably,
-• the circuitry in computers became smaller and more reliable.
-
-Entity: 1965–1980
-Label: DATE
-Sentence: Historical Development of Computers The Third Generation: Integrated Circuit Computers (1965–1980)
-Integrating multiple transistors in a single silicon/germanium chip
-Explosion in computer use
-Computers became faster, smaller, and cheaper, bringing huge gains in processing power
-
-Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
-More integration, more transistors on a single silicon chip
-Computers became smaller: Appearance of micro- computers
-Increasing the processing power of all computers types (also supercomputers and main frame computers)
-
-Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
-
-Historical Development of Computers Size comparison Vacuum Tube Transistor Integrated circuit package Integrated circuit chip
-
-Historical Development of Computers Moore’s Law (Gordon Moore – Intel Founder, 1965)
 

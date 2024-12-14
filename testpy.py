@@ -80,30 +80,35 @@ def extract_text_from_pdf(pdf_path):
 
 def extract_named_entities_with_context(text):
     """Extracts named entities and their surrounding context from the text."""
+    # Split the text into pages based on double newlines
+    pages = text.split("\n\n")
+    
+    entities_with_context = []
+    
     # Add custom date range detection using regex for year ranges
     date_pattern = r'\b(\d{4}\s*–\s*\d{4})\b'  # Matches patterns like "1642 – 1945"
     
-    # Store matches before spaCy processing
-    date_matches = [(match.group(), match.start(), match.end()) for match in re.finditer(date_pattern, text)]
-    
-    # Now process with spaCy
-    doc = nlp(text)
-    entities_with_context = []
-    
-    # Iterate over named entities from spaCy
-    for ent in doc.ents:
-        if ent.label_ in ["PERSON", "ORG", "GPE", "DATE", "EVENT", "LOC", "MONEY", "PRODUCT", "WORK_OF_ART", "TIME"]:
-            # Capture only the sentence containing the entity
-            sentence = ent.sent.text.strip()
-            entities_with_context.append((ent.text.strip(), ent.label_, sentence))
-    
-    # Handle custom ENTITY_DATE matches
-    for match_text, start, end in date_matches:
-        # Identify the sentence containing the date
-        for sent in doc.sents:
-            if sent.start_char <= start < sent.end_char:
-                entities_with_context.append((match_text, "DATE", sent.text.strip()))
-                break
+    for page in pages:
+        # Store matches before spaCy processing
+        date_matches = [(match.group(), match.start(), match.end()) for match in re.finditer(date_pattern, page)]
+        
+        # Now process with spaCy
+        doc = nlp(page)
+        
+        # Iterate over named entities from spaCy
+        for ent in doc.ents:
+            if ent.label_ in ["PERSON", "ORG", "GPE", "DATE", "EVENT", "LOC", "MONEY", "PRODUCT", "WORK_OF_ART", "TIME"]:
+                # Capture only the sentence containing the entity
+                sentence = ent.sent.text.strip()
+                entities_with_context.append((ent.text.strip(), ent.label_, sentence))
+        
+        # Handle custom ENTITY_DATE matches
+        for match_text, start, end in date_matches:
+            # Identify the sentence containing the date
+            for sent in doc.sents:
+                if sent.start_char <= start < sent.end_char:
+                    entities_with_context.append((match_text, "DATE", sent.text.strip()))
+                    break
     
     return entities_with_context
 
@@ -114,29 +119,35 @@ def generate_multiple_choice_questions(entities_with_context):
     questions = []
     
     # Create a list of all available entities for choices
-    all_entities = [e[0] for e in entities_with_context]
+    all_entities = [(e[0], i) for i, e in enumerate(entities_with_context)]  # Include index for uniqueness
     used_entities = set()  # Track used entities to prevent duplicates
     
     for entity, label, sentence in entities_with_context:
+        entity_id = (entity, label)  # Create a unique identifier for the entity
+        
+        # Skip if this entity has already been used
+        if entity_id in used_entities:
+            continue
+        
         # Use the full sentence for the question
         question_text = sentence.replace(entity, "______")
         
         # Generate answer options from all entities, including dates
-        available_entities = [e for e in all_entities if e != entity and e not in question_text and e not in used_entities]
+        available_entities = [e for e in all_entities if e[0] != entity and (e[0], entities_with_context[e[1]][1]) not in used_entities]
         if len(available_entities) < 3:
             continue  # Skip if we don't have enough options
             
         incorrect_answers = random.sample(available_entities, min(3, len(available_entities)))
-        options = incorrect_answers + [entity]
+        options = incorrect_answers + [(entity, label)]  # Keep entity with its label
         random.shuffle(options)
         
         # Format the question
-        options_text = "\n".join([f"{chr(97 + i)}. {option}" for i, option in enumerate(options)])
+        options_text = "\n".join([f"{chr(97 + i)}. {option[0]}" for i, option in enumerate(options)])
         question = f"{question_text}\n{options_text}"
         questions.append({"question": question, "answer": entity})
         
         # Mark the entity as used
-        used_entities.add(entity)
+        used_entities.add(entity_id)
     
     return questions
 
