@@ -49,6 +49,11 @@ Label: ORG
 Sentence: Register
  Register is a small, very fast storage area inside CPU.
 
+Entity: A*(B+C
+Label: PRODUCT
+Sentence:  For instance, when a ALU is commanded to calculate A*(B+C), ALU needs to calculate B+C first, then ALU need to store the result for a moment and use the result to multiply A.
+
+
 Entity: MAR
 Label: ORG
 Sentence: Four types of Register
@@ -430,6 +435,11 @@ Sentence: The Computer Level Hierarchy
 Entity: The Computer Level Hierarchy
 Label: ORG
 Sentence: The Computer Level Hierarchy Level 5: High-Level Language Level
+
+
+Entity: C++
+Label: PERSON
+Sentence: Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
 
 
 Entity: FORTRAN

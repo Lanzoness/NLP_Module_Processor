@@ -145,8 +145,12 @@ def generate_multiple_choice_questions(entities_with_context):
         
         # Format the question
         options_text = "\n".join([f"{chr(97 + i)}. {option[0]}" for i, option in enumerate(options)])
-        question = f"{question_text}\n{options_text}"
-        questions.append({"question": question, "answer": entity})
+        question = {
+            "question": question_text,
+            "answer": entity,
+            "options": options  # Add options to the question dictionary
+        }
+        questions.append(question)
         
         # Mark the entity as used
         used_entities.add(entity_id)
@@ -168,6 +172,35 @@ def save_entities_to_file(filename, entities_with_context):
             file.write(f"Entity: {entity}\nLabel: {label}\nSentence: {sentence}\n\n")
     print(f"Entities and sentences have been saved to {filename}")
 
+def display_questions_and_get_score(multiple_choice_questions):
+    """Displays questions and options, and calculates the score based on user input."""
+    score = 0
+    
+    for question in multiple_choice_questions:
+        print(question['question'])  # Display the question
+        print("Options:")
+        
+        # Display the options
+        options = question['options']  # Assuming options are stored in the question dict
+        for i, option in enumerate(options):
+            print(f"{chr(65 + i)}. {option[0]}")  # A, B, C, D for options
+        
+        # Get user input
+        user_answer = input("Enter your answer (A, B, C, or D): ").strip().upper()
+        
+        # Check if the answer is correct
+        if user_answer in ['A', 'B', 'C', 'D']:
+            selected_index = ord(user_answer) - 65  # Convert A, B, C, D to index 0, 1, 2, 3
+            if options[selected_index][0] == question['answer']:  # Compare with the correct answer
+                score += 1
+                print("Correct!\n")
+            else:
+                print("Wrong answer.\n")
+        else:
+            print("Invalid input. Please enter A, B, C, or D.\n")
+    
+    print(f"Your total score is: {score}/{len(multiple_choice_questions)}")
+
 def main(pdf_path):
     text = extract_text_from_pdf(pdf_path)
     entities_with_context = extract_named_entities_with_context(text)
@@ -183,6 +216,9 @@ def main(pdf_path):
     output_file = "generated_questions.txt"
     save_questions_to_file(output_file, multiple_choice_questions)
     print(f"Questions have been saved to {output_file}")
+
+    # Display questions and get score
+    display_questions_and_get_score(multiple_choice_questions)
 
 if __name__ == "__main__":
     pdf_path = "Module_01_Introduction_to_Computer_Organization_and_Architecture.pdf"  # Replace with your PDF file path
