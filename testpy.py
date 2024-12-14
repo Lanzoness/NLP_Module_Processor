@@ -188,26 +188,9 @@ def save_questions_to_file(filename, multiple_choice_questions):
             file.write(f"\n{i}. {q['question']} \n(Answer: {q['answer']})\n")
             file.write("----------------------------")
 
-def extract_keywords(text, num_keywords=10):
-    """Extracts keywords from the text using TF-IDF."""
-    vectorizer = TfidfVectorizer(stop_words='english')
-    tfidf_matrix = vectorizer.fit_transform([text])
-    feature_names = vectorizer.get_feature_names_out()
-    dense = tfidf_matrix.todense()
-    denselist = dense.tolist()
-    df = pd.DataFrame(denselist, columns=feature_names)
-
-    # Get the top keywords
-    keywords = df.iloc[0].nlargest(num_keywords).index.tolist()
-    return keywords
-
 def main(pdf_path):
     text = extract_text_from_pdf(pdf_path)
     entities_with_context = extract_named_entities_with_context(text)
-
-    # Extract keywords
-    keywords = extract_keywords(text)
-    print("Extracted Keywords:", keywords)
 
     # Generate questions
     multiple_choice_questions = generate_multiple_choice_questions(entities_with_context)
