@@ -118,16 +118,11 @@ def generate_multiple_choice_questions(entities_with_context):
     used_entities = set()  # Track used entities to prevent duplicates
     
     for entity, label, sentence in entities_with_context:
-        # Limit the sentence to a maximum of 20 words for the question
-        max_words = 20
-        sentence_words = sentence.split()
-        truncated_sentence = ' '.join(sentence_words[:max_words]) + ('...' if len(sentence_words) > max_words else '')
-        
-        # Replace the entity in the truncated sentence with a blank
-        question_text = truncated_sentence.replace(entity, "______")
+        # Use the full sentence for the question
+        question_text = sentence.replace(entity, "______")
         
         # Generate answer options from all entities, including dates
-        available_entities = [e for e in all_entities if e != entity and e not in truncated_sentence and e not in used_entities]
+        available_entities = [e for e in all_entities if e != entity and e not in question_text and e not in used_entities]
         if len(available_entities) < 3:
             continue  # Skip if we don't have enough options
             
