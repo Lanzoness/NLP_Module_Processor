@@ -15,13 +15,26 @@ def extract_text_from_pdf(pdf_path):
         
         # Iterate through each page
         for page in doc:
-            # Extract text from the page and combine all lines
+            # Extract text from the page
             page_text = page.get_text("text")
-            # Remove existing newlines and extra spaces
-            page_text = ' '.join(page_text.split())
+            lines = page_text.split('\n')
+            processed_lines = []
             
-            # Add the processed page text with a newline
-            text += page_text + "\n\n"
+            for line in lines:
+                line = line.strip()
+                if not line:
+                    continue
+                
+                # Check for bullet points, numbers, or special markers
+                is_list_item = bool(re.match(r'^\s*(?:\d+[\.\)]|\([a-zA-Z0-9]\)|[•\-\*\u2022\u2023\u2043\u2219\u25E6▪■●○•◦▶▷◀◁►◄▸▹◂◃➤➢➣➺➜➝➞➟➠➡➥➦➧➨➩➪➫➬➭➮➯➱➲➳➵➸➼➽➾\u27A4])', line))
+                
+                if is_list_item:
+                    processed_lines.append('\n' + line)
+                else:
+                    processed_lines.append(line)
+            
+            # Combine all lines and add double newline for page separation
+            text += ' '.join(processed_lines) + "\n\n"
         
         # Close the document
         doc.close()

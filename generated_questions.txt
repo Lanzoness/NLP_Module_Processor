@@ -1,499 +1,501 @@
 Multiple-Choice Questions:
 
 1. The main components of a computer From Software to Hardware Computer scientists design algorithms Computer scientists implement an algorithm by using high level programing language (______, C, etc.)
-a. Java
-b. CPU
-c. Prolog
-d. CU 
+a. CU
+b. Java
+c. CPU
+d. CPU 
 (Answer: Java)
 ----------------------------
 2. The central processing unit (______) is responsible for fetching the program instructions, decoding each instruction that is fetched, and performing the indicated sequence of operations on the correct data.
-a. RAM
-b. International Electrotechnical Commission
-c. every 18 months
+a. Neumann
+b. CU
+c. The Computer Level Hierarchy
 d. CPU 
 (Answer: CPU)
 ----------------------------
 3. All computers have a ______ that can be divided into two pieces.
 a. CPU
-b. RAM
-c. CU
-d. Register 
+b. CU
+c. The Von Neumann Model
+d. 1642 – 1945 
 (Answer: CPU)
 ----------------------------
 4. The second ______ component is the control unit, a module responsible for sequencing operations and making sure the correct data are where they need to be at the correct time.
-a. CU
-b. The Computer Level Hierarchy
-c. CPU
-d. Neumann 
+a. RAM
+b. CPU
+c. Historical Development of Computers Generation Zero
+d. CU 
 (Answer: CPU)
 ----------------------------
 5. ______ is a small, very fast storage area inside CPU.
-a. CU
+a. Calculating Machines
 b. Register Register
-c. CU
-d. CPU 
+c. C++
+d. The Von Neumann Model 
 (Answer: Register Register)
 ----------------------------
 6. Register Register is a small, very fast storage area inside ______.
-a. RAM
+a. The Computer Level Hierarchy
 b. CPU
-c. Input / Output Devices Input
-d. 0 to 65535 
+c. RAM
+d. CU 
 (Answer: CPU)
 ----------------------------
 7. CU receives orders from ______ in the form of instruction and decode (break) that instruction down into specific commands for other components inside computer system.
-a. The Computer Level Hierarchy
-b. RAM
-c. CPU
-d. CPU 
+a. CPU
+b. Memory
+c. CU
+d. RAM 
 (Answer: RAM)
 ----------------------------
 8. Together, these components perform the tasks of the ______: fetching instructions, decoding them, and finally performing the indicated sequence of operations.
-a. Flash Drive
+a. Temporary
 b. CPU
-c. RAM
-d. Java 
+c. C++
+d. RAM 
 (Answer: CPU)
 ----------------------------
 9. How a ______ works?
-a. 1.5 year
-b. Neumann
-c. CPU
-d. Memory Primary 
+a. Neumann
+b. CPU
+c. RAM
+d. 1642 – 1945 
 (Answer: CPU)
 ----------------------------
 10. 1. ______ turn on enable wire of Instruction Address Register(Program
-a. Assembly Language Level
-b. Register Register
-c. RAM
-d. CU 
+a. Calculating Machines
+b. Assembly Language Level
+c. CU
+d. The Computer Level Hierarchy 
 (Answer: CU)
 ----------------------------
 11. 1. CU turn on enable wire of ______
-a. Instruction Address Register(Program
-b. Register
-c. The Computer Level Hierarchy
-d. every 18 months 
+a. The Von Neumann Model
+b. Speaker
+c. Instruction Address Register(Program
+d. CU 
 (Answer: Instruction Address Register(Program)
 ----------------------------
 12. Counter) to allow the next Instruction address to flows to ______.
-a. CPU
-b. MAR
-c. RAM
-d. 1024 
+a. Memory Address Register
+b. RAM
+c. Instruction Register
+d. The Computer Level Hierarchy 
 (Answer: RAM)
 ----------------------------
 13. 2. Instruction address first goes to ______ which only tells RAM what address the CPU wants next.
-a. Memory Address Register
-b. Neumann
-c. CEN
-d. CPU 
+a. CPU
+b. Assembly
+c. RAM
+d. Memory Address Register 
 (Answer: Memory Address Register)
 ----------------------------
 14. 2. Instruction address first goes to Memory Address Register which only tells ______ what address the CPU wants next.
 a. RAM
-b. Input / Output Devices Input
-c. CPU
-d. MAR 
+b. Register
+c. Calculating Machines
+d. The Computer Level Hierarchy 
 (Answer: RAM)
 ----------------------------
 15. 2. Instruction address first goes to Memory Address Register which only tells RAM what address the ______ wants next.
-a. RAM
-b. Memory Data Register(buffer
-c. CPU
-d. RAM 
+a. CPU
+b. The Computer Level Hierarchy
+c. Java
+d. Register 
 (Answer: CPU)
 ----------------------------
 16. ______ turns on the set wire of MAR, then memory address goes to RAM.
-a. European Committee for Standardization
-b. Register
+a. Instruction Register
+b. 1024
 c. CU
-d. CPU 
+d. Register 
 (Answer: CU)
 ----------------------------
 17. CU turns on the set wire of ______, then memory address goes to RAM.
-a. RAM
+a. FORTRAN
 b. MAR
-c. RAM
-d. International Electrotechnical Commission 
+c. Lisp, Pascal
+d. CPU 
 (Answer: MAR)
 ----------------------------
 18. CU turns on the set wire of MAR, then memory address goes to ______.
-a. The Computer Level Hierarchy
+a. Memory Address Register
+b. RAM
+c. Neumann
+d. Historical Development of Computers Generation Zero 
+(Answer: RAM)
+----------------------------
+19. ______ turns on the enable RAM wire.
+a. RAM
+b. CPU
+c. The Computer Level Hierarchy
+d. CU 
+(Answer: CU)
+----------------------------
+20. CU turns on the enable ______ wire.
+a. CU
+b. RAM
+c. Register
+d. Flash Drive 
+(Answer: RAM)
+----------------------------
+21. Then data goes to ______) from RAM via data bus.
+a. CPU
 b. CU
+c. Memory Data Register(buffer
+d. RAM 
+(Answer: Memory Data Register(buffer)
+----------------------------
+22. Then data goes to Memory Data Register(buffer) from ______ via data bus.
+a. The Computer Level Hierarchy
+b. CPU
 c. RAM
 d. Java 
 (Answer: RAM)
 ----------------------------
-19. ______ turns on the enable RAM wire.
-a. CU
-b. 1024
-c. MAR
-d. RAM 
-(Answer: CU)
-----------------------------
-20. CU turns on the enable ______ wire.
-a. RAM
-b. Instruction Register
-c. CPU
-d. 1024 
-(Answer: RAM)
-----------------------------
-21. Then data goes to ______) from RAM via data bus.
-a. Register Register
-b. RAM
-c. Memory Data Register(buffer
-d. Lisp, Pascal 
-(Answer: Memory Data Register(buffer)
-----------------------------
-22. Then data goes to Memory Data Register(buffer) from ______ via data bus.
-a. Memory
-b. The Computer Level Hierarchy
-c. RAM
-d. Historical Development of Computers Generation Zero 
-(Answer: RAM)
-----------------------------
 23. Then data (instruction) goes to ______.
-a. Instruction Register
-b. RAM
-c. Prolog
-d. CU 
+a. Prolog
+b. Neumann
+c. RAM
+d. Instruction Register 
 (Answer: Instruction Register)
 ----------------------------
 24. 4. ______ turns on the set Instruction Register(store instruction) wire.
-a. The Computer Level Hierarchy
-b. Assembly
-c. MAR
-d. CU 
-(Answer: CU)
-----------------------------
-25. Instruction goes to ______.
-a. Calculating Machines
+a. Memory Primary
 b. CU
-c. Prolog
-d. Lisp, Pascal 
-(Answer: CU)
-----------------------------
-26. ______ decodes instruction, tells ALU the type of operation ALU need to perform and stores the input in Temporary registers by turning on the set wire.
-a. CPU
-b. The Computer Level Hierarchy
-c. CU
+c. The Computer Level Hierarchy
 d. MAR 
 (Answer: CU)
 ----------------------------
-27. CU decodes instruction, tells ALU the type of operation ALU need to perform and stores the input in ______ registers by turning on the set wire.
-a. International Electrotechnical Commission
-b. CPU
-c. Temporary
-d. Input / Output Devices Input 
-(Answer: Temporary)
+25. Instruction goes to ______.
+a. Register
+b. CU
+c. Lisp, Pascal
+d. Historical Development of Computers Generation Zero 
+(Answer: CU)
 ----------------------------
-28. How a ______ works?
-a. Memory Address Register
-b. International Electrotechnical Commission
-c. CPU
-d. RAM 
-(Answer: CPU)
-----------------------------
-29. ______ turns on the set wire of Accumulator and instructs ALU to store the immediate result in Accumulator (A Register).
-a. Neumann
+26. ______ decodes instruction, tells ALU the type of operation ALU need to perform and stores the input in Temporary registers by turning on the set wire.
+a. Java
 b. RAM
-c. Memory
+c. The Von Neumann Model
 d. CU 
 (Answer: CU)
 ----------------------------
+27. CU decodes instruction, tells ALU the type of operation ALU need to perform and stores the input in ______ registers by turning on the set wire.
+a. The Computer Level Hierarchy
+b. CU
+c. RAM
+d. Temporary 
+(Answer: Temporary)
+----------------------------
+28. How a ______ works?
+a. Neumann
+b. RAM
+c. CPU
+d. Register Register 
+(Answer: CPU)
+----------------------------
+29. ______ turns on the set wire of Accumulator and instructs ALU to store the immediate result in Accumulator (A Register).
+a. RAM
+b. The Computer Level Hierarchy
+c. CU
+d. Instruction Register 
+(Answer: CU)
+----------------------------
 30. CU turns on the set wire of Accumulator and instructs ALU to store the immediate result in Accumulator (A ______).
-a. MAR
+a. CU
 b. CPU
 c. Register
-d. The Computer Level Hierarchy 
+d. every 18 months 
 (Answer: Register)
 ----------------------------
 31. ______ turns on the enable wire of Accumulator to instruct Accumulator to output the result to the system bus.
-a. The Computer Level Hierarchy
-b. Register
-c. International Electrotechnical Commission
+a. CPU
+b. CEN
+c. CPU
 d. CU 
 (Answer: CU)
 ----------------------------
 32. 6. ______ send address to MAR again and points out an address in RAM.
-a. The Computer Level Hierarchy
-b. International Electrotechnical Commission
-c. RAM
+a. Assembly Language Level
+b. Memory
+c. CPU
 d. CU 
 (Answer: CU)
 ----------------------------
 33. 6. CU send address to ______ again and points out an address in RAM.
-a. CPU
-b. Neumann
+a. MAR
+b. The Computer Level Hierarchy
 c. CPU
-d. MAR 
+d. RAM 
 (Answer: MAR)
 ----------------------------
 34. 6. CU send address to MAR again and points out an address in ______.
-a. RAM
-b. International Electrotechnical Commission
-c. Input / Output Devices Input
-d. CPU 
+a. CPU
+b. RAM
+c. Calculating Machines
+d. The Computer Level Hierarchy 
 (Answer: RAM)
 ----------------------------
 35. The result stored temporarily in A ______ will go to the RAM via data bus.
-a. CPU
-b. Register
-c. Memory
-d. Memory Address Register 
+8.
+a. Register
+b. CPU
+c. 1024
+d. The Computer Level Hierarchy 
 (Answer: Register)
 ----------------------------
 36. The result stored temporarily in A Register will go to the ______ via data bus.
-a. 1642 – 1945
-b. CU
+8.
+a. CEN
+b. C++
 c. RAM
-d. Register Register 
+d. Speaker 
 (Answer: RAM)
 ----------------------------
 37. Data will be stored in the specified address in ______.
 a. RAM
-b. Calculating Machines
-c. The Computer Level Hierarchy
-d. CPU 
+b. The Von Neumann Model
+c. MAR
+d. Temporary 
 (Answer: RAM)
 ----------------------------
 38. ______ is ready for the next instruction.
 a. CPU
 b. CU
-c. Register
-d. Lisp, Pascal 
+c. MAR
+d. Register 
 (Answer: CPU)
 ----------------------------
 39. How a ______ works?
-a. CPU
-b. Assembly Language Level
-c. 1642 – 1945
-d. CU 
+a. MAR
+b. CEN
+c. CPU
+d. The Computer Level Hierarchy 
 (Answer: CPU)
 ----------------------------
 40. ______ A memory is just like a human brain.
 a. Memory
-b. 1.5 year
-c. CU
-d. Input / Output Devices Input 
+b. CPU
+c. CPU
+d. The Computer Level Hierarchy 
 (Answer: Memory)
 ----------------------------
 41. For example, if the computer has 64k words, then this memory unit has 64 * ______ = 65536 memory locations.
-a. C++
-b. 1024
+a. Instruction Register
+b. CU
 c. Memory
-d. Prolog 
+d. 1024 
 (Answer: 1024)
 ----------------------------
 42. The address of these locations varies from ______.
-a. European Committee for Standardization
-b. Memory
-c. 0 to 65535
-d. RAM 
+a. 0 to 65535
+b. Neumann
+c. 1024
+d. CU 
 (Answer: 0 to 65535)
 ----------------------------
 43. ______ memory holds only those data and instructions on which the computer is currently working.
-a. The Computer Level Hierarchy
-b. Memory Primary
-c. CPU
-d. C++ 
+a. RAM
+b. CPU
+c. Memory Primary
+d. CU 
 (Answer: Memory Primary)
 ----------------------------
 44. ______ and output devices allow the computer system to interact with the outside world by moving data into and out of the system.
-a. Memory Data Register(buffer
+a. every 18 months
 b. Input / Output Devices Input
-c. CPU
-d. RAM 
+c. Prolog
+d. CPU 
 (Answer: Input / Output Devices Input)
 ----------------------------
 45. Some output devices are: Monitor Printer ______ Projector
 
 Combined Input/Output Devices Touchscreen: Acts as both an input device (when you touch it) and an output device (displaying information).
-a. Register
-b. RAM
-c. Speaker
-d. RAM 
+a. 1.5 year
+b. Speaker
+c. CPU
+d. Lisp, Pascal 
 (Answer: Speaker)
 ----------------------------
 46. USB ______: Similar to an external hard drive, it can both receive and send data.
-a. Flash Drive
-b. RAM
-c. RAM
-d. Historical Development of Computers Generation Zero 
+a. 1024
+b. Flash Drive
+c. The Computer Level Hierarchy
+d. CPU 
 (Answer: Flash Drive)
 ----------------------------
 47. (______) Focuses on international standards for electrical, electronic, and related technologies.
-a. International Electrotechnical Commission
-b. 1024
-c. MAR
-d. C++ 
+a. CPU
+b. 1642 – 1945
+c. International Electrotechnical Commission
+d. Speaker 
 (Answer: International Electrotechnical Commission)
 ----------------------------
 48. Some international standards organizations ______ (European Committee for Standardization) Develops standards in various sectors, including information technology
 
 Historical Development of Computers Generation Zero:
-a. Register Register
-b. European Committee for Standardization
-c. Memory Primary
-d. CEN 
+a. Prolog
+b. CPU
+c. CEN
+d. The Computer Level Hierarchy 
 (Answer: CEN)
 ----------------------------
 49. Some international standards organizations CEN (______) Develops standards in various sectors, including information technology
 
 Historical Development of Computers Generation Zero:
-a. Memory Data Register(buffer
-b. Temporary
-c. CPU
+a. Prolog
+b. CPU
+c. RAM
 d. European Committee for Standardization 
 (Answer: European Committee for Standardization)
 ----------------------------
 50. Some international standards organizations CEN (European Committee for Standardization) Develops standards in various sectors, including information technology
 
 ______:
-a. International Electrotechnical Commission
-b. Historical Development of Computers Generation Zero
-c. Neumann
-d. Assembly Language Level 
+a. CPU
+b. Neumann
+c. Historical Development of Computers Generation Zero
+d. The Computer Level Hierarchy 
 (Answer: Historical Development of Computers Generation Zero)
 ----------------------------
 51. Mechanical ______ (1642 – 1945)
-a. Calculating Machines
-b. CEN
-c. CU
-d. CPU 
+a. CPU
+b. MAR
+c. Calculating Machines
+d. Register 
 (Answer: Calculating Machines)
 ----------------------------
 52. Mechanical Calculating Machines (______)
-a. CPU
+a. Register Register
 b. 1642 – 1945
-c. The Computer Level Hierarchy
-d. RAM 
+c. Lisp, Pascal
+d. CPU 
 (Answer: 1642 – 1945)
 ----------------------------
 53. The density of transistors in an integrated circuit doubles ______ (1.5 year).
-a. CPU
-b. every 18 months
-c. CPU
-d. Historical Development of Computers Generation Zero 
+a. Historical Development of Computers Generation Zero
+b. CEN
+c. every 18 months
+d. RAM 
 (Answer: every 18 months)
 ----------------------------
 54. The density of transistors in an integrated circuit doubles every 18 months (______).
-a. 1.5 year
-b. RAM
-c. Instruction Register
-d. CPU 
+a. RAM
+b. 1.5 year
+c. CU
+d. Historical Development of Computers Generation Zero 
 (Answer: 1.5 year)
 ----------------------------
 55. ______ The user executes programs on a PC (Paint, word files, games, etc.)
-a. RAM
-b. CPU
-c. CPU
-d. The Computer Level Hierarchy 
+a. Speaker
+b. RAM
+c. The Computer Level Hierarchy
+d. Assembly Language Level 
 (Answer: The Computer Level Hierarchy)
 ----------------------------
 56. ______ Imagine the machine (computer) as a hierarchy of levels, in which each level has a specific function.
 a. CU
-b. Temporary
-c. The Computer Level Hierarchy
-d. Java 
+b. The Computer Level Hierarchy
+c. 1.5 year
+d. RAM 
 (Answer: The Computer Level Hierarchy)
 ----------------------------
 57. ______
 
 ______ Level 5: High-Level Language Level Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
-a. Register
-b. MAR
-c. The Computer Level Hierarchy
-d. C++ 
+a. Calculating Machines
+b. Memory Data Register(buffer
+c. European Committee for Standardization
+d. The Computer Level Hierarchy 
 (Answer: The Computer Level Hierarchy)
 ----------------------------
 58. ______
 
 ______ Level 5: High-Level Language Level Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
-a. Historical Development of Computers Generation Zero
-b. Flash Drive
-c. 0 to 65535
-d. The Computer Level Hierarchy 
+a. The Computer Level Hierarchy
+b. Calculating Machines
+c. RAM
+d. RAM 
 (Answer: The Computer Level Hierarchy)
 ----------------------------
 59. The Computer Level Hierarchy
 
 The Computer Level Hierarchy Level 5: High-Level Language Level Consists of languages such as C, ______, FORTRAN, Lisp, Pascal, and Prolog.
-a. 1024
-b. CPU
-c. Speaker
-d. C++ 
+a. Java
+b. RAM
+c. C++
+d. CPU 
 (Answer: C++)
 ----------------------------
 60. The Computer Level Hierarchy
 
 The Computer Level Hierarchy Level 5: High-Level Language Level Consists of languages such as C, C++, ______, Lisp, Pascal, and Prolog.
 a. Instruction Register
-b. Neumann
-c. FORTRAN
-d. RAM 
+b. FORTRAN
+c. International Electrotechnical Commission
+d. CPU 
 (Answer: FORTRAN)
 ----------------------------
 61. The Computer Level Hierarchy
 
 The Computer Level Hierarchy Level 5: High-Level Language Level Consists of languages such as C, C++, FORTRAN, ______, and Prolog.
-a. Lisp, Pascal
-b. Memory Primary
-c. CU
-d. The Computer Level Hierarchy 
+a. RAM
+b. CPU
+c. The Von Neumann Model
+d. Lisp, Pascal 
 (Answer: Lisp, Pascal)
 ----------------------------
 62. The Computer Level Hierarchy
 
 The Computer Level Hierarchy Level 5: High-Level Language Level Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and ______.
-a. Prolog
-b. every 18 months
-c. The Computer Level Hierarchy
-d. 1642 – 1945 
+a. European Committee for Standardization
+b. The Von Neumann Model
+c. Neumann
+d. Prolog 
 (Answer: Prolog)
 ----------------------------
 63. Compilers translates these languages to a language the machine can understand (that lower levels could understand): ______ then machine languages.
-a. 1642 – 1945
-b. CU
-c. CPU
-d. Assembly 
+a. CPU
+b. Assembly
+c. Prolog
+d. CPU 
 (Answer: Assembly)
 ----------------------------
 64. ______ Level 4: Assembly Language Level More “machine dependent” language.
-a. CPU
-b. The Computer Level Hierarchy
-c. 1642 – 1945
-d. CPU 
+a. The Computer Level Hierarchy
+b. Neumann
+c. MAR
+d. Historical Development of Computers Generation Zero 
 (Answer: The Computer Level Hierarchy)
 ----------------------------
 65. The Computer Level Hierarchy Level 4: ______ More “machine dependent” language.
-a. Assembly Language Level
-b. Neumann
-c. CPU
-d. International Electrotechnical Commission 
+a. 1024
+b. The Von Neumann Model
+c. Assembly Language Level
+d. CPU 
 (Answer: Assembly Language Level)
 ----------------------------
 66. All stored-program computers have come to be known as von ______ systems using the von ______ architecture
-a. CU
-b. The Computer Level Hierarchy
-c. Input / Output Devices Input
-d. Neumann 
+a. European Committee for Standardization
+b. Neumann
+c. CPU
+d. Calculating Machines 
 (Answer: Neumann)
 ----------------------------
 67. All stored-program computers have come to be known as von ______ systems using the von ______ architecture
-a. Neumann
+a. The Computer Level Hierarchy
 b. CU
-c. MAR
-d. The Computer Level Hierarchy 
+c. 1642 – 1945
+d. Neumann 
 (Answer: Neumann)
 ----------------------------
 68. Any data operands required to execute the instruction are fetched from memory and placed into registers within the ______.
-a. RAM
-b. CPU
-c. Neumann
-d. CU 
+a. CPU
+b. 0 to 65535
+c. Lisp, Pascal
+d. Calculating Machines 
 (Answer: CPU)
 ----------------------------
 69. ______
@@ -501,9 +503,9 @@ d. CU
 ______
 
 An example system: wading through the jargon
-a. CPU
+a. Neumann
 b. The Von Neumann Model
-c. MAR
-d. The Computer Level Hierarchy 
+c. The Computer Level Hierarchy
+d. RAM 
 (Answer: The Von Neumann Model)
 ----------------------------

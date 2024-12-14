@@ -24,9 +24,18 @@ Four types of Register MAR (memory address register): store memory that curre
 
 Control Unit (CU) CU acts like a manager in a computer. CU receives orders from RAM in the form of instruction and decode (break) that instruction down into specific commands for other components inside computer system. It directs the data flow and the operation of the ALU. Together, these components perform the tasks of the CPU: fetching instructions, decoding them, and finally performing the indicated sequence of operations. The performance of a machine is directly affected by the design of the datapath and the control unit.
 
-How a CPU works? 1. CU turn on enable wire of Instruction Address Register(Program Counter) to allow the next Instruction address to flows to RAM. 2. Instruction address first goes to Memory Address Register which only tells RAM what address the CPU wants next. CU turns on the set wire of MAR, then memory address goes to RAM. CU turns on the enable RAM wire. 3. Then data goes to Memory Data Register(buffer) from RAM via data bus. Then data (instruction) goes to Instruction Register. 4. CU turns on the set Instruction Register(store instruction) wire. Instruction goes to CU. CU decodes instruction, tells ALU the type of operation ALU need to perform and stores the input in Temporary registers by turning on the set wire.
+How a CPU works? 
+1. CU turn on enable wire of Instruction Address Register(Program Counter) to allow the next Instruction address to flows to RAM. 
+2. Instruction address first goes to Memory Address Register which only tells RAM what address the CPU wants next. CU turns on the set wire of MAR, then memory address goes to RAM. CU turns on the enable RAM wire. 
+3. Then data goes to Memory Data Register(buffer) from RAM via data bus. Then data (instruction) goes to Instruction Register. 
+4. CU turns on the set Instruction Register(store instruction) wire. Instruction goes to CU. CU decodes instruction, tells ALU the type of operation ALU need to perform and stores the input in Temporary registers by turning on the set wire.
 
-How a CPU works? 5. ALU operates the instruction. CU turns on the set wire of Accumulator and instructs ALU to store the immediate result in Accumulator (A Register). CU turns on the enable wire of Accumulator to instruct Accumulator to output the result to the system bus. 6. CU send address to MAR again and points out an address in RAM. 7. The result stored temporarily in A Register will go to the RAM via data bus. 8. Data will be stored in the specified address in RAM. 9. CPU is ready for the next instruction. Repeat steps 1-6.
+How a CPU works? 
+5. ALU operates the instruction. CU turns on the set wire of Accumulator and instructs ALU to store the immediate result in Accumulator (A Register). CU turns on the enable wire of Accumulator to instruct Accumulator to output the result to the system bus. 
+6. CU send address to MAR again and points out an address in RAM. 
+7. The result stored temporarily in A Register will go to the RAM via data bus. 
+8. Data will be stored in the specified address in RAM. 
+9. CPU is ready for the next instruction. Repeat steps 1-6.
 
 How a CPU works? https://www.youtube.com/watch?v=RIrQwd_srRw You may watch this video for a simple explanation of how a cpu works.
 
@@ -56,7 +65,9 @@ Historical Development of Computers Generation Zero: Mechanical Calculating Mach
 
 Historical Development of Computers First Generation: Vacuum tube computers (1945–1953) Use of electrical/electronic technology (much faster than mechanical technology) Invent binary machines built from vacuum tubes Invent vaccum tubes diodes and triodes Disadvantages: Bulky systems, Power consumption and heat dissipation.
 
-Historical Development of Computers The Second Generation: Transistorized Computers (1954–1965) Transistors revolutionize computers • Transistors consume less power than vacuum tubes, are smaller, and work more reliably, • the circuitry in computers became smaller and more reliable.
+Historical Development of Computers The Second Generation: Transistorized Computers (1954–1965) Transistors revolutionize computers 
+• Transistors consume less power than vacuum tubes, are smaller, and work more reliably, 
+• the circuitry in computers became smaller and more reliable.
 
 Historical Development of Computers The Third Generation: Integrated Circuit Computers (1965–1980) Integrating multiple transistors in a single silicon/germanium chip Explosion in computer use Computers became faster, smaller, and cheaper, bringing huge gains in processing power
 
@@ -72,7 +83,9 @@ Historical Development of Computers If Moore’s Law is to hold, Rock’s Law
 
 The Computer Level Hierarchy The user executes programs on a PC (Paint, word files, games, etc.) The user is outside the computer! He uses input and output devices to communicate with the computer. Now, what happens INSIDE the computer? To understand, we will use a “divide and conquer” approach.
 
-The Computer Level Hierarchy Imagine the machine (computer) as a hierarchy of levels, in which each level has a specific function. The highest level – Level 6 – is the “user’s level” • Level 6 is composed of applications • User runs programs such as word processors, graphics packages, or games. The lower levels are unseen by the user those can be considered as “virtual machines”. Let us discover these “virtual machines”.
+The Computer Level Hierarchy Imagine the machine (computer) as a hierarchy of levels, in which each level has a specific function. The highest level – Level 6 – is the “user’s level” 
+• Level 6 is composed of applications 
+• User runs programs such as word processors, graphics packages, or games. The lower levels are unseen by the user those can be considered as “virtual machines”. Let us discover these “virtual machines”.
 
 The Computer Level Hierarchy
 
