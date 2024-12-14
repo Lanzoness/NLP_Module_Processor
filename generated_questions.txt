@@ -1,4 +1,3 @@
-
 Multiple-Choice Questions:
 
 1. The main components of a computer
@@ -7,11 +6,10 @@ From ______ to Hardware
 Computer scientists implement analgorithm by
 using high level programing language (Java, C,
 etc.)
-a. 1024
-b. the jargon
-
-c. Input / Output Devices
-d. Software 
+a. Software
+b. CPU
+c. 1024
+d. CPU 
 (Answer: Software)
 ----------------------------
 2. The main components of a computer
@@ -20,9 +18,9 @@ From Software to ______
 Computer scientists implement analgorithm by
 using high level programing language (Java, C,
 etc.)
-a. RAM
-b. decadeThe Computer Level Hierarchy
-c. CPU
+a. toMemory Data Register(buffer
+b. Software
+c. Register
 d. Hardware 
 (Answer: Hardware)
 ----------------------------
@@ -32,365 +30,255 @@ From Software to Hardware
 Computer scientists implement analgorithm by
 using high level programing language (______, C,
 etc.)
-a. International Organization for 
-Standardization
-b. Hardware
-c. isa
+a. Software
+b. Register(Program Counter
+c. 1024
 d. Java 
 (Answer: Java)
 ----------------------------
-4. ______ algorithm runs thisalgorithm and another
-one runs that algorithm and soon
-Wefinally getdown tomachine level
-Machine level can bethought ofasanalgorithm
-implemented asanelectronic deviceThe main components of a computer
-Principle of Equivalence of Hardware and Software
-Anything that can bedone with software can also be
-done with hardware, and anything that can bedone
-with hardware can also bedone with software
-We implement an application inHardware or
-Software level
-Our knowledge ofcomputer organization and
-architecture willhelp ustomake thebest choiceComputer Hardware main components
-At the most basic level, a computer 
-is a device consisting of 3 pieces :
-A processor to interpret and 
-execute programs
-A memory to store both data and 
-programs
-A mechanism for transferring data 
-to and from the outside world
-Central Processing Unit (CPU)
-a. CPU
-b. Another
-c. Program Counter
-d. CPU 
-(Answer: Another)
-----------------------------
-5. Another algorithm runs thisalgorithm and another
-one runs that algorithm and soon
-Wefinally getdown tomachine level
-Machine level can bethought ofasanalgorithm
-implemented asanelectronic deviceThe main components of a computer
-Principle of Equivalence of ______ and Software
-Anything that can bedone with software can also be
-done with hardware, and anything that can bedone
-with hardware can also bedone with software
-We implement an application in______ or
-Software level
-Our knowledge ofcomputer organization and
-architecture willhelp ustomake thebest choiceComputer ______ main components
-At the most basic level, a computer 
-is a device consisting of 3 pieces :
-A processor to interpret and 
-execute programs
-A memory to store both data and 
-programs
-A mechanism for transferring data 
-to and from the outside world
-Central Processing Unit (CPU)
-a. Hardware
-b. European Telecommunications 
-Standards Institute
-c. Flash Drive
-d. Historical Development of Computers 
-(Answer: Hardware)
-----------------------------
-6. Another algorithm runs thisalgorithm and another
-one runs that algorithm and soon
-Wefinally getdown tomachine level
-Machine level can bethought ofasanalgorithm
-implemented asanelectronic deviceThe main components of a computer
-Principle of Equivalence of Hardware and Software
-Anything that can bedone with software can also be
-done with hardware, and anything that can bedone
-with hardware can also bedone with software
-We implement an application inHardware or
-Software level
-Our knowledge ofcomputer organization and
-architecture willhelp ustomake thebest choiceComputer Hardware main components
-At the most basic level, a computer 
-is a device consisting of 3 pieces :
-A processor to interpret and 
-execute programs
-A memory to store both data and 
-programs
-A mechanism for transferring data 
-to and from the outside world
-______ (CPU)
-a. Register
-b. Central Processing Unit
-c. International Electrotechnical
-Commission
-d. Register 
-(Answer: Central Processing Unit)
-----------------------------
-7. Another algorithm runs thisalgorithm and another
-one runs that algorithm and soon
-Wefinally getdown tomachine level
-Machine level can bethought ofasanalgorithm
-implemented asanelectronic deviceThe main components of a computer
-Principle of Equivalence of Hardware and Software
-Anything that can bedone with software can also be
-done with hardware, and anything that can bedone
-with hardware can also bedone with software
-We implement an application inHardware or
-Software level
-Our knowledge ofcomputer organization and
-architecture willhelp ustomake thebest choiceComputer Hardware main components
-At the most basic level, a computer 
-is a device consisting of 3 pieces :
-A processor to interpret and 
-execute programs
-A memory to store both data and 
-programs
-A mechanism for transferring data 
-to and from the outside world
-Central Processing Unit (______)
-a. CPU
-b. Historical Development of Computers
-c. Itisused
-d. Speaker 
-(Answer: CPU)
-----------------------------
-8. The central processing unit (______) isresponsible for
+4. The central processing unit (______) isresponsible for
 fetching the program instructions, decoding each
 instruction that isfetched, and performing the
 indicated sequence ofoperations onthe correct
 data .
-a. Develops
-b. Register
-c. Another
-d. CPU 
+a. toRAM .CUturns
+b. CPU
+c. 1642 –1945
+d. toMemory Data Register(buffer 
 (Answer: CPU)
 ----------------------------
-9. All computers have a ______ that can 
+5. All computers have a ______ that can 
 be divided into two pieces.
-a. CPU
-b. European Telecommunications 
-Standards Institute
-c. The Von Neumann Model
-d. Historical Development of Computers
-Generation Zero 
+a. toRAM .CUturns
+b. Graphics
+c. CPU
+d. •User 
 (Answer: CPU)
 ----------------------------
-10. The first isthe datapath ,which ______
-network ofstorage units (registers) and
-arithmetic and logic units (forperforming
-various operations ondata) connected
-bybuses (capable ofmoving data from
-place toplace) where the timing is
-controlled byclocks .
-a. the jargon
-
-b. RAM
-c. isa
-d. CPU 
-(Answer: isa)
-----------------------------
-11. The second ______ component isthe
+6. The second ______ component isthe
 control unit, amodule responsible for
 sequencing operations and making sure
 thecorrect data arewhere they need to
 beatthecorrect time .
-a. CPU
-b. RAM
-c. Von Neumann Model
-d. the jargon
- 
+a. toMemory Data Register(buffer
+b. Register(Program Counter
+c. 1965 –1980
+d. CPU 
 (Answer: CPU)
 ----------------------------
-12. ______
+7. ______
 ______ is a small, very fast storage 
 area inside CPU.
-a. The Von Neumann Model
+a. toMemory Data Register(buffer
 b. Neumann
 c. Register
-d. 1642 –1945 
+d. CPU 
 (Answer: Register)
 ----------------------------
-13. Register
+8. Register
 Register is a small, very fast storage 
 area inside ______.
-a. CPU
-b. MBR
-c. Itisused
-d. International Organization for 
-Standardization 
+a. 1945 –1953
+b. Software
+c. CPU
+d. European Committee 
 (Answer: CPU)
 ----------------------------
-14. ______ tostore intermediate values
+9. ______ tostore intermediate values
 from calculations orinstructions that
 isneeded again immediately .
-a. Register
-b. Itisused
-c. CPU
-d. CPU 
+a. Itisused
+b. CPU
+c. RAM
+d. 1945 –1953 
 (Answer: Itisused)
 ----------------------------
-15. Four types of ______
-MAR (memory address register): store memory that 
-currently be accessed inside RAM
-MDR/MBR (memory data/buffer register): store data 
-from memory
-Accumulator (A register): a register 
-stores immediate result from ALU
-Program Counter (PC): store the address of the next 
-instructionControl Unit (CU)
-CUacts likeamanager inacomputer .
-a. Arthur Rock
-b. 1965 –1980
-c. Another
-d. Register 
-(Answer: Register)
-----------------------------
-16. Four types of Register
-MAR (memory address register): store memory that 
-currently be accessed inside ______
-MDR/MBR (memory data/buffer register): store data 
-from memory
-Accumulator (A register): a register 
-stores immediate result from ALU
-Program Counter (PC): store the address of the next 
-instructionControl Unit (CU)
-CUacts likeamanager inacomputer .
-a. Hardware
-b. 1945 –1953
-c. RAM
-d. 1024 
-(Answer: RAM)
-----------------------------
-17. Four types of Register
-MAR (memory address register): store memory that 
-currently be accessed inside RAM
-MDR/______ (memory data/buffer register): store data 
-from memory
-Accumulator (A register): a register 
-stores immediate result from ALU
-Program Counter (PC): store the address of the next 
-instructionControl Unit (CU)
-CUacts likeamanager inacomputer .
-a. Register
-b. Hardware
-c. MBR
-d. Central Processing Unit 
-(Answer: MBR)
-----------------------------
-18. Four types of Register
-MAR (memory address register): store memory that 
-currently be accessed inside RAM
-MDR/MBR (memory data/buffer register): store data 
-from memory
-Accumulator (A register): a register 
-stores immediate result from ALU
-______ (PC): store the address of the next 
-instructionControl Unit (CU)
-CUacts likeamanager inacomputer .
-a. Intel
-b. The Von Neumann Model
-c. Speaker
-d. Program Counter 
-(Answer: Program Counter)
-----------------------------
-19. Four types of Register
-MAR (memory address register): store memory that 
-currently be accessed inside RAM
-MDR/MBR (memory data/buffer register): store data 
-from memory
-Accumulator (A register): a register 
-stores immediate result from ALU
-Program Counter (PC): store the address of the next 
-instructionControl Unit (______)
-______acts likeamanager inacomputer .
-a. Input / Output Devices
-b. MBR
-c. CU
-d. 1024 
-(Answer: CU)
-----------------------------
-20. CU receives orders from ______ inthe form of
+10. CU receives orders from ______ inthe form of
 instruction and decode (break) that instruction
 down into specific commands for other
 components inside computer system .
-a. Central Processing Unit
-b. CEN
-c. CPU
+a. Neumann
+b. CPU
+c. decadeThe Computer Level Hierarchy
 d. RAM 
 (Answer: RAM)
 ----------------------------
-21. Together, these components perform thetasks of
+11. Together, these components perform thetasks of
 the ______:fetching instructions, decoding them,
 and finally performing theindicated sequence of
 operations .
-a. Historical Development of Computers
-Generation Zero
-b. Neumann
-c. CPU
-d. Another 
+a. RAM
+b. Historical Development of Computers
+c. Register(Program Counter
+d. CPU 
 (Answer: CPU)
 ----------------------------
-22. ontheenable ______ wire.
-a. decadeThe Computer Level Hierarchy
-b. •User
-c. RAM
-d. Central Processing Unit 
+12. How a ______ works?
+1.CUturn onenable wire ofInstruction Address Register(Program Counter) to
+allow thenext Instruction address toflows toRAM .
+a. Historical Development of Computers
+b. Intel
+c. Input / Output Devices
+d. CPU 
+(Answer: CPU)
+----------------------------
+13. How a CPU works?
+1.CUturn onenable wire ofInstruction Address ______) to
+allow thenext Instruction address toflows toRAM .
+a. Register(Program Counter
+b. The
+c. CPU
+d. The Von Neumann Model 
+(Answer: Register(Program Counter)
+----------------------------
+14. How a CPU works?
+1.CUturn onenable wire ofInstruction Address Register(Program Counter) to
+allow thenext Instruction address ______ .
+a. RAM
+b. Graphics
+c. toflows toRAM
+d. toRAM .CUturns 
+(Answer: toflows toRAM)
+----------------------------
+15. 2.Instruction address firstgoes ______ which only tells
+RAM what address theCPU wants next .CUturns onthesetwire ofMAR,
+then memory address goes toRAM .CUturns
+a. toMemory Address Register
+b. RAM
+c. Java
+d. Rock’s Law 
+(Answer: toMemory Address Register)
+----------------------------
+16. 2.Instruction address firstgoes toMemory Address Register which only tells
+______ what address theCPU wants next .CUturns onthesetwire ofMAR,
+then memory address goes to______ .CUturns
+a. Java
+b. Historical Development of Computers
+Generation Zero
+c. Input / Output Devices
+d. RAM 
 (Answer: RAM)
 ----------------------------
-23. Then data (instruction) goes toInstruction ______ .
+17. 2.Instruction address firstgoes toMemory Address Register which only tells
+RAM what address ______ wants next .CUturns onthesetwire ofMAR,
+then memory address goes toRAM .CUturns
 a. Register
-b. Central Processing Unit
-c. International Organization for 
-Standardization
-d. Itisused 
+b. Von Neumann Model
+c. 1945 –1953
+d. theCPU 
+(Answer: theCPU)
+----------------------------
+18. 2.Instruction address firstgoes toMemory Address Register which only tells
+RAM what address theCPU wants next .CUturns onthesetwire ofMAR,
+then memory address goes ______
+a. CPU
+b. 1024
+c. toRAM .CUturns
+d. Flash Drive 
+(Answer: toRAM .CUturns)
+----------------------------
+19. ontheenable ______ wire.
+a. Arthur Rock
+b. RAM
+c. The
+d. Graphics 
+(Answer: RAM)
+----------------------------
+20. 3.Then data goes ______) from RAM viadata bus.
+a. toMemory Data Register(buffer
+b. International Electrotechnical
+Commission
+c. CPU
+d. Hardware 
+(Answer: toMemory Data Register(buffer)
+----------------------------
+21. 3.Then data goes toMemory Data Register(buffer) from ______ viadata bus.
+a. RAM
+b. Register(Program Counter
+c. •User
+d. Java 
+(Answer: RAM)
+----------------------------
+22. Then data (instruction) goes toInstruction ______ .
+a. theCPU
+b. Register
+c. The Von Neumann Model
+d. toflows toRAM 
 (Answer: Register)
 ----------------------------
-24. How a ______ works?
-a. CPU
-b. European Committee
-c. 1965 –1980
-d. Central Processing Unit 
+23. How a ______ works?
+a. The Von Neumann Model
+b. toflows toRAM
+c. CPU
+d. Register(Program Counter 
 (Answer: CPU)
 ----------------------------
-25. ______ tostore data and instructions .
-a. Historical Development of Computers
-Generation Zero
-b. Itisused
-c. RAM
-d. •User 
+24. 7.The result stored temporarily inARegister ______ via
+data bus.
+a. willgototheRAM
+b. Speaker
+c. Graphics
+d. The Von Neumann Model 
+(Answer: willgototheRAM)
+----------------------------
+25. 9.______ isready forthenext instruction .Repeat steps 1-6.How a ______ works?
+a. Java
+b. CPU
+c. Intel
+d. RAM 
+(Answer: CPU)
+----------------------------
+26. ______ tostore data and instructions .
+a. RAM
+b. 1024
+c. Hardware
+d. Itisused 
 (Answer: Itisused)
 ----------------------------
-26. Forexample, ifthe
+27. ______ memory isdivided into large number of
+small parts called cells .Each location orcell
+hasaunique address, which varies from zero
+tomemory sizeminus one.
+a. The
+b. Register(Program Counter
+c. 1642 –1945
+d. CPU 
+(Answer: The)
+----------------------------
+28. Forexample, ifthe
 computer has 64kwords, then thismemory
 unit has64*______ =65536 memory locations .
-a. Register
-b. RAM
-c. Speaker
-d. 1024 
+a. Input / Output Devices
+b. 1024
+c. Historical Development of Computers
+d. European Committee 
 (Answer: 1024)
 ----------------------------
-27. ______ memory holds only those data and 
+29. ______ memory holds only those data and 
 instructions on which the computer is currently 
 working.
-a. The Von Neumann Model
-b. CPU
-c. Memory
+a. Memory
 Primary
+b. Graphics
+c. Itisused
 d. Neumann 
 (Answer: Memory
 Primary)
 ----------------------------
-28. ______
+30. ______
 Input and output devices allow the
 computer system tointeract with theoutside
 world bymoving data into and out ofthe
 system .
-a. CPU
-b. Input / Output Devices
-c. Calculating Machines
-d. CPU 
+a. Input / Output Devices
+b. Flash Drive
+c. Memory
+Primary
+d. European Telecommunications 
+Standards Institute 
 (Answer: Input / Output Devices)
 ----------------------------
-29. Some input devices are:
+31. Some input devices are:
 Keyboard
 Mouse
 Microphone
@@ -401,13 +289,13 @@ ______ tablet
 Joystick
 Output device
 Anoutput device is used to send data out of the system.
-a. MBR
-b. RAM
-c. CPU
+a. 1945 –1953
+b. decadeThe Computer Level Hierarchy
+c. Historical Development of Computers
 d. Graphics 
 (Answer: Graphics)
 ----------------------------
-30. Some output devices are:
+32. Some output devices are:
 Monitor
 Printer
 ______
@@ -416,64 +304,31 @@ Combined Input/Output Devices
 Touchscreen : Acts as both an input 
 device (when you touch it) and an 
 output device (displaying information).
-a. Historical Development of Computers
-b. European Telecommunications 
-Standards Institute
-c. Speaker
-d. 1024 
+a. Speaker
+b. Rock’s Law
+c. 1642 –1945
+d. CPU 
 (Answer: Speaker)
 ----------------------------
-31. USB ______ : Similar to an external 
+33. USB ______ : Similar to an external 
 hard drive, it can both receive and 
 send data.
-a. Develops
-b. Neumann
-c. •User
-d. Flash Drive 
+a. Flash Drive
+b. Intel
+c. RAM
+d. The Von Neumann Model 
 (Answer: Flash Drive)
-----------------------------
-32. Aim
-Establish common guide lines for a particular 
-type of equipment to ensure a “worldwide”1
-interoperability (compatibility)Some international standards 
-organizations
-ISO (______)
-Develops and publishes international 
-standards across various industries, 
-including computing and technology.
-a. Register
-b. International Organization for 
-Standardization
-c. CPU
-d. Develops 
-(Answer: International Organization for 
-Standardization)
-----------------------------
-33. Aim
-Establish common guide lines for a particular 
-type of equipment to ensure a “worldwide”1
-interoperability (compatibility)Some international standards 
-organizations
-ISO (International Organization for 
-Standardization)
-______ and publishes international 
-standards across various industries, 
-including computing and technology.
-a. Von Neumann Model
-b. RAM
-c. Develops
-d. Program Counter 
-(Answer: Develops)
 ----------------------------
 34. IEC (______)
 Focuses on international standards for 
 electrical, electronic, and related 
 technologies.
-a. Java
-b. Central Processing Unit
-c. International Electrotechnical
+a. International Electrotechnical
 Commission
-d. RAM 
+b. The Von Neumann Model
+c. The
+d. Memory
+Primary 
 (Answer: International Electrotechnical
 Commission)
 ----------------------------
@@ -482,11 +337,11 @@ Commission)
 information and communications 
 technologies, including fixed, mobile, 
 radio, and internet technologies.
-a. decadeThe Computer Level Hierarchy
-b. •User
-c. European Telecommunications 
+a. European Telecommunications 
 Standards Institute
-d. RAM 
+b. Software
+c. Itisused
+d. Hardware 
 (Answer: European Telecommunications 
 Standards Institute)
 ----------------------------
@@ -499,11 +354,10 @@ sectors, including information
 technology
 Historical Development of Computers
 Generation Zero:
-a. CEN
-b. The Von Neumann Model
-c. decadeThe Computer Level Hierarchy
-d. International Electrotechnical
-Commission 
+a. RAM
+b. CEN
+c. The Von Neumann Model
+d. 1642 –1945 
 (Answer: CEN)
 ----------------------------
 37. Some international standards 
@@ -515,10 +369,10 @@ sectors, including information
 technology
 Historical Development of Computers
 Generation Zero:
-a. European Committee
-b. Central Processing Unit
-c. 1945 –1953
-d. Graphics 
+a. The
+b. European Committee
+c. Itisused
+d. Software 
 (Answer: European Committee)
 ----------------------------
 38. Some international standards 
@@ -529,30 +383,28 @@ Standardization)
 sectors, including information 
 technology
 ______:
-a. Memory
-Primary
-b. Historical Development of Computers
-Generation Zero
-c. Develops
-d. International Electrotechnical
-Commission 
+a. Itisused
+b. decadeThe Computer Level Hierarchy
+c. RAM
+d. Historical Development of Computers
+Generation Zero 
 (Answer: Historical Development of Computers
 Generation Zero)
 ----------------------------
 39. Mechanical ______ 
 (1642 –1945 )
-a. Register
-b. Register
-c. Historical Development of Computers
-d. Calculating Machines 
+a. Calculating Machines
+b. RAM
+c. CPU
+d. Itisused 
 (Answer: Calculating Machines)
 ----------------------------
 40. Mechanical Calculating Machines 
 (______ )
-a. •User
-b. Calculating Machines
-c. 1642 –1945
-d. CPU 
+a. CEN
+b. toMemory Address Register
+c. CPU
+d. 1642 –1945 
 (Answer: 1642 –1945)
 ----------------------------
 41. Use of mechanical technology to do calculations
@@ -560,331 +412,127 @@ d. CPU
 than the decimal number systemHistorical Development of Computers
 First Generation: Vacuum tube computers 
 (______)
-a. 1945 –1953
-b. CPU
-c. Historical Development of Computers
-d. Von Neumann Model 
+a. theCPU
+b. toRAM .CUturns
+c. 1945 –1953
+d. toMemory Data Register(buffer 
 (Answer: 1945 –1953)
 ----------------------------
 42. ______
-The Second Generation: Transistorized 
-Computers (1954 –1965 )
-Transistors revolutionize computers
-•Transistors consume lesspower than
-vacuum tubes, are smaller, and
-work more reliably,
-•the circuitry incomputers became
-smaller and more reliable .
-a. CEN
-b. Register
-c. Input / Output Devices
+The Third Generation: Integrated Circuit 
+Computers (1965 –1980 )
+a. Graphics
+b. decadeThe Computer Level Hierarchy
+c. CPU
 d. Historical Development of Computers 
 (Answer: Historical Development of Computers)
 ----------------------------
 43. Historical Development of Computers
-The Second Generation: Transistorized 
-Computers (______ )
-Transistors revolutionize computers
-•Transistors consume lesspower than
-vacuum tubes, are smaller, and
-work more reliably,
-•the circuitry incomputers became
-smaller and more reliable .
-a. 1954 –1965
-b. instructionsThe Computer Level Hierarchy
-Level 0
-c. Memory
-Primary
-d. Calculating Machines 
-(Answer: 1954 –1965)
-----------------------------
-44. ______
 The Third Generation: Integrated Circuit 
-Computers (1965 –1980 )
-a. CPU
-b. Historical Development of Computers
+Computers (______ )
+a. Graphics
+b. Input / Output Devices
 c. CPU
-d. 1642 –1945 
-(Answer: Historical Development of Computers)
-----------------------------
-45. Historical Development of Computers
-The Third Generation: Integrated Circuit 
-Computers (______ )
-a. Von Neumann Model
-b. Itisused
-c. The Von Neumann Model
 d. 1965 –1980 
 (Answer: 1965 –1980)
 ----------------------------
-46. ______ (early Intel capitalist Arthur Rock)
-a. Software
-b. Rock’s Law
-c. MBR
-d. CPU 
+44. ______ (early Intel capitalist Arthur Rock)
+a. Rock’s Law
+b. Java
+c. CPU
+d. RAM 
 (Answer: Rock’s Law)
 ----------------------------
-47. Rock’s Law (early ______ capitalist Arthur Rock)
+45. Rock’s Law (early ______ capitalist Arthur Rock)
 a. Itisused
-b. Neumann
-c. Register
-d. Intel 
+b. Intel
+c. toRAM .CUturns
+d. RAM 
 (Answer: Intel)
 ----------------------------
-48. Rock’s Law (early Intel capitalist ______)
-a. Arthur Rock
-b. Historical Development of Computers
-c. Neumann
-d. Flash Drive 
+46. Rock’s Law (early Intel capitalist ______)
+a. The
+b. CPU
+c. Software
+d. Arthur Rock 
 (Answer: Arthur Rock)
 ----------------------------
-49. The cost of capital equipment to build 
-semiconductors will double every four yearsHistorical Development of Computers
-IfMoore’s Law istohold, ______ must fallor
-computers must shift to aradically different
-technology
-Research into new computing paradigms has been
-proceeding inearnest during thelasthalf
-a. 1024
-b. Rock’s Law
-c. CPU
-d. European Committee 
-(Answer: Rock’s Law)
-----------------------------
-50. ______
+47. ______
 Theuser executes programs onaPC(Paint, word files, games,
 etc.)
-a. Java
-b. decadeThe Computer Level Hierarchy
-c. Input / Output Devices
-d. •User 
+a. Speaker
+b. The Von Neumann Model
+c. Graphics
+d. decadeThe Computer Level Hierarchy 
 (Answer: decadeThe Computer Level Hierarchy)
 ----------------------------
-51. The highest level –Level 6 –is the “user’s level”
+48. The highest level –Level 6 –is the “user’s level”
 •Level 6 is composed of applications
 ______ runs programs such as word processors, graphics 
 packages, or games.
-a. Input / Output Devices
-b. Itisused
-c. CEN
-d. •User 
+a. The
+b. •User
+c. Neumann
+d. RAM 
 (Answer: •User)
 ----------------------------
-52. Computer Level Hierarchy
-Level 1: The Control Level 
-Is where a control unit do its job
-Receives machine instructions from the level above
-decodes and executes those instructions properly
-Moves data to where and when it should be
-The control unit interprets the machine ______: The Digital Logic Level
-is where we find the physical components of the 
-computer system: the gates and wiresThe Von Neumann Model
-A computer architecture model published by a 
-famous Hungarian mathematician named John von 
-Neumann
-The idea is to store programs’ instructions inside a main 
-memory in order to avoid rewiring the system each 
-time it had a new problem to solve, or an old one to 
-debug.
-a. RAM
-b. CEN
-c. Arthur Rock
-d. instructionsThe Computer Level Hierarchy
-Level 0 
-(Answer: instructionsThe Computer Level Hierarchy
-Level 0)
-----------------------------
-53. Computer Level Hierarchy
-Level 1: The Control Level 
-Is where a control unit do its job
-Receives machine instructions from the level above
-decodes and executes those instructions properly
-Moves data to where and when it should be
-The control unit interprets the machine instructionsThe Computer Level Hierarchy
-Level 0: The Digital Logic Level
-is where we find the physical components of the 
-computer system: the gates and wiresThe ______
-A computer architecture model published by a 
-famous Hungarian mathematician named John von 
-Neumann
-The idea is to store programs’ instructions inside a main 
-memory in order to avoid rewiring the system each 
-time it had a new problem to solve, or an old one to 
-debug.
-a. Itisused
-b. International Electrotechnical
-Commission
-c. Von Neumann Model
-d. Neumann 
-(Answer: Von Neumann Model)
-----------------------------
-54. Computer Level Hierarchy
-Level 1: The Control Level 
-Is where a control unit do its job
-Receives machine instructions from the level above
-decodes and executes those instructions properly
-Moves data to where and when it should be
-The control unit interprets the machine instructionsThe Computer Level Hierarchy
-Level 0: The Digital Logic Level
-is where we find the physical components of the 
-computer system: the gates and wiresThe Von Neumann Model
-A computer architecture model published by a 
-famous Hungarian mathematician named ______Neumann
-The idea is to store programs’ instructions inside a main 
-memory in order to avoid rewiring the system each 
-time it had a new problem to solve, or an old one to 
-debug.
-a. decadeThe Computer Level Hierarchy
-b. •User
-c. John von 
-
-d. MBR 
-(Answer: John von 
-)
-----------------------------
-55. Computer Level Hierarchy
-Level 1: The Control Level 
-Is where a control unit do its job
-Receives machine instructions from the level above
-decodes and executes those instructions properly
-Moves data to where and when it should be
-The control unit interprets the machine instructionsThe Computer Level Hierarchy
-Level 0: The Digital Logic Level
-is where we find the physical components of the 
-computer system: the gates and wiresThe Von ______ Model
-A computer architecture model published by a 
-famous Hungarian mathematician named John von 
-______
-The idea is to store programs’ instructions inside a main 
-memory in order to avoid rewiring the system each 
-time it had a new problem to solve, or an old one to 
-debug.
-a. Neumann
-b. Graphics
-c. CPU
-d. The Von Neumann Model 
-(Answer: Neumann)
-----------------------------
-56. All stored -program computers have come to be 
+49. All stored -program computers have come to be 
 known as von ______ systems using the von 
 ______ architectureThe Von ______ Model
 The Von ______ architecture
-a. CPU
-b. CEN
-c. RAM
-d. Neumann 
+a. Neumann
+b. The
+c. CPU
+d. RAM 
 (Answer: Neumann)
 ----------------------------
-57. All stored -program computers have come to be 
+50. All stored -program computers have come to be 
 known as von Neumann systems using the von 
 Neumann architectureThe ______
 The Von Neumann architecture
-a. Historical Development of Computers
-Generation Zero
-b. Historical Development of Computers
-c. Von Neumann Model
-d. Flash Drive 
+a. Software
+b. Intel
+c. RAM
+d. Von Neumann Model 
 (Answer: Von Neumann Model)
 ----------------------------
-58. It satisfies at least the following 
-characteristics
-Consists of three hardware 
-systems 
-A central processing unit (______) 
-with a control unit, an arithmetic 
-logic unit (ALU), registers (small 
-storage areas), and a program 
-counter ;
-The Von Neumann Model
-The Von Neumann architecture 
-It satisfies at least the following 
-characteristics
-a main -memory system, 
-which holds programs that 
-control the computer’s 
-operation;
-and an I/O system.
-a. Another
-b. CPU
-c. isa
-d. Program Counter 
-(Answer: CPU)
-----------------------------
-59. Capacity to carry out sequential 
-instruction processing
-Contains a single path, between 
-the main memory system and 
-the control unit of the ______
-The Von Neumann Model
-Program instructions are stored inside the main memory
-The machine runs the programs sequentially (instruction 
-per instruction –machine instruction)
-Each machine instruction is fetched, decoded and 
-executed during one cycle known as the von 
-Neumann execution cycle (also called the fetch -
-decode -execute cycle )
-a. European Telecommunications 
-Standards Institute
-b. Register
-c. CPU
-d. Hardware 
-(Answer: CPU)
-----------------------------
-60. Capacity to carry out sequential 
-instruction processing
-Contains a single path, between 
-the main memory system and 
-the control unit of the CPU
-The Von ______ Model
-Program instructions are stored inside the main memory
-The machine runs the programs sequentially (instruction 
-per instruction –machine instruction)
-Each machine instruction is fetched, decoded and 
-executed during one cycle known as the von 
-______ execution cycle (also called the fetch -
-decode -execute cycle )
-a. The Von Neumann Model
-b. Hardware
-c. CPU
-d. Neumann 
-(Answer: Neumann)
-----------------------------
-61. ______
+51. ______
 One iteration of the cycle is as follows:
 1.
-a. International Organization for 
-Standardization
-b. Central Processing Unit
-c. The Von Neumann Model
-d. 1965 –1980 
+a. The Von Neumann Model
+b. toMemory Data Register(buffer
+c. Java
+d. 1024 
 (Answer: The Von Neumann Model)
 ----------------------------
-62. Any data operands required to execute the instruction are 
+52. Any data operands required to execute the instruction are 
 fetched from memory and placed into registers within the 
 ______.
-a. CPU
-b. The Von Neumann Model
-c. •User
-d. Java 
+a. Itisused
+b. CPU
+c. International Electrotechnical
+Commission
+d. RAM 
 (Answer: CPU)
 ----------------------------
-63. ______
+53. ______
 ______
 An example system: wading through the jargon
-a. John von 
-
-b. The Von Neumann Model
-c. CPU
-d. •User 
+a. toMemory Address Register
+b. Historical Development of Computers
+Generation Zero
+c. Java
+d. The Von Neumann Model 
 (Answer: The Von Neumann Model)
 ----------------------------
-64. The Von Neumann Model
+54. The Von Neumann Model
 The Von Neumann Model
 An example system: wading through the jargon
-a. Speaker
-b. the jargon
+a. the jargon
 
-c. 1642 –1945
-d. Itisused 
+b. The Von Neumann Model
+c. Itisused
+d. Historical Development of Computers 
 (Answer: the jargon
 )
 ----------------------------
