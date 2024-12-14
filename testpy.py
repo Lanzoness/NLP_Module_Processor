@@ -80,85 +80,31 @@ def extract_text_from_pdf(pdf_path):
 
 def extract_named_entities_with_context(text):
     """Extracts named entities and their surrounding context from the text."""
-    # First, preprocess the text to join split lines
-    lines = text.splitlines()
-    processed_text = ""
-    i = 0
-    while i < len(lines):
-        current_line = lines[i].strip()
-        if not current_line:
-            processed_text += "\n"
-            i += 1
-            continue
-            
-        # If the current line has an unmatched parenthesis
-        if '(' in current_line and ')' not in current_line:
-            # Look ahead to the next line
-            if i + 1 < len(lines):
-                next_line = lines[i + 1].strip()
-                if ')' in next_line:
-                    # Join the lines
-                    processed_text += current_line + " " + next_line + "\n"
-                    i += 2
-                    continue
-        
-        processed_text += current_line + "\n"
-        i += 1
-    
     # Add custom date range detection using regex for year ranges
     date_pattern = r'\b(\d{4}\s*–\s*\d{4})\b'  # Matches patterns like "1642 – 1945"
-    processed_text = re.sub(date_pattern, r'ENTITY_DATE(\1)', processed_text)
-
+    
+    # Store matches before spaCy processing
+    date_matches = [(match.group(), match.start(), match.end()) for match in re.finditer(date_pattern, text)]
+    
     # Now process with spaCy
-    doc = nlp(processed_text)
+    doc = nlp(text)
     entities_with_context = []
     
+    # Iterate over named entities from spaCy
     for ent in doc.ents:
-        # Expanded list of entity labels to include dates and names
         if ent.label_ in ["PERSON", "ORG", "GPE", "DATE", "EVENT", "LOC", "MONEY", "PRODUCT", "WORK_OF_ART", "TIME"]:
-            sentence = ent.sent.text.strip()
-            entity_text = ent.text.strip()
-            
-            # Check for custom date entity
-            if "ENTITY_DATE" in entity_text:
-                entity_text = entity_text.replace("ENTITY_DATE", "").strip()
-                ent.label_ = "DATE"  # Set the label to DATE for custom entities
-            
-            # If entity contains opening parenthesis, ensure we capture everything
-            if '(' in entity_text:
-                # Find the position in the sentence
-                start_pos = sentence.find(entity_text)
-                if start_pos != -1:
-                    # Look for closing parenthesis after the entity
-                    remaining = sentence[start_pos:]
-                    open_count = remaining.count('(')
-                    close_count = remaining.count(')')
-                    
-                    if open_count > close_count:
-                        # Find position of the last closing parenthesis
-                        last_close = -1
-                        count = open_count - close_count
-                        temp = remaining
-                        while count > 0 and (pos := temp.find(')')) != -1:
-                            last_close = pos
-                            temp = temp[pos + 1:]
-                            count -= 1
-                        
-                        if last_close != -1:
-                            # Include everything up to the last needed closing parenthesis
-                            entity_text = remaining[:last_close + 1]
-            
-            # Increase the sentence length limit
-            if len(sentence.split()) <= 30:  # Limit to 30 words
-                entities_with_context.append((entity_text, ent.label_, sentence))
+            entities_with_context.append((ent.text.strip(), ent.label_, ent.sent.text.strip()))
     
-    # Add custom handling for ENTITY_DATE
-    for match in re.finditer(r'ENTITY_DATE\((.*?)\)', processed_text):
-        date_entity = match.group(1).strip()
-        sentence = doc[match.start():match.end()].sent.text.strip()  # Get the sentence containing the date
-        entities_with_context.append((date_entity, "DATE", sentence))
-
+    # Handle custom ENTITY_DATE matches
+    for match_text, start, end in date_matches:
+        # Identify the sentence containing the date
+        for sent in doc.sents:
+            if sent.start_char <= start < sent.end_char:
+                entities_with_context.append((match_text, "DATE", sent.text.strip()))
+                break
+    
     return entities_with_context
+
 
 
 def generate_multiple_choice_questions(entities_with_context):
@@ -220,5 +166,5 @@ def main(pdf_path):
     print(f"Questions have been saved to {output_file}")
 
 if __name__ == "__main__":
-    pdf_path = "Module_01_Introduction_to_Computer_Organization_and_Architecture-cropped.pdf"  # Replace with your PDF file path
+    pdf_path = "Module_01_Introduction_to_Computer_Organization_and_Architecture.pdf"  # Replace with your PDF file path
     main(pdf_path)

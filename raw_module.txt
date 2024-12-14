@@ -257,9 +257,3 @@ The Von Neumann Model One iteration of the cycle is as follows:
 
 4.  The ALU executes the instruction and places the results in registers or memory.
 
-The Von Neumann Model
-
-The Von Neumann Model
-
-An example system: wading through the jargon
-
