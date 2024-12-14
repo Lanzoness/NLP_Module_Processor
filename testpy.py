@@ -26,26 +26,38 @@ def extract_text_from_pdf(pdf_path):
                 if not line:
                     continue
                 
-                # Split the line into sentences
-                parts = re.split(r'(?<=[.?!])\s+(?=[A-Z])', line)
+                # Split by numbered list pattern
+                numbered_parts = re.split(r'(\d+\.\s+)', line)
                 
-                for part in parts:
-                    # Check for any non-alphanumeric character at the start (except spaces)
-                    is_list_item = bool(re.match(r'^\s*[^a-zA-Z0-9\s]', part))
-                    
-                    if is_list_item:
+                for part in numbered_parts:
+                    # If this part is a number with period (e.g., "1. "), start a new line
+                    if re.match(r'^\d+\.\s+$', part):
                         if current_line:
-                            processed_lines.append(current_line)
+                            processed_lines.append(current_line.strip())
                             current_line = ""
                         current_line = part
-                    else:
-                        if current_line:
-                            current_line += " " + part
+                        continue
+                    
+                    # Split remaining parts by sentence boundaries
+                    sentence_parts = re.split(r'(?<=[.?!])\s+(?=[A-Z])', part)
+                    
+                    for sent in sentence_parts:
+                        # Check for other list item markers
+                        is_list_item = bool(re.match(r'^\s*(?:[^a-zA-Z0-9\s])', sent))
+                        
+                        if is_list_item:
+                            if current_line:
+                                processed_lines.append(current_line.strip())
+                                current_line = ""
+                            current_line = sent
                         else:
-                            current_line = part
+                            if current_line:
+                                current_line += " " + sent
+                            else:
+                                current_line = sent
             
             if current_line:
-                processed_lines.append(current_line)
+                processed_lines.append(current_line.strip())
             
             # Combine all lines and add double newline for page separation
             text += '\n'.join(processed_lines) + "\n\n"

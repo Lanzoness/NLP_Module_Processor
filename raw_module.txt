@@ -248,10 +248,14 @@ The Von Neumann Model
 Each machine instruction is fetched, decoded and executed during one cycle known as the von Neumann execution cycle (also called the fetch- decode-execute cycle)
 
 The Von Neumann Model One iteration of the cycle is as follows:
-1. The control unit fetches the next program instruction from the memory, using the program counter to determine where the instruction is located.
-2. The instruction is decoded into a language the ALU can understand.
-3. Any data operands required to execute the instruction are fetched from memory and placed into registers within the CPU.
-4. The ALU executes the instruction and places the results in registers or memory.
+
+1.  The control unit fetches the next program instruction from the memory, using the program counter to determine where the instruction is located.
+
+2.  The instruction is decoded into a language the ALU can understand.
+
+3.  Any data operands required to execute the instruction are fetched from memory and placed into registers within the CPU.
+
+4.  The ALU executes the instruction and places the results in registers or memory.
 
 The Von Neumann Model
 
