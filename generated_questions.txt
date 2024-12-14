@@ -3,282 +3,456 @@ Multiple-Choice Questions:
 1. The main components of a computer
 From ______ to Hardware
 Computer scientists design algorithms
-Computer scientists implement analgorithm by
+Computer scientists implement an algorithm by
 using high level programing language (Java, C,
 etc.)
 a. Software
-b. CPU
-c. 1024
-d. CPU 
+b. CU
+c. Graphics
+d. Assembly Language Level 
 (Answer: Software)
 ----------------------------
 2. The main components of a computer
 From Software to ______
 Computer scientists design algorithms
-Computer scientists implement analgorithm by
+Computer scientists implement an algorithm by
 using high level programing language (Java, C,
 etc.)
-a. toMemory Data Register(buffer
-b. Software
-c. Register
-d. Hardware 
+a. CPU
+b. Register
+c. Hardware
+d. European Telecommunications 
+Standards Institute 
 (Answer: Hardware)
 ----------------------------
 3. The main components of a computer
 From Software to Hardware
 Computer scientists design algorithms
-Computer scientists implement analgorithm by
+Computer scientists implement an algorithm by
 using high level programing language (______, C,
 etc.)
-a. Software
-b. Register(Program Counter
-c. 1024
-d. Java 
+a. Java
+b. 1024
+c. RAM
+d. Instruction Register 
 (Answer: Java)
 ----------------------------
-4. The central processing unit (______) isresponsible for
+4. The central processing unit (______) is responsible for
 fetching the program instructions, decoding each
-instruction that isfetched, and performing the
-indicated sequence ofoperations onthe correct
-data .
-a. toRAM .CUturns
-b. CPU
-c. 1642 –1945
-d. toMemory Data Register(buffer 
+instruction
+that
+is
+fetched,
+and
+performing
+the
+indicated sequence of operations on the correct
+data.
+a. CPU
+b. Memory Address Register
+c. RAM
+d. RAM 
 (Answer: CPU)
 ----------------------------
 5. All computers have a ______ that can 
 be divided into two pieces.
-a. toRAM .CUturns
-b. Graphics
-c. CPU
-d. •User 
+a. CPU
+b. Intel
+c. International Electrotechnical
+Commission
+d. CU 
 (Answer: CPU)
 ----------------------------
-6. The second ______ component isthe
-control unit, amodule responsible for
+6. The
+second
+______
+component
+is
+the
+control unit, a module responsible for
 sequencing operations and making sure
-thecorrect data arewhere they need to
-beatthecorrect time .
-a. toMemory Data Register(buffer
-b. Register(Program Counter
-c. 1965 –1980
-d. CPU 
+the correct data are where they need to
+be at the correct time.
+a. CPU
+b. every 18 months
+c. MAR
+d. RAM 
 (Answer: CPU)
 ----------------------------
 7. ______
 ______ is a small, very fast storage 
 area inside CPU.
-a. toMemory Data Register(buffer
-b. Neumann
-c. Register
+a. CEN
+b. Register
+c. Software
 d. CPU 
 (Answer: Register)
 ----------------------------
 8. Register
 Register is a small, very fast storage 
 area inside ______.
-a. 1945 –1953
-b. Software
-c. CPU
-d. European Committee 
+a. RAM
+b. Calculating Machines
+c. RAM
+d. CPU 
 (Answer: CPU)
 ----------------------------
-9. ______ tostore intermediate values
-from calculations orinstructions that
-isneeded again immediately .
-a. Itisused
+9. CU receives orders from ______ in the form of
+instruction and decode (break) that instruction
+down
+into
+specific
+commands
+for
+other
+components inside computer system.
+a. Data
+b. Neumann
+c. Instruction Address Register(Program Counter
+d. RAM 
+(Answer: RAM)
+----------------------------
+10. Together, these components perform the tasks of
+the ______: fetching instructions, decoding them,
+and finally performing the indicated sequence of
+operations.
+a. CPU
+b. CU
+c. CU
+d. RAM 
+(Answer: CPU)
+----------------------------
+11. How a ______ works?
+1.
+a. Software
+b. CPU
+c. MAR
+d. Data 
+(Answer: CPU)
+----------------------------
+12. ______ turn on enable wire of Instruction Address Register(Program Counter) to
+allow the next Instruction address to flows to RAM.
+a. CEN
+b. CU
+c. Memory Data Register(buffer
+d. CPU 
+(Answer: CU)
+----------------------------
+13. CU turn on enable wire of ______) to
+allow the next Instruction address to flows to RAM.
+a. Instruction Address Register(Program Counter
+b. MAR
+c. CPU
+d. CPU 
+(Answer: Instruction Address Register(Program Counter)
+----------------------------
+14. CU turn on enable wire of Instruction Address Register(Program Counter) to
+allow the next Instruction address to flows to ______.
+a. 1642 – 1945
+b. CU
+c. Hardware
+d. RAM 
+(Answer: RAM)
+----------------------------
+15. 2.
+Instruction address first goes to ______ which only tells
+RAM what address the CPU wants next.
+a. Memory Address Register
 b. CPU
 c. RAM
-d. 1945 –1953 
-(Answer: Itisused)
+d. every 18 months 
+(Answer: Memory Address Register)
 ----------------------------
-10. CU receives orders from ______ inthe form of
-instruction and decode (break) that instruction
-down into specific commands for other
-components inside computer system .
-a. Neumann
-b. CPU
-c. decadeThe Computer Level Hierarchy
-d. RAM 
-(Answer: RAM)
-----------------------------
-11. Together, these components perform thetasks of
-the ______:fetching instructions, decoding them,
-and finally performing theindicated sequence of
-operations .
-a. RAM
-b. Historical Development of Computers
-c. Register(Program Counter
-d. CPU 
-(Answer: CPU)
-----------------------------
-12. How a ______ works?
-1.CUturn onenable wire ofInstruction Address Register(Program Counter) to
-allow thenext Instruction address toflows toRAM .
-a. Historical Development of Computers
-b. Intel
-c. Input / Output Devices
-d. CPU 
-(Answer: CPU)
-----------------------------
-13. How a CPU works?
-1.CUturn onenable wire ofInstruction Address ______) to
-allow thenext Instruction address toflows toRAM .
-a. Register(Program Counter
-b. The
-c. CPU
-d. The Von Neumann Model 
-(Answer: Register(Program Counter)
-----------------------------
-14. How a CPU works?
-1.CUturn onenable wire ofInstruction Address Register(Program Counter) to
-allow thenext Instruction address ______ .
-a. RAM
-b. Graphics
-c. toflows toRAM
-d. toRAM .CUturns 
-(Answer: toflows toRAM)
-----------------------------
-15. 2.Instruction address firstgoes ______ which only tells
-RAM what address theCPU wants next .CUturns onthesetwire ofMAR,
-then memory address goes toRAM .CUturns
-a. toMemory Address Register
-b. RAM
-c. Java
-d. Rock’s Law 
-(Answer: toMemory Address Register)
-----------------------------
-16. 2.Instruction address firstgoes toMemory Address Register which only tells
-______ what address theCPU wants next .CUturns onthesetwire ofMAR,
-then memory address goes to______ .CUturns
-a. Java
-b. Historical Development of Computers
-Generation Zero
-c. Input / Output Devices
-d. RAM 
-(Answer: RAM)
-----------------------------
-17. 2.Instruction address firstgoes toMemory Address Register which only tells
-RAM what address ______ wants next .CUturns onthesetwire ofMAR,
-then memory address goes toRAM .CUturns
+16. 2.
+Instruction address first goes to Memory Address Register which only tells
+______ what address the CPU wants next.
 a. Register
-b. Von Neumann Model
-c. 1945 –1953
-d. theCPU 
-(Answer: theCPU)
-----------------------------
-18. 2.Instruction address firstgoes toMemory Address Register which only tells
-RAM what address theCPU wants next .CUturns onthesetwire ofMAR,
-then memory address goes ______
-a. CPU
-b. 1024
-c. toRAM .CUturns
-d. Flash Drive 
-(Answer: toRAM .CUturns)
-----------------------------
-19. ontheenable ______ wire.
-a. Arthur Rock
 b. RAM
-c. The
-d. Graphics 
+c. International Electrotechnical
+Commission
+d. Rock’s Law 
 (Answer: RAM)
 ----------------------------
-20. 3.Then data goes ______) from RAM viadata bus.
-a. toMemory Data Register(buffer
+17. 2.
+Instruction address first goes to Memory Address Register which only tells
+RAM what address the ______ wants next.
+a. Calculating Machines
+b. Temporary
+c. CEN
+d. CPU 
+(Answer: CPU)
+----------------------------
+18. ______ turns on the set wire of MAR,
+then memory address goes to RAM.
+a. The Computer Level Hierarchy
+b. CU
+c. CPU
+d. 1.5 year 
+(Answer: CU)
+----------------------------
+19. CU turns on the set wire of ______,
+then memory address goes to RAM.
+a. MAR
+b. RAM
+c. Accumulator
+d. Flash Drive 
+(Answer: MAR)
+----------------------------
+20. CU turns on the set wire of MAR,
+then memory address goes to ______.
+a. CU
+b. MAR
+c. RAM
+d. CEN 
+(Answer: RAM)
+----------------------------
+21. ______ turns on the enable RAM wire.
+a. CU
+b. Speaker
+c. CPU
+d. Arthur Rock 
+(Answer: CU)
+----------------------------
+22. CU turns on the enable ______ wire.
+a. CU
+b. RAM
+c. CPU
+d. CPU 
+(Answer: RAM)
+----------------------------
+23. 3.
+Then data goes to ______) from RAM via data bus.
+a. Neumann
+b. every 18 months
+c. Memory Data Register(buffer
+d. Instruction Register 
+(Answer: Memory Data Register(buffer)
+----------------------------
+24. 3.
+Then data goes to Memory Data Register(buffer) from ______ via data bus.
+a. CPU
+b. RAM
+c. International Electrotechnical
+Commission
+d. CU 
+(Answer: RAM)
+----------------------------
+25. Then data (instruction) goes to ______.
+a. Rock’s Law
+b. Instruction Register
+c. Memory
+Primary
+d. MAR 
+(Answer: Instruction Register)
+----------------------------
+26. 4.
+______ turns on the set Instruction Register(store instruction) wire.
+a. Register
+b. CPU
+c. CU
+d. European Telecommunications 
+Standards Institute 
+(Answer: CU)
+----------------------------
+27. Instruction
+goes to ______.
+a. CEN
+b. CU
+c. 1.5 year
+d. CPU 
+(Answer: CU)
+----------------------------
+28. ______ decodes instruction, tells ALU the type of operation ALU
+need to perform and stores the input in Temporary registers by turning on
+the set wire.
+a. Graphics
+b. Intel
+c. CU
+d. CPU 
+(Answer: CU)
+----------------------------
+29. CU decodes instruction, tells ALU the type of operation ALU
+need to perform and stores the input in ______ registers by turning on
+the set wire.
+a. Register
+b. MAR
+c. Temporary
+d. Instruction Address Register(Program Counter 
+(Answer: Temporary)
+----------------------------
+30. How a ______ works?
+5.
+a. CEN
+b. RAM
+c. CPU
+d. The Computer Level Hierarchy 
+(Answer: CPU)
+----------------------------
+31. ______
+turns
+on
+the
+set
+wire
+of
+Accumulator and instructs ALU to store the immediate result
+in Accumulator (A Register).
+a. CPU
+b. The Von Neumann Model
+c. CU
+d. The Computer Level Hierarchy 
+(Answer: CU)
+----------------------------
+32. CU
+turns
+on
+the
+set
+wire
+of
+______ and instructs ALU to store the immediate result
+in ______ (A Register).
+a. Accumulator
 b. International Electrotechnical
 Commission
-c. CPU
-d. Hardware 
-(Answer: toMemory Data Register(buffer)
+c. European Telecommunications 
+Standards Institute
+d. Memory Address Register 
+(Answer: Accumulator)
 ----------------------------
-21. 3.Then data goes toMemory Data Register(buffer) from ______ viadata bus.
-a. RAM
-b. Register(Program Counter
-c. •User
-d. Java 
-(Answer: RAM)
-----------------------------
-22. Then data (instruction) goes toInstruction ______ .
-a. theCPU
-b. Register
-c. The Von Neumann Model
-d. toflows toRAM 
+33. CU
+turns
+on
+the
+set
+wire
+of
+Accumulator and instructs ALU to store the immediate result
+in Accumulator (A ______).
+a. CPU
+b. RAM
+c. Register
+d. 1024 
 (Answer: Register)
 ----------------------------
-23. How a ______ works?
-a. The Von Neumann Model
-b. toflows toRAM
-c. CPU
-d. Register(Program Counter 
-(Answer: CPU)
+34. ______ turns on the enable wire of
+Accumulator to instruct Accumulator to output the result to the
+system bus.
+a. RAM
+b. CU
+c. The Von Neumann Model
+d. Java 
+(Answer: CU)
 ----------------------------
-24. 7.The result stored temporarily inARegister ______ via
+35. 6.
+______ send address to MAR again and points out an address in RAM.
+a. RAM
+b. RAM
+c. Data
+d. CU 
+(Answer: CU)
+----------------------------
+36. 6.
+CU send address to ______ again and points out an address in RAM.
+a. Instruction Register
+b. Neumann
+c. The Computer Level Hierarchy
+d. MAR 
+(Answer: MAR)
+----------------------------
+37. 6.
+CU send address to MAR again and points out an address in ______.
+a. CU
+b. Register
+c. RAM
+d. Memory Data Register(buffer 
+(Answer: RAM)
+----------------------------
+38. The result stored temporarily in A ______ will go to the RAM via
 data bus.
-a. willgototheRAM
-b. Speaker
-c. Graphics
-d. The Von Neumann Model 
-(Answer: willgototheRAM)
+a. European Telecommunications 
+Standards Institute
+b. International Electrotechnical
+Commission
+c. Register
+d. Memory Address Register 
+(Answer: Register)
 ----------------------------
-25. 9.______ isready forthenext instruction .Repeat steps 1-6.How a ______ works?
-a. Java
+39. The result stored temporarily in A Register will go to the ______ via
+data bus.
+a. The Computer Level Hierarchy
+b. CEN
+c. CU
+d. RAM 
+(Answer: RAM)
+----------------------------
+40. ______ will be stored in the specified address in RAM.
+a. Data
+b. Historical Development of Computers
+Generation Zero
+c. RAM
+d. MAR 
+(Answer: Data)
+----------------------------
+41. Data will be stored in the specified address in ______.
+a. CU
+b. CU
+c. RAM
+d. CU 
+(Answer: RAM)
+----------------------------
+42. 9.
+______ is ready for the next instruction.
+a. CU
 b. CPU
-c. Intel
+c. Software
 d. RAM 
 (Answer: CPU)
 ----------------------------
-26. ______ tostore data and instructions .
-a. RAM
-b. 1024
-c. Hardware
-d. Itisused 
-(Answer: Itisused)
+43. How a ______ works?
+a. CPU
+b. RAM
+c. Intel
+d. Instruction Register 
+(Answer: CPU)
 ----------------------------
-27. ______ memory isdivided into large number of
-small parts called cells .Each location orcell
-hasaunique address, which varies from zero
-tomemory sizeminus one.
-a. The
-b. Register(Program Counter
-c. 1642 –1945
-d. CPU 
-(Answer: The)
-----------------------------
-28. Forexample, ifthe
-computer has 64kwords, then thismemory
-unit has64*______ =65536 memory locations .
-a. Input / Output Devices
-b. 1024
-c. Historical Development of Computers
-d. European Committee 
+44. For example, if the
+computer has 64k words, then this memory
+unit has 64 * ______ = 65536 memory locations.
+a. CU
+b. The Computer Level Hierarchy
+c. RAM
+d. 1024 
 (Answer: 1024)
 ----------------------------
-29. ______ memory holds only those data and 
+45. ______ memory holds only those data and 
 instructions on which the computer is currently 
 working.
-a. Memory
+a. Accumulator
+b. Memory
 Primary
-b. Graphics
-c. Itisused
-d. Neumann 
+c. CPU
+d. Register 
 (Answer: Memory
 Primary)
 ----------------------------
-30. ______
-Input and output devices allow the
-computer system tointeract with theoutside
-world bymoving data into and out ofthe
-system .
-a. Input / Output Devices
-b. Flash Drive
-c. Memory
-Primary
-d. European Telecommunications 
-Standards Institute 
+46. ______
+Input
+and
+output
+devices
+allow
+the
+computer system to interact with the outside
+world by moving data into and out of the
+system.
+a. Register
+b. Input / Output Devices
+c. Arthur Rock
+d. Register 
 (Answer: Input / Output Devices)
 ----------------------------
-31. Some input devices are:
+47. Some input devices are:
 Keyboard
 Mouse
 Microphone
@@ -287,252 +461,235 @@ ______ tablet
 Web Camera
 Scanner
 Joystick
+
 Output device
-Anoutput device is used to send data out of the system.
-a. 1945 –1953
-b. decadeThe Computer Level Hierarchy
-c. Historical Development of Computers
+An output device is used to send data out of the system.
+a. Intel
+b. 1642 – 1945
+c. Register
 d. Graphics 
 (Answer: Graphics)
 ----------------------------
-32. Some output devices are:
+48. Some output devices are:
 Monitor
 Printer
 ______
 Projector
+
 Combined Input/Output Devices
-Touchscreen : Acts as both an input 
+Touchscreen: Acts as both an input 
 device (when you touch it) and an 
 output device (displaying information).
-a. Speaker
-b. Rock’s Law
-c. 1642 –1945
-d. CPU 
+a. Rock’s Law
+b. CU
+c. Speaker
+d. Java 
 (Answer: Speaker)
 ----------------------------
-33. USB ______ : Similar to an external 
+49. USB ______: Similar to an external 
 hard drive, it can both receive and 
 send data.
-a. Flash Drive
-b. Intel
-c. RAM
-d. The Von Neumann Model 
+a. RAM
+b. Flash Drive
+c. CPU
+d. Graphics 
 (Answer: Flash Drive)
 ----------------------------
-34. IEC (______)
+50. IEC (______)
 Focuses on international standards for 
 electrical, electronic, and related 
 technologies.
-a. International Electrotechnical
+a. CU
+b. International Electrotechnical
 Commission
-b. The Von Neumann Model
-c. The
-d. Memory
-Primary 
+c. CU
+d. CU 
 (Answer: International Electrotechnical
 Commission)
 ----------------------------
-35. (______)
+51. (______)
 Produces globally applicable standards for 
 information and communications 
 technologies, including fixed, mobile, 
 radio, and internet technologies.
-a. European Telecommunications 
+a. The Computer Level Hierarchy
+b. CPU
+c. European Telecommunications 
 Standards Institute
-b. Software
-c. Itisused
-d. Hardware 
+d. Temporary 
 (Answer: European Telecommunications 
 Standards Institute)
 ----------------------------
-36. Some international standards 
+52. Some international standards 
 organizations
 ______ (European Committee for 
 Standardization)
 Develops standards in various 
 sectors, including information 
 technology
+
 Historical Development of Computers
 Generation Zero:
-a. RAM
-b. CEN
-c. The Von Neumann Model
-d. 1642 –1945 
+a. CEN
+b. Rock’s Law
+c. European Telecommunications 
+Standards Institute
+d. Graphics 
 (Answer: CEN)
 ----------------------------
-37. Some international standards 
+53. Some international standards 
 organizations
 CEN (______ for 
 Standardization)
 Develops standards in various 
 sectors, including information 
 technology
+
 Historical Development of Computers
 Generation Zero:
-a. The
+a. 1024
 b. European Committee
-c. Itisused
-d. Software 
+c. Hardware
+d. Instruction Register 
 (Answer: European Committee)
 ----------------------------
-38. Some international standards 
+54. Some international standards 
 organizations
 CEN (European Committee for 
 Standardization)
 Develops standards in various 
 sectors, including information 
 technology
+
 ______:
-a. Itisused
-b. decadeThe Computer Level Hierarchy
-c. RAM
-d. Historical Development of Computers
-Generation Zero 
+a. Historical Development of Computers
+Generation Zero
+b. CPU
+c. every 18 months
+d. Graphics 
 (Answer: Historical Development of Computers
 Generation Zero)
 ----------------------------
-39. Mechanical ______ 
-(1642 –1945 )
-a. Calculating Machines
-b. RAM
-c. CPU
-d. Itisused 
+55. Mechanical ______ 
+(1642 – 1945)
+a. CU
+b. Calculating Machines
+c. The Von Neumann Model
+d. MAR 
 (Answer: Calculating Machines)
 ----------------------------
-40. Mechanical Calculating Machines 
-(______ )
-a. CEN
-b. toMemory Address Register
-c. CPU
-d. 1642 –1945 
-(Answer: 1642 –1945)
-----------------------------
-41. Use of mechanical technology to do calculations
-Suggest the use of binary number system rather 
-than the decimal number systemHistorical Development of Computers
-First Generation: Vacuum tube computers 
+56. Mechanical Calculating Machines 
 (______)
-a. theCPU
-b. toRAM .CUturns
-c. 1945 –1953
-d. toMemory Data Register(buffer 
-(Answer: 1945 –1953)
-----------------------------
-42. ______
-The Third Generation: Integrated Circuit 
-Computers (1965 –1980 )
-a. Graphics
-b. decadeThe Computer Level Hierarchy
-c. CPU
-d. Historical Development of Computers 
-(Answer: Historical Development of Computers)
-----------------------------
-43. Historical Development of Computers
-The Third Generation: Integrated Circuit 
-Computers (______ )
-a. Graphics
-b. Input / Output Devices
-c. CPU
-d. 1965 –1980 
-(Answer: 1965 –1980)
-----------------------------
-44. ______ (early Intel capitalist Arthur Rock)
-a. Rock’s Law
-b. Java
-c. CPU
+a. Instruction Register
+b. RAM
+c. 1642 – 1945
 d. RAM 
+(Answer: 1642 – 1945)
+----------------------------
+57. The density of transistors in an integrated circuit 
+doubles ______ (1.5 year).
+a. CPU
+b. 1024
+c. every 18 months
+d. CPU 
+(Answer: every 18 months)
+----------------------------
+58. The density of transistors in an integrated circuit 
+doubles every 18 months (______).
+a. 1.5 year
+b. Register
+c. Register
+d. Memory
+Primary 
+(Answer: 1.5 year)
+----------------------------
+59. ______ (early Intel capitalist Arthur Rock)
+a. CPU
+b. CU
+c. Rock’s Law
+d. Software 
 (Answer: Rock’s Law)
 ----------------------------
-45. Rock’s Law (early ______ capitalist Arthur Rock)
-a. Itisused
-b. Intel
-c. toRAM .CUturns
-d. RAM 
+60. Rock’s Law (early ______ capitalist Arthur Rock)
+a. CPU
+b. Memory Data Register(buffer
+c. Assembly Language Level
+d. Intel 
 (Answer: Intel)
 ----------------------------
-46. Rock’s Law (early Intel capitalist ______)
-a. The
-b. CPU
-c. Software
-d. Arthur Rock 
+61. Rock’s Law (early Intel capitalist ______)
+a. Historical Development of Computers
+Generation Zero
+b. CU
+c. Arthur Rock
+d. Memory Data Register(buffer 
 (Answer: Arthur Rock)
 ----------------------------
-47. ______
-Theuser executes programs onaPC(Paint, word files, games,
+62. ______
+The user executes programs on a PC (Paint, word files, games,
 etc.)
-a. Speaker
-b. The Von Neumann Model
-c. Graphics
-d. decadeThe Computer Level Hierarchy 
-(Answer: decadeThe Computer Level Hierarchy)
+a. RAM
+b. The Computer Level Hierarchy
+c. Temporary
+d. Register 
+(Answer: The Computer Level Hierarchy)
 ----------------------------
-48. The highest level –Level 6 –is the “user’s level”
-•Level 6 is composed of applications
-______ runs programs such as word processors, graphics 
-packages, or games.
-a. The
-b. •User
-c. Neumann
-d. RAM 
-(Answer: •User)
-----------------------------
-49. All stored -program computers have come to be 
-known as von ______ systems using the von 
-______ architectureThe Von ______ Model
-The Von ______ architecture
-a. Neumann
-b. The
+63. ______
+Imagine the machine (computer) as a hierarchy of 
+levels, in which each level has a specific function.
+a. Assembly Language Level
+b. RAM
 c. CPU
-d. RAM 
-(Answer: Neumann)
+d. The Computer Level Hierarchy 
+(Answer: The Computer Level Hierarchy)
 ----------------------------
-50. All stored -program computers have come to be 
-known as von Neumann systems using the von 
-Neumann architectureThe ______
-The Von Neumann architecture
-a. Software
+64. ______
+Level 4: Assembly Language Level
+More “machine dependent” language.
+a. CU
 b. Intel
 c. RAM
-d. Von Neumann Model 
-(Answer: Von Neumann Model)
+d. The Computer Level Hierarchy 
+(Answer: The Computer Level Hierarchy)
 ----------------------------
-51. ______
-One iteration of the cycle is as follows:
-1.
-a. The Von Neumann Model
-b. toMemory Data Register(buffer
-c. Java
-d. 1024 
-(Answer: The Von Neumann Model)
+65. The Computer Level Hierarchy
+Level 4: ______
+More “machine dependent” language.
+a. Java
+b. CU
+c. Assembly Language Level
+d. CU 
+(Answer: Assembly Language Level)
 ----------------------------
-52. Any data operands required to execute the instruction are 
+66. All stored-program computers have come to be 
+known as von ______ systems using the von 
+______ architecture
+
+The Von ______ Model
+The Von ______ architecture
+a. 1642 – 1945
+b. CU
+c. Neumann
+d. every 18 months 
+(Answer: Neumann)
+----------------------------
+67. Any data operands required to execute the instruction are 
 fetched from memory and placed into registers within the 
 ______.
-a. Itisused
-b. CPU
-c. International Electrotechnical
-Commission
-d. RAM 
+a. Arthur Rock
+b. CU
+c. CPU
+d. Flash Drive 
 (Answer: CPU)
 ----------------------------
-53. ______
-______
-An example system: wading through the jargon
-a. toMemory Address Register
-b. Historical Development of Computers
-Generation Zero
-c. Java
-d. The Von Neumann Model 
-(Answer: The Von Neumann Model)
-----------------------------
-54. The Von Neumann Model
-The Von Neumann Model
-An example system: wading through the jargon
-a. the jargon
+68. ______
 
-b. The Von Neumann Model
-c. Itisused
-d. Historical Development of Computers 
-(Answer: the jargon
-)
+______
+
+An example system: wading through the jargon
+a. RAM
+b. Flash Drive
+c. The Von Neumann Model
+d. European Committee 
+(Answer: The Von Neumann Model)
 ----------------------------

@@ -1,4 +1,4 @@
-import PyPDF2
+import fitz  # PyMuPDF
 import spacy
 import random
 import re
@@ -9,13 +9,27 @@ nlp = spacy.load("en_core_web_sm")
 
 def extract_text_from_pdf(pdf_path):
     """Extracts text from a PDF file and corrects spacing issues."""
-    with open(pdf_path, 'rb') as file:
-        reader = PyPDF2.PdfReader(file)
-        text = ""
-        for page in reader.pages:
-            page_text = page.extract_text()
-            text += page_text
-    return text
+    text = ""
+    try:
+        # Open the PDF file
+        doc = fitz.open(pdf_path)
+        
+        # Iterate through each page
+        for page in doc:
+            # Extract text from the page with better formatting
+            text += page.get_text("text") + "\n"
+        
+        # Close the document
+        doc.close()
+        
+        # Save raw text to file
+        with open("raw_module.txt", "w", encoding="utf-8") as raw_file:
+            raw_file.write(text)
+        
+        return text
+    except Exception as e:
+        print(f"Error extracting text from PDF: {str(e)}")
+        return ""
 
 def extract_named_entities_with_context(text):
     """Extracts named entities and their surrounding context from the text."""
