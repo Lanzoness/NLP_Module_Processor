@@ -88,6 +88,9 @@ def extract_named_entities_with_context(text):
     # Add custom date range detection using regex for year ranges
     date_pattern = r'\b(\d{4}\s*–\s*\d{4})\b'  # Matches patterns like "1642 – 1945"
     
+    # Define a set of words to exclude from being detected as entities
+    exclude_words = {"vs", "another", "we"}  # Add more words as needed
+    
     for page in pages:
         # Store matches before spaCy processing
         date_matches = [(match.group(), match.start(), match.end()) for match in re.finditer(date_pattern, page)]
@@ -97,7 +100,11 @@ def extract_named_entities_with_context(text):
         
         # Iterate over named entities from spaCy
         for ent in doc.ents:
-            if ent.label_ in ["PERSON", "ORG", "GPE", "DATE", "EVENT", "LOC", "PRODUCT", "WORK_OF_ART", "TIME"]:
+            # Skip entities that are in the exclude_words set
+            if ent.text.lower() in exclude_words:
+                continue
+            
+            if ent.label_ in ["PERSON", "ORG", "GPE", "DATE", "EVENT", "LOC", "MONEY", "PRODUCT", "WORK_OF_ART", "TIME"]:
                 # Capture only the sentence containing the entity
                 sentence = ent.sent.text.strip()
                 entities_with_context.append((ent.text.strip(), ent.label_, sentence))
@@ -183,5 +190,5 @@ def main(pdf_path):
     print(f"Questions have been saved to {output_file}")
 
 if __name__ == "__main__":
-    pdf_path = "Module_3-The-Second-Plenary-Council-of-The-Philippines-cropped.pdf"  # Replace with your PDF file path
+    pdf_path = "Module_01_Introduction_to_Computer_Organization_and_Architecture.pdf"  # Replace with your PDF file path
     main(pdf_path)

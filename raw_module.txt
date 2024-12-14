@@ -1,85 +1,259 @@
-7 Let us share our insights’:
-1.  When someone speaks about a church of the poor, what thoughts come into your mind? What does it mean to you personally?
-2.  Are the poor during the time of Jesus the same as we speak of the poor today in our society? Lesson Three:
-1.  The Second Plenary Council of the Philippines Overview Amid socio-economic development and progress, and even religio-cultural change of our society, the proliferation of the poor continues. However, the poor are not passive about their situation. Somehow or the other, they organize themselves to fight against the oppressive structure of our society. They are clamoring for justice and a just living wage. They are struggling to live a life with dignity as children of God. The Philippine Church, on the other hand, heeds to the call of the poor. Since the call of Vatican II (1962-1965), the Philippine Church has been trying to respond to the “signs of the times.” The situation provokes the Church to act; and so, the birth of the Second Plenary Council of the Philippines (PCP II) on January 20-February 17,
-1991.  Nevertheless, the situation, especially the miserable condition of the poor has been able to evangelize the Church. Thus, the Church’s concern is the LIBERATION OF THE POOR. This is the vision of the Philippine Church: to be “CHURCH OF THE POOR”. According to PCP II, to be CHURCH OF THE POOR means:
-To embrace and practice the evangelical spirit of poverty, which combines detachment from possessions with a profound trust in the Lord as the sole source of salvation
-(#125);
-The members and leaders of the Church have a special love for the poor (#126);
-At the very least, the poor are not discriminated against (#128); In the course of time the church experienced its ups and downs, yet she never wavered in her desire to continue the work that Jesus Christ had entrusted her for his flock. Guided with the Spirit she constantly struggles and made herself a beacon of hope for every community of believers, especially the community of the poor. In this Lesson we will learn how this same church nourishes us with love, binding us together as one for the greater glory of God.
+Overview of computer organization and architecture What is computer organization and architecture?
+In a computer system, hardware and many software components are fundamentally related
+Computer organization and architecture help us to understand how hardware and software interact with each other
 
-8
-The pastors and church leaders will give preferential attention and time and share their resources to the poor (#129);
-One will be in solidarity with the poor (#130);
-One will condemn any injustices and exploitation of the poor (#131);
-The poor themselves are evangelizers (#132);
-The rich parishes will live simply to share what they have with the poor (#133);
-The community of disciples especially the rich have preferential love for the poor (#134);
-One is willing to follow Jesus Christ through poverty and oppression to carry out the work of salvation
-(#135). http://mpq3.blogspot.com/2011/ 01/pcp-ii-20.html Models of the Church According to PCP II The models of the Church in the final document of PCPII are presented in the second part of the Acts and Decrees (PCPII. p. 35). These models are a response to meet the challenge of the Third millennium. The PCP II identifies five models in envisioning the renewed Church:
-1.  The Church is a Communion. A Christian grows in faith in a community. Each one is called an individual and each one must give a personal response. But Christ calls us to form a Christian community. He wants the Church to be “a communion of life, love, and truth” (Lumen Gentium 9) “a community of faith, hope, and charity” (LG 8). The first disciples formed a community in which they “devoted themselves to the teachings of the apostles and the communal life, to the breaking of the bread and prayers
-(Acts 2:42). They were of one heart and mind. This unity is expressed in the diversity and equality in the dignity of members. a. Unity in Diversity. In 1 Cor. 12:12-30, Paul expressed this when he compared the group of believers to a human body. He called it the Body of Christ with unity in diversity among the believers. There are different charisms and ministries in the Church, but there is only one body. The diversity does not destroy the unity, but it brings out the complementarity and necessary contribution of the different charisms and ministries. Sharing and mutual interaction of the different members characterized the Church and through them that everybody’s need is supplied (PCPII. 92). b. Equality in Dignity. There is the diversity of ministries and charisms (LG 13) in the Church, yet in unity, there is also equality in the Christian dignity of all the members. This means that there is still hierarchy which is the hierarchy of service, and not of Christian excellence. The Christian dignity of the ordained is measured by the sincerity and genuineness of their service rather than by the office they hold. They are great if they truly serve the Lord and his community (Mk. 10:42-45). John Paul II concludes the equality in the dignity of all Christians: “Each member of the lay faithful, together with
+Overview of computer organization and architecture Computer organization
+It encompasses all physical aspects of computer systems.
+How components are connected together?
+How components interact with/talk to each other?
+It addresses issues such as
+Control signals, signaling methods
+Memory types, …
+It helps us to answer the question: How does a computer work?
 
-9 ordained ministers and men and women religious, shares responsibility for the Church mission” (CL 15).
-2.  The Church as Participation. In the Body of Christ, (I Cor. 12:4-36, Eph.4;7,11-16) each has a gift from the Spirit to share, and each has a need of the other’s gifts for the building up of the body and the fulfillment of its mission. It means that in the Church, nobody is so poor as to have nothing to give, and nobody is so rich as to have nothing to receive. It emphasizes the insights of Vatican II on co-responsibility, shared responsibility in the mission of the entire Church among the bishops, clergy, religious, laymen, and women. This is to restore the laity’s neglected role as evangelizers and to enable them to exercise the same role more fully and efficaciously in spreading the kingdom of Christ.
-3.  The Church as Community- in-Mission. This is the missionary character of the community of disciples The Church is the communion in the state of mission (PCPII, p. 103). It originated from the mission of the Son and the Holy Spirit
-(AG 2). The Church exists for the world not for itself or its members. It is sent on a mission in the world to proclaim the Good News of Christ and to be an instrument of his grace
-(PCPII, 104). It exists to evangelize, proclaim the Good News, build up the Church, and serve the Kingdom by permeating the world with Gospel values so that finally all creation may be united in Christ as the head (Eph. 1:10). Also, Jesus’ final words to them are words of commissioning: “You will receive power when the Holy Spirit comes upon you, and you will be my witness in Jerusalem, throughout Judea and Samaria, to the ends of the earth (Acts 1:8). In the missionary mandate found in (Mt. 28:19-20), it is said in a different way saying, “Go, therefore, and make disciples of all nations…and behold, I am with you always, until the end of the age”. As the country in Asia with a predominantly Catholic population, the Philippine Church should be a missionary Church (No. 106). Pope John Paul II spoke with special clarity when he said to the Philippine bishops that: “There is no doubt about it: the Philippines has a special missionary vocation to proclaim the Good News, to carry the light of Christ to the nations” (JP II- Message to Asian Bishops). https://www.askideas.com/64-all-time-best-poverty-quotes/it-is-easy-enough-to-tell-the- poor-to-accept-their-poverty-as-gods-will-when-you-yourself-have-warm-clothes-and- plenty-of-food-and-medical-care-thomas-merton/
+Overview of computer organization and architecture Computer architecture
+It focuses on the structure and behavior of the computer system
+It refers to the logical aspects of system implementation as seen by the programmer.
+It includes many elements such as
+instruction sets and formats, data types, addressing modes, number and type of registers,
+…
+It helps us to answer the question: How do I design a computer?
 
-12
-(Continuation … The Second Plenary Council of the Philippines) 4. A Priestly, Prophetic, and Kingly People. By our baptism, we shared in the kingly, prophetic, and priestly functions of Christ. This means that as faithful, we must present ourselves as a sacrifice, living, holy, and pleasing to God (Rom 12:1) praising God and bearing witness to Christ. It is exercised by the reception of the sacraments, prayer and thanksgiving, the witness of the holy life, abnegation and active charity” (LG 10). We exercise it when we participate in the offering of the Eucharist (LG 10). The entire baptized share in the common priesthood of Jesus. By the sacrament of the Holy Orders, some are ordained to shepherd and serve the people of God. They possess the ministerial priesthood. We are not only priests, but we are also prophets. We are tasked to spread the Good News of Christ to others by the way we live our lives, behavior, testimony, and teaching
-(PCP II, 120). When we are manifesting this to others, the community becomes prophetic. The people of God receive the Word of the living God by a “supernatural appreciation of the faith” (sensus fidei). With the right judgment, we must penetrate faith more deeply and apply it more fully to our lives (LG 12). When we are witnessing, service is necessary. This means service for others and not for ourselves. Through this, we can overcome the realities of sin thus establishing God’s reign in our midst. This is the sharing in the kingly mission of Christ (PCP II, 121).
-5.  The Church of the Poor. The Church of the poor means that the Church embraces and practices the Evangelical spirit of poverty, which combines detachment from possessions with the profound trust in the Lord as the source of salvation (PCP II, 125). The Lord does not want anyone to be materially poor, but he wants all his followers to be “poor in spirit”
-(Mt. 5:3). https://www.eurasiareview.com/01092020-philippines-a-modern-day-depiction- of-the-last-supper-oped/
+Overview of computer organization and architecture Computer organization VS architecture
+The distinction between computer organization and computer architecture is not clear-cut.
+These are strongly interrelated and interdependent.
+We can truly understand each of them only when we comprehend both of them.
 
-13 The “Church of the Poor” means the poor are not discriminated against because of their poverty, nor will they be deprived of their “rights to receive the abundance of the help of the spiritual goods of the Church, especially of the word of God in the sacrament of the pastors (LG 37). If they cannot pay the stipends or the stole fees because of poverty, they will not be deprived of the sacraments or the necessary spiritual services (PCP II, 128). This further stresses that the pastors and other Church leaders will give preferential attention and time to those who are poor, and will generously share their resources to alleviate their poverty and make them recognize the love of the Lord for them despite their poverty (PCP II, 129). The “Church of the Poor” also means that the Church will not only evangelize the poor, but the Poor in the Church will themselves become evangelizers. This will not only render preferential service to the poor but will practice preferential reliance on the poor in the work of evangelization (PCP II, 132). This means service for all. Furthermore, this means a willingness to follow Christ through poverty and oppression to carry out the work of salvation, not seeking earthly glory but proclaiming by his example, humility, and self-denial (LG 9). https://vincentvqpham.wordpress.com/2016/01/31/christians-called-to-share-in- christs-priestly-prophetic-and-kingly-mission/
+The main components of a computer From Software to Hardware
+Computer scientists design algorithms
+Computer scientists implement an algorithm by using high level programing language (Java, C, etc.)
+Another algorithm runs this algorithm and another one runs that algorithm and so on
+We finally get down to machine level
+Machine level can be thought of as an algorithm implemented as an electronic device
 
-14 CLOSING PRAYER: I will continue, O my God, to do all my actions for the love of you. St. John Baptist de la Salle, pray for us. Live Jesus in our hearts, forever! In the name of the Father, and of the Son, and of the Holy Spirit. Amen.
+The main components of a computer Principle of Equivalence of Hardware and Software
+Anything that can be done with software can also be done with hardware, and anything that can be done with hardware can also be done with software
+We implement an application in Hardware or Software level
+Our knowledge of computer organization and architecture will help us to make the best choice
 
-17
-2.  A Vision of a Renewed Church: Church of the Poor/ Community of Disciples Overview Since the time Jesus started his ministry, he never wavered to nurture the faith of his disciples. The establishment of this community grew bigger as time passes. History made this reality a remembrance of joy. Those who had witnessed how our Lord fulfilled the will of His Father to bring salvation to humanity through his death on the cross, have come to acknowledge the truth of his message about the Kingdom of God. a. Mission of a Renewed Church: Integral Evangelization One integral part of the mission is evangelization. The post-synodal exhortation of Paul VI Evangelii Nuntiandi generally considers evangelization as a “complex and dynamic reality”
-(EN 17). Elements like a witness, dialogue, proclamation, catechesis, conversion, the formation of the local clergy, inculturation, integral human promotion or development or liberation, etc., are contained in Evangelii Nuntiandi (Tomko, 1990). The Church realizes that evangelization should take into account peoples’ concrete lives, both personal and social. God’s kingdom should be preached about man/woman’s present concerns which include issues like justice, liberation, and human development. Pope Paul VI, however, says “they are not the end of evangelization “. The proclamation of Jesus Christ and the promotion of the values of God’s Kingdom “remain to be the primary mission of the Church” (Redemptoris Missio, 34). Human development, liberation, and the propagation of a https://www.slideshare.net/BiangbiangEstamo/a-renewed-integral-evangelization-ppt
+Computer Hardware main components At the most basic level, a computer is a device consisting of 3 pieces:
+A processor to interpret and execute programs
+A memory to store both data and programs
+A mechanism for transferring data to and from the outside world
 
-18
-“civilization of love” should be founded on the universal values of peace, solidarity, justice, and liberty, which find their full attainment in Christ” (Tertio Millenio Adveniente, 52.) Morneau (Pp. 32-57) presents ten theses drawn from the ten themes that Pope Paul VI emphasized in Evangelii Nuntiandi: 1. Evangelization consists of many diverse but complementary elements, all of which proclaim the good news of God’s love and his liberating salvation in Jesus Christ. 2. Evangelization is grounded in the power of the Holy Spirit who calls us to holiness and enables us to live in Christ. 3. Evangelization demands the sensitivity of maintaining complete fidelity to the message of Jesus while adapting it to the circumstances of the people being evangelized. 4. Evangelization seeks to transform the mind and heart of each individual and all humankind, making them into the likeness of the Lord Jesus. 5. Evangelization demands constant study and prayer if truth is to be discovered and shared. 6. Evangelization, the essential mission of the Church, is the responsibility of every Christian; no one is exempt from this call and privilege. 7. Evangelization is rooted in personal adherence to Jesus Christ and the work of building the Kingdom. 8. Evangelization will face resistance, major forces like secularism and atheism. 9. Evangelization is concerned with the full liberation of people from all forms of oppression, especially from the oppression of sin.
-10.  Evangelization relies on a promise of presence and, thus, is characterized by a profound hope. John Paul II’s expression of lay involvement is supported by Vatican II and Evangelii Nuntiandi:
-“From the fact of their union with Christ the head, flows the laymen’s right and duty to be apostles … it is by the Lord himself that they are assigned to the apostolate”
-(AA, 3). Evangelii Nuntiandi (60) articulates further saying that “Evangelizing is the work of the whole Church. This means that for the world as a whole and for each of the regions where she happens to be, the Church knows herself responsible for the task of spreading the gospel.”
+Central Processing Unit (CPU)
+The central processing unit (CPU) is responsible for fetching the program instructions, decoding each instruction that is fetched, and performing the indicated sequence of operations on the correct data.
+CPU acts like the “brain” of a computer system. It contains the circuitry to interpret and execute program instructions.
 
-19 The Vatican Council and Evangelii Nuntiandi clearly state that Christ calls the laity to full participation in the life of the Church and full commitment to the mission of the Church. PCP II enumerates four aspects of the Church’s life and has emerged as lived experience after Vatican II and which determine the role and life of the lay faithful. The lay is called to a community of families, Christian presence, ministry and evangelization, and social transformation. For PCP II, evangelization comprises both a “message of salvation” concerned with catechesis and liturgy and a “message of liberation focusing on social transformation. The community of disciples envisioned by PCP II must be increasingly seen by our people today as a community of faith rooted in Christ and immersed in the life of the Filipino people. One of the most potent ways of actualizing PCP II’s vision is making different communities/ parishes realize the value of being a community of disciples. http//dalubhasang pinoy. file
+All computers have a CPU that can be divided into two pieces.
+The first is the datapath, which is a network of storage units (registers) and arithmetic and logic units (for performing various operations on data) connected by buses (capable of moving data from place to place) where the timing is controlled by clocks.
+The second CPU component is the control unit, a module responsible for sequencing operations and making sure the correct data are where they need to be at the correct time.
 
-22
-(Continuation … A Vision of a Renewed Church: Church of the Poor/Community of Disciples Integration The Church as the Church of the poor and a community of disciples is a way to promote that the Church must be active in the lives of people especially the poor. The Church exhorted the people to take an active role in the social milieu particularly in liberating themselves from the bondage of oppression and enslavement. This aspect of freedom must be truly liberating, free from all that can violate their human dignity and rights as individuals. Likewise, a Church of the poor and community of disciples must be prophets. They will be proclaiming to people the gospel values and the hope to attain peace, justice, prosperity, equality, and love to the lost, the least, and the last.
-1.  Church of the Poor. The Church of the poor means that the church embraces and practices the Evangelical spirit of poverty, which combines detachment from possessions with the profound trust in the Lord as the source of salvation (PCP II,125). Furthermore, the PCP II (129) stresses that the pastors and other church leaders will give preferential attention and time to those who are poor and will generously share their resources to alleviate their poverty and make them recognize the love of the Lord for them despite their poverty.
-2.  Community of Disciples. This means a willingness to follow Christ through poverty and oppression to carry out the work of salvation, not seeking earthly glory but proclaiming by his example, humility, and self-denial (LG 9).
-3.  Integral Evangelization. The Church realizes that evangelization should take into account peoples’ concrete lives, both personal and social. God’s kingdom should be preached about man/woman’s present concerns which include issues like justice, liberation, and human development. Conclusion The “new” church sees to it that the call of being the church of the poor and community of disciples enthusiastically “promotes a journey towards renewal, unity, and empowerment of the people to live with dignity amidst the crises and problems of our society (Domingo). The Basic Ecclesial Community: towards social transformation, 2005 p.5). Furthermore, it upholds the real participation of the people in transforming the society rooted and centered in the very example of Jesus Christ. It spells that these “new” Church must know how to
-“identify the joys, hopes, grievances, and aspirations of humanity and especially of the poor as its own” (Acts and Decrees of the PCP II,1992, p.72) until such time that these new” disciples thru their common effort will establish a just and humane society (Kingdom of God).
+Arithmetic/Logic Unit (ALU)
+ALU does all mathematical operations
+(arithmetic)
+(+/-/compare) and logical
+(AND/OR) calculations.
+Some computers have two ALUs to process two calculations simultaneously. That is called dual core technology.
+ALUs contain several special storage units called registers.
 
-27 Supplementary Lesson: THE BROTHER OF THE CHRISTIAN SCHOOL: A COMMUNITY OF FAITH WHAT IS THE “COMMUNITY” FOUNDED BY FR. JOHN BAPTIST DE LA SALLE? The community was founded in 1680, at Reims, France, by St. John Baptist de La Salle , a priest, a canon of the metropolitan church of that city. The community is known as the Institute of the Brothers of the Christian Schools, a society of male religious approved by the Church, but not taking Holy orders, and having for its object the personal sanctification of its members and the Christian education of youth, especially of the children of artisans and the poor. It accepts the direction of any kind of male educational institution, provided the teaching of Latin is excluded, but its principal object is the direction of elementary gratuitous schools. https://www.catholic.org/encyclopedia/view.php?id=6140 The Spirit of the Community The spirit of the community (institute), infused by the example and teachings of its founder and fostered by the exercises of the religious life, is a spirit of faith and zeal. The spirit of faith induces a Brother to see God in all things, to suffer everything for God, and above all to sanctify himself. The spirit of zeal attracts him towards children to instruct them in the truths of religion and penetrate their hearts with the maxims of the Gospel, so that they may make it the rule of their conduct. St. John Baptist de La Salle had himself given his Brothers admirable proofs of the purity of his faith and the vivacity of his zeal. It was his faith that made him adore the will of God in all the adversities he met with. His whole life was a prolonged act of zeal: he taught school at Reims, Paris, and Grenoble, and showed how to do it well. He composed works for teachers and pupils, and especially the "Conduite des écoles" the "Devoirs du chrétien", and the
-"Règles de la bienséance et de la civilité chrétienne"
-(https://www.catholic.org/encyclopedia/view.php?id=6140) https://lsaruminations.edublogs.org/2014/05/ 14/the-lasallian-community-try-it/
+Register
+Register is a small, very fast storage area inside CPU.
+It is used to store intermediate values from calculations or instructions that is needed again immediately.
+For instance, when a ALU is commanded to calculate A*(B+C), ALU needs to calculate B+C first, then ALU need to store the result for a moment and use the result to multiply A.
+It is faster for ALU to access register than store the data in memory units.
 
-28 The saint pointed out that the zeal of a religious educator should be exercised by three principal means: vigilance, good example, and instruction. Vigilance removes from children a great many occasions of offending God; good example places before them models for imitation; instruction makes them familiar with what they should know, especially with the truths of religion. Hence, the Brothers have always considered catechism as the most important subject taught in their schools. They are catechists by vocation and the will of the Church. They are, therefore, by the spirit of their institute, religious educators: as religious, they take the three usual vows of poverty, chastity, and obedience; as educators, they add the vow of teaching the poor gratuitously according to the prescriptions of their rule, and the vow of remaining in their institute, which they may not leave of themselves even to join a more perfect order. Besides, the work appeared so very important to St. John Baptist de La Salle that, to attach the Brothers permanently to the education of the poor, he forbade them to teach Latin.
-(https://www.catholic.org/encyclopedia/view.php?id=6140) A reflection: What is to be a Lasallian Brother?
-…is someone who follows the call of the Lord and consecrates himself entirely to Him through the religious vows of poverty, chastity, and obedience, to dedicate his whole life and all his strength to the mission of educating children and young people, in other words to being a religious educator.
-…forms community with the other members of the Institute, and they all commit themselves to “keep Christian Schools together and by association”, especially for the service of the poor, and to carry out whatever ministry is entrusted to them, wherever they may be sent.
-…is a “layman” and does not aim at the priesthood, because his ministry does not involve carrying out the sacred functions of the liturgy or administering the sacraments. His mission consists of educating the pupils in a Christian way through an education that involves both profane and religious content.
-…is an apostle whose life is dedicated to helping the pupils in their needs and problems. More than being a friend, he seeks to be a ‘brother’ to each one of them!
-…is a catechist and an educator in the faith of his pupils. He speaks to them of God, teaches them the truths of faith, and helps them to live their lives as Christians, leading them to the knowledge and love of God so that they grow constantly in the faith.
-…shows care and concern for all the pupils entrusted to him by God, but he has a special love for the poorer pupils since they have more need of help.
-…lives in union with God. Through prayer, he acquires the strength to carry out his ministry as an educator to bring the pupils closer to God.
-…is a teacher by profession. Consequently, he seeks constantly to improve himself through study and personal reflection to be able to carry out his duties with greater competence (https://www.lasalle.org/en/lasallian-family/brothers/). CLOSING PRAYER: I will continue, O my God, to do all my actions for the love of you. St. John Baptist de la Salle, pray for us. Live Jesus in our hearts, forever! In the name of the Father, and of the Son, and of the Holy Spirit. Amen.
+Four types of Register
+MAR (memory address register): store memory that currently be accessed inside RAM
+MDR/MBR (memory data/buffer register): store data from memory
+Accumulator (A register): a register stores immediate result from ALU
+Program Counter (PC): store the address of the next instruction
 
-31 PRAYER
-“Creating Community”: Life of St. John Baptist de La Salle A PRAYER IN CREATING A LASALLIAN COMMUNITY Let us remember that we are in the holy presence of God…
-+In the name of the Father, and of the Son… Leader: Jesus, be with us now as we meditate on the role of community in our life. De La Salle’s Words: In his meditations on the Ascension, De La Salle wrote: The third petition which Jesus made to the Eternal Father for His Apostles… is that they should be closely united among themselves. This union should be close and firm as to resemble that which exists between the three Divine Persons… And this union of heart and mind which Jesus desires to see among His Apostles is to produce the same effect as the essential union between the Father, the Son, and the Holy Spirit, that is to say, they are all to share the same sentiments, to have the same practices… As St. Luke records in the Acts, saying,
-“there was one heart and soul in all the company of believers.”
-… Only using such harmony will you be able to maintain that peace that constitutes the whole happiness of your life. Ask therefore the Lord of all hearts to make yours one with those of your Brothers, in that of Jesus.
-(Battersby, Meditations, p. 174) Reflection: https://en.wikipedia.org/wiki/Lasallian_educat ional_institutions
+Control Unit (CU)
+CU acts like a manager in a computer.
+CU receives orders from RAM in the form of instruction and decode (break) that instruction down into specific commands for other components inside computer system.
+It directs the data flow and the operation of the ALU.
+Together, these components perform the tasks of the CPU: fetching instructions, decoding them, and finally performing the indicated sequence of operations.
+The performance of a machine is directly affected by the design of the datapath and the control unit.
 
-32 The drive to create and experience community surges in every culture and each individual. Common beliefs, rituals, and mores bond people into the community. Christians are united by a belief in the Triune God revealed in the life, death, and resurrection of Jesus Christ. This belief is expressed in communal liturgies and through shared values and common causes. The community provides us with a sense of our identity and protects us. In the early days of Christianity, the followers of Jesus were known for their love for one another, expressed in their sharing of goods and care for one another. De La Salle urged his followers to create community, too. They should be united in sentiments, will, affections, rule, and practices. De La Salle believed that without community, his Brothers would become discouraged, lose their sense of mission, and drift away from their calling. He wanted the school to be a community as well, a place where the students found encouragement and guidance to lead lives that would create good in the church and society. De La Salle’s model for the community was the Trinity itself – the three persons, each unique and distinct yet bonded together in love. God’s Word: Acts 4: 32-35; Acts 2: 42 The whole group of believers was united, heart and soul; no one claimed private ownership of any possessions, as everything they owned was held in common. The apostles continued to testify to the resurrection of the Lord Jesus with great power, and they were all accorded great aspect. None of their members was ever in want, as all those who owned land or houses would sell them, and bring the money from the sale of them, to present it to the apostles; it was then distributed to any who might be in need. (Acts 4: 32-35) These remained faithful to the teaching of the apostles, to the brotherhood, to the breaking of bread, and the prayers. (Acts 2: 42). The Word of the Lord. Closing prayer All: How good it is, how pleasant, for God’s people to live in unity. It is like the precious oil running down from Aaron’s head and beard, down to the collar of his robes. It is like the dew on Mount Hermon falling on the hills of Zion. For there Yahweh has promised a blessing, a life that never ends. Modified. Koch, C. (1990). Companions for the Journey: Praying with the De La Salle. https://www.dlsud.edu.ph/news/2020/peace.htm
+How a CPU works? 1. CU turn on enable wire of Instruction Address Register(Program Counter) to allow the next Instruction address to flows to RAM. 2. Instruction address first goes to Memory Address Register which only tells RAM what address the CPU wants next. CU turns on the set wire of MAR, then memory address goes to RAM. CU turns on the enable RAM wire. 3. Then data goes to Memory Data Register(buffer) from RAM via data bus. Then data (instruction) goes to Instruction Register. 4. CU turns on the set Instruction Register(store instruction) wire. Instruction goes to CU. CU decodes instruction, tells ALU the type of operation ALU need to perform and stores the input in Temporary registers by turning on the set wire.
 
-33 Prepared by: Gil A. Ellema, PhD LEARNING REFERENCES Primary Sources: New American Bible (NAB) Christian Community Bible, Revised Standard Version (RSV) Catholic Bishops’ Conference of the Philippines. (2005). Catechism for Filipino Catholics. Makati: Word and Life Publications. Acts and Decrees of the Second Plenary Council of the Philippines
-(PCP II) Episcopal Commission on Catechesis and Catholic Education.
-(1994). Catechism of the Catholic Church (newsprint edition). Manila: Word and Life Publication Evangelii gaudium (Joy of the gospel). Patambang, Salibay, and Valera. (2001). Sacraments, marriage, and family life. Manila: National Bookstore. Alonsozana, De Leon, Domingo, Ellema, Ramirez, Regis, Salibay, Talamera, Valera. (Workbook) Christian Discipleship in the Modern World. Pan Asia Book Exchange Inc., Quezon City, Philippines Additional Online Sources: http://www.catholic-pages.com/church/marks.asp https://www.sacredspace.ie/scripture/ http://www.vatican.va/content/john-paul- ii/en/encyclicals/documents/hf_jp- ii_enc_18051986_dominum-et-vivificantem.html https://www.religion-online.org/book-chapter/chapter-14-the- growth-of-the-church/ https://courses.lumenlearning.com/atd-herkimer- worldreligions/chapter/reformation-counter-reformation-and- the-modern-period/
+How a CPU works? 5. ALU operates the instruction. CU turns on the set wire of Accumulator and instructs ALU to store the immediate result in Accumulator (A Register). CU turns on the enable wire of Accumulator to instruct Accumulator to output the result to the system bus. 6. CU send address to MAR again and points out an address in RAM. 7. The result stored temporarily in A Register will go to the RAM via data bus. 8. Data will be stored in the specified address in RAM. 9. CPU is ready for the next instruction. Repeat steps 1-6.
+
+How a CPU works? https://www.youtube.com/watch?v=RIrQwd_srRw You may watch this video for a simple explanation of how a cpu works.
+
+Memory
+A memory is just like a human brain.
+It is used to store data and instructions.
+Is the storage space in the computer, where data is to be processed and instructions required for processing are stored.
+The memory is divided into large number of small parts called cells. Each location or cell has a unique address, which varies from zero to memory size minus one. For example, if the computer has 64k words, then this memory unit has 64 * 1024 = 65536 memory locations. The address of these locations varies from 0 to 65535.
+
+Memory
+Primary memory holds only those data and instructions on which the computer is currently working.
+It has a limited capacity and data is lost when power is switched off.
+It is generally made up of semiconductor device.
+Are not as fast as registers.
+
+Input / Output Devices
+Input and output devices allow the computer system to interact with the outside world by moving data into and out of the system.
+Input/output devices are usually called I/O devices.
+They are directly connected to an electronic module inside the systems unit called a device controller.
+For example, the speakers of a multimedia computer system are directly connected to a device controller called an audio card
+(such as a SoundBlaster), which in turn is connected to the rest of the system.
+
+Input device An input device is used to bring data into the system. Some input devices are:
+Keyboard
+Mouse
+Microphone
+Bar code reader
+Graphics tablet
+Web Camera
+Scanner
+Joystick
+
+Output device An output device is used to send data out of the system. Some output devices are:
+Monitor
+Printer
+Speaker
+Projector
+
+Combined Input/Output Devices
+Touchscreen: Acts as both an input device (when you touch it) and an output device (displaying information).
+External Hard Drive: Can receive data from a computer (input) and send data to a computer (output).
+USB Flash Drive: Similar to an external hard drive, it can both receive and send data.
+
+Standards Organizations There are several key standard organizations that play a crucial role in developing and maintaining standards for computers and related technologies. Aim
+Establish common guide lines for a particular type of equipment to ensure a “worldwide”1 interoperability (compatibility)
+
+Some international standards organizations
+ISO (International Organization for Standardization)
+Develops and publishes international standards across various industries, including computing and technology.
+IEC (International Electrotechnical Commission)
+Focuses on international standards for electrical, electronic, and related technologies.
+
+Some international standards organizations IEEE (Institute of Electrical and Electronic Engineers)
+sets standards for various computer components, signaling protocols, and data representation ITU (International Telecommunications Union)
+Sets standards for telecommunications systems, including telephone, telegraph, and data communication systems
+
+Some international standards organizations
+ANSI (American National Standards Institute)
+Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
+ETSI (European Telecommunications Standards Institute)
+Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
+
+Some international standards organizations CEN (European Committee for Standardization)
+Develops standards in various sectors, including information technology
+
+Historical Development of Computers Generation Zero: Mechanical Calculating Machines
+(1642 – 1945)
+Use of mechanical technology to do calculations
+Suggest the use of binary number system rather than the decimal number system
+
+Historical Development of Computers First Generation: Vacuum tube computers
+(1945–1953)
+Use of electrical/electronic technology (much faster than mechanical technology)
+Invent binary machines built from vacuum tubes
+Invent vaccum tubes diodes and triodes
+Disadvantages: Bulky systems, Power consumption and heat dissipation.
+
+Historical Development of Computers The Second Generation: Transistorized Computers (1954–1965)
+Transistors revolutionize computers
+• Transistors consume less power than vacuum tubes, are smaller, and work more reliably,
+• the circuitry in computers became smaller and more reliable.
+
+Historical Development of Computers The Third Generation: Integrated Circuit Computers (1965–1980)
+Integrating multiple transistors in a single silicon/germanium chip
+Explosion in computer use
+Computers became faster, smaller, and cheaper, bringing huge gains in processing power
+
+Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
+More integration, more transistors on a single silicon chip
+Computers became smaller: Appearance of micro- computers
+Increasing the processing power of all computers types (also supercomputers and main frame computers)
+
+Historical Development of Computers The Fourth Generation: VLSI Computers (>1980)
+
+Historical Development of Computers Size comparison Vacuum Tube Transistor Integrated circuit package Integrated circuit chip
+
+Historical Development of Computers Moore’s Law (Gordon Moore – Intel Founder, 1965)
+The density of transistors in an integrated circuit doubles every 18 months (1.5 year). Rock’s Law (early Intel capitalist Arthur Rock)
+The cost of capital equipment to build semiconductors will double every four years
+
+Historical Development of Computers
+If Moore’s Law is to hold, Rock’s Law must fall or computers must shift to a radically different technology
+Research into new computing paradigms has been proceeding in earnest during the last half decade
+
+The Computer Level Hierarchy
+The user executes programs on a PC (Paint, word files, games, etc.)
+The user is outside the computer! He uses input and output devices to communicate with the computer.
+Now, what happens INSIDE the computer?
+To understand, we will use a “divide and conquer” approach.
+
+The Computer Level Hierarchy
+Imagine the machine (computer) as a hierarchy of levels, in which each level has a specific function.
+The highest level – Level 6 – is the “user’s level”
+• Level 6 is composed of applications
+• User runs programs such as word processors, graphics packages, or games.
+The lower levels are unseen by the user those can be considered as “virtual machines”.
+Let us discover these “virtual machines”.
+
+The Computer Level Hierarchy
+
+The Computer Level Hierarchy Level 5: High-Level Language Level
+Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
+Programmers write programs at this level.
+Compilers translates these languages to a language the machine can understand (that lower levels could understand): Assembly then machine languages.
+
+The Computer Level Hierarchy Level 4: Assembly Language Level
+More “machine dependent” language.
+Assembly language is then one to one translated to machine language (one assembly language instruction is translated to exactly one machine language instruction).
+
+The Computer Level Hierarchy Level 3: System Software Level
+Deals with operating system instructions
+(multiprogramming, protecting memory, synchronizing processes, and various other important functions)
+Instructions translated from assembly language to machine language are passed through this level unmodified
+
+The Computer Level Hierarchy Level 2: Instruction Set Architecture (ISA), or Machine Level
+Machine language recognized by the particular architecture of the computer system
+Programs written in machine language can be executed directly by the electronic circuits without any interpreters, translators, or compilers.
+
+The Computer Level Hierarchy Level 1: The Control Level
+Is where a control unit do its job
+Receives machine instructions from the level above
+decodes and executes those instructions properly
+Moves data to where and when it should be
+The control unit interprets the machine instructions
+
+The Computer Level Hierarchy Level 0: The Digital Logic Level
+is where we find the physical components of the computer system: the gates and wires
+
+The Von Neumann Model
+A computer architecture model published by a famous Hungarian mathematician named John von Neumann
+The idea is to store programs’ instructions inside a main memory in order to avoid rewiring the system each time it had a new problem to solve, or an old one to debug.
+All stored-program computers have come to be known as von Neumann systems using the von Neumann architecture
+
+The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics
+Consists of three hardware systems
+A central processing unit (CPU) with a control unit, an arithmetic logic unit (ALU), registers (small storage areas), and a program counter;
+
+The Von Neumann Model The Von Neumann architecture It satisfies at least the following characteristics
+ a main-memory system, which holds programs that control the computer’s operation;
+ and an I/O system.
+Capacity to carry out sequential instruction processing
+Contains a single path, between the main memory system and the control unit of the CPU
+
+The Von Neumann Model
+Program instructions are stored inside the main memory
+The machine runs the programs sequentially (instruction per instruction – machine instruction)
+Each machine instruction is fetched, decoded and executed during one cycle known as the von Neumann execution cycle (also called the fetch- decode-execute cycle)
+
+The Von Neumann Model One iteration of the cycle is as follows:
+
+1.  The control unit fetches the next program instruction from the memory, using the program counter to determine where the instruction is located.
+
+2.  The instruction is decoded into a language the ALU can understand.
+
+3.  Any data operands required to execute the instruction are fetched from memory and placed into registers within the CPU.
+
+4.  The ALU executes the instruction and places the results in registers or memory.
 
