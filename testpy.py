@@ -134,20 +134,36 @@ def extract_named_entities_with_context(text):
 def generate_multiple_choice_questions(entities_with_context):
     """Generates multiple-choice questions based on entity context."""
     questions = []
+    used_answers = set()  # Track used answers
+    
+    # Create a list of all available entities for choices
+    all_entities = [e[0] for e in entities_with_context]
+    
     for entity, label, sentence in entities_with_context:
+        # Skip if this entity has already been used as an answer
+        if entity in used_answers:
+            continue
+            
+        # Add this entity to used answers
+        used_answers.add(entity)
+        
         # Replace the entity in the sentence with a blank
         question_text = sentence.replace(entity, "______")
-
-        # Generate answer options
-        incorrect_answers = random.sample(
-            [e[0] for e in entities_with_context if e[0] != entity], min(3, len(entities_with_context) - 1))
+        
+        # Generate answer options from unused entities
+        available_entities = [e for e in all_entities if e != entity and e not in sentence]
+        if len(available_entities) < 3:
+            continue  # Skip if we don't have enough options
+            
+        incorrect_answers = random.sample(available_entities, min(3, len(available_entities)))
         options = incorrect_answers + [entity]
         random.shuffle(options)
-
+        
         # Format the question
         options_text = "\n".join([f"{chr(97 + i)}. {option}" for i, option in enumerate(options)])
         question = f"{question_text}\n{options_text}"
         questions.append({"question": question, "answer": entity})
+    
     return questions
 
 def save_questions_to_file(filename, multiple_choice_questions):
