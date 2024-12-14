@@ -105,6 +105,10 @@ def extract_named_entities_with_context(text):
         processed_text += current_line + "\n"
         i += 1
     
+    # Add custom date range detection using regex for year ranges
+    date_pattern = r'\b(\d{4}\s*–\s*\d{4})\b'  # Matches patterns like "1642 – 1945"
+    processed_text = re.sub(date_pattern, r'ENTITY_DATE(\1)', processed_text)
+
     # Now process with spaCy
     doc = nlp(processed_text)
     entities_with_context = []
@@ -114,6 +118,11 @@ def extract_named_entities_with_context(text):
         if ent.label_ in ["PERSON", "ORG", "GPE", "DATE", "EVENT", "LOC", "MONEY", "PRODUCT", "WORK_OF_ART", "TIME"]:
             sentence = ent.sent.text.strip()
             entity_text = ent.text.strip()
+            
+            # Check for custom date entity
+            if "ENTITY_DATE" in entity_text:
+                entity_text = entity_text.replace("ENTITY_DATE", "").strip()
+                ent.label_ = "DATE"  # Set the label to DATE for custom entities
             
             # If entity contains opening parenthesis, ensure we capture everything
             if '(' in entity_text:
@@ -143,6 +152,12 @@ def extract_named_entities_with_context(text):
             if len(sentence.split()) <= 30:  # Limit to 30 words
                 entities_with_context.append((entity_text, ent.label_, sentence))
     
+    # Add custom handling for ENTITY_DATE
+    for match in re.finditer(r'ENTITY_DATE\((.*?)\)', processed_text):
+        date_entity = match.group(1).strip()
+        sentence = doc[match.start():match.end()].sent.text.strip()  # Get the sentence containing the date
+        entities_with_context.append((date_entity, "DATE", sentence))
+
     return entities_with_context
 
 
@@ -157,7 +172,7 @@ def generate_multiple_choice_questions(entities_with_context):
         # Replace the entity in the sentence with a blank
         question_text = sentence.replace(entity, "______")
         
-        # Generate answer options from unused entities
+        # Generate answer options from all entities, including dates
         available_entities = [e for e in all_entities if e != entity and e not in sentence]
         if len(available_entities) < 3:
             continue  # Skip if we don't have enough options

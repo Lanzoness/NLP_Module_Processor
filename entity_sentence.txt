@@ -1,0 +1,347 @@
+Entity: CPU
+Label: ORG
+Sentence: The central processing unit (CPU) is responsible for fetching the program instructions, decoding each instruction that is fetched, and performing the indicated sequence of operations on the correct data.
+
+Entity: CPU
+Label: ORG
+Sentence: All computers have a CPU that can be divided into two pieces.
+
+Entity: CPU
+Label: ORG
+Sentence: The second CPU component is the control unit, a module responsible for sequencing operations and making sure the correct data are where they need to be at the correct time.
+
+Entity: Register
+Label: ORG
+Sentence: Register
+Register is a small, very fast storage area inside CPU.
+
+Entity: CPU
+Label: ORG
+Sentence: Register
+Register is a small, very fast storage area inside CPU.
+
+Entity: RAM
+Label: ORG
+Sentence: CU receives orders from RAM in the form of instruction and decode (break) that instruction down into specific commands for other components inside computer system.
+
+Entity: CPU
+Label: ORG
+Sentence: Together, these components perform the tasks of the CPU: fetching instructions, decoding them, and finally performing the indicated sequence of operations.
+
+Entity: CPU
+Label: ORG
+Sentence: How a CPU works?
+
+Entity: CU
+Label: ORG
+Sentence: 1. CU turn on enable wire of Instruction Address Register(Program
+
+Entity: Instruction Address Register(Program
+Label: ORG
+Sentence: 1. CU turn on enable wire of Instruction Address Register(Program
+
+Entity: RAM
+Label: ORG
+Sentence: Counter) to allow the next Instruction address to flows to RAM.
+
+Entity: Memory Address Register
+Label: ORG
+Sentence: 2. Instruction address first goes to Memory Address Register which only tells RAM what address the CPU wants next.
+
+Entity: RAM
+Label: ORG
+Sentence: 2. Instruction address first goes to Memory Address Register which only tells RAM what address the CPU wants next.
+
+Entity: CPU
+Label: ORG
+Sentence: 2. Instruction address first goes to Memory Address Register which only tells RAM what address the CPU wants next.
+
+Entity: CU
+Label: ORG
+Sentence: CU turns on the set wire of MAR, then memory address goes to RAM.
+
+Entity: MAR
+Label: ORG
+Sentence: CU turns on the set wire of MAR, then memory address goes to RAM.
+
+Entity: RAM
+Label: ORG
+Sentence: CU turns on the set wire of MAR, then memory address goes to RAM.
+
+Entity: CU
+Label: ORG
+Sentence: CU turns on the enable RAM wire.
+
+Entity: RAM
+Label: ORG
+Sentence: CU turns on the enable RAM wire.
+
+Entity: Memory Data Register(buffer
+Label: ORG
+Sentence: Then data goes to Memory Data Register(buffer) from RAM via data bus.
+
+Entity: RAM
+Label: ORG
+Sentence: Then data goes to Memory Data Register(buffer) from RAM via data bus.
+
+Entity: Instruction Register
+Label: ORG
+Sentence: Then data (instruction) goes to Instruction Register.
+
+Entity: CU
+Label: ORG
+Sentence: 4. CU turns on the set Instruction Register(store instruction) wire.
+
+Entity: CU
+Label: ORG
+Sentence: Instruction goes to CU.
+
+Entity: CU
+Label: ORG
+Sentence: CU decodes instruction, tells ALU the type of operation ALU need to perform and stores the input in Temporary registers by turning on the set wire.
+
+Entity: Temporary
+Label: GPE
+Sentence: CU decodes instruction, tells ALU the type of operation ALU need to perform and stores the input in Temporary registers by turning on the set wire.
+
+Entity: CPU
+Label: ORG
+Sentence: How a CPU works?
+
+Entity: CU
+Label: ORG
+Sentence: CU turns on the set wire of Accumulator and instructs ALU to store the immediate result in Accumulator (A Register).
+
+Entity: Register
+Label: ORG
+Sentence: CU turns on the set wire of Accumulator and instructs ALU to store the immediate result in Accumulator (A Register).
+
+Entity: CU
+Label: ORG
+Sentence: CU turns on the enable wire of Accumulator to instruct Accumulator to output the result to the system bus.
+
+Entity: CU
+Label: ORG
+Sentence: 6. CU send address to MAR again and points out an address in RAM.
+
+Entity: MAR
+Label: ORG
+Sentence: 6. CU send address to MAR again and points out an address in RAM.
+
+Entity: RAM
+Label: ORG
+Sentence: 6. CU send address to MAR again and points out an address in RAM.
+
+Entity: Register
+Label: ORG
+Sentence: The result stored temporarily in A Register will go to the RAM via data bus.
+
+Entity: RAM
+Label: ORG
+Sentence: The result stored temporarily in A Register will go to the RAM via data bus.
+
+Entity: RAM
+Label: ORG
+Sentence: Data will be stored in the specified address in RAM.
+
+Entity: CPU
+Label: ORG
+Sentence: CPU is ready for the next instruction.
+
+Entity: CPU
+Label: ORG
+Sentence: How a CPU works?
+
+Entity: 1024
+Label: DATE
+Sentence: For example, if the computer has 64k words, then this memory unit has 64 * 1024 = 65536 memory locations.
+
+Entity: 0 to 65535
+Label: DATE
+Sentence: The address of these locations varies from 0 to 65535.
+
+Entity: Memory
+Primary
+Label: ORG
+Sentence: Memory
+Primary memory holds only those data and instructions on which the computer is currently working.
+
+Entity: Input / Output Devices
+Label: ORG
+Sentence: Input / Output Devices
+Input and output devices allow the computer system to interact with the outside world by moving data into and out of the system.
+
+Entity: Graphics
+Label: LOC
+Sentence: Some input devices are:
+Keyboard
+Mouse
+Microphone
+Bar code reader
+Graphics tablet
+Web Camera
+Scanner
+Joystick
+
+Output device An output device is used to send data out of the system.
+
+Entity: Web Camera
+Label: WORK_OF_ART
+Sentence: Some input devices are:
+Keyboard
+Mouse
+Microphone
+Bar code reader
+Graphics tablet
+Web Camera
+Scanner
+Joystick
+
+Output device An output device is used to send data out of the system.
+
+Entity: Speaker
+Label: ORG
+Sentence: Some output devices are:
+Monitor
+Printer
+Speaker
+Projector
+
+Combined Input/Output Devices
+Touchscreen: Acts as both an input device (when you touch it) and an output device (displaying information).
+
+Entity: External Hard Drive: Can receive
+Label: WORK_OF_ART
+Sentence: External Hard Drive: Can receive data from a computer (input) and send data to a computer (output).
+
+Entity: Flash Drive
+Label: PERSON
+Sentence: USB Flash Drive: Similar to an external hard drive, it can both receive and send data.
+
+Entity: International Electrotechnical Commission
+Label: ORG
+Sentence: IEC (International Electrotechnical Commission)
+Focuses on international standards for electrical, electronic, and related technologies.
+
+Entity: European Telecommunications Standards Institute
+Label: ORG
+Sentence: (European Telecommunications Standards Institute)
+Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
+
+Entity: CEN
+Label: ORG
+Sentence: Some international standards organizations CEN (European Committee for Standardization)
+Develops standards in various sectors, including information technology
+
+Historical Development of Computers Generation Zero: Mechanical Calculating Machines
+(ENTITY_DATE(1642 – 1945))
+
+Entity: European Committee for Standardization
+Label: ORG
+Sentence: Some international standards organizations CEN (European Committee for Standardization)
+Develops standards in various sectors, including information technology
+
+Historical Development of Computers Generation Zero: Mechanical Calculating Machines
+(ENTITY_DATE(1642 – 1945))
+
+Entity: Historical Development of Computers Generation Zero
+Label: ORG
+Sentence: Some international standards organizations CEN (European Committee for Standardization)
+Develops standards in various sectors, including information technology
+
+Historical Development of Computers Generation Zero: Mechanical Calculating Machines
+(ENTITY_DATE(1642 – 1945))
+
+Entity: Calculating Machines
+Label: PERSON
+Sentence: Some international standards organizations CEN (European Committee for Standardization)
+Develops standards in various sectors, including information technology
+
+Historical Development of Computers Generation Zero: Mechanical Calculating Machines
+(ENTITY_DATE(1642 – 1945))
+
+Entity: Historical Development of Computers First Generation: Vacuum
+Label: ORG
+Sentence: Use of mechanical technology to do calculations
+Suggest the use of binary number system rather than the decimal number system
+
+Historical Development of Computers First Generation: Vacuum tube computers
+(ENTITY_DATE(1945–1953))
+
+Entity: every 18 months
+Label: DATE
+Sentence: The density of transistors in an integrated circuit doubles every 18 months (1.5 year).
+
+Entity: 1.5 year
+Label: DATE
+Sentence: The density of transistors in an integrated circuit doubles every 18 months (1.5 year).
+
+Entity: Rock’s Law
+Label: ORG
+Sentence: Rock’s Law (early Intel capitalist Arthur Rock)
+
+Entity: Intel
+Label: ORG
+Sentence: Rock’s Law (early Intel capitalist Arthur Rock)
+
+Entity: Arthur Rock
+Label: PERSON
+Sentence: Rock’s Law (early Intel capitalist Arthur Rock)
+
+Entity: The Computer Level Hierarchy
+Label: ORG
+Sentence: The Computer Level Hierarchy
+The user executes programs on a PC (Paint, word files, games, etc.)
+
+Entity: The Computer Level Hierarchy
+Label: ORG
+Sentence: The Computer Level Hierarchy
+Imagine the machine (computer) as a hierarchy of levels, in which each level has a specific function.
+
+Entity: • User
+Label: PRODUCT
+Sentence: The highest level – Level 6 – is the “user’s level”
+• Level 6 is composed of applications
+• User runs programs such as word processors, graphics packages, or games.
+
+Entity: The Computer Level Hierarchy
+Label: ORG
+Sentence: The Computer Level Hierarchy Level 4: Assembly Language Level
+More “machine dependent” language.
+
+Entity: Assembly Language Level
+Label: ORG
+Sentence: The Computer Level Hierarchy Level 4: Assembly Language Level
+More “machine dependent” language.
+
+Entity: More
+Label: PRODUCT
+Sentence: The Computer Level Hierarchy Level 4: Assembly Language Level
+More “machine dependent” language.
+
+Entity: Neumann
+Label: ORG
+Sentence: All stored-program computers have come to be known as von Neumann systems using the von Neumann architecture
+
+Entity: Neumann
+Label: ORG
+Sentence: All stored-program computers have come to be known as von Neumann systems using the von Neumann architecture
+
+Entity: The Von Neumann Model One
+Label: PRODUCT
+Sentence: The Von Neumann Model One iteration of the cycle is as follows:
+
+1.
+
+Entity: CPU
+Label: ORG
+Sentence: Any data operands required to execute the instruction are fetched from memory and placed into registers within the CPU.
+
+Entity: The Von Neumann Model
+Label: PERSON
+Sentence: The Von Neumann Model
+
+The Von Neumann Model
+
+An example system: wading through the jargon
+
