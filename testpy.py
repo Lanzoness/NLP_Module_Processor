@@ -102,6 +102,11 @@ def extract_named_entities_with_context(text):
             if ent.label_ in ["PERSON", "ORG", "GPE", "DATE", "EVENT", "LOC", "MONEY", "PRODUCT", "WORK_OF_ART", "TIME"]:
                 # Capture only the sentence containing the entity
                 sentence = ent.sent.text.strip()
+                
+                # Check the length condition
+                if len(sentence) <= len(ent.text) + 5:
+                    continue  # Skip this entity if the condition is met
+                
                 entities_with_context.append((ent.text.strip(), ent.label_, sentence))
         
         # Handle custom ENTITY_DATE matches

@@ -405,11 +405,6 @@ Entity: every four years
 Label: DATE
 Sentence: The cost of capital equipment to build semiconductors will double every four years
 
-Entity: Historical Development of Computers
-Label: ORG
-Sentence: Historical Development of Computers
-
-
 Entity: Research
 Label: ORG
 Sentence: Research into new computing paradigms has been proceeding in earnest during the last half decade
@@ -417,20 +412,6 @@ Sentence: Research into new computing paradigms has been proceeding in earnest d
 Entity: the last half decade
 Label: DATE
 Sentence: Research into new computing paradigms has been proceeding in earnest during the last half decade
-
-Entity: The Computer Level Hierarchy
-Label: ORG
-Sentence: The Computer Level Hierarchy
-
-
-Entity: The Computer Level Hierarchy
-Label: ORG
-Sentence: The Computer Level Hierarchy
-
-
-Entity: The Computer Level Hierarchy
-Label: ORG
-Sentence: The Computer Level Hierarchy
 
 Entity: The Computer Level Hierarchy
 Label: ORG
@@ -514,11 +495,6 @@ Label: ORG
 Sentence: The Computer Level Hierarchy Level 0: The Digital Logic Level
  is where we find the physical components of the computer system: the gates and wires
 
-Entity: The Von Neumann Model
-Label: PERSON
-Sentence: The Von Neumann Model
-
-
 Entity: John von Neumann
 Label: PERSON
 Sentence: A computer architecture model published by a famous Hungarian mathematician named John von Neumann
@@ -557,11 +533,6 @@ Sentence: The Von Neumann Model The Von Neumann architecture It satisfies at lea
 Entity: CPU
 Label: ORG
 Sentence: Contains a single path, between the main memory system and the control unit of the CPU
-
-Entity: The Von Neumann Model
-Label: PERSON
-Sentence: The Von Neumann Model
-
 
 Entity: Neumann
 Label: ORG
