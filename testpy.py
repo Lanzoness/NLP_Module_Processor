@@ -17,7 +17,30 @@ def extract_text_from_pdf(pdf_path):
         # Iterate through each page
         for page in doc:
             # Extract text from the page with better formatting
-            text += page.get_text("text") + "\n"
+            page_text = page.get_text("text")
+            
+            # Clean up unnecessary newlines while preserving paragraphs
+            lines = page_text.split('\n')
+            cleaned_lines = []
+            current_line = ""
+            
+            for line in lines:
+                line = line.strip()
+                if not line:  # Empty line indicates paragraph break
+                    if current_line:
+                        cleaned_lines.append(current_line)
+                        current_line = ""
+                    cleaned_lines.append("")
+                else:
+                    if current_line:
+                        current_line += " " + line
+                    else:
+                        current_line = line
+            
+            if current_line:  # Add the last line if exists
+                cleaned_lines.append(current_line)
+            
+            text += "\n".join(cleaned_lines) + "\n"
         
         # Close the document
         doc.close()
