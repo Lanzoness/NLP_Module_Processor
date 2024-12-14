@@ -158,11 +158,14 @@ def generate_multiple_choice_questions(entities_with_context):
     return questions
 
 def save_questions_to_file(filename, multiple_choice_questions):
-    """Saves generated questions to a text file."""
+    """Saves generated questions to a text file, including options."""
     with open(filename, "w", encoding="utf-8") as file:
         file.write("Multiple-Choice Questions:\n")
         for i, q in enumerate(multiple_choice_questions, 1):
             file.write(f"\n{i}. {q['question']} \n(Answer: {q['answer']})\n")
+            # Add options to the file
+            options_text = "\n".join([f"{chr(65 + j)}. {option[0]}" for j, option in enumerate(q['options'])])
+            file.write(f"Options:\n{options_text}\n")
             file.write("----------------------------")
 
 def save_entities_to_file(filename, entities_with_context):
