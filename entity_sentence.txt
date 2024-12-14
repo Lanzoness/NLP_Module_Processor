@@ -1,3 +1,8 @@
+Entity: VS
+Label: PRODUCT
+Sentence: Overview of computer organization and architecture Computer organization VS architecture
+
+
 Entity: Software
 Label: PERSON
 Sentence: The main components of a computer From Software to Hardware
@@ -91,22 +96,6 @@ Sentence: Four types of Register
  Accumulator (A register): a register stores immediate result from ALU
  Program Counter (PC): store the address of the next instruction
 
-Entity:  Accumulator
-Label: WORK_OF_ART
-Sentence: Four types of Register
- MAR (memory address register): store memory that currently be accessed inside RAM
- MDR/MBR (memory data/buffer register): store data from memory
- Accumulator (A register): a register stores immediate result from ALU
- Program Counter (PC): store the address of the next instruction
-
-Entity:  Program Counter
-Label: ORG
-Sentence: Four types of Register
- MAR (memory address register): store memory that currently be accessed inside RAM
- MDR/MBR (memory data/buffer register): store data from memory
- Accumulator (A register): a register stores immediate result from ALU
- Program Counter (PC): store the address of the next instruction
-
 Entity: Control Unit
 Label: ORG
 Sentence: Control Unit (CU)
@@ -117,22 +106,9 @@ Label: ORG
 Sentence: Control Unit (CU)
  CU acts like a manager in a computer.
 
-Entity:  CU
-Label: ORG
-Sentence: Control Unit (CU)
- CU acts like a manager in a computer.
-
-Entity:  CU
-Label: ORG
-Sentence:  CU receives orders from RAM in the form of instruction and decode (break) that instruction down into specific commands for other components inside computer system.
-
 Entity: RAM
 Label: ORG
 Sentence:  CU receives orders from RAM in the form of instruction and decode (break) that instruction down into specific commands for other components inside computer system.
-
-Entity:  Together
-Label: PERSON
-Sentence:  Together, these components perform the tasks of the CPU: fetching instructions, decoding them, and finally performing the indicated sequence of operations.
 
 Entity: CPU
 Label: ORG
@@ -293,10 +269,6 @@ Entity: CPU
 Label: ORG
 Sentence: How a CPU works?
 
-Entity: 
-Label: PERSON
-Sentence:  Is the storage space in the computer, where data is to be processed and instructions required for processing are stored.
-
 Entity: 1024
 Label: DATE
 Sentence: For example, if the computer has 64k words, then this memory unit has 64 * 1024 = 65536 memory locations.
@@ -311,87 +283,9 @@ Label: ORG
 Sentence: Input / Output Devices
  Input and output devices allow the computer system to interact with the outside world by moving data into and out of the system.
 
-Entity:  Input
-Label: PERSON
-Sentence:  Input/output devices are usually called I/O devices.
-
 Entity: SoundBlaster
 Label: PRODUCT
 Sentence: For example, the speakers of a multimedia computer system are directly connected to a device controller called an audio card (such as a SoundBlaster), which in turn is connected to the rest of the system.
-
-Entity:  Keyboard
- Mouse
- Microphone
-Label: PERSON
-Sentence: Some input devices are:
- Keyboard
- Mouse
- Microphone
- Bar code reader
- Graphics tablet
- Web Camera
- Scanner
- Joystick
-
-Entity:  Bar
-Label: WORK_OF_ART
-Sentence: Some input devices are:
- Keyboard
- Mouse
- Microphone
- Bar code reader
- Graphics tablet
- Web Camera
- Scanner
- Joystick
-
-Entity:  Graphics
-Label: ORG
-Sentence: Some input devices are:
- Keyboard
- Mouse
- Microphone
- Bar code reader
- Graphics tablet
- Web Camera
- Scanner
- Joystick
-
-Entity:  Web Camera
- Scanner
- Joystick
-Label: WORK_OF_ART
-Sentence: Some input devices are:
- Keyboard
- Mouse
- Microphone
- Bar code reader
- Graphics tablet
- Web Camera
- Scanner
- Joystick
-
-Entity:  Monitor
- Printer
- Speaker
-Label: WORK_OF_ART
-Sentence: Some output devices are:
- Monitor
- Printer
- Speaker
- Projector
-
-Entity:  Projector
-Label: ORG
-Sentence: Some output devices are:
- Monitor
- Printer
- Speaker
- Projector
-
-Entity:  External Hard Drive
-Label: ORG
-Sentence:  External Hard Drive: Can receive data from a computer (input) and send data to a computer (output).
 
 Entity: Aim
  Establish
@@ -399,29 +293,9 @@ Label: PERSON
 Sentence: Aim
  Establish common guide lines for a particular type of equipment to ensure a “worldwide”1 interoperability (compatibility)
 
-Entity:  ISO (International Organization for Standardization
-Label: ORG
-Sentence: Some international standards organizations
- ISO (International Organization for Standardization)
- Develops and publishes international standards across various industries, including computing and technology.
-
-Entity:  Develops
-Label: ORG
-Sentence: Some international standards organizations
- ISO (International Organization for Standardization)
- Develops and publishes international standards across various industries, including computing and technology.
-
-Entity:  IEC
-Label: ORG
-Sentence:  IEC (International Electrotechnical Commission)
-
 Entity: International Electrotechnical Commission
 Label: ORG
 Sentence:  IEC (International Electrotechnical Commission)
-
-Entity:  Focuses
-Label: WORK_OF_ART
-Sentence:  Focuses on international standards for electrical, electronic, and related technologies.
 
 Entity: IEEE (Institute of Electrical and Electronic Engineers
 Label: ORG
@@ -435,20 +309,7 @@ Sentence: Some international standards organizations IEEE (Institute of Electric
  sets standards for various computer components, signaling protocols, and data representation ITU (International Telecommunications Union)
  Sets standards for telecommunications systems, including telephone, telegraph, and data communication systems
 
-Entity:  Sets
-Label: ORG
-Sentence: Some international standards organizations IEEE (Institute of Electrical and Electronic Engineers)
- sets standards for various computer components, signaling protocols, and data representation ITU (International Telecommunications Union)
- Sets standards for telecommunications systems, including telephone, telegraph, and data communication systems
-
 Entity: American National Standards Institute
-Label: ORG
-Sentence: Some international standards organizations
- ANSI (American National Standards Institute)
- Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
- ETSI (European Telecommunications Standards Institute)
-
-Entity:  Oversees
 Label: ORG
 Sentence: Some international standards organizations
  ANSI (American National Standards Institute)
@@ -469,21 +330,12 @@ Sentence: Some international standards organizations
  Oversees the development of voluntary consensus standards for products, services, processes, and systems in the U.S.
  ETSI (European Telecommunications Standards Institute)
 
-Entity:  Produces
-Label: ORG
-Sentence:  Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
-
 Entity: CEN
 Label: ORG
 Sentence: Some international standards organizations CEN (European Committee for Standardization)
  Develops standards in various sectors, including information technology
 
 Entity: European Committee for Standardization
-Label: ORG
-Sentence: Some international standards organizations CEN (European Committee for Standardization)
- Develops standards in various sectors, including information technology
-
-Entity:  Develops
 Label: ORG
 Sentence: Some international standards organizations CEN (European Committee for Standardization)
  Develops standards in various sectors, including information technology
@@ -525,10 +377,6 @@ Sentence: Historical Development of Computers The Second Generation: Transistori
 
 Entity: Transistors
 Label: ORG
-Sentence: Transistors revolutionize computers • Transistors consume less power than vacuum tubes, are smaller, and work more reliably, • the circuitry in computers became smaller and more reliable.
-
-Entity: • Transistors
-Label: PRODUCT
 Sentence: Transistors revolutionize computers • Transistors consume less power than vacuum tubes, are smaller, and work more reliably, • the circuitry in computers became smaller and more reliable.
 
 Entity: 1954–1965
@@ -587,10 +435,6 @@ Entity: every 18 months
 Label: DATE
 Sentence: The density of transistors in an integrated circuit doubles every 18 months (1.5 year).
 
-Entity: 1.5 year
-Label: DATE
-Sentence: The density of transistors in an integrated circuit doubles every 18 months (1.5 year).
-
 Entity: Rock’s Law
 Label: ORG
 Sentence: Rock’s Law (early Intel capitalist Arthur Rock)
@@ -636,11 +480,6 @@ Sentence: The Computer Level Hierarchy
 Entity: The Computer Level Hierarchy
 Label: ORG
 Sentence: The Computer Level Hierarchy
-
-
-Entity: • User
-Label: PRODUCT
-Sentence: The highest level – Level 6 – is the “user’s level” • Level 6 is composed of applications • User runs programs such as word processors, graphics packages, or games.
 
 
 Entity: The Computer Level Hierarchy
