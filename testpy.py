@@ -19,22 +19,36 @@ def extract_text_from_pdf(pdf_path):
             page_text = page.get_text("text")
             lines = page_text.split('\n')
             processed_lines = []
+            current_line = ""
             
             for line in lines:
                 line = line.strip()
                 if not line:
                     continue
                 
-                # Check for bullet points, numbers, or special markers
-                is_list_item = bool(re.match(r'^\s*(?:\d+[\.\)]|\([a-zA-Z0-9]\)|[•\-\*\u2022\u2023\u2043\u2219\u25E6▪■●○•◦▶▷◀◁►◄▸▹◂◃➤➢➣➺➜➝➞➟➠➡➥➦➧➨➩➪➫➬➭➮➯➱➲➳➵➸➼➽➾\u27A4])', line))
+                # Split the line into sentences
+                parts = re.split(r'(?<=[.?!])\s+(?=[A-Z])', line)
                 
-                if is_list_item:
-                    processed_lines.append('\n' + line)
-                else:
-                    processed_lines.append(line)
+                for part in parts:
+                    # Check for any non-alphanumeric character at the start (except spaces)
+                    is_list_item = bool(re.match(r'^\s*[^a-zA-Z0-9\s]', part))
+                    
+                    if is_list_item:
+                        if current_line:
+                            processed_lines.append(current_line)
+                            current_line = ""
+                        current_line = part
+                    else:
+                        if current_line:
+                            current_line += " " + part
+                        else:
+                            current_line = part
+            
+            if current_line:
+                processed_lines.append(current_line)
             
             # Combine all lines and add double newline for page separation
-            text += ' '.join(processed_lines) + "\n\n"
+            text += '\n'.join(processed_lines) + "\n\n"
         
         # Close the document
         doc.close()
