@@ -96,7 +96,8 @@ def extract_named_entities_with_context(text):
         r'^\s*[\u25D1]\s*',  # Circle with right half black
         r'^\s*[\u25D2]\s*',  # Circle with upper half black
         r'^\s*[\u25D3]\s*',  # Circle with lower half black
-        r'^\s*\s*'         # Specific character to exclude
+        r'^\s*\s*',         # Specific character to exclude
+        r'(?i)\bvs\b'       # Exlude word "vs", case sensitive
     ]
     
     for page in pages:

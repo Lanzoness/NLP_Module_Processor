@@ -1,8 +1,3 @@
-Entity: VS
-Label: PRODUCT
-Sentence: Overview of computer organization and architecture Computer organization VS architecture
-
-
 Entity: Software
 Label: PERSON
 Sentence: The main components of a computer From Software to Hardware
