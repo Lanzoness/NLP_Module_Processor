@@ -49,6 +49,8 @@ def extract_text_from_pdf(pdf_path):
         with open("raw_module.txt", "w", encoding="utf-8") as raw_file:
             raw_file.write(text)
         
+        print("Raw text saved to raw_module.txt")
+
         return text
     except Exception as e:
         print(f"Error extracting text from PDF: {str(e)}")
@@ -61,9 +63,38 @@ def extract_named_entities_with_context(text):
     for ent in doc.ents:
         if ent.label_ in ["PERSON", "ORG", "GPE", "DATE", "EVENT", "LOC"]:
             sentence = ent.sent.text.strip()
+            
+            # Find the entity's position in the sentence
+            entity_start = sentence.find(ent.text)
+            if entity_start != -1:
+                # Look ahead for closing parenthesis if we have an opening one
+                entity_text = ent.text
+                rest_of_sentence = sentence[entity_start + len(ent.text):]
+                
+                # If the entity contains an opening parenthesis or ends with it
+                if '(' in entity_text or entity_text.rstrip().endswith('('):
+                    # Count opening parentheses
+                    open_count = entity_text.count('(')
+                    close_count = entity_text.count(')')
+                    
+                    # If we need more closing parentheses
+                    if open_count > close_count:
+                        needed_closing = open_count - close_count
+                        # Look in the rest of the sentence for closing parentheses
+                        pos = 0
+                        for _ in range(needed_closing):
+                            next_close = rest_of_sentence[pos:].find(')')
+                            if next_close != -1:
+                                # Include up to and including the closing parenthesis
+                                include_text = rest_of_sentence[pos:pos + next_close + 1]
+                                entity_text += include_text
+                                pos = next_close + 1
+                            else:
+                                break
+            
             # Ensure sentences are concise by limiting word count
             if len(sentence.split()) <= 30:  # Limit to 30 words
-                entities_with_context.append((ent.text, ent.label_, sentence))
+                entities_with_context.append((entity_text, ent.label_, sentence))
     return entities_with_context
 
 def generate_multiple_choice_questions(entities_with_context):
@@ -75,8 +106,7 @@ def generate_multiple_choice_questions(entities_with_context):
 
         # Generate answer options
         incorrect_answers = random.sample(
-            [e[0] for e in entities_with_context if e[0] != entity], min(3, len(entities_with_context) - 1)
-        )
+            [e[0] for e in entities_with_context if e[0] != entity], min(3, len(entities_with_context) - 1))
         options = incorrect_answers + [entity]
         random.shuffle(options)
 
