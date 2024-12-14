@@ -28,35 +28,28 @@ def extract_text_from_pdf(pdf_path):
                 if not line:
                     continue
                 
-                # Split by numbered list pattern
-                numbered_parts = re.split(r'(\d+\.\s+)', line)
+                # Split by numbered list pattern or bullet markers
+                numbered_parts = re.split(r'(\d+\.\s+|)', line)
                 
                 for part in numbered_parts:
-                    # If this part is a number with period (e.g., "1. "), start a new line
-                    if re.match(r'^\d+\.\s+$', part):
+                    # Check if the part is a list item marker (number or bullet)
+                    is_list_item = re.match(r'^\d+\.\s+$', part) or part.strip() == ""
+                    
+                    if is_list_item:
                         if current_line:
                             processed_lines.append(current_line.strip())
                             current_line = ""
-                        current_line = part
-                        continue
-                    
-                    # Split remaining parts by sentence boundaries
-                    sentence_parts = re.split(r'(?<=[.?!])\s+(?=[A-Z])', part)
-                    
-                    for sent in sentence_parts:
-                        # Check for other list item markers
-                        is_list_item = bool(re.match(r'^\s*(?:[^a-zA-Z0-9\s])', sent))
                         
-                        if is_list_item:
-                            if current_line:
-                                processed_lines.append(current_line.strip())
-                                current_line = ""
-                            current_line = sent
-                        else:
-                            if current_line:
-                                current_line += " " + sent
-                            else:
-                                current_line = sent
+                        # Ensure a space exists after the list item marker
+                        if not part.endswith(" "):
+                            part += " "
+                        
+                        current_line = part
+                    else:
+                        # Ensure a space follows the current line if it doesn't already
+                        if current_line and not current_line.endswith(" "):
+                            current_line += " "
+                        current_line += part
             
             if current_line:
                 processed_lines.append(current_line.strip())
@@ -77,6 +70,7 @@ def extract_text_from_pdf(pdf_path):
     except Exception as e:
         print(f"Error extracting text from PDF: {str(e)}")
         return ""
+
 
 def extract_named_entities_with_context(text):
     """Extracts named entities and their surrounding context from the text."""
