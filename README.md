@@ -6,4 +6,5 @@ Use the following commands in your command prompt:
    pip install spacy
    pip install scikit-learn
    pip install pandas
+   python -m spacy download en_core_web_sm
 ```
