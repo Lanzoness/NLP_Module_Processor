@@ -93,7 +93,9 @@ def extract_named_entities_with_context(text):
     # Iterate over named entities from spaCy
     for ent in doc.ents:
         if ent.label_ in ["PERSON", "ORG", "GPE", "DATE", "EVENT", "LOC", "MONEY", "PRODUCT", "WORK_OF_ART", "TIME"]:
-            entities_with_context.append((ent.text.strip(), ent.label_, ent.sent.text.strip()))
+            # Capture only the sentence containing the entity
+            sentence = ent.sent.text.strip()
+            entities_with_context.append((ent.text.strip(), ent.label_, sentence))
     
     # Handle custom ENTITY_DATE matches
     for match_text, start, end in date_matches:
