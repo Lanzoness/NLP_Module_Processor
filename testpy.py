@@ -13,9 +13,6 @@ def extract_text_from_pdf(pdf_path):
         text = ""
         for page in reader.pages:
             page_text = page.extract_text()
-            # Fix missing spaces between words
-            #page_text = re.sub(r'(?<=[a-zA-Z])(?=[A-Z])', ' ', page_text)  # Add space between camel-case-like text
-            #page_text = re.sub(r'(?<=\w)(?=\S)', ' ', page_text)  # Add space where a word is stuck to another
             text += page_text
     return text
 
@@ -28,6 +25,12 @@ def extract_named_entities_with_context(text):
             sentence = ent.sent.text
             entities_with_context.append((ent.text, ent.label_, sentence))
     return entities_with_context
+
+def truncate_text(text, max_length):
+    """Truncates the text to the maximum length without breaking the context."""
+    if len(text) <= max_length:
+        return text
+    return text[:max_length].rsplit(' ', 1)[0] + '...'
 
 def generate_fill_in_the_blank_questions(entities):
     """Generates fill-in-the-blank questions from entities."""
@@ -45,6 +48,9 @@ def generate_multiple_choice_questions(entities_with_context):
         # Replace the entity in the sentence with a blank
         question_text = sentence.replace(entity, "______")
 
+        # Truncate the question text if it's too long
+        question_text = truncate_text(question_text, 150)
+
         # Generate answer options
         incorrect_answers = random.sample(
             [e[0] for e in entities_with_context if e[0] != entity], min(3, len(entities_with_context) - 1)
@@ -61,11 +67,10 @@ def generate_multiple_choice_questions(entities_with_context):
 def save_questions_to_file(filename, fill_in_the_blank_questions, multiple_choice_questions):
     """Saves generated questions to a text file."""
     with open(filename, "w", encoding="utf-8") as file:
-        """
         file.write("Fill-in-the-Blank Questions:\n")
         for i, q in enumerate(fill_in_the_blank_questions, 1):
             file.write(f"{i}. {q['question']} (Answer: {q['answer']})\n")
-        """
+        
         file.write("\nMultiple-Choice Questions:\n")
         for i, q in enumerate(multiple_choice_questions, 1):
             file.write(f"\n{i}. {q['question']} \n(Answer: {q['answer']})\n")
