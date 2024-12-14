@@ -1,105 +1,106 @@
 Multiple-Choice Questions:
 
 1. The central processing unit (______) is responsible for fetching the program instructions, decoding each instruction that is fetched, and performing the indicated sequence of operations on the correct data.
-a. Flash Drive
-b. Intel
+a. Historical Development of Computers Generation Zero
+b. European Committee for Standardization
 c. CPU
 d. CU 
 (Answer: CPU)
 ----------------------------
 2. ______
 ______ is a small, very fast storage area inside CPU.
-a. Rock’s Law
-b. Register
-c. International Electrotechnical Commission
-d. CU 
+a. Intel
+b. Temporary
+c. Memory Address Register
+d. Register 
 (Answer: Register)
 ----------------------------
 3. CU receives orders from ______ in the form of instruction and decode (break) that instruction down into specific commands for other components inside computer system.
-a. Register
-b. Rock’s Law
-c. CPU
+a. The Computer Level Hierarchy
+b. Memory
+Primary
+c. European Committee for Standardization
 d. RAM 
 (Answer: RAM)
 ----------------------------
 4. 1. ______ turn on enable wire of Instruction Address Register(Program
-a. Neumann
-b. RAM
-c. 0 to 65535
-d. CU 
+a. Assembly Language Level
+b. The Computer Level Hierarchy
+c. CU
+d. Instruction Register 
 (Answer: CU)
 ----------------------------
 5. 1. CU turn on enable wire of ______
-a. CPU
-b. Instruction Address Register(Program
-c. Memory Data Register(buffer
-d. Arthur Rock 
+a. Arthur Rock
+b. CPU
+c. Instruction Address Register(Program
+d. CPU 
 (Answer: Instruction Address Register(Program)
 ----------------------------
 6. 2. Instruction address first goes to ______ which only tells RAM what address the CPU wants next.
-a. CU
-b. CU
-c. Memory Address Register
-d. Neumann 
+a. Memory Address Register
+b. Instruction Address Register(Program
+c. Speaker
+d. External Hard Drive: Can receive 
 (Answer: Memory Address Register)
 ----------------------------
 7. CU turns on the set wire of ______, then memory address goes to RAM.
 a. MAR
-b. Instruction Register
-c. Neumann
-d. CPU 
+b. 0 to 65535
+c. CPU
+d. The Von Neumann Model 
 (Answer: MAR)
 ----------------------------
 8. Then data goes to ______) from RAM via data bus.
-a. Neumann
-b. Memory Data Register(buffer
-c. CPU
-d. CPU 
+a. Flash Drive
+b. Web Camera
+c. Rock’s Law
+d. Memory Data Register(buffer 
 (Answer: Memory Data Register(buffer)
 ----------------------------
 9. Then data (instruction) goes to ______.
-a. 1642 – 1945
-b. Input / Output Devices
-c. CPU
-d. Instruction Register 
+a. The Von Neumann Model
+b. CEN
+c. Instruction Register
+d. CU 
 (Answer: Instruction Register)
 ----------------------------
 10. CU decodes instruction, tells ALU the type of operation ALU need to perform and stores the input in ______ registers by turning on the set wire.
-a. Register
-b. Speaker
-c. Memory Data Register(buffer
-d. Temporary 
+a. Temporary
+b. 1642 – 1945
+c. More
+d. European Telecommunications Standards Institute 
 (Answer: Temporary)
 ----------------------------
 11. For example, if the computer has 64k words, then this memory unit has 64 * ______ = 65536 memory locations.
 a. 1024
-b. CU
-c. RAM
-d. European Telecommunications Standards Institute 
+b. External Hard Drive: Can receive
+c. CPU
+d. RAM 
 (Answer: 1024)
 ----------------------------
 12. The address of these locations varies from ______.
-a. CU
+a. RAM
 b. 0 to 65535
-c. CPU
-d. 1.5 year 
+c. Input / Output Devices
+d. CPU 
 (Answer: 0 to 65535)
 ----------------------------
 13. ______ memory holds only those data and instructions on which the computer is currently working.
-a. The Von Neumann Model
-b. CU
-c. RAM
-d. Memory
-Primary 
+a. every 18 months
+b. Rock’s Law
+c. Memory
+Primary
+d. Instruction Register 
 (Answer: Memory
 Primary)
 ----------------------------
 14. ______
 Input and output devices allow the computer system to interact with the outside world by moving data into and out of the system.
-a. CPU
-b. International Electrotechnical Commission
-c. Input / Output Devices
-d. CU 
+a. Input / Output Devices
+b. The Von Neumann Model One
+c. Historical Development of Computers Generation Zero
+d. The Computer Level Hierarchy 
 (Answer: Input / Output Devices)
 ----------------------------
 15. Some input devices are:
@@ -113,13 +114,30 @@ ______ tablet
 Joystick
 
 Output device An output device is used to send data out of the system.
-a. Register
-b. Temporary
-c. Memory Data Register(buffer
-d. Graphics 
+a. Neumann
+b. European Telecommunications Standards Institute
+c. Graphics
+d. RAM 
 (Answer: Graphics)
 ----------------------------
-16. Some output devices are:
+16. Some input devices are:
+Keyboard
+Mouse
+Microphone
+Bar code reader
+Graphics tablet
+______
+Scanner
+Joystick
+
+Output device An output device is used to send data out of the system.
+a. MAR
+b. CU
+c. Memory Data Register(buffer
+d. Web Camera 
+(Answer: Web Camera)
+----------------------------
+17. Some output devices are:
 Monitor
 Printer
 ______
@@ -127,157 +145,190 @@ ______
 
 Combined Input/Output Devices
 Touchscreen: Acts as both an input device (when you touch it) and an output device (displaying information).
-a. Speaker
-b. International Electrotechnical Commission
-c. CPU
-d. every 18 months 
+a. Calculating Machines
+b. CU
+c. The Computer Level Hierarchy
+d. Speaker 
 (Answer: Speaker)
 ----------------------------
-17. USB ______: Similar to an external hard drive, it can both receive and send data.
-a. Flash Drive
-b. CEN
-c. 0 to 65535
-d. Instruction Register 
+18. ______ data from a computer (input) and send data to a computer (output).
+a. The Von Neumann Model One
+b. CPU
+c. External Hard Drive: Can receive
+d. Historical Development of Computers Generation Zero 
+(Answer: External Hard Drive: Can receive)
+----------------------------
+19. USB ______: Similar to an external hard drive, it can both receive and send data.
+a. CPU
+b. Flash Drive
+c. The Computer Level Hierarchy
+d. RAM 
 (Answer: Flash Drive)
 ----------------------------
-18. IEC (______)
+20. IEC (______)
 Focuses on international standards for electrical, electronic, and related technologies.
 a. RAM
-b. International Electrotechnical Commission
-c. CPU
-d. European Committee for Standardization 
+b. every 18 months
+c. International Electrotechnical Commission
+d. RAM 
 (Answer: International Electrotechnical Commission)
 ----------------------------
-19. (______)
+21. (______)
 Produces globally applicable standards for information and communications technologies, including fixed, mobile, radio, and internet technologies.
 a. European Telecommunications Standards Institute
-b. Input / Output Devices
-c. CPU
-d. CPU 
+b. CU
+c. CU
+d. Speaker 
 (Answer: European Telecommunications Standards Institute)
 ----------------------------
-20. Some international standards organizations ______ (European Committee for Standardization)
+22. Some international standards organizations ______ (European Committee for Standardization)
 Develops standards in various sectors, including information technology
 
 Historical Development of Computers Generation Zero: Mechanical Calculating Machines
 (1642 – 1945)
 a. CEN
-b. 1024
-c. CPU
+b. RAM
+c. CU
 d. RAM 
 (Answer: CEN)
 ----------------------------
-21. Some international standards organizations CEN (______)
+23. Some international standards organizations CEN (______)
 Develops standards in various sectors, including information technology
 
 Historical Development of Computers Generation Zero: Mechanical Calculating Machines
 (1642 – 1945)
-a. CU
+a. Input / Output Devices
 b. European Committee for Standardization
-c. CU
-d. every 18 months 
+c. RAM
+d. International Electrotechnical Commission 
 (Answer: European Committee for Standardization)
-----------------------------
-22. Some international standards organizations CEN (European Committee for Standardization)
-Develops standards in various sectors, including information technology
-
-______: Mechanical Calculating Machines
-(1642 – 1945)
-a. Temporary
-b. RAM
-c. Register
-d. Historical Development of Computers Generation Zero 
-(Answer: Historical Development of Computers Generation Zero)
-----------------------------
-23. Some international standards organizations CEN (European Committee for Standardization)
-Develops standards in various sectors, including information technology
-
-Historical Development of Computers Generation Zero: Mechanical ______
-(1642 – 1945)
-a. CPU
-b. RAM
-c. CU
-d. Calculating Machines 
-(Answer: Calculating Machines)
 ----------------------------
 24. Some international standards organizations CEN (European Committee for Standardization)
 Develops standards in various sectors, including information technology
 
-Historical Development of Computers Generation Zero: Mechanical Calculating Machines
-(______)
-a. Speaker
+______: Mechanical Calculating Machines
+(1642 – 1945)
+a. CPU
 b. CPU
-c. 1642 – 1945
-d. CU 
-(Answer: 1642 – 1945)
+c. Instruction Register
+d. Historical Development of Computers Generation Zero 
+(Answer: Historical Development of Computers Generation Zero)
 ----------------------------
-25. The density of transistors in an integrated circuit doubles ______ (1.5 year).
-a. MAR
-b. Memory Data Register(buffer
-c. RAM
-d. every 18 months 
-(Answer: every 18 months)
-----------------------------
-26. The density of transistors in an integrated circuit doubles every 18 months (______).
-a. 1.5 year
-b. The Computer Level Hierarchy
-c. Graphics
+25. Some international standards organizations CEN (European Committee for Standardization)
+Develops standards in various sectors, including information technology
+
+Historical Development of Computers Generation Zero: Mechanical ______
+(1642 – 1945)
+a. Calculating Machines
+b. CPU
+c. MAR
 d. Memory
 Primary 
+(Answer: Calculating Machines)
+----------------------------
+26. Some international standards organizations CEN (European Committee for Standardization)
+Develops standards in various sectors, including information technology
+
+Historical Development of Computers Generation Zero: Mechanical Calculating Machines
+(______)
+a. 1642 – 1945
+b. Graphics
+c. RAM
+d. CPU 
+(Answer: 1642 – 1945)
+----------------------------
+27. The density of transistors in an integrated circuit doubles ______ (1.5 year).
+a. CPU
+b. Arthur Rock
+c. every 18 months
+d. CU 
+(Answer: every 18 months)
+----------------------------
+28. The density of transistors in an integrated circuit doubles every 18 months (______).
+a. More
+b. Intel
+c. 1.5 year
+d. Rock’s Law 
 (Answer: 1.5 year)
 ----------------------------
-27. ______ (early Intel capitalist Arthur Rock)
-a. Rock’s Law
-b. RAM
-c. CU
-d. Neumann 
+29. ______ (early Intel capitalist Arthur Rock)
+a. RAM
+b. 1642 – 1945
+c. CPU
+d. Rock’s Law 
 (Answer: Rock’s Law)
 ----------------------------
-28. Rock’s Law (early ______ capitalist Arthur Rock)
-a. Input / Output Devices
-b. The Computer Level Hierarchy
-c. CU
+30. Rock’s Law (early ______ capitalist Arthur Rock)
+a. • User
+b. The Von Neumann Model
+c. Register
 d. Intel 
 (Answer: Intel)
 ----------------------------
-29. Rock’s Law (early Intel capitalist ______)
-a. 1642 – 1945
-b. Neumann
-c. Temporary
-d. Arthur Rock 
+31. Rock’s Law (early Intel capitalist ______)
+a. CU
+b. Arthur Rock
+c. International Electrotechnical Commission
+d. CEN 
 (Answer: Arthur Rock)
 ----------------------------
-30. ______
+32. ______
 The user executes programs on a PC (Paint, word files, games, etc.)
-a. The Computer Level Hierarchy
-b. Register
-c. CPU
-d. Historical Development of Computers Generation Zero 
+a. RAM
+b. Memory Data Register(buffer
+c. The Computer Level Hierarchy
+d. European Telecommunications Standards Institute 
 (Answer: The Computer Level Hierarchy)
 ----------------------------
-31. The Computer Level Hierarchy Level 4: ______
-More “machine dependent” language.
+33. The highest level – Level 6 – is the “user’s level”
+• Level 6 is composed of applications
+______ runs programs such as word processors, graphics packages, or games.
 a. RAM
 b. CPU
-c. International Electrotechnical Commission
-d. Assembly Language Level 
+c. Assembly Language Level
+d. • User 
+(Answer: • User)
+----------------------------
+34. The Computer Level Hierarchy Level 4: ______
+More “machine dependent” language.
+a. Assembly Language Level
+b. CU
+c. CPU
+d. RAM 
 (Answer: Assembly Language Level)
 ----------------------------
-32. All stored-program computers have come to be known as von ______ systems using the von ______ architecture
+35. The Computer Level Hierarchy Level 4: Assembly Language Level
+______ “machine dependent” language.
+a. International Electrotechnical Commission
+b. CEN
+c. More
+d. European Committee for Standardization 
+(Answer: More)
+----------------------------
+36. All stored-program computers have come to be known as von ______ systems using the von ______ architecture
 a. European Committee for Standardization
-b. Arthur Rock
-c. Neumann
-d. RAM 
+b. RAM
+c. • User
+d. Neumann 
 (Answer: Neumann)
 ----------------------------
-33. ______
+37. ______ iteration of the cycle is as follows:
+
+1.
+a. The Computer Level Hierarchy
+b. RAM
+c. The Computer Level Hierarchy
+d. The Von Neumann Model One 
+(Answer: The Von Neumann Model One)
+----------------------------
+38. ______
 
 ______
 
 An example system: wading through the jargon
-a. every 18 months
-b. CPU
-c. Arthur Rock
+a. Arthur Rock
+b. RAM
+c. CU
 d. The Von Neumann Model 
 (Answer: The Von Neumann Model)
 ----------------------------

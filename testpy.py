@@ -110,7 +110,8 @@ def extract_named_entities_with_context(text):
     entities_with_context = []
     
     for ent in doc.ents:
-        if ent.label_ in ["PERSON", "ORG", "GPE", "DATE", "EVENT", "LOC"]:
+        # Expanded list of entity labels
+        if ent.label_ in ["PERSON", "ORG", "GPE", "DATE", "EVENT", "LOC", "MONEY", "PRODUCT", "WORK_OF_ART"]:
             sentence = ent.sent.text.strip()
             entity_text = ent.text.strip()
             
@@ -138,8 +139,8 @@ def extract_named_entities_with_context(text):
                             # Include everything up to the last needed closing parenthesis
                             entity_text = remaining[:last_close + 1]
             
-            # Ensure sentences are concise
-            if len(sentence.split()) <= 30:  # Limit to 30 words
+            # Increase the sentence length limit
+            if len(sentence.split()) <= 30:  # Limit to 50 words
                 entities_with_context.append((entity_text, ent.label_, sentence))
     
     return entities_with_context
@@ -148,19 +149,11 @@ def extract_named_entities_with_context(text):
 def generate_multiple_choice_questions(entities_with_context):
     """Generates multiple-choice questions based on entity context."""
     questions = []
-    used_answers = set()  # Track used answers
     
     # Create a list of all available entities for choices
     all_entities = [e[0] for e in entities_with_context]
     
     for entity, label, sentence in entities_with_context:
-        # Skip if this entity has already been used as an answer
-        if entity in used_answers:
-            continue
-            
-        # Add this entity to used answers
-        used_answers.add(entity)
-        
         # Replace the entity in the sentence with a blank
         question_text = sentence.replace(entity, "______")
         
