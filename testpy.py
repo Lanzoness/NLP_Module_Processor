@@ -3,7 +3,6 @@ import spacy
 import random
 import re
 
-
 # Load SpaCy's English NLP model
 nlp = spacy.load("en_core_web_sm")
 
@@ -16,31 +15,13 @@ def extract_text_from_pdf(pdf_path):
         
         # Iterate through each page
         for page in doc:
-            # Extract text from the page with better formatting
+            # Extract text from the page and combine all lines
             page_text = page.get_text("text")
+            # Remove existing newlines and extra spaces
+            page_text = ' '.join(page_text.split())
             
-            # Clean up unnecessary newlines while preserving paragraphs
-            lines = page_text.split('\n')
-            cleaned_lines = []
-            current_line = ""
-            
-            for line in lines:
-                line = line.strip()
-                if not line:  # Empty line indicates paragraph break
-                    if current_line:
-                        cleaned_lines.append(current_line)
-                        current_line = ""
-                    cleaned_lines.append("")
-                else:
-                    if current_line:
-                        current_line += " " + line
-                    else:
-                        current_line = line
-            
-            if current_line:  # Add the last line if exists
-                cleaned_lines.append(current_line)
-            
-            text += "\n".join(cleaned_lines) + "\n"
+            # Add the processed page text with a newline
+            text += page_text + "\n\n"
         
         # Close the document
         doc.close()
@@ -50,52 +31,78 @@ def extract_text_from_pdf(pdf_path):
             raw_file.write(text)
         
         print("Raw text saved to raw_module.txt")
-
         return text
+        
     except Exception as e:
         print(f"Error extracting text from PDF: {str(e)}")
         return ""
 
 def extract_named_entities_with_context(text):
     """Extracts named entities and their surrounding context from the text."""
-    doc = nlp(text)
+    # First, preprocess the text to join split lines
+    lines = text.splitlines()
+    processed_text = ""
+    i = 0
+    while i < len(lines):
+        current_line = lines[i].strip()
+        if not current_line:
+            processed_text += "\n"
+            i += 1
+            continue
+            
+        # If the current line has an unmatched parenthesis
+        if '(' in current_line and ')' not in current_line:
+            # Look ahead to the next line
+            if i + 1 < len(lines):
+                next_line = lines[i + 1].strip()
+                if ')' in next_line:
+                    # Join the lines
+                    processed_text += current_line + " " + next_line + "\n"
+                    i += 2
+                    continue
+        
+        processed_text += current_line + "\n"
+        i += 1
+    
+    # Now process with spaCy
+    doc = nlp(processed_text)
     entities_with_context = []
+    
     for ent in doc.ents:
         if ent.label_ in ["PERSON", "ORG", "GPE", "DATE", "EVENT", "LOC"]:
             sentence = ent.sent.text.strip()
+            entity_text = ent.text.strip()
             
-            # Find the entity's position in the sentence
-            entity_start = sentence.find(ent.text)
-            if entity_start != -1:
-                # Look ahead for closing parenthesis if we have an opening one
-                entity_text = ent.text
-                rest_of_sentence = sentence[entity_start + len(ent.text):]
-                
-                # If the entity contains an opening parenthesis or ends with it
-                if '(' in entity_text or entity_text.rstrip().endswith('('):
-                    # Count opening parentheses
-                    open_count = entity_text.count('(')
-                    close_count = entity_text.count(')')
+            # If entity contains opening parenthesis, ensure we capture everything
+            if '(' in entity_text:
+                # Find the position in the sentence
+                start_pos = sentence.find(entity_text)
+                if start_pos != -1:
+                    # Look for closing parenthesis after the entity
+                    remaining = sentence[start_pos:]
+                    open_count = remaining.count('(')
+                    close_count = remaining.count(')')
                     
-                    # If we need more closing parentheses
                     if open_count > close_count:
-                        needed_closing = open_count - close_count
-                        # Look in the rest of the sentence for closing parentheses
-                        pos = 0
-                        for _ in range(needed_closing):
-                            next_close = rest_of_sentence[pos:].find(')')
-                            if next_close != -1:
-                                # Include up to and including the closing parenthesis
-                                include_text = rest_of_sentence[pos:pos + next_close + 1]
-                                entity_text += include_text
-                                pos = next_close + 1
-                            else:
-                                break
+                        # Find position of the last closing parenthesis
+                        last_close = -1
+                        count = open_count - close_count
+                        temp = remaining
+                        while count > 0 and (pos := temp.find(')')) != -1:
+                            last_close = pos
+                            temp = temp[pos + 1:]
+                            count -= 1
+                        
+                        if last_close != -1:
+                            # Include everything up to the last needed closing parenthesis
+                            entity_text = remaining[:last_close + 1]
             
-            # Ensure sentences are concise by limiting word count
+            # Ensure sentences are concise
             if len(sentence.split()) <= 30:  # Limit to 30 words
                 entities_with_context.append((entity_text, ent.label_, sentence))
+    
     return entities_with_context
+
 
 def generate_multiple_choice_questions(entities_with_context):
     """Generates multiple-choice questions based on entity context."""
