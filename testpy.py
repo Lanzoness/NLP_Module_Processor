@@ -22,24 +22,11 @@ def extract_named_entities_with_context(text):
     entities_with_context = []
     for ent in doc.ents:
         if ent.label_ in ["PERSON", "ORG", "GPE", "DATE", "EVENT", "LOC"]:
-            sentence = ent.sent.text
-            entities_with_context.append((ent.text, ent.label_, sentence))
+            sentence = ent.sent.text.strip()
+            # Only include sentences that are concise (single sentence containing the entity)
+            if len(sentence.split('.')) <= 2:
+                entities_with_context.append((ent.text, ent.label_, sentence))
     return entities_with_context
-
-def truncate_text(text, max_length):
-    """Truncates the text to the maximum length without breaking the context."""
-    if len(text) <= max_length:
-        return text
-    return text[:max_length].rsplit(' ', 1)[0] + '...'
-
-def generate_fill_in_the_blank_questions(entities):
-    """Generates fill-in-the-blank questions from entities."""
-    questions = []
-    for entity, label in entities:
-        question = f"Fill in the blank: _______ ({label})"
-        answer = entity
-        questions.append({"question": question, "answer": answer})
-    return questions
 
 def generate_multiple_choice_questions(entities_with_context):
     """Generates multiple-choice questions based on entity context."""
@@ -47,9 +34,6 @@ def generate_multiple_choice_questions(entities_with_context):
     for entity, label, sentence in entities_with_context:
         # Replace the entity in the sentence with a blank
         question_text = sentence.replace(entity, "______")
-
-        # Truncate the question text if it's too long
-        question_text = truncate_text(question_text, 150)
 
         # Generate answer options
         incorrect_answers = random.sample(
@@ -67,10 +51,6 @@ def generate_multiple_choice_questions(entities_with_context):
 def save_questions_to_file(filename, fill_in_the_blank_questions, multiple_choice_questions):
     """Saves generated questions to a text file."""
     with open(filename, "w", encoding="utf-8") as file:
-        file.write("Fill-in-the-Blank Questions:\n")
-        for i, q in enumerate(fill_in_the_blank_questions, 1):
-            file.write(f"{i}. {q['question']} (Answer: {q['answer']})\n")
-        
         file.write("\nMultiple-Choice Questions:\n")
         for i, q in enumerate(multiple_choice_questions, 1):
             file.write(f"\n{i}. {q['question']} \n(Answer: {q['answer']})\n")
