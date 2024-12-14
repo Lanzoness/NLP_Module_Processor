@@ -74,31 +74,13 @@ def extract_named_entities_with_context(text):
     # Add custom date range detection using regex for year ranges
     date_pattern = r'\b(\d{4}\s*–\s*\d{4})\b'  # Matches patterns like "1642 – 1945"
     
-    # Define a set of patterns to exclude from being detected as entities
-    exclude_patterns = [
-        r'^\s*[\u2022]\s*',  # Bullet points
-        r'^\s*[-•*]\s*',     # Other list item markers
-        r'^\s*\d+\.\s*',     # Numbered list items
-        r'^\s*[\u25AA]\s*',  # Square bullet
-        r'^\s*[\u25AB]\s*',  # Hollow square bullet
-        r'^\s*[\u25CF]\s*',  # Black circle bullet
-        r'^\s*[\u25CB]\s*',  # White circle bullet
-        r'^\s*[\u25C6]\s*',  # Black diamond bullet
-        r'^\s*[\u25B6]\s*',  # Right-pointing triangle bullet
-        r'^\s*[\u25C7]\s*',  # White diamond bullet
-        r'^\s*[\u25A0]\s*',  # Black square bullet
-        r'^\s*[\u25A1]\s*',  # White square bullet
-        r'^\s*[\u25B2]\s*',  # Black up-pointing triangle
-        r'^\s*[\u25BC]\s*',  # Black down-pointing triangle
-        r'^\s*[\u25B3]\s*',  # White up-pointing triangle
-        r'^\s*[\u25BD]\s*',  # White down-pointing triangle
-        r'^\s*[\u25D0]\s*',  # Circle with left half black
-        r'^\s*[\u25D1]\s*',  # Circle with right half black
-        r'^\s*[\u25D2]\s*',  # Circle with upper half black
-        r'^\s*[\u25D3]\s*',  # Circle with lower half black
-        r'^\s*\s*',         # Specific character to exclude
-        r'(?i)\bvs\b'       # Exlude word "vs", case sensitive
-    ]
+    # Regex pattern to check for non-alphanumeric characters, including specified symbols and space
+    non_alphanumeric_pattern = r'[^a-zA-Z0-9.:,?/(){}[\] ]'  # Matches any non-alphanumeric character, including specified symbols and space
+    
+    # Define a set of blacklisted words
+    blacklist = {
+        "vs"
+    }
     
     for page in pages:
         # Store matches before spaCy processing
@@ -109,8 +91,12 @@ def extract_named_entities_with_context(text):
         
         # Iterate over named entities from spaCy
         for ent in doc.ents:
-            # Skip entities that match any of the exclude patterns
-            if any(re.match(pattern, ent.text) for pattern in exclude_patterns):
+            # Skip entities that contain non-alphanumeric characters
+            if re.search(non_alphanumeric_pattern, ent.text):
+                continue
+            
+            # Skip entities that are in the blacklist
+            if ent.text.lower() in blacklist:  # Use lower() for case-insensitive comparison
                 continue
             
             if ent.label_ in ["PERSON", "ORG", "GPE", "DATE", "EVENT", "LOC", "MONEY", "PRODUCT", "WORK_OF_ART", "TIME"]:

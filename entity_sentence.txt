@@ -44,36 +44,10 @@ Entity: CPU
 Label: ORG
 Sentence:  The second CPU component is the control unit, a module responsible for sequencing operations and making sure the correct data are where they need to be at the correct time.
 
-Entity: Register
- Register
-Label: ORG
-Sentence: Register
- Register is a small, very fast storage area inside CPU.
-
 Entity: CPU
 Label: ORG
 Sentence: Register
  Register is a small, very fast storage area inside CPU.
-
-Entity: A*(B+C
-Label: PRODUCT
-Sentence:  For instance, when a ALU is commanded to calculate A*(B+C), ALU needs to calculate B+C first, then ALU need to store the result for a moment and use the result to multiply A.
-
-
-Entity: A.
-
-Label: PERSON
-Sentence:  For instance, when a ALU is commanded to calculate A*(B+C), ALU needs to calculate B+C first, then ALU need to store the result for a moment and use the result to multiply A.
-
-
-Entity: Register
-
-Label: ORG
-Sentence: Four types of Register
- MAR (memory address register): store memory that currently be accessed inside RAM
- MDR/MBR (memory data/buffer register): store data from memory
- Accumulator (A register): a register stores immediate result from ALU
- Program Counter (PC): store the address of the next instruction
 
 Entity: MAR
 Label: ORG
@@ -272,21 +246,9 @@ Entity: 0 to 65535
 Label: DATE
 Sentence: The address of these locations varies from 0 to 65535.
 
-Entity: Input / Output Devices
- Input
-Label: ORG
-Sentence: Input / Output Devices
- Input and output devices allow the computer system to interact with the outside world by moving data into and out of the system.
-
 Entity: SoundBlaster
 Label: PRODUCT
 Sentence: For example, the speakers of a multimedia computer system are directly connected to a device controller called an audio card (such as a SoundBlaster), which in turn is connected to the rest of the system.
-
-Entity: Aim
- Establish
-Label: PERSON
-Sentence: Aim
- Establish common guide lines for a particular type of equipment to ensure a “worldwide”1 interoperability (compatibility)
 
 Entity: International Electrotechnical Commission
 Label: ORG
@@ -342,11 +304,6 @@ Sentence: Historical Development of Computers Generation Zero: Mechanical Calcul
 
 Entity: Calculating Machines
 Label: PERSON
-Sentence: Historical Development of Computers Generation Zero: Mechanical Calculating Machines (1642 – 1945)
-
-
-Entity: 1642 – 1945
-Label: DATE
 Sentence: Historical Development of Computers Generation Zero: Mechanical Calculating Machines (1642 – 1945)
 
 
@@ -411,11 +368,6 @@ Entity: Historical Development of Computers Size
 Label: ORG
 Sentence: Historical Development of Computers Size comparison Vacuum Tube Transistor Integrated circuit package Integrated circuit chip
 
-Entity: Historical Development of Computers Moore’s Law
-Label: ORG
-Sentence: Historical Development of Computers Moore’s Law (Gordon Moore – Intel Founder, 1965)
-
-
 Entity: Gordon Moore
 Label: PERSON
 Sentence: Historical Development of Computers Moore’s Law (Gordon Moore – Intel Founder, 1965)
@@ -430,10 +382,9 @@ Entity: every 18 months
 Label: DATE
 Sentence: The density of transistors in an integrated circuit doubles every 18 months (1.5 year).
 
-Entity: Rock’s Law
-Label: ORG
-Sentence: Rock’s Law (early Intel capitalist Arthur Rock)
-
+Entity: 1.5 year
+Label: DATE
+Sentence: The density of transistors in an integrated circuit doubles every 18 months (1.5 year).
 
 Entity: Intel
 Label: ORG
@@ -452,11 +403,6 @@ Sentence: The cost of capital equipment to build semiconductors will double ever
 Entity: Historical Development of Computers
 Label: ORG
 Sentence: Historical Development of Computers
-
-
-Entity: Rock’s Law
-Label: ORG
-Sentence: If Moore’s Law is to hold, Rock’s Law must fall or computers must shift to a radically different technology
 
 
 Entity: Research
@@ -484,11 +430,6 @@ Sentence: The Computer Level Hierarchy
 Entity: The Computer Level Hierarchy
 Label: ORG
 Sentence: The Computer Level Hierarchy Level 5: High-Level Language Level
-
-
-Entity: C++
-Label: PERSON
-Sentence: Consists of languages such as C, C++, FORTRAN, Lisp, Pascal, and Prolog.
 
 
 Entity: FORTRAN
