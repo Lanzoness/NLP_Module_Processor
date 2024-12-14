@@ -110,8 +110,8 @@ def extract_named_entities_with_context(text):
     entities_with_context = []
     
     for ent in doc.ents:
-        # Expanded list of entity labels
-        if ent.label_ in ["PERSON", "ORG", "GPE", "DATE", "EVENT", "LOC", "MONEY", "PRODUCT", "WORK_OF_ART"]:
+        # Expanded list of entity labels to include dates and names
+        if ent.label_ in ["PERSON", "ORG", "GPE", "DATE", "EVENT", "LOC", "MONEY", "PRODUCT", "WORK_OF_ART", "TIME"]:
             sentence = ent.sent.text.strip()
             entity_text = ent.text.strip()
             
@@ -140,7 +140,7 @@ def extract_named_entities_with_context(text):
                             entity_text = remaining[:last_close + 1]
             
             # Increase the sentence length limit
-            if len(sentence.split()) <= 30:  # Limit to 50 words
+            if len(sentence.split()) <= 30:  # Limit to 30 words
                 entities_with_context.append((entity_text, ent.label_, sentence))
     
     return entities_with_context
