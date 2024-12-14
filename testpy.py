@@ -162,10 +162,12 @@ def save_questions_to_file(filename, multiple_choice_questions):
     with open(filename, "w", encoding="utf-8") as file:
         file.write("Multiple-Choice Questions:\n")
         for i, q in enumerate(multiple_choice_questions, 1):
-            file.write(f"\n{i}. {q['question']} \n(Answer: {q['answer']})\n")
-            # Add options to the file
+            file.write(f"\n{i}. {q['question']} \n")
+            # Add options to the file first
             options_text = "\n".join([f"{chr(65 + j)}. {option[0]}" for j, option in enumerate(q['options'])])
             file.write(f"Options:\n{options_text}\n")
+            # Now add the answer
+            file.write(f"(Answer: {q['answer']})\n")
             file.write("----------------------------")
 
 def save_entities_to_file(filename, entities_with_context):
