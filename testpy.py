@@ -2,8 +2,6 @@ import fitz  # PyMuPDF
 import spacy
 import random
 import re
-from sklearn.feature_extraction.text import TfidfVectorizer
-import pandas as pd
 
 # Load SpaCy's English NLP model
 nlp = spacy.load("en_core_web_sm")
