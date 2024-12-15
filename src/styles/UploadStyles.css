@@ -60,8 +60,8 @@ h2 {
     top: 3%;
     left: 31%;
     background: #000;
-    width: 640px;
-    height: 750px;
+    width: 648px;
+    height: 785px;
     border-radius: 20px;
     border: 2.81px solid rgb(65, 254, 212, 0.45);
     /* top right bottom left */
@@ -69,9 +69,11 @@ h2 {
     /* outline: 2.81px solid rgb(65, 254, 212, 0.45); */
 }
 
-.dropbox{
-    margin-top: -35px;
-    align-content: left;
+.dropbox-container{
+    /* margin top right bottom left */
+    margin: 32.76px 0px 26.21px 0px;
+    width: 574.675px;
+    height: 376.253px;
 }
 
 .display-name-container {
