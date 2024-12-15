@@ -6,7 +6,7 @@ Use the following commands in your command prompt:
    pip install spacy
    python -m spacy download en_core_web_sm
 ```
-Use the following commands in the project terminal:
+Use the following commands in the project's root directory:
 ```
    npm install
 ```
