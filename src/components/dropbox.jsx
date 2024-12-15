@@ -1,33 +1,35 @@
-import React, { useCallback, useState } from 'react';
-import { useDropzone } from 'react-dropzone';
-import { saveAs } from 'file-saver';
-import './components_styles/dropbox.css';
+import React, {useCallback} from 'react'
+import {useDropzone} from 'react-dropzone'
+import './components_styles/dropbox.css'
 
+ 
 function Dropbox() {
-    const [fileContent, setFileContent] = useState(null);
+  // callback function that recieves the accepted files  
 
-    const onDrop = useCallback((acceptedFiles) => {
-        const reader = new FileReader();
-        reader.onload = () => {
-            const text = reader.result;
-            setFileContent(text);
 
-            // Create a Blob from the file content and save it
-            const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
-            saveAs(blob, acceptedFiles[0].name);
-        };
-        reader.readAsText(acceptedFiles[0]);
-    }, []);
+  const onDrop = useCallback(acceptedFiles => {
+    console.log(acceptedFiles)
+  }, [])
+   
+// react hook components with the onDrop callback function called 
+  const {getRootProps, getInputProps, isDragActive} = useDropzone({onDrop})
 
-    const { getRootProps, getInputProps } = useDropzone({ onDrop });
-
-    return (
-        <div {...getRootProps()} className="dropbox">
-            <input {...getInputProps()} />
-            <p>Drag 'n' drop some files here, or click to select files</p>
-            {fileContent && <div><h3>File Content:</h3><pre>{fileContent}</pre></div>}
-        </div>
-    );
+  return (
+    // drag and drop functionality
+    <div className='dropbox' {...getRootProps()}>
+    {/* container for the input drag and drop functionality */}
+      <input {...getInputProps()} />
+      {        
+        isDragActive ?
+          <p>Supported file types: .pdf</p>:
+          <p>Drag and drop a file or browse a file
+            <br/>
+          <p>Supported file types: .pdf</p>
+          </p> 
+      }
+    </div>
+  )
 }
+
 
 export default Dropbox;
