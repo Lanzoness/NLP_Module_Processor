@@ -4,21 +4,26 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../styles/UploadStyles.css" rel="stylesheet">
-    <title>Upload File</title>
-</head>
-<body>
-    <div class="card-container">
-        <h1>Upload a module to create a quiz</h1>
-        <img class="dropbox" src="../placeholders/dropbox.png" />
-        <div class="display-name">
-            <h2>Uploaded Module:</h2>
-            <div class="display-name-container">
-                <p>Uploaded Module Title</p>
+        <title>Upload File</title>
+    </head>
+    <body>
+        <div class="card-container">
+            <h1>Upload a module to create a quiz</h1>
+            <div id="dropbox-container" class="dropbox-container">
+                <!-- dropbox component will be rendered here  -->
             </div>
-            <button class="submit-button">
-                <p>Start Reviewing</p>
-            </button>
-        </div>    
-    </div>
-</body>
+            <div class="display-name">
+                <h2>Uploaded Module:</h2>
+                <div class="display-name-container">
+                    <p>Uploaded Module Title</p>
+                </div>
+                <button class="submit-button">
+                    <p>Start Reviewing</p>
+                </button>
+            </div>    
+        </div>
+
+        <!-- imported components -->
+        <script type="module" src="./main.jsx"></script>
+    </body>
 </html>
