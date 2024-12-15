@@ -1,0 +1,107 @@
+/* Import Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* webpage set default styles START */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+img, picture, svg {
+    display: block;
+    max-width: 100%;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    /* overflow: scroll; temporary scroll */
+    height: 100%;
+    
+}
+/* webpage set default styles END */
+
+body{
+    background: linear-gradient(125deg, 
+     rgba(65,234,212,0.2) 0%,
+     rgba(117,179,184,0.2) 22%, 
+     rgba(0,0,0,0.2) 50%, 
+     rgba(159,134,162,0.2) 75%,
+     rgba(203,186,237,0.2) 100%), 
+     rgb(0, 0, 0, 1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    min-height: 100vh; 
+}
+
+h1 {
+    font-size: 22.46px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #41EAD4;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18.72px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: left;
+}
+
+.card-container {
+    position: absolute;
+    top: 3%;
+    left: 31%;
+    background: #000;
+    width: 640px;
+    height: 750px;
+    border-radius: 20px;
+    border: 2.81px solid rgb(65, 254, 212, 0.45);
+    /* top right bottom left */
+    padding: 45px 36px 45px 36px;
+    /* outline: 2.81px solid rgb(65, 254, 212, 0.45); */
+}
+
+.dropbox{
+    margin-top: -35px;
+    align-content: left;
+}
+
+.display-name-container {
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid rgba(65, 234, 212, 0.4);
+    padding: 16px 23px;
+    margin-top: 10px;
+    background: rgba(39, 43, 43, 1);
+    /* text */
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.submit-button {
+    padding-top: 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(65, 234, 212, 0.4);
+    width: 574.68px;
+    height: 71px;
+    padding: 16px 23px;
+    margin-top: 60px;
+    background: #41EAD4;
+    /* text */
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+
+ 
