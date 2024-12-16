@@ -23,8 +23,4 @@ dist-ssr
 *.sln
 *.sw?
 
-# Ignore all files in the uploads directory
-uploads/*
 
-# But do not ignore the uploads directory itself
-!uploads/
