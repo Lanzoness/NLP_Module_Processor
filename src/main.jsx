@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import Dropbox from './components/dropbox.jsx'
 import LongBtn from './components/long-btn.jsx'
 import MediumBtn from './components/medium-btn.jsx'
+import SmallBtn from './components/small-btn.jsx'
 
 // Get the current page name from the URL
 const currentPage = window.location.pathname.split('/').pop();
@@ -17,7 +18,7 @@ if (currentPage === 'resultsPage.html') {
             <MediumBtn text={buttonText} />
         </React.StrictMode>
     )
-} else if (currentPage === 'index.html') {
+} else if (currentPage === 'index.html' || currentPage === '') {
     // Render other components for other pages
     ReactDOM.createRoot(document.getElementById('dropbox-container')).render(
         <React.StrictMode>
@@ -30,4 +31,14 @@ if (currentPage === 'resultsPage.html') {
             <LongBtn />
         </React.StrictMode>
     )
-}
+}else if (currentPage === 'QuizPage.html') {
+    const buttonContainer = document.getElementById('small-btn');
+    const buttonText = buttonContainer.textContent;
+
+    ReactDOM.createRoot(buttonContainer).render(
+        <React.StrictMode>
+            <SmallBtn text={buttonText} />
+        </React.StrictMode>
+    )
+}   
+

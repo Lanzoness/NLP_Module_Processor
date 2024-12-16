@@ -6,6 +6,8 @@
     <title>Document</title>
     <link href="../styles/QuizStyles.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- imported components -->
+    <script type="module" src="main.jsx"></script>
 </head>
 <body>
     <div class="card-container quiz">
@@ -13,9 +15,12 @@
             <div class="short-container score-counter">
                 <p>Score: 00/72</p> 
             </div>
-            <button class="short-container buttons">
+            <div id="small-btn">
+                Quit
+            </div>
+            <!-- <button class="short-container buttons">
                 <p>Quit</p>
-            </button>
+            </button> -->
         </div>
         <div id='question' class="question-container">
             <p id="sentence">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
@@ -55,4 +60,5 @@ $(document).ready(function() {
     });
 });
 </script>
+    
 </html>
