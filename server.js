@@ -17,6 +17,9 @@ const PORT = 5137; // Set the port to 5137
 app.use(cors());
 app.use(bodyParser.json());
 
+// At the top with other imports
+let questionsCache = null; // Global variable to store questions
+
 // Set up multer for file uploads
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
@@ -29,52 +32,58 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
-// Endpoint to handle file upload
-app.post('/upload', upload.single('pdfFile'), (req, res) => {
-    const pdfPath = req.file.path; // Get the path of the uploaded file
-    console.log('Received PDF path:', pdfPath);
-
-    // Construct the command to run the Python script
-    const command = `python testpy.py "${pdfPath}"`; // Adjust the command if necessary
-
-    // Execute the Python script
-    exec(command, (error, stdout, stderr) => {
-        if (error) {
-            console.error(`Error executing script: ${error.message}`);
-            console.error(`stderr: ${stderr}`);
-            return res.status(500).json({ error: 'Error executing script', details: stderr });
-        }
-        console.log(`Script output: ${stdout}`);
+// Modified upload endpoint
+app.post('/upload', upload.single('pdfFile'), async (req, res) => {
+    try {
+        // Clear cache immediately
+        questionsCache = null;
         
-        // Ensure the latest questions are read
-        const questionsFilePath = path.join(__dirname, 'generated_questions.txt');
-        fs.readFile(questionsFilePath, 'utf8', (err, data) => {
-            if (err) {
-                console.error('Error reading questions file:', err);
-                return res.status(500).json({ error: 'Error reading questions file' });
-            }
+        const pdfPath = req.file.path;
+        console.log('Received PDF path:', pdfPath);
 
-            // Parse the questions from the file and send them as JSON
-            const questions = parseQuestions(data);
-            res.json({ message: 'File path received and script executed', questions });
+        // Run Python script
+        await new Promise((resolve, reject) => {
+            exec(`python testpy.py "${pdfPath}"`, (error, stdout, stderr) => {
+                if (error) {
+                    reject({ error, stderr });
+                } else {
+                    resolve({ stdout, stderr });
+                }
+            });
         });
-    });
+
+        // Ensure file is written before reading
+        await new Promise(resolve => setTimeout(resolve, 2000));
+
+        // Read new questions
+        const questionsFilePath = path.join(__dirname, 'generated_questions.txt');
+        const data = await fs.promises.readFile(questionsFilePath, 'utf8');
+        questionsCache = parseQuestions(data);
+        
+        res.json({ 
+            message: 'File processed successfully', 
+            questions: questionsCache,
+            success: true 
+        });
+    } catch (error) {
+        console.error('Error processing upload:', error);
+        res.status(500).json({ error: 'Error processing upload', success: false });
+    }
 });
 
-// Add this endpoint to handle the request for questions
-app.get('/questions', (req, res) => {
-    // Read the generated questions from the file
-    const questionsFilePath = path.join(__dirname, 'generated_questions.txt');
-    fs.readFile(questionsFilePath, 'utf8', (err, data) => {
-        if (err) {
-            console.error('Error reading questions file:', err);
-            return res.status(500).json({ error: 'Error reading questions file' });
+// Modified questions endpoint
+app.get('/questions', async (req, res) => {
+    try {
+        if (!questionsCache) {
+            const questionsFilePath = path.join(__dirname, 'generated_questions.txt');
+            const data = await fs.promises.readFile(questionsFilePath, 'utf8');
+            questionsCache = parseQuestions(data);
         }
-
-        // Parse the questions from the file and send them as JSON
-        const questions = parseQuestions(data);
-        res.json(questions);
-    });
+        res.json(questionsCache);
+    } catch (error) {
+        console.error('Error fetching questions:', error);
+        res.status(500).json({ error: 'Error fetching questions' });
+    }
 });
 
 // Helper function to parse questions from the file

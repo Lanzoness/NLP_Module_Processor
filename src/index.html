@@ -24,21 +24,26 @@
             function handleUpload() {
                 if (uploadedFile) {
                     const formData = new FormData();
-                    formData.append('pdfFile', uploadedFile); // Append the file to the form data
+                    formData.append('pdfFile', uploadedFile);
 
-                    // Update the fetch URL to point to the Express server
                     fetch('http://localhost:5137/upload', {
                         method: 'POST',
-                        body: formData // Send the form data
+                        body: formData
                     })
-                    .then(response => response.json(),
-                        window.location.href = 'QuizPage.html'
-                    )
+                    .then(response => response.json())
                     .then(data => {
-                        console.log('Success:', data);
+                        if (data.success) {
+                            console.log('Upload successful:', data);
+                            // Only navigate after successful upload
+                            window.location.href = 'QuizPage.html';
+                        } else {
+                            console.error('Upload failed:', data.error);
+                            alert('Failed to process file. Please try again.');
+                        }
                     })
                     .catch((error) => {
                         console.error('Error:', error);
+                        alert('Error uploading file. Please try again.');
                     });
                 } else {
                     alert("Please upload a PDF file first.");
