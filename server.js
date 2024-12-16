@@ -4,6 +4,7 @@ import cors from 'cors';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { exec } from 'child_process';
+import multer from 'multer';
 
 // Get the current filename
 const __filename = fileURLToPath(import.meta.url);
@@ -15,9 +16,21 @@ const PORT = 5137; // You can choose any available port
 app.use(cors());
 app.use(bodyParser.json());
 
+// Set up multer for file uploads
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, 'uploads/'); // Specify the directory to save uploaded files
+    },
+    filename: (req, file, cb) => {
+        cb(null, file.originalname); // Use the original file name
+    }
+});
+
+const upload = multer({ storage });
+
 // Endpoint to handle file upload
-app.post('/upload', (req, res) => {
-    const { pdfPath } = req.body;
+app.post('/upload', upload.single('pdfFile'), (req, res) => {
+    const pdfPath = req.file.path; // Get the path of the uploaded file
     console.log('Received PDF path:', pdfPath);
 
     // Construct the command to run the Python script
