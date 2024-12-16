@@ -70,41 +70,62 @@ h2 {
     /* outline: 2.81px solid rgb(65, 254, 212, 0.45); */
 }
 
-.dropbox-container{
-    /* margin top right bottom left */
-    margin: 32.76px 0px 26.21px 0px;
-    width: 574.675px;
-    height: 376.253px;
+.quiz{
+    width: 1157px;
+    height: 817px;
+    left: 18%;
 }
 
-
-.display-name-container {
-    align-items: center;
-    border-radius: 15px;
-    border: 1px solid rgba(65, 234, 212, 0.4);
-    padding: 16px 23px;
-    margin-top: 10px;
-    background: rgba(39, 43, 43, 1);
-    /* text */
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.2);
+.upper-portion{
+    display: grid;
+    grid-template: 
+    'score quit';
+    column-gap: 717px;
 }
 
-.submit-button {
-    padding-top: 25px;
-    border-radius: 15px;
-    border: 1px solid rgba(65, 234, 212, 0.4);
-    width: 574.68px;
-    height: 71px;
-    padding: 16px 23px;
-    margin-top: 60px;
-    background: #41EAD4;
-    /* text */
+.short-container {
+    height: 61px;
+    border-radius: 15px;  
     text-align: center;
     font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    color: #000000;
+    font-size: 17px;
+}
+
+.score-counter {
+    grid-area: "score";
+    padding-top: 20px;
+    color: #41EAD4;
+    border: 1px solid rgba(65, 234, 212, 0.4);
+    width: 217px;  
+}
+
+.buttons{
+    grid-area: "quit";
+    border: 1px solid #ffffff;
+    color:#ffffff;
+    background: #000000;
+    width: 150px;
+}
+
+.question-container{
+    margin-top: 34px;
+    padding: 20px 59px 20px 59px;
+    border-radius: 15px;
+    border: 2px solid #0F2D33;
+    background: linear-gradient(180deg, 
+    rgba(65,234,212,0.05) 0%, 
+    rgba(111,223,208,0.11) 55%, 
+    rgba(75,179,166,0.17) 79%, 
+    rgba(37,132,120,0.25) 100%),
+    rgb(0, 0, 0, 1);
+    width: 1084px;
+    height: 198px;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
 }
 
