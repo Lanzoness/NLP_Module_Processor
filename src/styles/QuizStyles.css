@@ -72,7 +72,7 @@ h2 {
 /* grid templates START */
 .quiz{
     width: 1157px;
-    height: 757px;
+    height: 817px;
     left: 18%;
 }
 
@@ -153,12 +153,13 @@ h2 {
     border: 1px solid rgb(65, 234, 212, 0.3);
     opacity: 0.9;
     background: linear-gradient(125deg,
-    rgba(65, 234, 212, 0.05) 0.04%, 
-    rgba(111, 223, 208, 0.11) 52.68%,
-    rgba(75, 179, 166, 0.13) 76.68%,
-    rgba(37, 132, 120, 0.15) 96.51%),
-    rgb(0, 0, 0, 1);
+        rgba(65, 234, 212, 0.05) 0.04%, 
+        rgba(111, 223, 208, 0.11) 52.68%,
+        rgba(75, 179, 166, 0.13) 76.68%,
+        rgba(37, 132, 120, 0.15) 96.51%),
+        rgb(0, 0, 0, 1);
     box-shadow: 0px 0px 30px 0px rgba(65, 204, 234, 0.28);
+    cursor: context-menu;
 }
 /* question container END */
 
@@ -167,3 +168,54 @@ h2 {
     grid-area: "next";
 }
 /* next-btn END */
+
+/* buttons container START */
+.options-container{
+    display: grid;
+    margin-top: 32px;
+    row-gap: 20px;
+}
+/* buttons container END */
+
+/* buttons style START */ 
+.options-default{
+    border-radius: 15px;
+    border: 1px solid #CBBAED;
+    background: rgba(255, 255, 255, 0.20);
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    width: 1084px;
+    height: 65px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    padding: 25px 15px 25px 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.options-default:hover {
+    border-radius: 15px;
+    border: 2px solid #CBBAED;
+    opacity: 0.8;
+    background: linear-gradient(90deg, 
+            rgba(116, 106, 135, 0.25) 0.01%,
+            rgba(148, 136, 173, 0.25) 27.97%, 
+            rgba(156, 143, 182, 0.25) 47.97%, 
+            rgba(176, 161, 205, 0.25) 77.46%, 
+            rgba(203, 186, 237, 0.25) 99.99%);
+    cursor: pointer;
+}
+
+.options-default:active {
+    border-radius: 15px;
+    border: 2px solid #CBBAED;
+    opacity: 0.5;
+    background: linear-gradient(90deg, 
+            rgba(116, 106, 135, 0.25) 0.01%,
+            rgba(148, 136, 173, 0.25) 27.97%, 
+            rgba(156, 143, 182, 0.25) 47.97%, 
+            rgba(176, 161, 205, 0.25) 77.46%, 
+            rgba(203, 186, 237, 0.25) 99.99%);
+}
+/* buttons style END  */

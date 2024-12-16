@@ -31,7 +31,7 @@ if (currentPage === 'resultsPage.html') {
             <LongBtn />
         </React.StrictMode>
     )
-}else if (currentPage === 'QuizPage.html') {
+}else if (currentPage === 'quizPage.html' || currentPage === 'QuizPage.html') {
     const buttonContainer = document.getElementById('quit-button');
     const buttonText = buttonContainer.textContent;
 
