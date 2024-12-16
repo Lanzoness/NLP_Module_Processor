@@ -55,12 +55,11 @@
                     })
                     .then(data => {
                         if (Array.isArray(data) && data.length > 0) {
-                            // Update the global questions array
-                            questions.length = 0; // Clear existing questions
-                            questions.push(...data); // Add new questions
+                            questions.length = 0;
+                            questions.push(...data);
                             currentQuestionIndex = 0;
                             score = 0;
-                            $('#score').text(`Score: ${score}`);
+                            $('#score').text(`Score: ${score}/${questions.length}`);
                             loadQuestion();
                         } else {
                             console.error('No questions available');
@@ -79,6 +78,8 @@
                     const question = questions[currentQuestionIndex];
                     $('#sentence').text(question.question || '');
                     $('#options').empty();
+                    
+                    $('#score').text(`Score: ${score}/${questions.length}`);
                     
                     if (question.options && Array.isArray(question.options)) {
                         const shuffledOptions = [...question.options].sort(() => Math.random() - 0.5);
@@ -109,10 +110,21 @@
         function checkAnswer(selectedOption) {
             const question = questions[currentQuestionIndex];
             if (selectedOption && question) {
-                if (selectedOption.trim() === question.answer.trim()) {
+                const isCorrect = selectedOption.trim() === question.answer.trim();
+                
+                console.log(`Question ${currentQuestionIndex + 1}:`);
+                console.log(`Selected Answer: ${selectedOption}`);
+                console.log(`Correct Answer: ${question.answer}`);
+                
+                if (isCorrect) {
                     score++;
-                    $('#score').text(`Score: ${score}`);
+                    console.log(`Correct! Score increased to ${score}/${questions.length}`);
+                } else {
+                    console.log(`Incorrect. Score remains ${score}/${questions.length}`);
                 }
+                
+                $('#score').text(`Score: ${score}/${questions.length}`);
+                
                 currentQuestionIndex++;
                 loadQuestion();
             }
