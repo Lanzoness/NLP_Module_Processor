@@ -1,7 +1,7 @@
 import React from 'react';
-import './components_styles/small-btn.css'
+import './components_styles/quit-button.css'
 
-const SmallBrn = ({ text = "button text" }) => {
+const QuitBtn = ({ text = "button text" }) => {
     const handleClick = () => {
         window.location.replace('/index.html');
     };
@@ -13,4 +13,4 @@ const SmallBrn = ({ text = "button text" }) => {
     );
 };
   
-  export default SmallBrn;
+  export default QuitBtn;
