@@ -11,7 +11,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
-const PORT = 5137; // You can choose any available port
+const PORT = 5137; // Set the port to 5137
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -51,7 +51,7 @@ app.post('/upload', upload.single('pdfFile'), (req, res) => {
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'src')));
 
-// Start the server
-app.listen(PORT, () => {
+// Start the server on localhost:5137
+app.listen(PORT, 'localhost', () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
