@@ -55,7 +55,7 @@ body{
     padding: 30px 35px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 34px;
+    gap: 35px;
     flex-shrink: 0;
     border-radius: 15px;
     opacity: 0.9;
@@ -78,7 +78,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 26px;
+    gap: 20px;
     box-sizing: border-box;
     height: 755px;
     width: 1019px;
@@ -92,11 +92,10 @@ body{
     color: #FFF;
     text-align: center;
     font-family: 'Inter', sans-serif;
-    font-size: 18px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    gap: 20px;
 }
 
 
@@ -105,7 +104,7 @@ body{
     color: #3BD4C0;
     text-align: center;
     font-family: 'Inter', sans-serif;
-    font-size: 18px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -148,6 +147,7 @@ body{
 .scroll-container::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255);
     border-radius: 50px;
+    cursor: pointer;
 }
 
 /* Question result styles */
@@ -157,6 +157,16 @@ body{
     padding: 15px;
     margin-bottom: 15px;
     border: 1px solid rgba(65, 234, 212, 0.2);
+}
+
+.question-result:hover {
+    background: rgba(45, 32, 32, 0.366);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(65, 234, 212, 0.5);  
+    box-shadow: 0px 0px 10px 0px rgb(106, 70, 178, 0.5);
+    cursor: help;
 }
 
 .question-text {
