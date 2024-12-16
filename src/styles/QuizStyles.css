@@ -70,6 +70,7 @@ h2 {
     /* outline: 2.81px solid rgb(65, 254, 212, 0.45); */
 }
 
+/* grid templates START */
 .quiz{
     width: 1157px;
     height: 817px;
@@ -83,41 +84,59 @@ h2 {
     column-gap: 717px;
 }
 
+.bottom-portion{
+    display: grid;
+    grid-template: 
+    'next';
+    justify-content: center;
+    align-items: center;
+}
+/* grid templates END */
+
+/* score styles START */
 .short-container {
-    height: 61px;
+    height: 70px;
     border-radius: 15px;  
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-    font-size: 17px;
+    padding: 20px 15px 20px 15px;
 }
 
 .score-counter {
     grid-area: "score";
-    padding-top: 20px;
     color: #41EAD4;
+    font-family: 'Inter', sans-serif;   
+    text-align: center;
+    font-weight: 700;
+    font-size: 17px;
     border: 1px solid rgba(65, 234, 212, 0.4);
     width: 217px;  
 }
 
-.buttons{
-    grid-area: "quit";
-    border: 1px solid #ffffff;
-    color:#ffffff;
-    background: #000000;
-    width: 150px;
+.short-container:hover {
+    border: 1px solid rgb(65, 234, 212, 0.5);
+    box-shadow: 0px 0px 20px 0px rgba(65, 204, 234, 0.34);
 }
+/* score styles END */  
 
+
+/* added quit-btn grid area START */
+.quit-btn{
+    grid-area: "quit";
+}
+/* added quit-btn grid area END */
+
+/* question container START  */
 .question-container{
     margin-top: 34px;
-    padding: 20px 59px 20px 59px;
-    border-radius: 15px;
+    padding: 10px 50px 10px 50px;
+    align-items: center;
+    border-radius: 20px;
     border: 2px solid #0F2D33;
-    background: linear-gradient(180deg, 
-    rgba(65,234,212,0.05) 0%, 
-    rgba(111,223,208,0.11) 55%, 
-    rgba(75,179,166,0.17) 79%, 
-    rgba(37,132,120,0.25) 100%),
-    rgb(0, 0, 0, 1);
+    background: linear-gradient(125deg,
+     rgba(65, 234, 212, 0.05) 0.04%, 
+     rgba(111, 223, 208, 0.11) 52.68%,
+     rgba(75, 179, 166, 0.13) 76.68%,
+     rgba(37, 132, 120, 0.15) 96.51%),
+     rgb(0, 0, 0, 1);
     width: 1084px;
     height: 198px;
     color: #ffffff;
@@ -127,5 +146,25 @@ h2 {
     font-weight: 400;
     font-size: 17px;
     line-height: 28px;
+    overflow: hidden;
 }
 
+.question-container:hover {
+    border-radius: 18.72px;
+    border: 1px solid rgb(65, 234, 212, 0.3);
+    opacity: 0.9;
+    background: linear-gradient(125deg,
+    rgba(65, 234, 212, 0.05) 0.04%, 
+    rgba(111, 223, 208, 0.11) 52.68%,
+    rgba(75, 179, 166, 0.13) 76.68%,
+    rgba(37, 132, 120, 0.15) 96.51%),
+    rgb(0, 0, 0, 1);
+    box-shadow: 0px 0px 30px 0px rgba(65, 204, 234, 0.28);
+}
+/* question container END */
+
+/* next-btn START */
+.next-btn{
+    grid-area: "next";
+}
+/* next-btn END */

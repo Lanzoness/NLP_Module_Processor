@@ -6,13 +6,14 @@
     border: 1px solid rgba(203, 186, 237, 0.85);
     background: #000000;
     font-family: 'Inter', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 17px;
     word-spacing: 0.1em;
     letter-spacing: 0.5px;
     display: flex;
     width: 150px;
-    padding: 20px 15px;
+    /* top righ left bottom */
+    padding: 20px 15px 20px 15px;
     justify-content: center;
     align-items: center;
     gap: 17px;
@@ -26,11 +27,12 @@
     border-radius: 15px;
     border: 1px solid #CBBAED;
     opacity: 0.4;
-    background: linear-gradient(90deg,
+    background: linear-gradient(128deg,
      rgba(0, 0, 0, 0.25) 0.4%,
      rgba(95, 82, 120, 0.35) 35.25%,
      rgba(176, 161, 205, 0.22) 70.18%,
-     rgba(185, 170, 216, 0.25) 98.67%);
+     rgba(185, 170, 216, 0.25) 98.67%),
+     rgba(0, 0, 0, 1);
     box-shadow: 0px 0px 20px 0px #6A46B2;
     transition: 0.3 ease-in-out;
 }
@@ -39,11 +41,12 @@
     border-radius: 15px;
     border: 3px solid #CBBAED;
     opacity: 1;
-    background: linear-gradient(90deg,
-     rgba(0, 0, 0, 0.25) 0.4%,
-     rgba(95, 82, 120, 0.35) 35.25%,
-     rgba(176, 161, 205, 0.22) 70.18%,
-     rgba(185, 170, 216, 0.25) 98.67%);
+    background: linear-gradient(128deg,
+     rgba(0, 0, 0, 0.12) 0.4%,
+     rgba(95, 82, 120, 0.22) 35.25%,
+     rgba(176, 161, 205, 0.24) 70.18%,
+     rgba(185, 170, 216, 0.2) 80.67%),
+     rgba(0, 0, 0, 1);
     box-shadow: 0px 0px 20px 0px rgba(106, 70, 178, 0.5);
     transition: 0.3 ease-in-out;
 }
