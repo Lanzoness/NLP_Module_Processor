@@ -116,6 +116,9 @@
                 console.log(`Selected Answer: ${selectedOption}`);
                 console.log(`Correct Answer: ${question.answer}`);
                 
+                // Disable all option buttons after selection
+                $('#options button').prop('disabled', true);
+                
                 if (isCorrect) {
                     score++;
                     console.log(`Correct! Score increased to ${score}/${questions.length}`);
@@ -124,9 +127,7 @@
                 }
                 
                 $('#score').text(`Score: ${score}/${questions.length}`);
-                
-                currentQuestionIndex++;
-                loadQuestion();
+                // Removed auto-advancement
             }
         }
 
