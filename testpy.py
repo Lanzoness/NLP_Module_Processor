@@ -182,33 +182,18 @@ def save_entities_to_file(filename, entities_with_context):
     print(f"Entities and sentences have been saved to {filename}")
 
 def display_questions_and_get_score(multiple_choice_questions):
-    """Displays questions and options, and calculates the score based on user input."""
-    score = 0
-    
+    """Returns questions and options as an object for JavaScript access."""
+    questions_data = []
+
     for question in multiple_choice_questions:
-        print(question['question'].encode('utf-8', 'ignore').decode('utf-8'))  # Ignore unencodable characters
-        print("Options:")
-        
-        # Display the options
-        options = question['options']  # Assuming options are stored in the question dict
-        for i, option in enumerate(options):
-            print(f"{chr(65 + i)}. {option[0]}")  # A, B, C, D for options
-        
-        # Get user input
-        user_answer = input("Enter your answer (A, B, C, or D): ").strip().upper()
-        
-        # Check if the answer is correct
-        if user_answer in ['A', 'B', 'C', 'D']:
-            selected_index = ord(user_answer) - 65  # Convert A, B, C, D to index 0, 1, 2, 3
-            if options[selected_index][0] == question['answer']:  # Compare with the correct answer
-                score += 1
-                print("Correct!\n")
-            else:
-                print("Wrong answer.\n")
-        else:
-            print("Invalid input. Please enter A, B, C, or D.\n")
-    
-    print(f"Your total score is: {score}/{len(multiple_choice_questions)}")
+        question_data = {
+            "question": question['question'],
+            "options": [option[0] for option in question['options']],
+            "answer": question['answer']
+        }
+        questions_data.append(question_data)
+
+    return questions_data
 
 def main(pdf_path):
     text = extract_text_from_pdf(pdf_path)
