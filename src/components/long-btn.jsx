@@ -2,9 +2,9 @@ import React from 'react';
 import './components_styles/long-btn.css'
 
 const LongBtn = ({ text = "Start Reviewing" }) => {
-    const handleClick = () => {
-        window.location.replace('/QuizPage.html');
-    };
+     const handleClick = () => {
+        //  window.location.replace('/QuizPage.html');
+     };
   
     return (
         <button className="long-btn" onClick={handleClick}>

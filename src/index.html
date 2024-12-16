@@ -31,7 +31,9 @@
                         method: 'POST',
                         body: formData // Send the form data
                     })
-                    .then(response => response.json())
+                    .then(response => response.json(),
+                        window.location.href = 'QuizPage.html'
+                    )
                     .then(data => {
                         console.log('Success:', data);
                     })
