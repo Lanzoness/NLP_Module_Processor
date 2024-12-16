@@ -5,6 +5,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { exec } from 'child_process';
 import multer from 'multer';
+import fs from 'fs';
 
 // Get the current filename
 const __filename = fileURLToPath(import.meta.url);
@@ -44,9 +45,62 @@ app.post('/upload', upload.single('pdfFile'), (req, res) => {
             return res.status(500).json({ error: 'Error executing script', details: stderr });
         }
         console.log(`Script output: ${stdout}`);
-        res.json({ message: 'File path received and script executed', output: stdout });
+        
+        // Ensure the latest questions are read
+        const questionsFilePath = path.join(__dirname, 'generated_questions.txt');
+        fs.readFile(questionsFilePath, 'utf8', (err, data) => {
+            if (err) {
+                console.error('Error reading questions file:', err);
+                return res.status(500).json({ error: 'Error reading questions file' });
+            }
+
+            // Parse the questions from the file and send them as JSON
+            const questions = parseQuestions(data);
+            res.json({ message: 'File path received and script executed', questions });
+        });
     });
 });
+
+// Add this endpoint to handle the request for questions
+app.get('/questions', (req, res) => {
+    // Read the generated questions from the file
+    const questionsFilePath = path.join(__dirname, 'generated_questions.txt');
+    fs.readFile(questionsFilePath, 'utf8', (err, data) => {
+        if (err) {
+            console.error('Error reading questions file:', err);
+            return res.status(500).json({ error: 'Error reading questions file' });
+        }
+
+        // Parse the questions from the file and send them as JSON
+        const questions = parseQuestions(data);
+        res.json(questions);
+    });
+});
+
+// Helper function to parse questions from the file
+function parseQuestions(data) {
+    const questions = [];
+    const questionBlocks = data.split('----------------------------').filter(block => block.trim());
+
+    questionBlocks.forEach(block => {
+        const lines = block.trim().split('\n');
+        const questionLine = lines[0];
+        const options = lines.slice(2, -1).map(line => line.split('. ')[1]).filter(option => option);
+        const answerLine = lines[lines.length - 1];
+        const answerMatch = answerLine.match(/\(Answer: (.+)\)/);
+        const answer = answerMatch ? answerMatch[1] : null;
+
+        if (questionLine && options.length === 4 && answer) {
+            questions.push({
+                question: questionLine.split('. ')[1],
+                options,
+                answer
+            });
+        }
+    });
+
+    return questions;
+}
 
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'src')));
