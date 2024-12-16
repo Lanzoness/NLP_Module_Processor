@@ -65,3 +65,39 @@ body{
     font-size: 14px;
     cursor: pointer;
 }
+
+/* heading container START */
+.heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+    box-sizing: border-box;
+    height: 755px;
+    width: 1019px;
+    /* margin: 30px 35px; */
+    outline: 1px solid white;
+}
+
+/* heading container START */
+.heading-container h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    gap: 20px;
+}
+
+/* score container START */
+.score-container h1 {
+    color: #3BD4C0;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
