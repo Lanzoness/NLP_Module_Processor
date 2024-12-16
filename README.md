@@ -1,5 +1,6 @@
 ﻿# NLP_Module_Processor
 
+# Installations
 Use the following commands in your command prompt:
 ```
    pip install PyMuPDF
@@ -9,8 +10,12 @@ Use the following commands in your command prompt:
 Use the following commands in the project's root directory:
 ```
    npm install
+   npm install --save react-dropzone
+   npm install react-router-dom
 ```
-To run localhost, use this command:
+
+# Run Localhost
+ use this command:
 ```
    npm run dev
 ```
