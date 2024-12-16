@@ -47,6 +47,7 @@
             $.getJSON('http://localhost:5137/questions')
                 .done(function(data) {
                     questions = data;
+                    displayScore(); // Initialize score display
                     loadQuestion();
                 })
                 .fail(function() {
@@ -67,17 +68,28 @@
                         $('#options').append(optionButton);
                     });
                 } else {
-                    console.log('No more questions.');
+                    console.log('Final Score:', `${score}/${questions.length}`);
                     window.location.href = 'resultsPage.html';
                 }
+            }
+
+            // Function to display score
+            function displayScore() {
+                const scoreText = `Score: ${score}/${questions.length}`;
+                $('#score').text(scoreText);
+                console.log('Current Score:', scoreText);
             }
 
             // Function to check the answer
             function checkAnswer(selectedOption) {
                 const question = questions[currentQuestionIndex];
-                if (selectedOption === question.answer) {
+                // Debug logging to see what we're comparing
+                console.log('Selected:', selectedOption);
+                console.log('Correct:', question.answer);
+                
+                if (selectedOption.trim() === question.answer.trim()) {
                     score++;
-                    $('#score').text(`Score: ${score}`);
+                    displayScore(); // Update score display after correct answer
                 }
                 currentQuestionIndex++;
                 loadQuestion();
