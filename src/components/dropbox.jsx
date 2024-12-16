@@ -53,7 +53,7 @@ function Dropbox() {
     // Read the file as DataURL
     reader.readAsDataURL(file);
     
-  }, [fileName])
+  }, []) // Remove fileName from dependencies
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
@@ -71,7 +71,7 @@ function Dropbox() {
       {/* getInputProps() : takes the file input props and passes them to the input element */}
       {
         fileName ? (
-          <p>Uploaded Module: {fileName}
+          <p>Uploaded Module: <br />{fileName}
            <br />
            <br /> 
            <span className="replace-msg">Drag or drop a different file to replace the uploaded module</span>
