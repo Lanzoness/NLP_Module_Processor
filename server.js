@@ -93,15 +93,30 @@ function parseQuestions(data) {
 
     questionBlocks.forEach(block => {
         const lines = block.trim().split('\n');
-        const questionLine = lines[0];
-        const options = lines.slice(2, -1).map(line => line.split('. ')[1]).filter(option => option);
+        
+        // Find the index where options begin
+        const optionsIndex = lines.findIndex(line => line.trim() === 'Options:');
+        
+        if (optionsIndex === -1) return; // Skip if no options found
+        
+        // Join all lines before "Options:" as the complete question
+        const questionText = lines.slice(0, optionsIndex)
+            .join(' ')
+            .replace(/^\d+\.\s*/, '') // Remove question number
+            .trim();
+            
+        // Get options and answer
+        const options = lines.slice(optionsIndex + 1, -1)
+            .map(line => line.split('. ')[1])
+            .filter(option => option);
+            
         const answerLine = lines[lines.length - 1];
         const answerMatch = answerLine.match(/\(Answer: (.+)\)/);
         const answer = answerMatch ? answerMatch[1] : null;
 
-        if (questionLine && options.length === 4 && answer) {
+        if (questionText && options.length === 4 && answer) {
             questions.push({
-                question: questionLine.split('. ')[1],
+                question: questionText,
                 options,
                 answer
             });
