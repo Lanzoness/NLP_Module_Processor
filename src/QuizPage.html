@@ -43,6 +43,7 @@
         const questions = [];
         let currentQuestionIndex = 0;
         let score = 0;
+        const quizResults = [];
 
         $(document).ready(function() {
             // Remove duplicate variable declarations
@@ -93,6 +94,12 @@
                         });
                     }
                 } else {
+                    // Store results in localStorage before redirecting
+                    localStorage.setItem('quizResults', JSON.stringify({
+                        score: score,
+                        totalQuestions: questions.length,
+                        details: quizResults
+                    }));
                     window.location.href = 'resultsPage.html';
                 }
             }
@@ -137,6 +144,14 @@
                 }
                 
                 $('#score').text(`Score: ${score}/${questions.length}`);
+
+                // Store the result
+                quizResults.push({
+                    question: question.question,
+                    userAnswer: selectedOption,
+                    correctAnswer: question.answer,
+                    isCorrect: isCorrect
+                });
             }
         }
 

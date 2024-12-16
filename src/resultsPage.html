@@ -13,43 +13,13 @@
                 You've Completed the Quiz!
             </h1>
             <div class="score-container">
-                <h1>Score:  {value}</h1>
+                <h1>Score: <span id="finalScore"></span></h1>
             </div>
 
          <div class="results-record">
             <h1>Review your answers</h1>
-            <div class="scroll-container">
-                <!-- Dummy Question Results -->
-                <div class="question-result">
-                    <p class="question-text">What is the capital of France?</p>
-                    <p class="user-answer incorrect">Your answer: London</p>
-                    <p class="correct-answer">Correct answer: Paris</p>
-                </div>
-                
-                <div class="question-result">
-                    <p class="question-text">Which planet is known as the Red Planet?</p>
-                    <p class="user-answer correct">Your answer: Mars</p>
-                    <p class="correct-answer">Correct answer: Mars</p>
-                </div>
-
-                <!-- Add more dummy results to demonstrate scrolling -->
-                <div class="question-result">
-                    <p class="question-text">What is the largest mammal?</p>
-                    <p class="user-answer correct">Your answer: Blue Whale</p>
-                    <p class="correct-answer">Correct answer: Blue Whale</p>
-                </div>
-
-                <div class="question-result">
-                    <p class="question-text">Who painted the Mona Lisa?</p>
-                    <p class="user-answer incorrect">Your answer: Michelangelo</p>
-                    <p class="correct-answer">Correct answer: Leonardo da Vinci</p>
-                </div>
-
-                <div class="question-result">
-                    <p class="question-text">What is the chemical symbol for gold?</p>
-                    <p class="user-answer correct">Your answer: Au</p>
-                    <p class="correct-answer">Correct answer: Au</p>
-                </div>
+            <div class="scroll-container" id="resultsContainer">
+                <!-- Results will be inserted here dynamically -->
             </div>
         </div>
         
@@ -75,5 +45,32 @@
 
     <!-- imported components -->
     <script type="module" src="main.jsx"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const results = JSON.parse(localStorage.getItem('quizResults'));
+            if (results) {
+                // Display score
+                document.getElementById('finalScore').textContent = 
+                    `${results.score}/${results.totalQuestions}`;
+
+                // Display detailed results
+                const container = document.getElementById('resultsContainer');
+                container.innerHTML = ''; // Clear any existing content
+
+                results.details.forEach(result => {
+                    const resultDiv = document.createElement('div');
+                    resultDiv.className = 'question-result';
+                    resultDiv.innerHTML = `
+                        <p class="question-text">${result.question}</p>
+                        <p class="user-answer ${result.isCorrect ? 'correct' : 'incorrect'}">
+                            Your answer: ${result.userAnswer}
+                        </p>
+                        <p class="correct-answer">Correct answer: ${result.correctAnswer}</p>
+                    `;
+                    container.appendChild(resultDiv);
+                });
+            }
+        });
+    </script>
 </body>
 </html>
