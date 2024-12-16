@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import Dropbox from './components/dropbox.jsx'
 import LongBtn from './components/long-btn.jsx'
 import MediumBtn from './components/medium-btn.jsx'
+import QuitBtn from './components/quit-button.jsx'
 
 // Get the current page name from the URL
 const currentPage = window.location.pathname.split('/').pop();
@@ -30,4 +31,14 @@ if (currentPage === 'resultsPage.html') {
             <LongBtn />
         </React.StrictMode>
     )
-}
+}else if (currentPage === 'quizPage.html' || currentPage === 'QuizPage.html') {
+    const buttonContainer = document.getElementById('quit-button');
+    const buttonText = buttonContainer.textContent;
+
+    ReactDOM.createRoot(buttonContainer).render(
+        <React.StrictMode>
+            <QuitBtn text={buttonText} />
+        </React.StrictMode>
+    )
+}   
+
