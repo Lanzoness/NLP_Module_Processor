@@ -12,6 +12,8 @@ Use the following commands in the project's root directory:
    npm install
    npm install --save react-dropzone
    npm install react-router-dom
+   npm install express body-parser cors
+   npm install concurrently --save-dev
 ```
 
 # Run Localhost

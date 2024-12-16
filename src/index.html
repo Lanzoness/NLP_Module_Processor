@@ -4,21 +4,67 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../styles/UploadStyles.css" rel="stylesheet">
-    <title>Upload File</title>
-</head>
-<body>
-    <div class="card-container">
-        <h1>Upload a module to create a quiz</h1>
-        <img class="dropbox" src="../placeholders/dropbox.png" />
-        <div class="display-name">
-            <h2>Uploaded Module:</h2>
-            <div class="display-name-container">
-                <p>Uploaded Module Title</p>
+        <title>Upload File</title>
+    </head>
+    <body>
+        <div class="card-container">
+            <h1>Upload a module to create a quiz</h1>
+            <div id="dropbox-container" class="dropbox-container">
+                <!-- dropbox component will be rendered here  -->
+                 <DropBox />
             </div>
-            <button class="submit-button">
-                <p>Start Reviewing</p>
-            </button>
+            <div id="long-btn" onclick="handleUpload()">Start Reviewing</div>
         </div>    
-    </div>
-</body>
+
+        <!-- imported components -->
+        <script type="module" src="./main.jsx"></script>
+        <script>
+            let uploadedFile = null; // Variable to store the uploaded file
+
+            function handleUpload() {
+                if (uploadedFile) {
+                    const filePath = uploadedFile.name; // Get the file name
+                    console.log("File path:", filePath);
+
+                    // Update the fetch URL to point to the Express server
+                    fetch('http://localhost:5137/upload', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ pdfPath: filePath })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log('Success:', data);
+                    })
+                    .catch((error) => {
+                        console.error('Error:', error);
+                    });
+                } else {
+                    alert("Please upload a PDF file first.");
+                }
+            }
+
+            // Function to set the uploaded file
+            function setUploadedFile(file) {
+                uploadedFile = file;
+            }
+
+            // Modify the Dropbox component to call setUploadedFile
+            document.addEventListener('DOMContentLoaded', () => {
+                const dropbox = document.querySelector('.dropbox-container');
+                dropbox.addEventListener('drop', (event) => {
+                    event.preventDefault();
+                    const file = event.dataTransfer.files[0];
+                    if (file && file.type === 'application/pdf') {
+                        setUploadedFile(file);
+                        console.log(`File uploaded: ${file.name}`);
+                    } else {
+                        alert("Invalid file type! Please upload a PDF.");
+                    }
+                });
+            });
+        </script>
+    </body>
 </html>
