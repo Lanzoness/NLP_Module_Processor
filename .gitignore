@@ -28,3 +28,6 @@ uploads/*
 
 # But do not ignore the uploads directory itself
 !uploads/
+
+# text files
+*.txt
