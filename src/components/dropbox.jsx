@@ -78,12 +78,12 @@ function Dropbox() {
           </p>
         ) : (
           isDragActive ? (
-            <p>Supported file types: .pdf</p>
+            <p>Supported file type: .pdf</p>
           ) : (
             <p>
               Drag and drop a file or browse a file
               <br />
-              <p>Supported file types: .pdf</p>
+              <p>Supported file type: .pdf</p>
             </p>
           )
         )

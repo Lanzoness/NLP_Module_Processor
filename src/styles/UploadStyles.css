@@ -18,7 +18,6 @@ img, picture, svg {
 html, body {
     margin: 0;
     padding: 0;
-    /* overflow: scroll; temporary scroll */
     height: 100%;
     
 }
@@ -61,7 +60,7 @@ h2 {
     left: 31%;
     background: #000;
     width: 648px;
-    height: 785px;
+    height: 700px;
     border-radius: 20px;
     border: 2.81px solid rgb(65, 254, 212, 0.45);
     /* top right bottom left */
@@ -89,21 +88,3 @@ h2 {
     color: rgba(255, 255, 255, 0.2);
 }
 
-.submit-button {
-    padding-top: 25px;
-    border-radius: 15px;
-    border: 1px solid rgba(65, 234, 212, 0.4);
-    width: 574.68px;
-    height: 71px;
-    padding: 16px 23px;
-    margin-top: 60px;
-    background: #41EAD4;
-    /* text */
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    color: #000000;
-}
-
- 
