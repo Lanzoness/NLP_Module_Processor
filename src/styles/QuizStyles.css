@@ -72,7 +72,7 @@ h2 {
 /* grid templates START */
 .quiz{
     width: 1157px;
-    height: 817px;
+    height: 820px;
     left: 18%;
 }
 
@@ -84,11 +84,14 @@ h2 {
 }
 
 .bottom-portion{
-    display: grid;
-    grid-template: 
-    'next';
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+    align-items: end;
+}
+
+.bottom-portion a {
+    text-decoration: none;
 }
 /* grid templates END */
 
@@ -165,7 +168,7 @@ h2 {
 
 /* next-btn START */
 .next-btn{
-    grid-area: "next";
+    text-decoration: none;
 }
 /* next-btn END */
 
