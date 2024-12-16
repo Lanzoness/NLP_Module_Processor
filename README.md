@@ -14,6 +14,7 @@ Use the following commands in the project's root directory:
    npm install react-router-dom
    npm install express body-parser cors
    npm install concurrently --save-dev
+   npm install multer
 ```
 
 # Run Localhost
