@@ -4,13 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../styles/ResultsPage.css" rel="stylesheet">
-    <title>Quiz Page</title>
+    <title>Results Page</title>
 </head>
 <body>
     <div class="card-container">
-        <h1 style="color: white;">Results Page</h1>
-        <div id="medium-btn" class="new-quiz-btn">Create Another Quiz</div>
+        <div class="heading-container">
+            <h1>Congratulations<br>
+                You've Completed the Quiz!
+            </h1>
+            <div class="score-container">
+                <h1>Score:  {value}</h1>
+            </div>
+
+         <div class="results-record">
+            <h1>Review your answers</h1>
+            <div class="scroll-container">
+                <!-- Dummy Question Results -->
+                <div class="question-result">
+                    <p class="question-text">What is the capital of France?</p>
+                    <p class="user-answer incorrect">Your answer: London</p>
+                    <p class="correct-answer">Correct answer: Paris</p>
+                </div>
+                
+                <div class="question-result">
+                    <p class="question-text">Which planet is known as the Red Planet?</p>
+                    <p class="user-answer correct">Your answer: Mars</p>
+                    <p class="correct-answer">Correct answer: Mars</p>
+                </div>
+
+                <!-- Add more dummy results to demonstrate scrolling -->
+                <div class="question-result">
+                    <p class="question-text">What is the largest mammal?</p>
+                    <p class="user-answer correct">Your answer: Blue Whale</p>
+                    <p class="correct-answer">Correct answer: Blue Whale</p>
+                </div>
+
+                <div class="question-result">
+                    <p class="question-text">Who painted the Mona Lisa?</p>
+                    <p class="user-answer incorrect">Your answer: Michelangelo</p>
+                    <p class="correct-answer">Correct answer: Leonardo da Vinci</p>
+                </div>
+
+                <div class="question-result">
+                    <p class="question-text">What is the chemical symbol for gold?</p>
+                    <p class="user-answer correct">Your answer: Au</p>
+                    <p class="correct-answer">Correct answer: Au</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- create another quiz btn -->
+        <div id="medium-btn" class="new-quiz-btn">
+            Create Another Quiz
+        </div>
+        <!--create another quiz btn -->
+
+
+        <!-- heading container div tag -->
+        </div>
+        <!-- heading container div tag END -->
+        <!-- <h1 style="color: white;">You've Completed the Quiz!</h1>
+        <h1 style="color: white;">Score</h1>
+        <div class="quiz-score" id="" ><p style="color:white;">100%</p></div> -->
+
+
+    <!-- card container div tag END -->
     </div>
+    <!-- card container div tag END -->
+
 
     <!-- imported components -->
     <script type="module" src="main.jsx"></script>
