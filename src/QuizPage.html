@@ -13,82 +13,135 @@
     <div class="card-container quiz">
         <div class="upper-portion">
             <div class="short-container score-counter">
-                <p>Score: 00/72</p> 
+                <p id="score">Score: 0</p> 
             </div>
             <div id="quit-button" class="quit-btn">
                 Quit
             </div>
-            <!-- <button class="short-container buttons">
-                <p>Quit</p>
-            </button> -->
         </div>
         <div id='question' class="question-container">
-            <p id="sentence">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-            deserunt mollit anim id est laborum. in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-            deserunt mollit anim id est laborum. in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-            deserunt mollit anim id est laborum.in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-            deserunt mollit anim id est laborum.in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-            deserunt mollit anim id est laborum. </p>
+            <p id="sentence"></p>
         </div>
 
         <!-- options container START -->
-        <div class="options-container">
-            <button class="options-default">
-                A. Lorem ipsum dolor sit amet
-            </button>
-            <button class="options-default">
-                B. Lorem ipsum dolor sit amet
-            </button>
-            <button class="options-default">
-                C. Lorem ipsum dolor sit amet
-            </button>
-            <button class="options-default">
-                D. Lorem ipsum dolor sit amet
-            </button>
+        <div id="options" class="options-container">
         </div>
         <!-- options container END -->
 
         <!-- bottom portion START -->
         <div class="bottom-portion">
-            <a href="resultsPage.html">
-                <button class="small-btn">
-                    Next
-                </button>
-            </a>
+            <button id="next-button" class="small-btn">
+                Next
+            </button>
         </div>
         <!-- bottom portion END -->
-
-    <!-- do not delete card conatiner div -->
     </div>
-    <!-- do not delete card conatiner div -->
-</body>
-<script>
-$(document).ready(function() {
-    function resizeText() {
-        const container = $('#question');
-        const sentence = $('#sentence');
-        let fontSize = parseInt(sentence.css('font-size'));
 
-        while (sentence.outerHeight() > container.innerHeight() || sentence.outerWidth() > container.innerWidth()) {
-            fontSize--;
-            sentence.css('font-size', fontSize + 'px');
+    <script>
+        // At the top level of the script
+        const questions = [];
+        let currentQuestionIndex = 0;
+        let score = 0;
+
+        $(document).ready(function() {
+            // Remove duplicate variable declarations
+            function fetchQuestions() {
+                return fetch('http://localhost:5137/questions')
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        if (Array.isArray(data) && data.length > 0) {
+                            // Update the global questions array
+                            questions.length = 0; // Clear existing questions
+                            questions.push(...data); // Add new questions
+                            currentQuestionIndex = 0;
+                            score = 0;
+                            $('#score').text(`Score: ${score}`);
+                            loadQuestion();
+                        } else {
+                            console.error('No questions available');
+                            alert('No questions available. Please upload a file first.');
+                            window.location.href = 'index.html';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error fetching questions:', error);
+                        alert('Error loading questions. Please try again.');
+                    });
+            }
+
+            function loadQuestion() {
+                if (questions && currentQuestionIndex < questions.length) {
+                    const question = questions[currentQuestionIndex];
+                    $('#sentence').text(question.question || '');
+                    $('#options').empty();
+                    
+                    if (question.options && Array.isArray(question.options)) {
+                        const shuffledOptions = [...question.options].sort(() => Math.random() - 0.5);
+                        shuffledOptions.forEach((option, index) => {
+                            const optionButton = $('<button>')
+                                .addClass('options-default')
+                                .text(`${String.fromCharCode(65 + index)}. ${option}`)
+                                .click(() => checkAnswer(option));
+                            $('#options').append(optionButton);
+                        });
+                    }
+                } else {
+                    window.location.href = 'resultsPage.html';
+                }
+            }
+
+            // Call fetchQuestions when page loads
+            fetchQuestions();
+
+            // Handle next button click
+            $('#next-button').click(() => {
+                currentQuestionIndex++;
+                loadQuestion();
+            });
+        });
+
+        // Function to check the answer
+        function checkAnswer(selectedOption) {
+            const question = questions[currentQuestionIndex];
+            if (selectedOption && question) {
+                if (selectedOption.trim() === question.answer.trim()) {
+                    score++;
+                    $('#score').text(`Score: ${score}`);
+                }
+                currentQuestionIndex++;
+                loadQuestion();
+            }
         }
-    }
 
-    resizeText();
+        let uploadedFile = null; // Variable to store the uploaded file
 
-    $(window).resize(function() {
-        resizeText();
-    });
-});
-</script>
-    
+        function handleUpload() {
+            if (uploadedFile) {
+                const formData = new FormData();
+                formData.append('pdfFile', uploadedFile); // Append the file to the form data
+
+                fetch('http://localhost:5137/upload', {
+                    method: 'POST',
+                    body: formData // Send the form data
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Success:', data);
+                    fetchQuestions(); // Fetch questions after upload
+                    window.location.href = 'QuizPage.html';
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
+            } else {
+                alert("Please upload a PDF file first.");
+            }
+        }
+    </script>
+</body>
 </html>

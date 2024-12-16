@@ -5,6 +5,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { exec } from 'child_process';
 import multer from 'multer';
+import fs from 'fs';
 
 // Get the current filename
 const __filename = fileURLToPath(import.meta.url);
@@ -15,6 +16,9 @@ const PORT = 5137; // Set the port to 5137
 
 app.use(cors());
 app.use(bodyParser.json());
+
+// At the top with other imports
+let questionsCache = null; // Global variable to store questions
 
 // Set up multer for file uploads
 const storage = multer.diskStorage({
@@ -28,25 +32,84 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
-// Endpoint to handle file upload
-app.post('/upload', upload.single('pdfFile'), (req, res) => {
-    const pdfPath = req.file.path; // Get the path of the uploaded file
-    console.log('Received PDF path:', pdfPath);
+// Modified upload endpoint
+app.post('/upload', upload.single('pdfFile'), async (req, res) => {
+    try {
+        // Clear cache immediately
+        questionsCache = null;
+        
+        const pdfPath = req.file.path;
+        console.log('Received PDF path:', pdfPath);
 
-    // Construct the command to run the Python script
-    const command = `python testpy.py "${pdfPath}"`; // Adjust the command if necessary
+        // Run Python script
+        await new Promise((resolve, reject) => {
+            exec(`python testpy.py "${pdfPath}"`, (error, stdout, stderr) => {
+                if (error) {
+                    reject({ error, stderr });
+                } else {
+                    resolve({ stdout, stderr });
+                }
+            });
+        });
 
-    // Execute the Python script
-    exec(command, (error, stdout, stderr) => {
-        if (error) {
-            console.error(`Error executing script: ${error.message}`);
-            console.error(`stderr: ${stderr}`);
-            return res.status(500).json({ error: 'Error executing script', details: stderr });
-        }
-        console.log(`Script output: ${stdout}`);
-        res.json({ message: 'File path received and script executed', output: stdout });
-    });
+        // Ensure file is written before reading
+        await new Promise(resolve => setTimeout(resolve, 2000));
+
+        // Read new questions
+        const questionsFilePath = path.join(__dirname, 'generated_questions.txt');
+        const data = await fs.promises.readFile(questionsFilePath, 'utf8');
+        questionsCache = parseQuestions(data);
+        
+        res.json({ 
+            message: 'File processed successfully', 
+            questions: questionsCache,
+            success: true 
+        });
+    } catch (error) {
+        console.error('Error processing upload:', error);
+        res.status(500).json({ error: 'Error processing upload', success: false });
+    }
 });
+
+// Modified questions endpoint
+app.get('/questions', async (req, res) => {
+    try {
+        if (!questionsCache) {
+            const questionsFilePath = path.join(__dirname, 'generated_questions.txt');
+            const data = await fs.promises.readFile(questionsFilePath, 'utf8');
+            questionsCache = parseQuestions(data);
+        }
+        res.json(questionsCache);
+    } catch (error) {
+        console.error('Error fetching questions:', error);
+        res.status(500).json({ error: 'Error fetching questions' });
+    }
+});
+
+// Helper function to parse questions from the file
+function parseQuestions(data) {
+    const questions = [];
+    const questionBlocks = data.split('----------------------------').filter(block => block.trim());
+
+    questionBlocks.forEach(block => {
+        const lines = block.trim().split('\n');
+        const questionLine = lines[0];
+        const options = lines.slice(2, -1).map(line => line.split('. ')[1]).filter(option => option);
+        const answerLine = lines[lines.length - 1];
+        const answerMatch = answerLine.match(/\(Answer: (.+)\)/);
+        const answer = answerMatch ? answerMatch[1] : null;
+
+        if (questionLine && options.length === 4 && answer) {
+            questions.push({
+                question: questionLine.split('. ')[1],
+                options,
+                answer
+            });
+        }
+    });
+
+    return questions;
+}
 
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'src')));
