@@ -2,6 +2,7 @@ import fitz  # PyMuPDF
 import spacy
 import random
 import re
+import sys
 
 # Load SpaCy's English NLP model
 nlp = spacy.load("en_core_web_sm")
@@ -229,5 +230,9 @@ def main(pdf_path):
     display_questions_and_get_score(multiple_choice_questions)
 
 if __name__ == "__main__":
-    pdf_path = "Module_01_Introduction_to_Computer_Organization_and_Architecture.pdf"  # Replace with your PDF file path
-    main(pdf_path)
+    # Get the PDF path from command line arguments
+    if len(sys.argv) > 1:
+        pdf_path = sys.argv[1]  # The first argument is the PDF path
+        main(pdf_path)
+    else:
+        print("Please provide the path to the PDF file.")
