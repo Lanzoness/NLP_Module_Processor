@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.long-btn {
+    padding-top: 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(65, 234, 212, 0.4);
+    width: 574.68px;
+    height: 71px;
+    padding: 16px 23px;
+    margin-top: 60px;
+    background: #41EAD4;
+    /* text */
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;    
+    transition: 0.3s ease-in;
+}
+
+.long-btn:hover {
+    background: #41EAD4;    
+    color:#000000;
+    opacity: 0.5;
+    transition: 0.2s ease-in-out;
+}
+
+.long-btn:active {
+    background: #41CCEA;
+    color:#000000;
+    opacity: 1;
+}
