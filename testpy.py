@@ -186,7 +186,7 @@ def display_questions_and_get_score(multiple_choice_questions):
     score = 0
     
     for question in multiple_choice_questions:
-        print(question['question'])  # Display the question
+        print(question['question'].encode('utf-8', 'replace').decode('utf-8'))  # Replace unencodable characters
         print("Options:")
         
         # Display the options
