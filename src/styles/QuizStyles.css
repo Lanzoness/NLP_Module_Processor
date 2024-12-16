@@ -222,3 +222,15 @@ h2 {
             rgba(203, 186, 237, 0.25) 99.99%);
 }
 /* buttons style END  */
+
+/* Add these to QuizStyles.css */
+.correct-answer {
+    background: rgba(0, 255, 0, 0.3) !important; /* Green background */
+    border: 2px solid #00ff00 !important;
+}
+
+.incorrect-answer {
+    background: rgba(255, 0, 0, 0.3) !important; /* Red background */
+    border: 2px solid #ff0000 !important;
+    opacity: 0.8 !important;
+}
