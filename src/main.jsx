@@ -17,7 +17,7 @@ if (currentPage === 'resultsPage.html') {
             <MediumBtn text={buttonText} />
         </React.StrictMode>
     )
-} else if (currentPage === 'index.html') {
+} else if (currentPage === 'index.html' || currentPage === '') {
     // Render other components for other pages
     ReactDOM.createRoot(document.getElementById('dropbox-container')).render(
         <React.StrictMode>
