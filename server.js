@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { exec } from 'child_process';
 
 // Get the current filename
 const __filename = fileURLToPath(import.meta.url);
@@ -18,7 +19,20 @@ app.use(bodyParser.json());
 app.post('/upload', (req, res) => {
     const { pdfPath } = req.body;
     console.log('Received PDF path:', pdfPath);
-    res.json({ message: 'File path received' }); // Send a JSON response
+
+    // Construct the command to run the Python script
+    const command = `python testpy.py "${pdfPath}"`; // Adjust the command if necessary
+
+    // Execute the Python script
+    exec(command, (error, stdout, stderr) => {
+        if (error) {
+            console.error(`Error executing script: ${error.message}`);
+            console.error(`stderr: ${stderr}`);
+            return res.status(500).json({ error: 'Error executing script', details: stderr });
+        }
+        console.log(`Script output: ${stdout}`);
+        res.json({ message: 'File path received and script executed', output: stdout });
+    });
 });
 
 // Serve static files from the React app
