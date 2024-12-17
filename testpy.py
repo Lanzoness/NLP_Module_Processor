@@ -298,7 +298,6 @@ def display_questions_and_get_score(multiple_choice_questions):
 
     return questions_data
 
-
 def main(pdf_path):
     text = extract_text_from_pdf(pdf_path)
     entities_with_context = extract_named_entities_with_context(text)
@@ -316,7 +315,7 @@ def main(pdf_path):
 
     for i in range(0, len(entities_with_context), batch_size):
           batch = entities_with_context[i:i+batch_size]
-          logging.debug(f"main: Processing entity batch {i//batch_size+1}: {batch}")
+          logging.debug(f"main: Processing entity batch {i//batch_size+1}. Length: {len(batch)}. Entities: {[e[0] for e in batch]}")
           
           try:
             batch_questions = generate_multiple_choice_questions(batch)
@@ -333,7 +332,6 @@ def main(pdf_path):
 
     # Display questions and get score
     display_questions_and_get_score(all_questions)
-
 
 if __name__ == "__main__":
     # Get the PDF path from command line arguments
