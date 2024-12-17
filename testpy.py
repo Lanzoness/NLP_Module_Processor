@@ -8,7 +8,6 @@ import logging
 # Configure logging
 logging.basicConfig(filename='console.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-
 # Load SpaCy's English NLP model
 nlp = spacy.load("en_core_web_sm")
 
@@ -132,6 +131,22 @@ def extract_named_entities_with_context(text):
     logging.info(f"Found {len(entities_with_context)} entities with context.")
     return entities_with_context
 
+def validate_entity_for_question(entity, label, sentence, all_entities, used_entities):
+     """Validates if an entity is suitable for generating a question."""
+
+     entity_id = (entity, label)
+     if entity_id in used_entities:
+        logging.debug(f"Skipping entity '{entity}' of type '{label}' as it has already been used.")
+        return False
+     
+     available_entities = [e for e in all_entities if e[0] != entity and (e[0], all_entities[e[1]][1]) not in used_entities]
+     if len(available_entities) < 3:
+            logging.debug(f"Skipping entity '{entity}' of type '{label}' due to insufficient answer options. Available options: {len(available_entities)}")
+            return False
+     
+     logging.debug(f"Entity '{entity}' of type '{label}' is valid for question generation. Available options: {len(available_entities)}")
+     return True
+
 def generate_multiple_choice_questions(entities_with_context):
     """Generates multiple-choice questions based on entity context."""
     questions = []
@@ -142,24 +157,16 @@ def generate_multiple_choice_questions(entities_with_context):
     used_entities = set()  # Track used entities to prevent duplicates
     
     for entity_idx, (entity, label, sentence) in enumerate(entities_with_context):
-        entity_id = (entity, label)  # Create a unique identifier for the entity
-        logging.debug(f"Processing entity {entity_idx+1}: '{entity}' of type '{label}'.")
         
-        # Skip if this entity has already been used
-        if entity_id in used_entities:
-             logging.debug(f"Skipping entity {entity_idx+1}: '{entity}' as it has already been used.")
-             continue
+        if not validate_entity_for_question(entity, label, sentence, all_entities, used_entities):
+              continue
         
         # Use the full sentence for the question
         question_text = sentence.replace(entity, "______")
         
         # Generate answer options from all entities, including dates
         available_entities = [e for e in all_entities if e[0] != entity and (e[0], entities_with_context[e[1]][1]) not in used_entities]
-        if len(available_entities) < 3:
-            logging.debug(f"Skipping entity {entity_idx+1}: '{entity}' of type '{label}' due to insufficient answer options. Available options: {len(available_entities)}")
-            continue
-        logging.debug(f"Processing entity {entity_idx+1}: '{entity}' of type '{label}'. Available options: {len(available_entities)}")
-        
+       
         # Initialize a set to track unique incorrect answers
         incorrect_answers = set()
 
@@ -187,7 +194,7 @@ def generate_multiple_choice_questions(entities_with_context):
         logging.debug(f"Generated question {len(questions)} for entity '{entity}'.")
         
         # Mark the entity as used
-        used_entities.add(entity_id)
+        used_entities.add((entity, label))
     logging.info(f"Generated {len(questions)} questions.")
     return questions
 
