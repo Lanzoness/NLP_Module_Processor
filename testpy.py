@@ -156,9 +156,10 @@ def generate_multiple_choice_questions(entities_with_context):
         # Generate answer options from all entities, including dates
         available_entities = [e for e in all_entities if e[0] != entity and (e[0], entities_with_context[e[1]][1]) not in used_entities]
         if len(available_entities) < 3:
-             logging.debug(f"Skipping entity {entity_idx+1}: '{entity}' due to insufficient answer options.")
-             continue  # Skip if we don't have enough options
-            
+            logging.debug(f"Skipping entity {entity_idx+1}: '{entity}' of type '{label}' due to insufficient answer options. Available options: {len(available_entities)}")
+            continue
+        logging.debug(f"Processing entity {entity_idx+1}: '{entity}' of type '{label}'. Available options: {len(available_entities)}")
+        
         # Initialize a set to track unique incorrect answers
         incorrect_answers = set()
 
