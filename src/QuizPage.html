@@ -76,20 +76,6 @@
 
             function loadQuestion() {
                 if (questions && currentQuestionIndex < questions.length) {
-                    if (!questionAnswered) {
-                        // Record skipped question
-                        const question = questions[currentQuestionIndex];
-                        quizResults.push({
-                            question: question.question,
-                            userAnswer: "Skipped",
-                            correctAnswer: question.answer,
-                            isCorrect: false
-                        });
-                        console.log(`Question ${currentQuestionIndex + 1}:`);
-                        console.log(`Selected Answer: `);
-                        console.log(`Correct Answer: ${question.answer}`);
-                    }
-
                     const question = questions[currentQuestionIndex];
                     $('#sentence').text(question.question || '');
                     $('#options').empty();
@@ -121,6 +107,20 @@
             fetchQuestions();
 
             $('#next-button').click(() => {
+                // Log skipped question before moving to next question
+                if (!questionAnswered && currentQuestionIndex < questions.length) {
+                    const question = questions[currentQuestionIndex];
+                    quizResults.push({
+                        question: question.question,
+                        userAnswer: "Skipped",
+                        correctAnswer: question.answer,
+                        isCorrect: false
+                    });
+                    console.log(`Question ${currentQuestionIndex + 1}:`);
+                    console.log(`Selected Answer: `);
+                    console.log(`Correct Answer: ${question.answer}`);
+                }
+                
                 currentQuestionIndex++;
                 loadQuestion();
             });
