@@ -3,6 +3,11 @@ import spacy
 import random
 import re
 import sys
+import logging
+
+# Configure logging
+logging.basicConfig(filename='console.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
 
 # Load SpaCy's English NLP model
 nlp = spacy.load("en_core_web_sm")
@@ -12,6 +17,7 @@ def extract_text_from_pdf(pdf_path):
     text = ""
     try:
         doc = fitz.open(pdf_path)  # Open the PDF file
+        logging.info(f"Opened PDF file: {pdf_path}")
         
         for page in doc:  # Iterate through each page
             page_text = page.get_text("text")
@@ -50,16 +56,16 @@ def extract_text_from_pdf(pdf_path):
             text += "\n".join(processed_lines) + "\n\n"
 
         doc.close()  # Close the document
+        logging.info("Closed PDF document.")
         
         # Save raw text to file
         with open("raw_module.txt", "w", encoding="utf-8") as raw_file:
             raw_file.write(text)
-
-        print("Raw text saved to raw_module.txt")
+        logging.info("Raw text saved to raw_module.txt")
         return text
 
     except Exception as e:
-        print(f"Error extracting text from PDF: {str(e)}")
+        logging.error(f"Error extracting text from PDF: {str(e)}")
         return ""
 
 
@@ -67,6 +73,7 @@ def extract_named_entities_with_context(text):
     """Extracts named entities and their surrounding context from the text."""
     # Split the text into pages based on double newlines
     pages = text.split("\n\n")
+    logging.info(f"Text split into {len(pages)} pages.")
     
     entities_with_context = []
     
@@ -81,9 +88,11 @@ def extract_named_entities_with_context(text):
         "vs"
     }
     
-    for page in pages:
+    for page_num, page in enumerate(pages):
+        logging.debug(f"Processing page {page_num+1}...")
         # Store matches before spaCy processing
         date_matches = [(match.group(), match.start(), match.end()) for match in re.finditer(date_pattern, page)]
+        logging.debug(f"Found {len(date_matches)} date matches on page {page_num+1}.")
         
         # Now process with spaCy
         doc = nlp(page)
@@ -92,10 +101,12 @@ def extract_named_entities_with_context(text):
         for ent in doc.ents:
             # Skip entities that contain non-alphanumeric characters
             if re.search(non_alphanumeric_pattern, ent.text):
+                logging.debug(f"Skipping entity '{ent.text}' on page {page_num+1} due to non-alphanumeric characters.")
                 continue
             
             # Skip entities that are in the blacklist
             if ent.text.lower() in blacklist:  # Use lower() for case-insensitive comparison
+                logging.debug(f"Skipping entity '{ent.text}' on page {page_num+1} as it is blacklisted.")
                 continue
             
             if ent.label_ in ["PERSON", "ORG", "GPE", "DATE", "EVENT", "LOC", "MONEY", "PRODUCT", "WORK_OF_ART", "TIME"]:
@@ -104,9 +115,11 @@ def extract_named_entities_with_context(text):
                 
                 # Check the length condition
                 if len(sentence) <= len(ent.text) + 5:
+                    logging.debug(f"Skipping entity '{ent.text}' on page {page_num+1} as sentence is too short.")
                     continue  # Skip this entity if the condition is met
                 
                 entities_with_context.append((ent.text.strip(), ent.label_, sentence))
+                logging.debug(f"Added entity '{ent.text}' of type '{ent.label_}' with context on page {page_num+1}.")
         
         # Handle custom ENTITY_DATE matches
         for match_text, start, end in date_matches:
@@ -114,24 +127,28 @@ def extract_named_entities_with_context(text):
             for sent in doc.sents:
                 if sent.start_char <= start < sent.end_char:
                     entities_with_context.append((match_text, "DATE", sent.text.strip()))
+                    logging.debug(f"Added custom date entity '{match_text}' with context on page {page_num+1}.")
                     break
-    
+    logging.info(f"Found {len(entities_with_context)} entities with context.")
     return entities_with_context
 
 def generate_multiple_choice_questions(entities_with_context):
     """Generates multiple-choice questions based on entity context."""
     questions = []
+    logging.info("Starting question generation.")
     
     # Create a list of all available entities for choices
     all_entities = [(e[0], i) for i, e in enumerate(entities_with_context)]  # Include index for uniqueness
     used_entities = set()  # Track used entities to prevent duplicates
     
-    for entity, label, sentence in entities_with_context:
+    for entity_idx, (entity, label, sentence) in enumerate(entities_with_context):
         entity_id = (entity, label)  # Create a unique identifier for the entity
+        logging.debug(f"Processing entity {entity_idx+1}: '{entity}' of type '{label}'.")
         
         # Skip if this entity has already been used
         if entity_id in used_entities:
-            continue
+             logging.debug(f"Skipping entity {entity_idx+1}: '{entity}' as it has already been used.")
+             continue
         
         # Use the full sentence for the question
         question_text = sentence.replace(entity, "______")
@@ -139,7 +156,8 @@ def generate_multiple_choice_questions(entities_with_context):
         # Generate answer options from all entities, including dates
         available_entities = [e for e in all_entities if e[0] != entity and (e[0], entities_with_context[e[1]][1]) not in used_entities]
         if len(available_entities) < 3:
-            continue  # Skip if we don't have enough options
+             logging.debug(f"Skipping entity {entity_idx+1}: '{entity}' due to insufficient answer options.")
+             continue  # Skip if we don't have enough options
             
         # Initialize a set to track unique incorrect answers
         incorrect_answers = set()
@@ -165,10 +183,11 @@ def generate_multiple_choice_questions(entities_with_context):
             "options": options  # Add options to the question dictionary
         }
         questions.append(question)
+        logging.debug(f"Generated question {len(questions)} for entity '{entity}'.")
         
         # Mark the entity as used
         used_entities.add(entity_id)
-    
+    logging.info(f"Generated {len(questions)} questions.")
     return questions
 
 def save_questions_to_file(filename, multiple_choice_questions):
@@ -183,13 +202,14 @@ def save_questions_to_file(filename, multiple_choice_questions):
             # Now add the answer
             file.write(f"(Answer: {q['answer']})\n")
             file.write("----------------------------")
+    logging.info(f"Questions saved to {filename}")
 
 def save_entities_to_file(filename, entities_with_context):
     """Saves entities and their corresponding sentences to a text file."""
     with open(filename, "w", encoding="utf-8") as file:
         for entity, label, sentence in entities_with_context:
             file.write(f"Entity: {entity}\nLabel: {label}\nSentence: {sentence}\n\n")
-    print(f"Entities and sentences have been saved to {filename}")
+    logging.info(f"Entities and sentences have been saved to {filename}")
 
 def display_questions_and_get_score(multiple_choice_questions):
     """Returns questions and options as an object for JavaScript access."""
@@ -219,7 +239,7 @@ def main(pdf_path):
     # Save questions to a file
     output_file = "generated_questions.txt"
     save_questions_to_file(output_file, multiple_choice_questions)
-    print(f"Questions have been saved to {output_file}")
+    logging.info(f"Questions have been saved to {output_file}")
 
     # Display questions and get score
     display_questions_and_get_score(multiple_choice_questions)
@@ -230,4 +250,4 @@ if __name__ == "__main__":
         pdf_path = sys.argv[1]  # The first argument is the PDF path
         main(pdf_path)
     else:
-        print("Please provide the path to the PDF file.")
+        logging.error("Please provide the path to the PDF file.")
