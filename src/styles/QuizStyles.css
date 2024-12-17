@@ -127,7 +127,7 @@ h2 {
 /* added quit-btn grid area END */
 
 /* question container START  */
-.question-container{
+.question-container {
     margin-top: 34px;
     padding: 10px 50px 10px 50px;
     align-items: center;
@@ -148,7 +148,9 @@ h2 {
     font-weight: 400;
     font-size: 17px;
     line-height: 28px;
-    overflow: hidden;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #41EAD4 #000;
 }
 
 .question-container:hover {
@@ -162,9 +164,34 @@ h2 {
         rgba(37, 132, 120, 0.15) 96.51%),
         rgb(0, 0, 0, 1);
     box-shadow: 0px 0px 30px 0px rgba(65, 204, 234, 0.28);
+    contain: content;
     cursor: context-menu;
 }
 /* question container END */
+
+/* questions container scrollbar start */
+.question-container::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 20px;
+}
+
+.question-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 100px;
+}
+
+.question-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255);
+    border-radius: 100px;
+}
+
+.question-container::-webkit-scrollbar-button {
+    display: none;
+    color: #000;
+    background: #000;
+}
+
+/* questions container scrollbar end */
 
 /* next-btn START */
 .next-btn{
@@ -233,4 +260,13 @@ h2 {
     background: rgba(255, 0, 0, 0.3) !important; /* Red background */
     border: 2px solid #ff0000 !important;
     opacity: 0.8 !important;
+}
+
+/* Add to existing styles */
+#sentence {
+    /* top  right bottom left*/
+    padding: 5px 0px 5px 0px;
+    white-space: pre-line;
+    line-height: 2;
+    text-align: left;
 }

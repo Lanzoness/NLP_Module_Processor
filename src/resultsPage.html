@@ -58,10 +58,19 @@
                 container.innerHTML = ''; // Clear any existing content
 
                 results.details.forEach(result => {
+                    // Format question text
+                    const formattedQuestion = result.question
+                        .replace(/\r/g, '') // Remove carriage returns
+                        .replace(/\n/g, '<br><br>- ') // Replace newlines with <br> tags
+                        .replace(//g, '<br><br>- ') // Replace bullet point with <br> and bullet point
+                        .replace(//g, '<br><br>- ') // Replace another bullet point with <br> and bullet point
+                        .replace(//g, '<br><br>- ') // Replace another bullet point with <br> and bullet point
+                        .trim();
+
                     const resultDiv = document.createElement('div');
                     resultDiv.className = 'question-result';
                     resultDiv.innerHTML = `
-                        <p class="question-text">${result.question}</p>
+                        <p class="question-text">${formattedQuestion}</p>
                         <p class="user-answer ${result.userAnswer === 'Skipped' ? 'skipped' : (result.isCorrect ? 'correct' : 'incorrect')}">
                             Your answer: ${result.userAnswer === 'Skipped' ? 'Question Skipped' : result.userAnswer}
                         </p>
