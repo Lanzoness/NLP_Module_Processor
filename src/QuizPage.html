@@ -39,14 +39,13 @@
     </div>
 
     <script>
-        // At the top level of the script
         const questions = [];
         let currentQuestionIndex = 0;
         let score = 0;
         const quizResults = [];
+        let questionAnswered = false; // Flag to track if the current question was answered
 
         $(document).ready(function() {
-            // Remove duplicate variable declarations
             function fetchQuestions() {
                 return fetch('http://localhost:5137/questions')
                     .then(response => {
@@ -77,6 +76,14 @@
 
             function loadQuestion() {
                 if (questions && currentQuestionIndex < questions.length) {
+                    if (!questionAnswered) {
+                        // Log a blank answer if the question was skipped
+                        const question = questions[currentQuestionIndex];
+                        console.log(`Question ${currentQuestionIndex + 1}:`);
+                        console.log(`Selected Answer: `);
+                        console.log(`Correct Answer: ${question.answer}`);
+                    }
+
                     const question = questions[currentQuestionIndex];
                     $('#sentence').text(question.question || '');
                     $('#options').empty();
@@ -93,8 +100,9 @@
                             $('#options').append(optionButton);
                         });
                     }
+
+                    questionAnswered = false; // Reset the flag for the new question
                 } else {
-                    // Store results in localStorage before redirecting
                     localStorage.setItem('quizResults', JSON.stringify({
                         score: score,
                         totalQuestions: questions.length,
@@ -104,17 +112,14 @@
                 }
             }
 
-            // Call fetchQuestions when page loads
             fetchQuestions();
 
-            // Handle next button click
             $('#next-button').click(() => {
                 currentQuestionIndex++;
                 loadQuestion();
             });
         });
 
-        // Function to check the answer
         function checkAnswer(selectedOption) {
             const question = questions[currentQuestionIndex];
             if (selectedOption && question) {
@@ -124,20 +129,16 @@
                 console.log(`Selected Answer: ${selectedOption}`);
                 console.log(`Correct Answer: ${question.answer}`);
                 
-                // Disable all option buttons after selection
                 $('#options button').prop('disabled', true);
                 
-                // Get the clicked button and the button with correct answer
                 const selectedButton = $(`#options button:contains('${selectedOption}')`);
                 const correctButton = $(`#options button:contains('${question.answer}')`);
                 
                 if (isCorrect) {
-                    // If correct, only highlight the selected button in green
                     selectedButton.addClass('correct-answer');
                     score++;
                     console.log(`Correct! Score increased to ${score}/${questions.length}`);
                 } else {
-                    // If incorrect, highlight selected in red and correct answer in green
                     selectedButton.addClass('incorrect-answer');
                     correctButton.addClass('correct-answer');
                     console.log(`Incorrect. Score remains ${score}/${questions.length}`);
@@ -145,31 +146,32 @@
                 
                 $('#score').text(`Score: ${score}/${questions.length}`);
 
-                // Store the result
                 quizResults.push({
                     question: question.question,
                     userAnswer: selectedOption,
                     correctAnswer: question.answer,
                     isCorrect: isCorrect
                 });
+
+                questionAnswered = true; // Set the flag to true when the question is answered
             }
         }
 
-        let uploadedFile = null; // Variable to store the uploaded file
+        let uploadedFile = null;
 
         function handleUpload() {
             if (uploadedFile) {
                 const formData = new FormData();
-                formData.append('pdfFile', uploadedFile); // Append the file to the form data
+                formData.append('pdfFile', uploadedFile);
 
                 fetch('http://localhost:5137/upload', {
                     method: 'POST',
-                    body: formData // Send the form data
+                    body: formData
                 })
                 .then(response => response.json())
                 .then(data => {
                     console.log('Success:', data);
-                    fetchQuestions(); // Fetch questions after upload
+                    fetchQuestions();
                     window.location.href = 'QuizPage.html';
                 })
                 .catch((error) => {
