@@ -311,23 +311,28 @@ def main(pdf_path):
     logging.debug(f"main: Entities with context before question generation: {entities_with_context}")
     logging.debug(f"main: Length of entities_with_context before question generation: {len(entities_with_context)}")
     
-    # Get first 5 entities
-    entities_with_context = entities_with_context[:5]
-    logging.debug(f"main: First 5 Entities with context before question generation: {entities_with_context}")
-    logging.debug(f"main: Length of first 5 entities_with_context before question generation: {len(entities_with_context)}")
+    all_questions = []
+    batch_size = 10  # Define the batch size
 
-
-
-    # Generate questions
-    multiple_choice_questions = generate_multiple_choice_questions(entities_with_context)
+    for i in range(0, len(entities_with_context), batch_size):
+          batch = entities_with_context[i:i+batch_size]
+          logging.debug(f"main: Processing entity batch {i//batch_size+1}: {batch}")
+          
+          try:
+            batch_questions = generate_multiple_choice_questions(batch)
+            all_questions.extend(batch_questions)
+          except Exception as e:
+            logging.error(f"main: Error generating questions for batch {i//batch_size + 1}: {e}")
+          
+    logging.info(f"main: Generated {len(all_questions)} questions in total.")
 
     # Save questions to a file
     output_file = "generated_questions.txt"
-    save_questions_to_file(output_file, multiple_choice_questions)
+    save_questions_to_file(output_file, all_questions)
     logging.info(f"Questions have been saved to {output_file}")
 
     # Display questions and get score
-    display_questions_and_get_score(multiple_choice_questions)
+    display_questions_and_get_score(all_questions)
 
 
 if __name__ == "__main__":
