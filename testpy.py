@@ -310,6 +310,13 @@ def main(pdf_path):
     # Debugging: Log entities before passing to question generation
     logging.debug(f"main: Entities with context before question generation: {entities_with_context}")
     logging.debug(f"main: Length of entities_with_context before question generation: {len(entities_with_context)}")
+    
+    # Get first 5 entities
+    entities_with_context = entities_with_context[:5]
+    logging.debug(f"main: First 5 Entities with context before question generation: {entities_with_context}")
+    logging.debug(f"main: Length of first 5 entities_with_context before question generation: {len(entities_with_context)}")
+
+
 
     # Generate questions
     multiple_choice_questions = generate_multiple_choice_questions(entities_with_context)
