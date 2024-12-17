@@ -143,19 +143,9 @@ def generate_multiple_choice_questions(entities_with_context):
         if len(available_entities) < 3:
             continue  # Skip if we don't have enough options
             
-        # Initialize options and ensure uniqueness
-        options = [(entity, label)]  # Start with the correct answer
-        used_options = {entity.lower()}  # Track used option texts to prevent duplicates
-        
-        while len(options) < 4:  # We need 4 options total (1 correct + 3 incorrect)
-            incorrect_entity = random.choice(available_entities)[0]  # Pick a random incorrect entity
-            
-            # Check for uniqueness
-            if incorrect_entity.lower() not in used_options:
-                options.append((incorrect_entity, label))  # Add the unique option
-                used_options.add(incorrect_entity.lower())  # Mark this option as used
-        
-        random.shuffle(options)  # Shuffle the options
+        incorrect_answers = random.sample(available_entities, min(3, len(available_entities)))
+        options = incorrect_answers + [(entity, label)]  # Keep entity with its label
+        random.shuffle(options)
         
         # Format the question
         options_text = "\n".join([f"{chr(97 + i)}. {option[0]}" for i, option in enumerate(options)])
