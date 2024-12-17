@@ -131,21 +131,21 @@ def extract_named_entities_with_context(text):
     logging.info(f"Found {len(entities_with_context)} entities with context.")
     return entities_with_context
 
-def validate_entity_for_question(entity, label, sentence, all_entities, used_entities):
-     """Validates if an entity is suitable for generating a question."""
+def validate_entity_for_question(entity, label, sentence, all_entities, used_entities, entities_with_context):
+    """Validates if an entity is suitable for generating a question."""
 
-     entity_id = (entity, label)
-     if entity_id in used_entities:
-        logging.debug(f"Skipping entity '{entity}' of type '{label}' as it has already been used.")
+    entity_id = (entity, label)
+    if entity_id in used_entities:
+        logging.debug(f"validate_entity: Skipping entity '{entity}' of type '{label}' as it has already been used.")
         return False
-     
-     available_entities = [e for e in all_entities if e[0] != entity and (e[0], all_entities[e[1]][1]) not in used_entities]
-     if len(available_entities) < 3:
-            logging.debug(f"Skipping entity '{entity}' of type '{label}' due to insufficient answer options. Available options: {len(available_entities)}")
+    
+    available_entities = [e for e in all_entities if e[0] != entity and (e[0], entities_with_context[e[1]][1]) not in used_entities]
+    if len(available_entities) < 3:
+            logging.debug(f"validate_entity: Skipping entity '{entity}' of type '{label}' due to insufficient answer options. Available options: {len(available_entities)}, entity: {entity}, label: {label}")
             return False
-     
-     logging.debug(f"Entity '{entity}' of type '{label}' is valid for question generation. Available options: {len(available_entities)}")
-     return True
+    
+    logging.debug(f"validate_entity: Entity '{entity}' of type '{label}' is valid for question generation. Available options: {len(available_entities)}")
+    return True
 
 def generate_multiple_choice_questions(entities_with_context):
     """Generates multiple-choice questions based on entity context."""
@@ -157,8 +157,19 @@ def generate_multiple_choice_questions(entities_with_context):
     used_entities = set()  # Track used entities to prevent duplicates
     
     for entity_idx, (entity, label, sentence) in enumerate(entities_with_context):
+        logging.debug(f"generate_question: Processing entity '{entity}' of type '{label}'.")
         
-        if not validate_entity_for_question(entity, label, sentence, all_entities, used_entities):
+        # Debugging 1: Log all entities before filtering
+        logging.debug(f"generate_question: All entities before filtering: {[ent[0] for ent in all_entities]}")
+        
+        # Calculate available_entities
+        available_entities = [e for e in all_entities if e[0] != entity and (e[0], entities_with_context[e[1]][1]) not in used_entities]
+        
+        # Debugging 2: Log the available entities after filtering
+        logging.debug(f"generate_question: Available entities after filtering for '{entity}': {len(available_entities)}. Entities: {[e[0] for e in available_entities]}")
+
+        if not validate_entity_for_question(entity, label, sentence, all_entities, used_entities, entities_with_context):
+              logging.debug(f"generate_question: Entity '{entity}' of type '{label}' failed validation. Skipping.")
               continue
         
         # Use the full sentence for the question
@@ -191,7 +202,7 @@ def generate_multiple_choice_questions(entities_with_context):
             "options": options  # Add options to the question dictionary
         }
         questions.append(question)
-        logging.debug(f"Generated question {len(questions)} for entity '{entity}'.")
+        logging.debug(f"generate_question: Generated question {len(questions)} for entity '{entity}'.")
         
         # Mark the entity as used
         used_entities.add((entity, label))
