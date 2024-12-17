@@ -81,9 +81,10 @@
                     // Format question text
                     const formattedQuestion = question.question
                     .replace(/\r/g, '') // Remove carriage returns
-                    .replace(/\n/g, '<br>') // Replace newlines with <br> tags
-                    .replace(//g, '<br>') // Replace bullet point with <br> and bullet point
-                    .replace(//g, '<br>') // Replace another bullet point with <br> and bullet point
+                    .replace(/\n/g, '<br> - ') // Replace newlines with <br> tags
+                    .replace(//g, '<br> - ') // Replace bullet point with <br> and bullet point
+                    .replace(//g, '<br> - ') // Replace another bullet point with <br> and bullet point
+                    .replace(//g, '<br> - ') // Replace another bullet point with <br> and bullet point
                     .trim();
                         
                     $('#sentence').html(formattedQuestion);
