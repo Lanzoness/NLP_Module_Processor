@@ -215,8 +215,8 @@ def generate_multiple_choice_questions(entities_with_context):
         # Debugging 1: Log all entities before filtering
         logging.debug(f"generate_question: All entities before filtering: {[ent[0] for ent in all_entities]}")
         
-        # Calculate available_entities
-        available_entities = [e for e in all_entities if e[0] != entity and (e[0], entities_with_context[e[1]][1]) not in used_entities]
+        # Calculate available_entities - simplified version for debugging
+        available_entities = [e for e in all_entities if e[0] != entity]
         
         # Debugging 2: Log the available entities after filtering
         logging.debug(f"generate_question: Available entities after filtering for '{entity}': {len(available_entities)}. Entities: {[e[0] for e in available_entities]}")
@@ -229,20 +229,31 @@ def generate_multiple_choice_questions(entities_with_context):
         question_text = sentence.replace(entity, "______")
         
         # Generate answer options from all entities, including dates
-        available_entities = [e for e in all_entities if e[0] != entity and (e[0], entities_with_context[e[1]][1]) not in used_entities]
-       
+        
+        
         # Initialize a set to track unique incorrect answers
         incorrect_answers = set()
 
+        # Check length before entering the while loop
+        if len(available_entities) <= 0:
+            logging.debug(f"generate_question: No available entities for entity {entity}. Skipping the while loop")
+            continue
+        
         # Continue sampling until we have 3 unique incorrect answers
         while len(incorrect_answers) < 3 and len(available_entities) > 0:
            try:
-             incorrect_answer = random.choice(available_entities)[0]  # Pick a random incorrect entity
+             # Simplified way to get an incorrect answer.
+             incorrect_answer = available_entities[0][0]
+             logging.debug(f"generate_question: Selecting incorrect answer {incorrect_answer}. Entities: {available_entities}")
+
              incorrect_answers.add(incorrect_answer)  # Add to the set (duplicates will be ignored)
            except Exception as e:
                 logging.error(f"generate_question: Error selecting incorrect answer: {e}. Entities: {available_entities}")
                 break
-
+           if len(available_entities) > 0:
+            available_entities.pop(0)
+           else:
+               break
         # Convert the set to a list for further processing
         incorrect_answers = list(incorrect_answers)
         
