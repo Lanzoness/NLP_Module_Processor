@@ -131,23 +131,29 @@
             if (selectedOption && question) {
                 const isCorrect = selectedOption.trim() === question.answer.trim();
                 
-                console.log(`Question ${currentQuestionIndex + 1}:`);
-                console.log(`Selected Answer: ${selectedOption}`);
-                console.log(`Correct Answer: ${question.answer}`);
-                
                 $('#options button').prop('disabled', true);
                 
-                const selectedButton = $(`#options button:contains('${selectedOption}')`);
-                const correctButton = $(`#options button:contains('${question.answer}')`);
+                // Get the clicked button
+                const selectedButton = $('#options button').filter(function() {
+                    // Compare the full text content after the prefix
+                    return $(this).text().split('. ')[1] === selectedOption;
+                });
+                
+                // Get the correct answer button
+                const correctButton = $('#options button').filter(function() {
+                    // Match the button with the correct answer text
+                    return $(this).text().includes(question.answer);
+                });
+                
+                console.log('Selected button:', selectedButton.text());
+                console.log('Correct button:', correctButton.text());
                 
                 if (isCorrect) {
                     selectedButton.addClass('correct-answer');
                     score++;
-                    console.log(`Correct! Score increased to ${score}/${questions.length}`);
                 } else {
                     selectedButton.addClass('incorrect-answer');
-                    correctButton.addClass('correct-answer');
-                    console.log(`Incorrect. Score remains ${score}/${questions.length}`);
+                    correctButton.addClass('correct-answer'); // Show correct answer
                 }
                 
                 $('#score').text(`Score: ${score}/${questions.length}`);
