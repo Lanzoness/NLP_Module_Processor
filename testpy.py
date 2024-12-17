@@ -152,9 +152,14 @@ def generate_multiple_choice_questions(entities_with_context):
     questions = []
     logging.info("Starting question generation.")
     
+    # Debugging: Log the entities before the loop starts
+    logging.debug(f"generate_question: Entities with context received: {entities_with_context}")
+    
     # Create a list of all available entities for choices
     all_entities = [(e[0], i) for i, e in enumerate(entities_with_context)]  # Include index for uniqueness
     used_entities = set()  # Track used entities to prevent duplicates
+
+    logging.debug(f"generate_question: All entities created: {[ent[0] for ent in all_entities]}")
     
     for entity_idx, (entity, label, sentence) in enumerate(entities_with_context):
         logging.debug(f"generate_question: Processing entity '{entity}' of type '{label}'.")
@@ -251,6 +256,9 @@ def main(pdf_path):
     # Save entities and sentences to a file
     entity_sentence_file = "entity_sentence.txt"
     save_entities_to_file(entity_sentence_file, entities_with_context)
+    
+    # Debugging: Log entities before passing to question generation
+    logging.debug(f"main: Entities with context before question generation: {entities_with_context}")
 
     # Generate questions
     multiple_choice_questions = generate_multiple_choice_questions(entities_with_context)
@@ -262,11 +270,3 @@ def main(pdf_path):
 
     # Display questions and get score
     display_questions_and_get_score(multiple_choice_questions)
-
-if __name__ == "__main__":
-    # Get the PDF path from command line arguments
-    if len(sys.argv) > 1:
-        pdf_path = sys.argv[1]  # The first argument is the PDF path
-        main(pdf_path)
-    else:
-        logging.error("Please provide the path to the PDF file.")
