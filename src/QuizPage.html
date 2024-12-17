@@ -77,8 +77,14 @@
             function loadQuestion() {
                 if (questions && currentQuestionIndex < questions.length) {
                     if (!questionAnswered) {
-                        // Log a blank answer if the question was skipped
+                        // Record skipped question
                         const question = questions[currentQuestionIndex];
+                        quizResults.push({
+                            question: question.question,
+                            userAnswer: "Skipped",
+                            correctAnswer: question.answer,
+                            isCorrect: false
+                        });
                         console.log(`Question ${currentQuestionIndex + 1}:`);
                         console.log(`Selected Answer: `);
                         console.log(`Correct Answer: ${question.answer}`);

@@ -62,8 +62,8 @@
                     resultDiv.className = 'question-result';
                     resultDiv.innerHTML = `
                         <p class="question-text">${result.question}</p>
-                        <p class="user-answer ${result.isCorrect ? 'correct' : 'incorrect'}">
-                            Your answer: ${result.userAnswer}
+                        <p class="user-answer ${result.userAnswer === 'Skipped' ? 'skipped' : (result.isCorrect ? 'correct' : 'incorrect')}">
+                            Your answer: ${result.userAnswer === 'Skipped' ? 'Question Skipped' : result.userAnswer}
                         </p>
                         <p class="correct-answer">Correct answer: ${result.correctAnswer}</p>
                     `;

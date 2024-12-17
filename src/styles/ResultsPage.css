@@ -198,3 +198,7 @@ body{
 .user-answer.incorrect {
     color: #ff6b6b;
 }
+.skipped {
+    color: #bababa;
+    font-style: italic;
+}
