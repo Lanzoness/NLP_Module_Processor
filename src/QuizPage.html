@@ -156,12 +156,12 @@
                     return $(this).text().includes(question.answer);
                 });
                 
-                console.log('Selected button:', selectedButton.text());
-                console.log('Correct button:', correctButton.text());
+                // console.log('Selected button:', selectedButton.text());
+                // console.log('Correct button:', correctButton.text());
                 
-                // console.log(`Question ${currentQuestionIndex + 1}:`);
-                // console.log(`Selected Answer: ${selectedOption}`);
-                // console.log(`Correct Answer: ${question.answer}`);
+                console.log(`Question ${currentQuestionIndex + 1}:`);
+                console.log(`Selected Answer: ${selectedOption}`);
+                console.log(`Correct Answer: ${question.answer}`);
 
                 if (isCorrect) {
                     selectedButton.addClass('correct-answer');
