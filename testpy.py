@@ -195,56 +195,43 @@ def generate_multiple_choice_questions(entities_with_context):
     """Generates multiple-choice questions based on entity context."""
     questions = []
     logging.info("Starting question generation.")
-
+    
     # Debugging: Log the entities before the loop starts
     logging.debug(f"generate_question: Entities with context received: {entities_with_context}")
+    logging.debug(f"generate_question: Length of entities_with_context: {len(entities_with_context)}")
 
+    
     # Create a list of all available entities for choices
-    all_entities = [(e[0], i) for i, e in enumerate(entities_with_context)]  # Include index for uniqueness
-    used_entities = set()  # Track used entities to prevent duplicates
-
-    logging.debug(f"generate_question: All entities created: {[ent[0] for ent in all_entities]}")
-
+    try:
+      all_entities = [(e[0], i) for i, e in enumerate(entities_with_context)]  # Include index for uniqueness
+      used_entities = set()  # Track used entities to prevent duplicates
+      logging.debug(f"generate_question: All entities created: {[ent[0] for ent in all_entities]}")
+    except Exception as e:
+        logging.error(f"generate_question: Error creating all_entities: {e}")
+        return []
+    
     for entity_idx, (entity, label, sentence) in enumerate(entities_with_context):
         logging.debug(f"generate_question: Processing entity '{entity}' of type '{label}'.")
-
+        
         # Debugging 1: Log all entities before filtering
-        logging.debug(
-            f"generate_question: All entities before filtering: {[ent[0] for ent in all_entities]}"
-        )
-
+        logging.debug(f"generate_question: All entities before filtering: {[ent[0] for ent in all_entities]}")
+        
         # Calculate available_entities
-        available_entities = [
-            e
-            for e in all_entities
-            if e[0] != entity
-            and (e[0], entities_with_context[e[1]][1]) not in used_entities
-        ]
-
+        available_entities = [e for e in all_entities if e[0] != entity and (e[0], entities_with_context[e[1]][1]) not in used_entities]
+        
         # Debugging 2: Log the available entities after filtering
-        logging.debug(
-            f"generate_question: Available entities after filtering for '{entity}': {len(available_entities)}. Entities: {[e[0] for e in available_entities]}"
-        )
+        logging.debug(f"generate_question: Available entities after filtering for '{entity}': {len(available_entities)}. Entities: {[e[0] for e in available_entities]}")
 
-        if not validate_entity_for_question(
-            entity, label, sentence, all_entities, used_entities, entities_with_context
-        ):
-            logging.debug(
-                f"generate_question: Entity '{entity}' of type '{label}' failed validation. Skipping."
-            )
-            continue
-
+        if not validate_entity_for_question(entity, label, sentence, all_entities, used_entities, entities_with_context):
+              logging.debug(f"generate_question: Entity '{entity}' of type '{label}' failed validation. Skipping.")
+              continue
+        
         # Use the full sentence for the question
         question_text = sentence.replace(entity, "______")
-
+        
         # Generate answer options from all entities, including dates
-        available_entities = [
-            e
-            for e in all_entities
-            if e[0] != entity
-            and (e[0], entities_with_context[e[1]][1]) not in used_entities
-        ]
-
+        available_entities = [e for e in all_entities if e[0] != entity and (e[0], entities_with_context[e[1]][1]) not in used_entities]
+       
         # Initialize a set to track unique incorrect answers
         incorrect_answers = set()
 
@@ -258,23 +245,19 @@ def generate_multiple_choice_questions(entities_with_context):
 
         # Combine the correct answer with the incorrect ones
         options = [(entity, label)] + [(ans, label) for ans in incorrect_answers]
-
+        
         random.shuffle(options)  # Shuffle the options
-
+        
         # Format the question
-        options_text = "\n".join(
-            [f"{chr(97 + i)}. {option[0]}" for i, option in enumerate(options)]
-        )
+        options_text = "\n".join([f"{chr(97 + i)}. {option[0]}" for i, option in enumerate(options)])
         question = {
             "question": question_text,
             "answer": entity,
-            "options": options,  # Add options to the question dictionary
+            "options": options  # Add options to the question dictionary
         }
         questions.append(question)
-        logging.debug(
-            f"generate_question: Generated question {len(questions)} for entity '{entity}'."
-        )
-
+        logging.debug(f"generate_question: Generated question {len(questions)} for entity '{entity}'.")
+        
         # Mark the entity as used
         used_entities.add((entity, label))
     logging.info(f"Generated {len(questions)} questions.")
