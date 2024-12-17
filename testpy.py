@@ -311,10 +311,10 @@ def main(pdf_path):
     # Save entities and sentences to a file
     entity_sentence_file = "entity_sentence.txt"
     save_entities_to_file(entity_sentence_file, entities_with_context)
-
+    
     # Debugging: Log entities before passing to question generation
     logging.debug(f"main: Entities with context before question generation: {entities_with_context}")
-
+    logging.debug(f"main: Length of entities_with_context before question generation: {len(entities_with_context)}")
 
     # Generate questions
     multiple_choice_questions = generate_multiple_choice_questions(entities_with_context)
