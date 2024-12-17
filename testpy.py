@@ -199,14 +199,17 @@ def generate_multiple_choice_questions(entities_with_context):
     logging.debug(f"generate_question: Entities with context received: {entities_with_context}")
     logging.debug(f"generate_question: Length of entities_with_context: {len(entities_with_context)}")
 
-    
     # Create a list of all available entities for choices
-    all_entities = [(e[0], i) for i, e in enumerate(entities_with_context)]  # Include index for uniqueness
-    used_entities = set()  # Track used entities to prevent duplicates
-    logging.debug(f"generate_question: All entities created: {[ent[0] for ent in all_entities]}")
-
+    try:
+        all_entities = [(e[0], i) for i, e in enumerate(entities_with_context)]  # Include index for uniqueness
+        used_entities = set()  # Track used entities to prevent duplicates
+        logging.debug(f"generate_question: All entities created: {[ent[0] for ent in all_entities]}")
+    except Exception as e:
+        logging.error(f"generate_question: Error creating all_entities: {e}")
+        return []
     
     for entity_idx, (entity, label, sentence) in enumerate(entities_with_context):
+      try:
         logging.debug(f"generate_question: Processing entity '{entity}' of type '{label}'.")
         
         # Debugging 1: Log all entities before filtering
@@ -233,12 +236,16 @@ def generate_multiple_choice_questions(entities_with_context):
 
         # Continue sampling until we have 3 unique incorrect answers
         while len(incorrect_answers) < 3 and len(available_entities) > 0:
-            incorrect_answer = random.choice(available_entities)[0]  # Pick a random incorrect entity
-            incorrect_answers.add(incorrect_answer)  # Add to the set (duplicates will be ignored)
+           try:
+             incorrect_answer = random.choice(available_entities)[0]  # Pick a random incorrect entity
+             incorrect_answers.add(incorrect_answer)  # Add to the set (duplicates will be ignored)
+           except Exception as e:
+                logging.error(f"generate_question: Error selecting incorrect answer: {e}. Entities: {available_entities}")
+                break
 
         # Convert the set to a list for further processing
         incorrect_answers = list(incorrect_answers)
-
+        
         # Combine the correct answer with the incorrect ones
         options = [(entity, label)] + [(ans, label) for ans in incorrect_answers]
         
@@ -256,6 +263,9 @@ def generate_multiple_choice_questions(entities_with_context):
         
         # Mark the entity as used
         used_entities.add((entity, label))
+      except Exception as e:
+          logging.error(f"generate_question: Error in processing entity {entity}: {e}")
+          continue
     logging.info(f"Generated {len(questions)} questions.")
     return questions
 
@@ -335,6 +345,8 @@ def main(pdf_path):
 
 if __name__ == "__main__":
     # Get the PDF path from command line arguments
+    #main("Module_01_Introduction_to_Computer_Organization_and_Architecture.pdf")
+    #main("NCS.pdf")
     if len(sys.argv) > 1:
         pdf_path = sys.argv[1]  # The first argument is the PDF path
         main(pdf_path)
