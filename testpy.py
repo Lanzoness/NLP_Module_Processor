@@ -118,8 +118,6 @@ def extract_named_entities_with_context(text):
     
     return entities_with_context
 
-
-
 def generate_multiple_choice_questions(entities_with_context):
     """Generates multiple-choice questions based on entity context."""
     questions = []
@@ -143,9 +141,21 @@ def generate_multiple_choice_questions(entities_with_context):
         if len(available_entities) < 3:
             continue  # Skip if we don't have enough options
             
-        incorrect_answers = random.sample(available_entities, min(3, len(available_entities)))
-        options = incorrect_answers + [(entity, label)]  # Keep entity with its label
-        random.shuffle(options)
+        # Initialize a set to track unique incorrect answers
+        incorrect_answers = set()
+
+        # Continue sampling until we have 3 unique incorrect answers
+        while len(incorrect_answers) < 3 and len(available_entities) > 0:
+            incorrect_answer = random.choice(available_entities)[0]  # Pick a random incorrect entity
+            incorrect_answers.add(incorrect_answer)  # Add to the set (duplicates will be ignored)
+
+        # Convert the set to a list for further processing
+        incorrect_answers = list(incorrect_answers)
+
+        # Combine the correct answer with the incorrect ones
+        options = [(entity, label)] + [(ans, label) for ans in incorrect_answers]
+        
+        random.shuffle(options)  # Shuffle the options
         
         # Format the question
         options_text = "\n".join([f"{chr(97 + i)}. {option[0]}" for i, option in enumerate(options)])
