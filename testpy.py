@@ -233,27 +233,20 @@ def generate_multiple_choice_questions(entities_with_context):
         
         # Initialize a set to track unique incorrect answers
         incorrect_answers = set()
-
-        # Check length before entering the while loop
-        if len(available_entities) <= 0:
-            logging.debug(f"generate_question: No available entities for entity {entity}. Skipping the while loop")
-            continue
         
-        # Continue sampling until we have 3 unique incorrect answers
-        while len(incorrect_answers) < 3 and len(available_entities) > 0:
-           try:
-             # Simplified way to get an incorrect answer.
-             incorrect_answer = available_entities[0][0]
-             logging.debug(f"generate_question: Selecting incorrect answer {incorrect_answer}. Entities: {available_entities}")
+        num_incorrect_answers = min(3, len(available_entities)) # Limit to a maximum of 3 incorrect answers
+        
+        try:
+             # Sample multiple incorrect entities
+             incorrect_answers_list = random.sample(available_entities, num_incorrect_answers)
+             incorrect_answers = set([incorrect_answer[0] for incorrect_answer in incorrect_answers_list])
+             
+        except ValueError as e:
+          logging.error(f"generate_question: Could not sample {num_incorrect_answers} incorrect entities: {e}")
 
-             incorrect_answers.add(incorrect_answer)  # Add to the set (duplicates will be ignored)
-           except Exception as e:
-                logging.error(f"generate_question: Error selecting incorrect answer: {e}. Entities: {available_entities}")
-                break
-           if len(available_entities) > 0:
-            available_entities.pop(0)
-           else:
-               break
+        except Exception as e:
+             logging.error(f"generate_question: Error while choosing incorrect answers: {e}")
+        
         # Convert the set to a list for further processing
         incorrect_answers = list(incorrect_answers)
         
