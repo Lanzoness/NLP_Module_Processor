@@ -190,7 +190,6 @@ def validate_entity_for_question(
     )
     return True
 
-
 def generate_multiple_choice_questions(entities_with_context):
     """Generates multiple-choice questions based on entity context."""
     questions = []
@@ -202,13 +201,10 @@ def generate_multiple_choice_questions(entities_with_context):
 
     
     # Create a list of all available entities for choices
-    try:
-      all_entities = [(e[0], i) for i, e in enumerate(entities_with_context)]  # Include index for uniqueness
-      used_entities = set()  # Track used entities to prevent duplicates
-      logging.debug(f"generate_question: All entities created: {[ent[0] for ent in all_entities]}")
-    except Exception as e:
-        logging.error(f"generate_question: Error creating all_entities: {e}")
-        return []
+    all_entities = [(e[0], i) for i, e in enumerate(entities_with_context)]  # Include index for uniqueness
+    used_entities = set()  # Track used entities to prevent duplicates
+    logging.debug(f"generate_question: All entities created: {[ent[0] for ent in all_entities]}")
+
     
     for entity_idx, (entity, label, sentence) in enumerate(entities_with_context):
         logging.debug(f"generate_question: Processing entity '{entity}' of type '{label}'.")
@@ -262,7 +258,6 @@ def generate_multiple_choice_questions(entities_with_context):
         used_entities.add((entity, label))
     logging.info(f"Generated {len(questions)} questions.")
     return questions
-
 
 def save_questions_to_file(filename, multiple_choice_questions):
     """Saves generated questions to a text file, including options."""
