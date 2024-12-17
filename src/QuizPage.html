@@ -77,13 +77,28 @@
             function loadQuestion() {
                 if (questions && currentQuestionIndex < questions.length) {
                     const question = questions[currentQuestionIndex];
-                    $('#sentence').text(question.question || '');
+                    
+                    // Format question text
+                    const formattedQuestion = question.question
+                    .replace(/\r/g, '') // Remove carriage returns
+                    .replace(/\n/g, '<br>') // Replace newlines with <br> tags
+                    .replace(//g, '<br>') // Replace bullet point with <br> and bullet point
+                    .replace(//g, '<br>') // Replace another bullet point with <br> and bullet point
+                    .trim();
+
+                        // .replace(/\r/g, '')
+                        // .trim()
+                        // .replace(//g, '<br>');
+                        
+                    $('#sentence').html(formattedQuestion);
                     $('#options').empty();
                     
                     $('#score').text(`Score: ${score}/${questions.length}`);
                     
                     if (question.options && Array.isArray(question.options)) {
-                        const shuffledOptions = [...question.options].sort(() => Math.random() - 0.5);
+                        const shuffledOptions = [...question.options]
+                            .map(opt => opt.replace(/\r/g, '').trim())
+                            .sort(() => Math.random() - 0.5);
                         shuffledOptions.forEach((option, index) => {
                             const optionButton = $('<button>')
                                 .addClass('options-default')
@@ -148,6 +163,10 @@
                 console.log('Selected button:', selectedButton.text());
                 console.log('Correct button:', correctButton.text());
                 
+                // console.log(`Question ${currentQuestionIndex + 1}:`);
+                // console.log(`Selected Answer: ${selectedOption}`);
+                // console.log(`Correct Answer: ${question.answer}`);
+
                 if (isCorrect) {
                     selectedButton.addClass('correct-answer');
                     score++;
