@@ -41,9 +41,9 @@ app.post('/upload', upload.single('pdfFile'), async (req, res) => {
         const pdfPath = req.file.path;
         console.log('Received PDF path:', pdfPath);
 
-        // Run Python script
+        // Run Python script using 'py' instead of 'python'
         await new Promise((resolve, reject) => {
-            exec(`python testpy.py "${pdfPath}"`, (error, stdout, stderr) => {
+            exec(`py testpy.py "${pdfPath}"`, (error, stdout, stderr) => {
                 if (error) {
                     reject({ error, stderr });
                 } else {
