@@ -40,7 +40,7 @@ def extract_text_from_pdf(pdf_path):
                 line = re.sub(r"^(|)(\S)", r"\1 \2", line)  # Ensure space between bullet and text
 
                 # Handle bullet points and symbols like , , etc.
-                if line.startswith(("", "", "-")) or re.match(r"^\d+\.", line):
+                if line.startswith(("", "", "-", "•")) or re.match(r"^\d+\.", line):
                     if current_line:  # Append previous line if it exists
                         processed_lines.append(current_line.strip())
                         current_line = ""
