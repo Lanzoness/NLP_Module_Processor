@@ -191,85 +191,62 @@ def validate_entity_for_question(
     return True
 
 def generate_multiple_choice_questions(entities_with_context):
-    """Generates multiple-choice questions based on entity context."""
+    """Generates multiple-choice questions with 4 options each."""
     questions = []
     logging.info("Starting question generation.")
-    
-    # Debugging: Log the entities before the loop starts
-    logging.debug(f"generate_question: Entities with context received: {entities_with_context}")
-    logging.debug(f"generate_question: Length of entities_with_context: {len(entities_with_context)}")
 
-    # Create a list of all available entities for choices
-    try:
-        all_entities = [(e[0], i) for i, e in enumerate(entities_with_context)]  # Include index for uniqueness
-        used_entities = set()  # Track used entities to prevent duplicates
-        logging.debug(f"generate_question: All entities created: {[ent[0] for ent in all_entities]}")
-    except Exception as e:
-        logging.error(f"generate_question: Error creating all_entities: {e}")
-        return []
-    
+    all_entities = [(e[0], e[1], i) for i, e in enumerate(entities_with_context)]  # Include label in all_entities
+    used_entities = set()
+
     for entity_idx, (entity, label, sentence) in enumerate(entities_with_context):
-      try:
-        logging.debug(f"generate_question: Processing entity '{entity}' of type '{label}'.")
-        
-        # Debugging 1: Log all entities before filtering
-        logging.debug(f"generate_question: All entities before filtering: {[ent[0] for ent in all_entities]}")
-        
-        # Calculate available_entities - simplified version for debugging
-        available_entities = [e for e in all_entities if e[0] != entity]
-        
-        # Debugging 2: Log the available entities after filtering
-        logging.debug(f"generate_question: Available entities after filtering for '{entity}': {len(available_entities)}. Entities: {[e[0] for e in available_entities]}")
+        logging.debug(f"generate_question: Processing entity '{entity}' of type '{label}'. Index: {entity_idx}")
 
-        if not validate_entity_for_question(entity, label, sentence, all_entities, used_entities, entities_with_context):
-              logging.debug(f"generate_question: Entity '{entity}' of type '{label}' failed validation. Skipping.")
-              continue
+        if (entity, label) in used_entities:  # Check if entity is already used
+            logging.debug(f"Skipping already used entity: {entity}")
+            continue
         
-        # Use the full sentence for the question
-        question_text = sentence.replace(entity, "______")
-        
-        # Generate answer options from all entities, including dates
-        
-        
-        # Initialize a set to track unique incorrect answers
+        available_entities = [e for e in all_entities if e[0] != entity and (e[0],e[1]) not in used_entities]  # Check used_entities for entity and label
+
         incorrect_answers = set()
-        
-        num_incorrect_answers = min(3, len(available_entities)) # Limit to a maximum of 3 incorrect answers
-        
-        try:
-             # Sample multiple incorrect entities
-             incorrect_answers_list = random.sample(available_entities, num_incorrect_answers)
-             incorrect_answers = set([incorrect_answer[0] for incorrect_answer in incorrect_answers_list])
-             
-        except ValueError as e:
-          logging.error(f"generate_question: Could not sample {num_incorrect_answers} incorrect entities: {e}")
+        num_options = 4  # We want 4 options total (including the correct answer)
 
-        except Exception as e:
-             logging.error(f"generate_question: Error while choosing incorrect answers: {e}")
-        
-        # Convert the set to a list for further processing
-        incorrect_answers = list(incorrect_answers)
-        
-        # Combine the correct answer with the incorrect ones
-        options = [(entity, label)] + [(ans, label) for ans in incorrect_answers]
-        
-        random.shuffle(options)  # Shuffle the options
-        
-        # Format the question
-        options_text = "\n".join([f"{chr(97 + i)}. {option[0]}" for i, option in enumerate(options)])
+        # Attempt to get 3 unique incorrect answers (robustly)
+        while len(incorrect_answers) < num_options - 1 and available_entities: #check if available_entities is not empty
+            try:
+                # Pick a random entity (with its label)
+                chosen_entity, chosen_label, _ = random.choice(available_entities)
+
+                if (chosen_entity, chosen_label) not in incorrect_answers and (chosen_entity, chosen_label) != (entity, label):  # and not already chosen as incorrect
+                    incorrect_answers.add((chosen_entity, chosen_label))
+                    logging.debug(f"Added incorrect answer: {chosen_entity}")
+
+                available_entities.remove((chosen_entity,chosen_label,_))  # Remove the chosen entity, whether it was added as an incorrect answer or not
+
+            except IndexError as e:
+                logging.error(f"IndexError during option generation: {e}. Available Entities: {available_entities}")
+                break  # Exit the while loop if an IndexError occurs
+
+            except Exception as e:  # Log and handle any other exceptions
+                logging.error(f"Error during option generation: {e}")
+                break  # Important: Exit the loop on any error to avoid freezing
+
+        if len(incorrect_answers) < num_options - 1:
+            logging.warning(f"Not enough unique entities to create 4 options for '{entity}'. Skipping.")  # Explicit logging for insufficient options
+            continue  # Skip to the next entity
+
+
+        # Create options list and shuffle
+        options = [(entity, label)] + list(incorrect_answers) # Cast incorrect_answers to a list before adding
+        random.shuffle(options)
+
         question = {
-            "question": question_text,
+            "question": sentence.replace(entity, "______"),
             "answer": entity,
-            "options": options  # Add options to the question dictionary
+            "options": options,
         }
         questions.append(question)
-        logging.debug(f"generate_question: Generated question {len(questions)} for entity '{entity}'.")
-        
-        # Mark the entity as used
-        used_entities.add((entity, label))
-      except Exception as e:
-          logging.error(f"generate_question: Error in processing entity {entity}: {e}")
-          continue
+        used_entities.add((entity, label))  # Mark as used after successful question generation
+
     logging.info(f"Generated {len(questions)} questions.")
     return questions
 
